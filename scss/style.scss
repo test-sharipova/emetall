@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+@import '_vari.scss';
 @font-face {
     font-family: 'Segoe UI';
     src: url(/fonts/SegoeUI.ttf) format('ttf');
@@ -14,19 +15,56 @@
     font-weight: 700;
   }
   @font-face {
-    font-family: 'Segoe UI';
+    font-family: 'Bebas Neue';
     src: url(/fonts/BebasNeue-Regular.ttf) format('ttf');
     font-weight: 400;
   }
   body {
     font-family: 'Segoe UI', 'Arial', sans-serif;
-    font-weight: 600;
+    color: $text-color;
   }
   .container {
     max-width: 1456px;
     width: 90%;
     margin: 0 auto;
   }
+  .btn {
+    padding: 11px 24px;
+    background: $blue;
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    border-radius: 6px;
+    &:hover {
+      opacity: .8;
+    }
+    &:active {
+      box-shadow: inset 4px 4px 4px rgba(16, 16, 16, 0.68);
+    }
+    &__burger {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 13px;
+      height: 12px;
+      margin-right: 12px;
+      span {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background: #fff;
+      }
+    }
+  }
 
+ 
   @import '_banner.scss';
+  @import '_header.scss';
+
+  @import '_media.scss';
 

@@ -1,8 +1,51 @@
 .banner {
     background: #E9F0FC;
     height: 56px;
+    overflow: hidden;
     &__wrap {
         max-width: 1017px;
+        width: 90%;
         margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        height: 100%;
+    }
+    &__name {
+        font-weight: 600;
+        font-size: 18px;
+        border-right: 1px solid $text-color;
+        height: 24px;
+        padding-right: 5px;
+    }
+    &__date {
+        padding-left: 5px;
+        font-size: 18px;
+        height: 24px;
+    }
+    &__btn {
+        font-weight: 400;
+        font-size: 14px;
+        color: #212529;
+        text-decoration: none;
+        display: block;
+        padding: 7px 16px;
+        border: 1px solid rgba(33, 37, 41, .3);
+        border-radius: 30px;
+        margin-left: 30px;
+        &:hover {
+            opacity: .5;
+        }
+        &:active {
+            box-shadow: inset 4px 4px 4px rgba(16, 16, 16, 0.68);
+
+        }
+    }
+    &__cup {
+        transform: rotate(-15deg) translateY(10px);
+    }
+    &__logo {
+        width: 109px;
     }
 }
