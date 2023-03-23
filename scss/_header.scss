@@ -81,6 +81,14 @@ header {
             margin-right: 12px;
         }
     }
+    &__menu {
+        &_mob {
+            padding: 9px 0 13px;
+            background: #FFFFFF;
+            box-shadow: 0px -1px 14px rgba(47, 61, 84, 0.15);
+            display: none;
+        }
+    }
 }
 
 .logo {
