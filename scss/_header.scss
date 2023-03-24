@@ -25,8 +25,7 @@ header {
         }
         &__number {
             font-family: 'Bebas Neue';
-            font-style: normal;
-            font-weight: 400;
+           
             font-size: 26px;
             color: #333333;
         }
@@ -145,17 +144,19 @@ header {
     &_active {
         border: none;
         top: 44px;
-        z-index: 3;
+        z-index: 5;
+        position: absolute;
+        right: 0;
         span {
             &:nth-child(1) {
-                transform: rotate(45deg) translateY(13px);
+                transform: rotate(45deg) translateY(15px);
                 background: #fff;
             }
             &:nth-child(2) {
                 display: none;
             }
             &:nth-child(3) {
-                transform: rotate(-45deg) translateY(-14px);
+                transform: rotate(-45deg) translateY(-15px);
                 background: #fff;
             }
         }

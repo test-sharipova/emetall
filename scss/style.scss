@@ -14,11 +14,7 @@
     src: url(/fonts/SegoeUIBold.ttf) format('ttf');
     font-weight: 700;
   }
-  @font-face {
-    font-family: 'Bebas Neue';
-    src: url(/fonts/BebasNeue-Regular.ttf) format('ttf');
-    font-weight: 400;
-  }
+  
   body {
     font-family: 'Segoe UI', 'Arial', sans-serif;
     color: $text-color;
