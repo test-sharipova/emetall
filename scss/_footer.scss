@@ -33,6 +33,11 @@ footer {
         &_white {
             color: #fff;
         }
+        &_12 {
+            font-size: 12px;
+            line-height: 14px;
+            max-width: 875px;
+        }
        
     }
     &__wrap {
@@ -101,6 +106,25 @@ footer {
     justify-content: space-between;
     gap: 40px;
 
+    }
+    &__logos {
+        &__wrapper {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 24px 0;
+            height: 110px;
+        }
+        &__item {
+            height: 100%;
+            display: flex;
+            gap: 10px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
     }
     
 }
