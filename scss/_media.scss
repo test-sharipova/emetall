@@ -77,7 +77,7 @@
         width: 70%;
         height: 80vh;
         transition: all .3s;
-        z-index: 3;
+        z-index: 14;
         &_active {
             right: 0;
         }
@@ -127,6 +127,10 @@
     }
 }
 @media screen and(max-width:767px) {
+    .container {
+        width: 100%;
+        padding: 0 8px;
+    }
     header {
         padding: 14px 0;
     }
@@ -138,7 +142,10 @@
         
     }
     .cart {
-        padding: 16px 0;
+        padding: 16px 0 20px;
+        &__wrapper {
+            gap: 0;  
+        }
         &__divider {
             display: none;
         }
@@ -158,9 +165,15 @@
         &__order {
             display: flex;
             flex-direction: column;
-            &_btn {
-                
+            min-width: 359px;
+            box-shadow: none;
+            padding: 0 0 10px;
+            &__wrap {
+              order: 2;
+              
+              
             }
+           
             &__block {
                 order: 1;
                 margin: 0 0 40px;

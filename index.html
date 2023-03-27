@@ -37,7 +37,7 @@
                     <span></span>
                 </div>
                 <a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
-                <a href="#" class="header__phone mobile"><img src="img/phone.png" alt="phone"></a>
+                <a href="#" class="header__phone mobile"><img src="img/phone.svg" alt="phone"></a>
             <a href="#" class="btn">
                <div class="btn__burger">
                 <span></span>
@@ -62,26 +62,26 @@
             </div>
             <div class="header__icons header__desktop">
                 <a href="#" class="header__item">
-                    <img src="img/Union.png" alt="stat">
+                    <img src="img/Union.svg" alt="stat">
                     <p class="header__text">Статистика</p>
                 </a>
                 <a href="#" class="header__item">
-                    <img src="img/Group.png" alt="search">
+                    <img src="img/Group.svg" alt="search">
                     <p class="header__text">Поиски</p>
                 </a>
                 <a href="#" class="header__item">
-                    <img src="img/Vector.png" alt="order">
+                    <img src="img/Vector.svg" alt="order">
                     <p class="header__text">Заказы</p>
                 </a>
                 <a href="#" class="header__item">
-                    <img src="img/cart.png" alt="cart">
+                    <img src="img/cart.svg" alt="cart">
                     <p class="header__text">Корзина</p>
                 </a>
                 <div class="header__item">
                     <div class="header__profile">
                         <div class="header__profile__back_white"></div>
                         <div class="header__profile__back_gray"></div>
-                        <img src="img/profile.png" alt="profile">
+                        <img src="img/profile.svg" alt="profile">
                         
                     </div>
                 </div>
@@ -102,7 +102,7 @@
                     
                 </ul>
                 
-                <div class="header__place"><img src="img/place.png" alt="place"> <p class="cart__text cart__text_14">Санкт-Петербург</p></div>
+                <div class="header__place"><img src="img/place.svg" alt="place"> <p class="cart__text cart__text_14">Санкт-Петербург</p></div>
                </div>
         </div>
         
@@ -113,23 +113,23 @@
         <div class="container">
             <div class="header__icons">
                 <a href="#" class="header__item">
-                    <img src="img/home.png" alt="home">
+                    <img src="img/Home.svg" alt="home">
                     <p class="header__text">Главная</p>
                 </a>
                 <a href="#" class="header__item">
-                    <img src="img/Filter.png" alt="filter">
+                    <img src="img/Filter.svg" alt="filter">
                     <p class="header__text">Фильтры</p>
                 </a>
                 <a href="#" class="header__item">
-                    <img src="img/polesnoe.png" alt="icon">
+                    <img src="img/polesnoe.svg" alt="icon">
                     <p class="header__text">Полезное</p>
                 </a>
                 <a href="#" class="header__item">
-                    <img src="img/cart.png" alt="cart">
+                    <img src="img/cart.svg" alt="cart">
                     <p class="header__text">Корзина</p>
                 </a>
                 <a href="#" class="header__item">
-                    <img src="img/profile_mob.png" alt="profile">
+                    <img src="img/profile_mob.svg" alt="profile">
                     <p class="header__text">Профиль</p>
                 </a>
             </div>
@@ -147,36 +147,35 @@
                     <div class="cart__wrapper">
                         <div class="cart__menu">
                             <div class="cart__wrap">
-                                <input type="checkbox">
-                                <p class="cart__text cart__text_14">Выбрать все</p>
+                                <input type="checkbox" class="cart__wrap__input" id="all">
+                                <label for="all" class="cart__text cart__text_14">Выбрать все</label>
                             </div>
-                            <div class="cart__wrap">
-                                <img src="img/delete.png" alt="delete all" class="cart__wrap__img">
+                            <div class="cart__wrap delete">
+                                <img src="img/delete.svg" alt="delete all" class="cart__wrap__img">
                                 <p class="cart__text cart__text_14 gray">Удалить</p>
                                 <div class="cart__count cart__text cart__text_14 gray">(5)</div>
                             </div>
                         </div>
-                        <p class="cart__text cart__text_14 blue repost"><img src="img/repost.png" alt="repost"> Поделиться собранной заявкой</p>
+                        <p class="cart__text cart__text_14 blue repost"><img src="img/repost.svg" alt="repost"> Поделиться собранной заявкой</p>
                     </div>
                     <div class="cart__block">
                         <div class="cart__head">Труба</div>
                         <div class="cart__item">
                             <div class="cart__name">
-                                <input type="checkbox">
+                                <input type="checkbox" class="cart__name__input">
                                 <div class="cart__name__wrap">
                                     <p class="cart__text cart__text_16">Труба профильная 50х50x3, ст.0-20, ГОСТ 13663-86</p>
-                                    <div class="cart__text cart__text_14 cart__name__raiting">ЕВРАЗ Маркет <span><img src="img/raiting.png" alt="raiting">8.9</span></div>
+                                    <div class="cart__text cart__text_14 cart__name__raiting">ЕВРАЗ Маркет <span><img src="img/raiting.svg" alt="raiting">8.9</span></div>
                                 </div>
                             </div>
                             <div class="cart__wrap">
                                 <div class="cart__quantity">
                                     <div class="cart__text cart__text_14">Тонны</div>
                                     <div class="cart__quantity__count">
-                                        <span class="minus"></span>
-                                        <span class="quantity">1,00</span>
+                                        <span class="minus"><img src="img/minus.svg" alt="minus"></span>
+                                        <input type="number" class="quantity" placeholder="1,00">
                                         <span class="plus">
-                                            <span></span>
-                                            <span></span>
+                                           <img src="img/plus.svg" alt="plus">
                                         </span>
                                     </div>
                                 </div>
@@ -188,23 +187,22 @@
                         </div>
                        <div class="cart__item">
                             <div class="cart__name">
-                                <input type="checkbox">
+                                <input type="checkbox" class="cart__name__input">
                                 <div class="cart__name__wrap">
                                     <p class="cart__text cart__text_16">Труба профильная 50х50x3, ст.0-20, ГОСТ 13663-86</p>
-                                    <div class="cart__text cart__text_14 cart__name__raiting">Мечел <span><img src="img/raiting.png" alt="raiting">8.6</span></div>
+                                    <div class="cart__text cart__text_14 cart__name__raiting">Мечел <span><img src="img/raiting.svg" alt="raiting">8.6</span></div>
                                 </div>
                             </div>
                             <div class="cart__wrap">
                                 <div class="cart__quantity">
                                     <div class="cart__text cart__text_14">Тонны</div>
-                                    <d class="cart__quantity__count">
-                                        <span class="minus"></span>
-                                        <span class="quantity">1,00</span>
+                                    <div class="cart__quantity__count">
+                                        <span class="minus"><img src="img/minus.svg" alt="minus"></span>
+                                        <input type="number" class="quantity" placeholder="1,00">
                                         <span class="plus">
-                                            <span></span>
-                                            <span></span>
+                                           <img src="img/plus.svg" alt="plus">
                                         </span>
-                                    </d iv>
+                                    </div>
                                 </div>
                                 <div class="cart__price">
                                     <div class="cart__price__prod"><span>58 920</span> ₽/т</div>
@@ -217,22 +215,21 @@
                         <div class="cart__head">Фланец</div>
                         <div class="cart__item">
                             <div class="cart__name">
-                                <input type="checkbox">
+                                <input type="checkbox" class="cart__name__input">
                                 <div class="cart__name__wrap">
                                     <p class="cart__text cart__text_16">Стальной фланец воротниковый Ду15 Ру16 ст 20 ГОСТ 12821-80
                                     </p>
-                                    <div class="cart__text cart__text_14 cart__name__raiting">ЕВРАЗ Маркет <span><img src="img/raiting.png" alt="raiting">8.9</span></div>
+                                    <div class="cart__text cart__text_14 cart__name__raiting">ЕВРАЗ Маркет <span><img src="img/raiting.svg" alt="raiting">8.9</span></div>
                                 </div>
                             </div>
                             <div class="cart__wrap">
                                 <div class="cart__quantity">
                                     <div class="cart__text cart__text_14">Тонны</div>
                                     <div class="cart__quantity__count">
-                                        <span class="minus"></span>
-                                        <span class="quantity">1,00</span>
+                                        <span class="minus"><img src="img/minus.svg" alt="minus"></span>
+                                        <input type="number" class="quantity" placeholder="1,00">
                                         <span class="plus">
-                                            <span></span>
-                                            <span></span>
+                                           <img src="img/plus.svg" alt="plus">
                                         </span>
                                     </div>
                                 </div>
@@ -244,22 +241,21 @@
                         </div>
                         <div class="cart__item">
                             <div class="cart__name">
-                                <input type="checkbox">
+                                <input type="checkbox" class="cart__name__input">
                                 <div class="cart__name__wrap">
                                     <p class="cart__text cart__text_16">Стальной фланец воротниковый Ду15 Ру16 ст 20 ГОСТ 12821-80
                                     </p>
-                                    <div class="cart__text cart__text_14 cart__name__raiting">Мечел <span><img src="img/raiting.png" alt="raiting">8.6</span></div>
+                                    <div class="cart__text cart__text_14 cart__name__raiting">Мечел <span><img src="img/raiting.svg" alt="raiting">8.6</span></div>
                                 </div>
                             </div>
                             <div class="cart__wrap">
                                 <div class="cart__quantity">
                                     <div class="cart__text cart__text_14">Тонны</div>
                                     <div class="cart__quantity__count">
-                                        <span class="minus"></span>
-                                        <span class="quantity">1,00</span>
+                                        <span class="minus"><img src="img/minus.svg" alt="minus"></span>
+                                        <input type="number" class="quantity" placeholder="1,00">
                                         <span class="plus">
-                                            <span></span>
-                                            <span></span>
+                                           <img src="img/plus.svg" alt="plus">
                                         </span>
                                     </div>
                                 </div>
@@ -274,23 +270,22 @@
                         <div class="cart__head">Отвод</div>
                         <div class="cart__item">
                             <div class="cart__name">
-                                <input type="checkbox">
+                                <input type="checkbox" class="cart__name__input">
                                 <div class="cart__name__wrap">
                                     <p class="cart__text cart__text_16">Отвод 21,3х2 стальной (Ст.20) 90 градусов исп.1 ГОСТ 17375-2001
 
                                     </p>
-                                    <div class="cart__text cart__text_14 cart__name__raiting">ЕВРАЗ Маркет <span><img src="img/raiting.png" alt="raiting">8.9</span></div>
+                                    <div class="cart__text cart__text_14 cart__name__raiting">ЕВРАЗ Маркет <span><img src="img/raiting.svg" alt="raiting">8.9</span></div>
                                 </div>
                             </div>
                             <div class="cart__wrap">
                                 <div class="cart__quantity">
                                     <div class="cart__text cart__text_14">Тонны</div>
                                     <div class="cart__quantity__count">
-                                        <span class="minus"></span>
-                                        <span class="quantity">1,00</span>
+                                        <span class="minus"><img src="img/minus.svg" alt="minus"></span>
+                                        <input type="number" class="quantity" placeholder="1,00">
                                         <span class="plus">
-                                            <span></span>
-                                            <span></span>
+                                           <img src="img/plus.svg" alt="plus">
                                         </span>
                                     </div>
                                 </div>
@@ -305,7 +300,8 @@
                     
                 </div>
                 <div class="cart__order">
-                    <div class="btn order_btn">Оформить заявку</div>
+                    <div class="cart__order__wrap">
+                        <div class="btn order_btn">Оформить заявку</div>
                     <div class="cart__divider"></div>
                     <div class="cart__wrapper">
                         <p class="cart__text_16">5 позиций</p>
@@ -313,9 +309,10 @@
                     </div>
                     <p class="cart__text cart__text_16">Что дальше? </p>
                     <p class="cart__text cart__text_14 weight400">После нажатия на кнопку “Оформить заявку” ваша заявка будет зарегистрирована в системе и поставщики получат уведомление. </p>
-                    <a href="#" class="cart__deli cart__text cart_text_16 blue "><img src="img/auto.png" alt="auto">Расчет стоимости перевозки</a>
+                    <a href="#" class="cart__deli cart__text cart_text_16 blue "><img src="img/auto.svg" alt="auto">Расчет стоимости перевозки</a>
+                    </div>
                     <div class="cart__order__block">
-                        <p class="cart__text cart__text_16"> E-металл поставка <a href="#"><img src="img/question.png" alt="question" class="question"></a></p>
+                        <p class="cart__text cart__text_16"> E-металл поставка <a href="#"><img src="img/question.svg" alt="question" class="question"></a></p>
                         <p class="cart__text_16"></p>
                         <p class="cart__text cart__text_14 weight400">Найдем лучшего поставщика. Оформим доставку.
                             Проведем сделку полностью.</p>
@@ -338,11 +335,11 @@
                 </div>
                 
                 <div class="footer__item">
-                    <a href="tel:+78003020940" class="footer__link"><img src="img/footer_phone.png" alt="phone"> 8 800 30 20 940</a>
+                    <a href="tel:+78003020940" class="footer__link"><img src="img/footer_phone.svg" alt="phone"> 8 800 30 20 940</a>
                     <a href="mailto:info@e-metall.ru" class="footer__text">info@e-metall.ru</a>
                 </div>
                 <div class="footer__item">
-                    <a href="#" class="footer__btn"><img src="img/footer_btn.png" alt="consultation">Возникла проблема?</a>
+                    <a href="#" class="footer__btn"><img src="img/footer_btn.svg" alt="consultation">Возникла проблема?</a>
                 </div>
 
             </div>
