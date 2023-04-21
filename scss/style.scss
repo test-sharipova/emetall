@@ -35,6 +35,7 @@
     text-decoration: none;
     color: #FFFFFF;
     border-radius: 6px;
+    width: fit-content;
     cursor: pointer;
     &:hover {
       opacity: .8;
@@ -63,12 +64,38 @@
     font-size: 28px;
     line-height: 37px;
   }
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .product {
+    &__item {
+      width: 154px;
+      height: 171px;
+      background: #FFFFFF;
+      box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.12);
+      border-radius: 15px;
+      padding: 16px;
+      &__title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        color: $text-color2;
+        margin-bottom: 20px;
+      }
+      img {
+        max-width: 90%;
+      }
+    }
+  }
+  
 
  
   @import '_banner.scss';
   @import '_header.scss';
-  @import '_cart.scss';
   @import '_footer.scss';
-
+  @import '_main.scss';
+  @import '_cart.scss';
   @import '_media.scss';
 
