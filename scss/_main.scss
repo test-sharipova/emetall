@@ -204,6 +204,42 @@
         }
     }
 }
+.about {
+    &__content {
+        width: 470px;
+        .fs_18 {
+            margin: 24px 0;
+        }
+    }
+    &__info {
+        width: 50%;
+        background: radial-gradient(circle at center,  #F5F5F5 0%,#F5F5F5 55%, #fff 55%);
+        padding: 52px;
+    }
+    
+    &__stick{
+        background: #FFFFFF;
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        width: 415px;
+        height: 108px;
+        padding: 24px 24px 31px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 12px;
+
+        .btn {
+            padding: 3px 10px;
+            margin-top: 8px;
+        }
+        &:nth-child(2) {
+            margin-left: 30px;
+        }
+        &:nth-child(3) {
+            margin-left: 60px;
+        }
+    }
+}
 
 
 

@@ -69,6 +69,7 @@
     justify-content: space-between;
     align-items: center;
   }
+  //products
   .product {
     &__item {
       position: relative;
@@ -129,10 +130,15 @@
   }
   .fs_18 {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 140%;
   }
   .fw_600 {
     font-weight: 600;
+  }
+  .title_36 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px;
   }
   //form
   .label {
