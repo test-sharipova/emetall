@@ -1,9 +1,10 @@
 .promo {
     &__wrapper {
         height: 400px;
+        padding: 0 160px;
     }
     &__content  {
-        margin: auto 0 auto 160px;
+       padding-top: 90px;
         height: 100%;
     }
     &__title {
@@ -11,6 +12,7 @@
         font-size: 36px;
         line-height: 122%;
         width: 412px;
+        margin: 0;
     }
     &__slider {
         background: #DFECF5;
@@ -26,6 +28,7 @@
     }
     &__img {
         width: 656px;
+        min-width: 656px;
         img {
             width: 100%;
         }
@@ -42,7 +45,9 @@
         background: #FFFFFF;
         position: absolute;
         top: 50%;
+        transform: translateY(-50%);
         z-index: 3;
+        cursor: pointer;
     }
     .slick-next {
         right: 32px;
@@ -80,8 +85,116 @@
 }
 .popular {
     padding-top: 40px;
-    &__slider {
+    .slick-arrow {
+        width: 48px;
+        height: 48px;
+        border-radius: 100%;
+        border: none;
+        outline: none;
+        background: #F2F2F4;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 3;
+        cursor: pointer;
+    }
+    .slick-next {
+        right: 32px;
+    }
+   
+}
+
+.choise {
+    padding: 0 0 60px;
+    &__wrapper {
+        background: #FFFFFF;
+        box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.12);
+        border-radius: 15px;
+        padding: 60px 60px 60px 60px;
+        gap: 74px;
+    }
+    &__link {
+        display: block;
+        text-decoration: none;
+        color: $text-color;
+        margin-bottom: 24px;
+    }
+    &__item {
+        align-self: flex-start;
+    }
+    &__content {
+        border-right: 1px solid #F2F2F4;
+        height: 360px;
+        width: 346px;
+        padding-right: 60px;
+    }
+    &__subtitle {
+        margin: 12px 0 32px;
+        line-height: 180%;
+    }
+    &__form {
+        width: 286px;
+    }
+    &__btn {
+        width: 100%;
+    }
+    &__links {
+        flex-grow: 1;
+    }
+}
+
+.spec {
+    padding-bottom: 60px;
+    &__item {
+        position: relative;
+        background: #EFF2F6;
+        border-radius: 12px;
+        padding: 18px 24px;
+        flex-grow: 1;
+        max-width: 464px;
+        height: 160px;
+    }
+    &__content {
+        width: 52%;
+    }
+    &__wrapper {
+        gap: 32px;
         margin-top: 32px;
+        flex-wrap: wrap;
+    }
+    &__img {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    &__oldPrice {
+        text-decoration: line-through;
+        margin: 7px 0 6px;
+    }
+    &__newPrice {
+        background: #DD0858;
+        width: fit-content;
+        padding: 4px 6px;
+        color: #FFFFFF;
+    }
+}
+
+.providers {
+    &__item {
+        text-align: center;
+    }
+    &__logo {
+        width: 216px;
+        height: 216px;
+        border-radius: 100%;
+        border: 1px solid #F2F2F4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 16px;
+        img {
+            max-width: 100%;
+        }
     }
 }
 
