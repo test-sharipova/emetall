@@ -180,6 +180,13 @@
 }
 
 .providers {
+    padding-bottom: 120px;
+    &__wrapper {
+        gap: 32px;
+        margin-top: 32px;
+        overflow: auto;
+        
+    }
     &__item {
         text-align: center;
     }
