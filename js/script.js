@@ -25,6 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
     $('.popular__slider').slick({
         dots: false,
         slidesToShow: 7,
+        centerMode: true,
         prevArrow: '<button type="button" class="slick-prev"><img src="img/prev.svg"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="img/next.svg"></button>',
     });
