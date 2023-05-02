@@ -1,0 +1,102 @@
+.catalog {
+    padding: 32px 0 250px;
+    .fs_28 {
+        margin-bottom: 32px;
+    }
+    &__content {
+        align-self: flex-start;
+    }
+    &__search {
+        width: 100%;
+        position: relative;
+        margin: 0 0 32px;
+
+        &__input {
+            width: 100%;
+            padding: 12px 0 12px 56px; 
+            outline: none;
+            border: 1px solid #DDDDDD;
+            border-radius: 6px;
+            &:focus {
+                outline: 4px solid #E9EFFC;
+                border: 1px solid #2764E0;
+                border-radius: 5px;
+               
+            }
+        }
+        &__img {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 18px;
+        }
+        &__btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 13px;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+        }
+    }
+    &__wrapper {
+        justify-content: flex-start;
+        gap: 32px;
+        .product__item {
+            margin: 0;
+            background: linear-gradient(142.27deg, #F1F5F8 -3.17%, #F1F5F8 100.18%);
+            box-shadow: none;
+            transition: all 3s;
+            &:hover {
+                transition: all 3s;
+                background: linear-gradient(142.27deg, #2864E0 -3.17%, #DB0A5B 100.18%);
+               
+                
+            }
+            &:hover > .product__item__title {
+                color: #fff;
+                
+            }
+        }
+    }
+    &__list {
+        min-width: 211px;
+        margin-right: 161px;
+        align-self: flex-start;
+        &__item {
+            position: relative;
+        }
+        &__wrap {
+            margin-bottom: 32px;
+            height: 200px;
+            overflow: hidden;
+        }
+        
+    }
+    &__link {
+        display: block;
+        line-height: 200%;
+        text-decoration: none;
+        color: $text-color;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .catalogShowMore {
+        position: absolute;
+        cursor: pointer;
+        bottom: -20px;
+    }
+    .catalogHide {
+        position: absolute;
+        cursor: pointer;
+        bottom: -20px;
+        img {
+            transform: rotate(180deg);
+        }
+    }
+    .heightAuto {
+        height: auto;
+      }
+}

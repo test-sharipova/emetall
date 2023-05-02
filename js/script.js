@@ -14,6 +14,19 @@ window.addEventListener('DOMContentLoaded', () => {
             menu.classList.remove('menu_active');
         });
     });
+    //showMore catalog
+    function showMore(item) {
+        $(item).each(function(i) {
+            $(this).on('click', function(e) {
+                
+                $('.catalog__list__wrap').eq(i).toggleClass('heightAuto');
+                $('.catalogShowMore').eq(i).toggleClass('hide');
+                $('.catalogHide').eq(i).toggleClass('hide');
+            })
+        });
+    };
+    showMore('.catalogShowMore');
+    showMore('.catalogHide');
 
     // promo slider
     $('.promo__slider').slick({
@@ -30,5 +43,6 @@ window.addEventListener('DOMContentLoaded', () => {
         nextArrow: '<button type="button" class="slick-next"><img src="img/next.svg"></button>',
     });
 
+    
 
     })
