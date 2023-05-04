@@ -7,7 +7,7 @@ header {
     &__wrapper {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-end;
         padding-bottom: 30px;
         
     }
@@ -38,6 +38,7 @@ header {
     &__icons {
         display: flex;
         justify-content: space-between;
+        align-items: flex-end;
     }
     &__profile {
         background: linear-gradient(#DD0858 , #2764E0);
