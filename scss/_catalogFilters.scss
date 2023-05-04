@@ -113,3 +113,29 @@
     }
     
 }
+.catalogFilters2 {
+  &__wrapper {
+    gap: 32px;
+    margin-top: 32px;
+  }
+  padding-top: 80px;
+  &__item {
+    background: $light;
+    border-radius: 12px;
+    padding: 51px 56px 50px;
+    max-width: 712px;
+    &__img {
+      background: #FFFFFF;
+      box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.12);
+      border-radius: 100%;
+      width: 126px;
+      height: 126px;
+      min-width: 126px;
+      margin-right: 48px;
+    }
+    .blue {
+      margin-top: 13px;
+      display: block;
+    }
+  }
+}
