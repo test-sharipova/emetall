@@ -87,6 +87,42 @@
         box-shadow: inset 2px 2px 2px rgba(16, 16, 16, 0.68);
       }
     }
+    &_gray {
+      background: #EFF2F6;
+      border-radius: 8px;
+      font-size: 14px;
+      padding: 11px 14px;
+      text-decoration: none;
+      color: $text-color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg {
+        margin-right: 9px;
+      }
+      &:hover {
+        opacity: .8;
+      }
+      &:active {
+        box-shadow: inset 2px 2px 2px rgba(16, 16, 16, 0.68);
+      }
+    }
+    &_more {
+      width: 38px;
+      height: 38px;
+      background: #FFFFFF;
+      border: 1px solid #DCDCDC;
+      border-radius: 8px;
+      text-decoration: none;
+      color: $text-color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 12px;
+      svg {
+        margin: 1px;
+      }
+    }
   }
   .title {
     font-weight: 600;
@@ -343,6 +379,14 @@
     .mb_16 {
       margin-bottom: 16px;
     }
+    .mb_8 {
+      margin-bottom: 8px;
+    }
+    .divider {
+      height: 1px;
+      width: 100%;
+      background: #F2F2F4;
+    }
 
  
   @import '_banner.scss';
@@ -352,6 +396,7 @@
   @import '_cart.scss';
   @import '_catalog';
   @import '_catalogFilters';
+  @import '_providerscard.scss';
   @import '_footer.scss';
   @import '_media.scss';
 

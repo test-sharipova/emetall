@@ -1,0 +1,24 @@
+.back {
+    .textColor {
+        display: block;
+        svg {
+            margin-right: 16px;
+        }
+        &:hover {
+            opacity: .8;
+        }
+    }
+}
+.providerscard {
+    &__name {
+        margin-left: 48px;
+        &__subtitle {
+            span {
+                margin-right: 16px;
+                svg {
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
