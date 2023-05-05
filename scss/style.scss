@@ -29,6 +29,11 @@
     width: 90%;
     margin: 0 auto;
   }
+  .container_992 {
+    max-width: 992px;
+    width: 90%;
+    
+  }
   .btn {
     padding: 11px 24px 13px;
     background: $blue;
@@ -185,6 +190,9 @@
     line-height: 140%;
     
   }
+  .fs_20 {
+    font-size: 20px;
+  }
   .fs_24 {
     font-size: 24px;
     line-height: 32px;
@@ -207,6 +215,9 @@
   .center {
     text-align: center;
     margin: 0 auto;
+  }
+  .lh_175 {
+    line-height: 175%;
   }
   //form
   .label {
@@ -250,6 +261,9 @@
       }
       &__210 {
         width: 210px;
+      }
+      &_392 {
+        width: 392px;
       }
     }
   }
@@ -297,7 +311,7 @@
 
     .adv {
       position: absolute;
-      bottom: 0;
+      bottom: -1px;
       right: 15px;
       background: url(../img/adv_bg.png) no-repeat center;
       background-size: cover;
@@ -310,7 +324,25 @@
       color: $dark_back;
       height: 22px;
     }
-    
+    //margins
+    .mb_80 {
+      margin-bottom: 80px;
+    }
+    .mb_60 {
+      margin-bottom: 60px;
+    }
+    .mb_32 {
+      margin-bottom: 32px;
+    }
+    .mb_24 {
+      margin-bottom: 24px;
+    }
+    .mb_20 {
+      margin-bottom: 20px;
+    }
+    .mb_16 {
+      margin-bottom: 16px;
+    }
 
  
   @import '_banner.scss';
