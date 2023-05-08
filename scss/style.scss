@@ -161,6 +161,26 @@
         box-shadow: inset 2px 2px 2px rgba(16, 16, 16, 0.68);
       }
     }
+    &_rew {
+      background: #E9F0FC;
+      border-radius: 6px;
+      width: 100%;
+      display: block;
+      font-weight: 600;
+      font-size: 15px;
+      padding: 11px 0;
+      text-align: center;
+      text-decoration: none;
+      color: $blue;
+      &:hover {
+        color: #fff;
+        background: $blue;
+        transition: all .3s;
+      }
+      &:active {
+        box-shadow: inset 2px 2px 2px rgba(16, 16, 16, 0.68);
+      }
+    }
   }
   .title {
     font-weight: 600;
@@ -427,11 +447,20 @@
       }
     }
     //margins
+    .mt_48 {
+      margin-top: 48px;
+    }
     .mb_80 {
       margin-bottom: 80px;
     }
     .mb_60 {
       margin-bottom: 60px;
+    }
+    .mb_40 {
+      margin-bottom: 40px;
+    }
+    .mb_48 {
+      margin-bottom: 48px;
     }
     .mb_32 {
       margin-bottom: 32px;

@@ -1,4 +1,4 @@
-@media screen and(max-width:1443px) {
+@media screen and (max-width:1443px) {
     .header {
         &__wrapper {
             flex-wrap: wrap;
@@ -26,7 +26,7 @@
         }
     }
 }
-@media screen and(max-width:1024px) {
+@media screen and (max-width:1024px) {
     .banner {
         &__logo {
             width: 85px;
@@ -39,7 +39,7 @@
         }
     }
 }
-@media screen and(max-width:1023px) {
+@media screen and (max-width:1023px) {
     .cart {
         padding-bottom: 100px;
         &__wrapper {
@@ -65,7 +65,7 @@
         }
     }
 }
-@media screen and(max-width:768px) {
+@media screen and (max-width:768px) {
     .menu {
         position: fixed;
         
@@ -130,7 +130,7 @@
         display: none;
     }
 }
-@media screen and(max-width:767px) {
+@media screen and (max-width:767px) {
     .container {
         width: 100%;
         padding: 0 8px;
@@ -301,6 +301,37 @@
                     display: block;
                     margin-left: 0;
                 }
+            }
+        }
+        &__rew {
+            order: 2;
+            &__raiting {
+                order: 1;
+            }
+        }
+        &__raiting {
+            &__header {
+                background: #E9F0FC;
+                border-radius: 8px;
+                padding: 14px 16px;
+                .fs_18 {
+                    font-size: 14px;
+                }
+            }
+        }
+        .mb_32 {
+            margin-bottom: 20px;
+        }
+        .raiting {
+            width: 48px;
+            height: 48px;
+            min-height: 48px;
+            min-width: 48px;
+            margin-right: 14px;
+            &:after {
+                width: 42px;
+                height: 42px;
+                top: 3.2px;
             }
         }
     }

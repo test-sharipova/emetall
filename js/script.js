@@ -56,4 +56,14 @@ function showInfo(item) {
 }
 showInfo('.showInfo');
 
+//raiting count
+const counters = document.querySelectorAll('.raiting-counter'),
+      lines = document.querySelectorAll('.about__raiting__line span');
+
+counters.forEach( (item, i) => {
+    lines[i].style.width = item.innerHTML*100/10 + '%';
+});
+console.log(counters);
+console.log(lines);
+
     });

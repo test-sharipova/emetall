@@ -56,17 +56,7 @@
         border-radius: 8px;
         padding: 14px 16px 13px;
         width: 100%;
-        .raiting {
-            width: 48px;
-            height: 48px;
-            min-height: 48px;
-            min-width: 48px;
-            margin-right: 14px;
-            &:after {
-                width: 42px;
-                height: 42px;
-            }
-        }
+        
     }
     &__about {
         border-radius: 8px;
@@ -164,6 +154,7 @@
     }
     &__serv {
         max-width: 960px;
+        margin-bottom: 60px;
         &__item {
             border: 1px solid #F2F2F4;
             border-radius: 10px;
@@ -177,5 +168,29 @@
                 margin-left: 16px;
             }
         }
+    }
+    &__rew {
+        max-width: 960px;
+        &__green {
+            clip-path: polygon(0% 0%, 75% 0%, 90% 47%, 75% 100%, 0% 100%);
+            background: rgb(21%, 65%, 10%, .3);
+            width: 47px;
+            height: 25px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            span {
+                margin-left: 7px;
+            }
+        }
+        &__raiting {
+            max-width: 352px;
+            width: 352px;
+            .raiting {
+                margin-right: 24px;
+            }
+        }
+        
     }
 }
