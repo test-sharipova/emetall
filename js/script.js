@@ -28,6 +28,7 @@ window.addEventListener('DOMContentLoaded', () => {
     showMore('.catalogShowMore');
     showMore('.catalogHide');
 
+    
     // promo slider
     $('.promo__slider').slick({
         dots: true,
@@ -42,7 +43,17 @@ window.addEventListener('DOMContentLoaded', () => {
         prevArrow: '<button type="button" class="slick-prev"><img src="img/prev.svg"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="img/next.svg"></button>',
     });
-
     
+    //show info providers card
+function showInfo(item) {
+    $(item).each(function(i) {
+        $(this).on('click', function(e) {
+            
+            $('.providers__phone').eq(i).removeClass('providerscard__hide');
+            
+        });
+    });
+}
+showInfo('.showInfo');
 
-    })
+    });

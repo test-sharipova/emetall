@@ -1,3 +1,4 @@
+//banner header
 .banner {
     background: #E9F0FC;
     height: 56px;
@@ -48,4 +49,46 @@
     &__logo {
         width: 109px;
     }
+}
+//banner block
+.banners {
+  align-self: flex-start;
+    &__block {
+        &>img {
+            width: 100%;
+          }
+          .wrapper {
+            align-items: flex-start;
+          }
+          width: 372px;
+          height: 140px;
+          padding: 28px 26px 36px;
+          border-radius: 10px;
+          margin-bottom: 20px;
+          position: relative;
+          &:nth-child(1) {
+            padding: 0;
+          }
+          &:nth-child(2) {
+            background: #F2F2F4;
+          }
+          &:nth-child(3) {
+            background: #E9F0FC;
+          }
+          &__title {
+            margin-bottom: 20px;
+            line-height: 20px;
+          }
+          &__content {
+            max-width: 146px;
+            
+          }
+          &__img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            max-width: 60%;
+          }
+    }
+
 }

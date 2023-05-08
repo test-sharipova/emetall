@@ -23,6 +23,7 @@
     max-width: 1456px;
     width: 90%;
     margin: 0 auto;
+    position: relative;
   }
   .container_1200 {
     max-width: 1200px;
@@ -34,6 +35,7 @@
     width: 90%;
     
   }
+  //btns
   .btn {
     padding: 11px 24px 13px;
     background: $blue;
@@ -102,6 +104,7 @@
       }
       &:hover {
         opacity: .8;
+        transition: all .3s;
       }
       &:active {
         box-shadow: inset 2px 2px 2px rgba(16, 16, 16, 0.68);
@@ -121,6 +124,41 @@
       margin-left: 12px;
       svg {
         margin: 1px;
+      }
+    }
+    &_transparent {
+      font-weight: 400;
+      font-size: 15px;
+      color: $text-color;
+      border: 1px solid #DCDCDC;
+      border-radius: 8px;
+      padding: 10px 0;
+      text-align: center;
+      display: block;
+      text-decoration: none;
+      &:hover {
+        opacity: .8;
+        transition: all .3s;
+      }
+      &:active {
+        box-shadow: inset 2px 2px 2px rgba(16, 16, 16, 0.68);
+      }
+    }
+    &_order {
+      color: $blue;
+      background: #E9F0FC;
+      border-radius: 8px;
+      padding: 10px 24px;
+      font-weight: 400;
+      font-size: 14px;
+      text-decoration: none;
+      &:hover {
+        color: #fff;
+        background: $blue;
+        transition: all .3s;
+      }
+      &:active {
+        box-shadow: inset 2px 2px 2px rgba(16, 16, 16, 0.68);
       }
     }
   }
@@ -148,6 +186,7 @@
     align-items: flex-start;
     justify-content: flex-start;
   }
+  
   //products
   .product {
     &__item {
@@ -202,6 +241,9 @@
   .gray2 {
     color: $gray;
   }
+  .green {
+    color: #1A903C;
+  }
   .textColor {
     color: $text-color;
     text-decoration: none;
@@ -243,6 +285,9 @@
   .fw_600 {
     font-weight: 600;
   }
+  .fw_400 {
+    font-weight: 400;
+  }
   .title_36 {
     font-weight: 600;
     font-size: 36px;
@@ -254,6 +299,9 @@
   }
   .lh_175 {
     line-height: 175%;
+  }
+  .lh_156 {
+    line-height: 156%;
   }
   //form
   .label {
@@ -334,10 +382,10 @@
         z-index: 3;
         
       }
-      &_49 {
+      &_green {
         background: conic-gradient(#36A71A 0 98%, #D9D9D9 0 2%);
       }
-      &_34 {
+      &_yellow {
         background: conic-gradient(#CFD240 0 68%, #D9D9D9 0 32%);
       }
     }
@@ -360,6 +408,24 @@
       color: $dark_back;
       height: 22px;
     }
+    .checkmark {
+      &_blue {
+        width: 16px;
+        height: 16px;
+        min-width: 16px;
+        min-height: 16px;
+        background: $blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        color: #fff;
+        font-weight: 600;
+        font-size: 12px;
+        align-self: center;
+        margin-right: 8px;
+      }
+    }
     //margins
     .mb_80 {
       margin-bottom: 80px;
@@ -378,6 +444,9 @@
     }
     .mb_16 {
       margin-bottom: 16px;
+    }
+    .mb_12 {
+      margin-bottom: 12px;
     }
     .mb_8 {
       margin-bottom: 8px;
