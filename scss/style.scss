@@ -158,7 +158,7 @@
         transition: all .3s;
       }
       &:active {
-        box-shadow: inset 2px 2px 2px rgba(16, 16, 16, 0.68);
+        box-shadow: inset 4px 4px 4px rgba(16, 16, 16, 0.68);
       }
     }
     &_rew {
@@ -484,6 +484,31 @@
       height: 1px;
       width: 100%;
       background: #F2F2F4;
+    }
+
+    //sites count
+    .sitesCount {
+      &__site {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        background: #F2F2F4;
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+        color: $text-color;
+        text-decoration: none;
+        margin-right: 12px;
+        &_active {
+          background: $blue;
+          color: #fff;
+        }
+        &:hover {
+          background: #DDDDDE;
+          transition: all .3s;
+        }
+      }
     }
 
  

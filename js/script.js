@@ -63,7 +63,37 @@ const counters = document.querySelectorAll('.raiting-counter'),
 counters.forEach( (item, i) => {
     lines[i].style.width = item.innerHTML*100/10 + '%';
 });
-console.log(counters);
-console.log(lines);
+
+//providerscard slider
+
+$('.providerscard__slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: true,
+    asNavFor: '.providerscard__slider-nav',
+    prevArrow: '<button type="button" class="slick-prev"><img src="img/prev.svg"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="img/next.svg"></button>',
+    responsive: [
+        {
+            breakpoint: 767,
+            settings: {
+                arrows: false,
+                slidesToShow: 1,
+                
+            } 
+        }
+    ]
+  });
+  $('.providerscard__slider-nav').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    asNavFor: '.providerscard__slider-for',
+    dots: false,
+    arrows: false,
+    centerMode: false,
+    focusOnSelect: true
+  });
+
 
     });

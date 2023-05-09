@@ -308,6 +308,12 @@
             &__raiting {
                 order: 1;
             }
+            &__item {
+                padding: 24px 16px;
+                .checkmark_blue {
+                    background: transparent;
+                }
+            }
         }
         &__raiting {
             &__header {
