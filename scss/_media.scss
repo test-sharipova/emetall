@@ -143,6 +143,9 @@
         &__wrapper {
             padding: 0;
         }
+        .mobile {
+            margin-right: 20px;
+        }
         
         
     }
@@ -313,7 +316,7 @@
                 order: 1;
             }
             &__item {
-                padding: 24px 16px;
+                padding: 24px 0px;
                 .checkmark_blue {
                     background: transparent;
                 }

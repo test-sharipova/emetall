@@ -88,9 +88,9 @@ $('.providerscard__slider-for').slick({
             breakpoint: 767,
             settings: {
                 arrows: false,
-                slidesToShow: 2,
-                slideToScroll: 2,
+                slidesToShow: 1,
                 
+                centerMode: true,
             } 
         }
     ]
