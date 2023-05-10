@@ -135,6 +135,7 @@
         width: 100%;
         padding: 0 8px;
     }
+    
     header {
         padding: 14px 0;
     }
@@ -256,6 +257,9 @@
     .providerscard {
         .container {
             padding: 0 16px;
+        }
+        .container__map {
+            padding: 0;
         }
         .providers__logo {
             width: 80px;

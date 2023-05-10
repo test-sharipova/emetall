@@ -34,6 +34,15 @@ window.addEventListener('DOMContentLoaded', () => {
         dots: true,
         prevArrow: '<button type="button" class="slick-prev"><img src="img/prev.svg"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="img/next.svg"></button>',
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    arrows: false,
+                                        
+                } 
+            }
+        ]
       });
     // popular slider
     $('.popular__slider').slick({
@@ -79,7 +88,8 @@ $('.providerscard__slider-for').slick({
             breakpoint: 767,
             settings: {
                 arrows: false,
-                slidesToShow: 1,
+                slidesToShow: 2,
+                slideToScroll: 2,
                 
             } 
         }
@@ -92,7 +102,8 @@ $('.providerscard__slider-for').slick({
     dots: false,
     arrows: false,
     centerMode: false,
-    focusOnSelect: true
+    focusOnSelect: true,
+    infinite: true,
   });
 
   //providerscard tabs
@@ -106,4 +117,15 @@ $('.providerscard__slider-for').slick({
     
   });
 
+  // show map adresses
+  function showAdress(item) {
+    $(item).each(function(i) {
+        $(this).on('click', function(e) {
+            
+            $('.providerscard__map__adress').eq(i).fadeIn();
+            
+        });
+    });
+}
+showAdress('.providerscard__map__block');
     });
