@@ -22,9 +22,9 @@ window.addEventListener('DOMContentLoaded', () => {
                 $('.catalog__list__wrap').eq(i).toggleClass('heightAuto');
                 $('.catalogShowMore').eq(i).toggleClass('hide');
                 $('.catalogHide').eq(i).toggleClass('hide');
-            })
+            });
         });
-    };
+    }
     showMore('.catalogShowMore');
     showMore('.catalogHide');
 
@@ -36,10 +36,10 @@ window.addEventListener('DOMContentLoaded', () => {
         nextArrow: '<button type="button" class="slick-next"><img src="img/next.svg"></button>',
         responsive: [
             {
-                breakpoint: 767,
+                breakpoint: 800,
                 settings: {
                     arrows: false,
-                                        
+                    slidesToShow: 1                   
                 } 
             }
         ]
@@ -51,6 +51,17 @@ window.addEventListener('DOMContentLoaded', () => {
         centerMode: true,
         prevArrow: '<button type="button" class="slick-prev"><img src="img/prev.svg"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="img/next.svg"></button>',
+        responsive: [
+            {
+                breakpoint: 525,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 2,
+                    centerMode: true,
+                    
+                } 
+            }
+        ]
     });
     
     //show info providers card

@@ -135,17 +135,21 @@
         width: 100%;
         padding: 0 8px;
     }
+    .container__map {
+        padding: 0;
+    }
     
     header {
         padding: 14px 0;
+        .mobile {
+            margin-right: 20px;
+        }
     }
     .header {
         &__wrapper {
             padding: 0;
         }
-        .mobile {
-            margin-right: 20px;
-        }
+        
         
         
     }
@@ -257,13 +261,171 @@
             
         }
     }
+    .title {
+        font-size: 20px;
+    }
+    .blue {
+        font-size: 14px;
+    }
+    .promo {
+       
+        &__wrapper {
+            padding: 40px 34px 0;
+            flex-direction: column;
+            height: auto;
+        }
+        &__slider {
+            height: auto;
+            .slick-arrow {
+                display: none;
+            }
+        }
+        &__title {
+            width: auto;
+            font-size: 32px;
+        }
+        &__content {
+            padding: 0;
+        }
+        &__text {
+            margin: 12px 0 24px;
+        }
+        &__img {
+            width: auto;
+            min-width: auto;
+           img {
+            width: 139%;
+    transform: translateX(-14%);
+           }
+        }
+        
+    }
+    .popular {
+        
+        .product__item {
+            margin-top: 20px;
+        }
+    }
+    .choise {
+        &__wrapper {
+            flex-direction: column;
+            padding: 24px 20px;
+            gap: 45px;
+        }
+        &__content {
+            padding-right: 0;
+            width: auto;
+            height: auto;
+        }
+        &__links {
+            width: 100%;
+            .fs_18 {
+                font-size: 14px;
+            }
+        }
+        .btn_transparent {
+            width: 100%;
+            margin-top: -25px;
+        }
+    }
+    .spec {
+        padding-bottom: 48px;
+        &__wrapper {
+            gap: 12px;
+        }
+        &__img {
+            width: 60%;
+        }
+    }
+    .providers {
+        padding-bottom: 48px;
+        &__wrapper {
+            gap: 16px;
+        }
+        &__item {
+            .fs_18 {
+                font-size: 12px;
+            }
+            .fs_14 {
+                font-size: 11px;
+            }
+        }
+        &__logo {
+            width: 96px;
+            height: 96px;
+            img {
+                max-width: 68%;
+            }
+        }
+    }
+    .about {
+        &__wrapper {
+            flex-direction: column;
+            margin-bottom: 0;
+        }
+        &__content {
+            width: auto;
+            text-align: center;
+            .fs_18 {
+                font-size: 14px;
+                margin: 12px 0 16px;
+                max-width: 316px;
+            }
+            &2 {
+                order: 1;
+            }
+        }
+        .title_36 {
+            font-size: 20px;
+            line-height: 27px;
+            max-width: 257px;
+            margin: 0 auto;
+        }
+        &__info {
+            width: 100%;
+            padding: 32px 0 60px;
+            background: radial-gradient(circle at center, #F5F5F5 0%, #F5F5F5 60%, #fff 55%);
+           
+        }
+        &__stick {
+            &:nth-child(2), &:nth-child(3) {
+                margin-left: auto;
+            }
+            max-width: 280px;
+            height: auto;
+            padding: 12px 24px;
+            .fs_18 {
+                font-size: 14px;
+                
+            }
+            .fs_14 {
+                font-size: 11px;
+                line-height: 180%;
+            }
+            margin: 12px auto 0;
+            .btn {
+                font-size: 10px;
+            }
+        }
+        &__info2 {
+            order: 2;
+        }
+        &__raiting {
+            transform: scale(0.7) translateX(-96px);
+            &_hidden {
+                margin: -243px 0 0 49px;
+            }
+        }
+        .fs_18 {
+            font-size: 14px;
+            
+        }
+    }
     .providerscard {
         .container {
             padding: 0 16px;
         }
-        .container__map {
-            padding: 0;
-        }
+       
         .providers__logo {
             width: 80px;
             height: 80px;

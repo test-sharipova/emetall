@@ -76,7 +76,7 @@
                 border: none;
             }
         
-    }
+    } 
     .slick-active {
         button {
             opacity: 1;
@@ -125,6 +125,10 @@
         text-decoration: none;
         color: $text-color;
         margin-bottom: 24px;
+        &:hover {
+            color: $blue;
+            transition: all .3s;
+        }
     }
     &__item {
         align-self: flex-start;
@@ -159,7 +163,9 @@
         padding: 18px 24px;
         flex-grow: 1;
         max-width: 464px;
+        min-width: 332px;
         height: 160px;
+        overflow: hidden;
     }
     &__content {
         width: 52%;
@@ -167,7 +173,7 @@
     &__wrapper {
         gap: 32px;
         margin-top: 32px;
-        flex-wrap: wrap;
+       overflow-x: scroll;
     }
     &__img {
         position: absolute;
