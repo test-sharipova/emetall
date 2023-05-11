@@ -523,6 +523,37 @@
             margin-top: 48px;
             margin-bottom: 35px;
         }
+        &__person {
+            background: #fff;
+            padding: 0;
+            margin: 60px 0;
+            &__wrap {
+                flex-direction: column;
+                justify-content: center;
+                gap: 32px;
+            }
+            &__content {
+                order: 2;
+                max-width: 100%;
+                text-align: center;
+                gap: 12px;
+            }
+            &__img {
+                order: 1;
+                position: relative;
+                width: 125px;
+                height: 125px;
+                border-radius: 100%;
+                background: #EFF2F6;
+                overflow: hidden;
+                right: auto;
+                bottom: 0;
+                img {
+                    width: 111%;
+                transform: translate(10px, 10px);
+                }
+            }
+        }
     }
     .providerscard {
         .container {
