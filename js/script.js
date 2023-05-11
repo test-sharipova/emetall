@@ -53,12 +53,23 @@ window.addEventListener('DOMContentLoaded', () => {
         nextArrow: '<button type="button" class="slick-next"><img src="img/next.svg"></button>',
         responsive: [
             {
-                breakpoint: 525,
+                breakpoint: 1024,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 4,
+                    variableWidth: true,
+                    centerMode: true,
+                                       
+                } 
+            },
+            {
+                breakpoint: 768,
                 settings: {
                     arrows: false,
                     slidesToShow: 2,
+                    variableWidth: true,
                     centerMode: true,
-                    
+                                       
                 } 
             }
         ]
