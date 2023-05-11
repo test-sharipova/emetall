@@ -456,6 +456,14 @@
             }
         }
     }
+    .catalog {
+        &__wrapper {
+            gap: 7px;
+        }
+        &__list {
+            margin-right: 0;
+        }
+    }
 }
 @media screen and (max-width:767px) {
     .container {
@@ -482,6 +490,23 @@
     }
     .desktop {
         display: none;
+    }
+    .catalog {
+        &__search {
+            &__img {
+                opacity: .6;
+            }
+            input::-webkit-input-placeholder { color: $text-color; }
+            input::-moz-placeholder { color: $text-color; }
+        }
+        .product__item {
+            width: 108px;
+            height: 120px;
+            overflow: hidden;
+        }
+        &__wrapper {
+            gap: 9px;
+        }
     }
     .cart {
         .container {
