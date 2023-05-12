@@ -15,11 +15,13 @@
         display: none !important;
       }
     
-    .catalogFilters__radio:checked+label {
-      background: #E9F0FC;
-      outline: 1px solid #8EB1ED;
-      
-    }
+   .showFilters {
+    padding: 12px 24px;
+    background: #e9f0fc;
+    
+    width: fit-content;
+    color: $blue;
+   }
     &__form {
       background: #FFFFFF;
       box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
@@ -139,6 +141,29 @@
       border-radius: 15px;
       padding: 40px 48px 46px;
     }
+    &__header {
+      width: 100%;
+      height: 60px;
+      padding: 20px 0;
+      text-align: center;
+      position: absolute;
+      background: #FFFFFF;
+      box-shadow: 0px 1px 14px rgba(47, 61, 84, 0.15);
+      top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+    }
+    &__close {
+      position: absolute;
+      top: 43%;
+      transform: translateY(-50%);
+      left: 22px;
+      transform: translateY(-50%);
+    left: 22px;
+    font-size: 36px;
+    line-height: 36px;
+    }
 }
 //radio buttons
 .labelRadio {
@@ -148,10 +173,25 @@
   padding: 9px 16px;
   font-weight: 400;
   font-size: 14px;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    outline: 1px solid #8EB1ED;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: none;
+    
+  }
   &:nth-child(2) {
     border-radius: 6px 0px 0px 6px;
     border-right: none;
-    
+    &::after {
+      border-radius: 6px 0px 0px 6px;
+    }
   }
   &:nth-child(4) {
     flex-grow: 1;
@@ -159,12 +199,18 @@
   &:last-child {
     border-radius: 0px 6px 6px 0px;
     border-left: none;
-    
+    &::after {
+      border-radius: 0px 6px 6px 0px;
+    }
   }
+  
 }
 .catalogFilters__radio:checked+label {
   background: #E9F0FC;
-  outline: 1px solid #8EB1ED;
+  &::after {
+    display: block;
+  }
+
   
 }
 .catalogFilters2 {
@@ -195,4 +241,39 @@
 }
 .catalogFilters3 {
   padding-bottom: 100px;
+  .tabs{
+    &__caption {
+      border-radius: 6px;
+      
+      list-style-type: none;
+      display: flex;
+      width: fit-content;
+      margin-bottom: 20px;
+      li {
+        padding: 10px 16px;
+        font-size: 14px;
+        border: 1px solid #DDDDDD;
+        background: #fff;
+        cursor: pointer;
+        &:last-child {
+          border-radius: 0 6px 6px 0;
+        }
+        &:first-child {
+          border-radius: 6px 0 0 6px;
+        }
+        &.active {
+          background: #E9F0FC;
+          border: 1px solid #2764E0;
+          
+        }
+      }
+    }
+  }
+  .tabs__content {
+    display: none; 
+    height: 100px;
+  }
+  .tabs__content.active {
+    display: block; 
+  }
 }

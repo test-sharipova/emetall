@@ -130,17 +130,23 @@
                 </div>
             </div>
         </div>
-           
+        <div class="catalogFilters__header">
+            <div class="catalogFilters__close">&times;</div>
+            <p class="fs_16 fw_600">Фильтры</p>
+        </div>   
            
     </header>
     <main>
         <section class="catalogFilters">
-            <div class="container">
-                <h2 class="fs_28 catalogFilters__title">Труба профилильная 50х50х3, ст.0-20, 6м</h2>
-                <p class="fs_14 gray catalogFilters__subtitle">2 618 предложений от 39 металлобаз со всей России</p>
+            <div class="container container__map">
+
+                <h2 class="fs_28 catalogFilters__title desktop">Труба профильная 50х50х3, ст.0-20, 6м</h2>
+                <p class="fs_14 gray catalogFilters__subtitle desktop">2 618 предложений от 39 металлобаз со всей России</p>
+                
                 <div class="wrapper">
                     <div>
-                        <form action="#" class="catalogFilters__form">
+                        <p class="fs_16 fw_600 showFilters mobile">Фильтры</p>
+                        <form action="#" class="catalogFilters__form desktop">
                             <div class="wrapper form__wrapper">
                               <div class="form__item_286">
                                   <label for="chapter" class="label">Раздел</label>
@@ -251,7 +257,7 @@
                             </div>
                             <div class="form__divider"></div>
                             <div class="wrapper form__wrapper">
-                              <div class="form__item_286">
+                              <div class="form__item_286 w100">
                                   <label for="metallobaza" class="label">Металлобаза</label>
                                   <input name="metallobaza" id="metallobaza" class="form__input" list="metallobazaoption">
                                   <datalist id="metallobazaoption">
@@ -260,10 +266,11 @@
                                       <option value="Металлобаза3"></option>
                                       <option value="Металлобаза4"></option>
                                   </datalist>
-                                    <p class="fs_12 gray2">Введите название металлобазы</p>
+                                    <p class="fs_12 gray2 desktop">Введите название металлобазы</p>
                               </div>
-                              <div class="form__item_286">
-                                  <p class="label">Наличие</p>
+                              <button type="submit" class="btn mobile">Показать 2 618 предложений</button>
+                              <div class="form__item_286 w100">
+                                  <p class="label desktop">Наличие</p>
       
                                   <div class="wrapper">
                                       <input type="radio" name="avail" value="all" id="all" class="catalogFilters__radio"> <label class="labelRadio" for="all">Все</label>
@@ -271,7 +278,7 @@
                                     <input type="radio" name="avail" value="order" id="order" class="catalogFilters__radio"> <label class="labelRadio" for="order">Под заказ</label>
                                   </div>
                               </div>
-                              <div class="form__item_286">
+                              <div class="form__item_286 w100">
                                   <p class="label">Покрытие</p>
       
                                   <div class="wrapper">
@@ -286,13 +293,13 @@
                                   <a href="#" class="blue fs_15 catalogFilters__link"><img src="img/search_blue.svg" alt="save search"> Сохранить поиск</a>
                                   <a href="#" class="fs_15 textColor catalogFilters__link"><img src="img/cross.svg" alt="throw off">Сбросить</a>
                                 </div>
-                                <button type="submit" class="btn">Показать 2 618 предложений</button>
+                                <button type="submit" class="btn desktop">Показать 2 618 предложений</button>
                             </div>
                             
                           </form>
                           <div class="catalogFilters__count fs_14"><img src="img/lightning.svg" alt="lightning">Эту позицию искали сегодня 3 человека</div>
                     </div>
-                    <div class="catalogFilters__banners">
+                    <div class="catalogFilters__banners desktop">
                         <div class="catalogFilters__banner">
                             <a href="#"><img src="img/banner.jpg" alt="banner"></a>
                             <div class="adv">Реклама</div>
@@ -360,31 +367,91 @@
             <div class="container">
                 <div class="container_992">
                     <h2 class="fs_24 mb_24">Популярное</h2>
-                    <div class="wrapper form__item_392 mb_20">
-                        <input type="radio" name="popular" value="popular_all" id="popular_all" class="catalogFilters__radio"> 
-                        <label class="labelRadio" for="popular_all">Все</label>
-                      <input type="radio" name="popular" value="popular_diametr" id="popular_diametr" class="catalogFilters__radio"> 
-                      <label class="labelRadio" for="popular_diametr">Диаметр</label>
-                      <input type="radio" name="popular" value="popular_stenka" id="popular_stenka" class="catalogFilters__radio"> 
-                      <label class="labelRadio" for="popular_stenka">Толщина стенки</label>
-                      <input type="radio" name="popular" value="popular_marka" id="popular_marka" class="catalogFilters__radio"> 
-                      <label class="labelRadio" for="popular_marka">Марка стали</label>
-                    </div>
-                    <div class="wrapper mb_80">
-                        <a href="#" class="catalogFilters__grayLink">8х1</a>
-                        <a href="#" class="catalogFilters__grayLink">8х2</a>
-                        <a href="#" class="catalogFilters__grayLink">ст. 20</a>
-                        <a href="#" class="catalogFilters__grayLink">ст. 10</a>
-                        <a href="#" class="catalogFilters__grayLink">09г2с</a>
-                        <a href="#" class="catalogFilters__grayLink">8х20</a>
-                        <a href="#" class="catalogFilters__grayLink">8х1</a>
-                        <a href="#" class="catalogFilters__grayLink">8х2</a>
-                        <a href="#" class="catalogFilters__grayLink">ст. 20</a>
-                        <a href="#" class="catalogFilters__grayLink">ст. 10</a>
-                        <a href="#" class="catalogFilters__grayLink">09г2с</a>
-                        <a href="#" class="catalogFilters__grayLink">8х20</a>
-                        <a href="#" class="catalogFilters__grayLink">Показать еще</a>
-                    </div>
+                    <div class="tabs">
+  
+                        <ul class="tabs__caption">
+                          <li class="active">Все</li>
+                          <li>Диаметр</li>
+                          <li>Толщина стенки</li>
+                          <li>Марка стали</li>
+                        </ul>
+                        
+                        <div class="tabs__content active">
+                            <div class="wrapper mb_80">
+                                <a href="#" class="catalogFilters__grayLink">8х1</a>
+                                <a href="#" class="catalogFilters__grayLink">8х2</a>
+                                <a href="#" class="catalogFilters__grayLink">ст. 20</a>
+                                <a href="#" class="catalogFilters__grayLink">ст. 10</a>
+                                <a href="#" class="catalogFilters__grayLink">09г2с</a>
+                                <a href="#" class="catalogFilters__grayLink">8х20</a>
+                                <a href="#" class="catalogFilters__grayLink">8х1</a>
+                                <a href="#" class="catalogFilters__grayLink">8х2</a>
+                                <a href="#" class="catalogFilters__grayLink">ст. 20</a>
+                                <a href="#" class="catalogFilters__grayLink">ст. 10</a>
+                                <a href="#" class="catalogFilters__grayLink">09г2с</a>
+                                <a href="#" class="catalogFilters__grayLink">8х20</a>
+                                <a href="#" class="catalogFilters__grayLink">Показать еще</a>
+                            </div>
+                        </div>
+                        
+                        <div class="tabs__content">
+                          Содержимое второго блока
+                          <div class="wrapper mb_80">
+                            <a href="#" class="catalogFilters__grayLink">8х1</a>
+                            <a href="#" class="catalogFilters__grayLink">8х2</a>
+                            <a href="#" class="catalogFilters__grayLink">ст. 20</a>
+                            <a href="#" class="catalogFilters__grayLink">ст. 10</a>
+                            <a href="#" class="catalogFilters__grayLink">09г2с</a>
+                            <a href="#" class="catalogFilters__grayLink">8х20</a>
+                            <a href="#" class="catalogFilters__grayLink">8х1</a>
+                            <a href="#" class="catalogFilters__grayLink">8х2</a>
+                            <a href="#" class="catalogFilters__grayLink">ст. 20</a>
+                            <a href="#" class="catalogFilters__grayLink">ст. 10</a>
+                            <a href="#" class="catalogFilters__grayLink">09г2с</a>
+                            <a href="#" class="catalogFilters__grayLink">8х20</a>
+                            <a href="#" class="catalogFilters__grayLink">Показать еще</a>
+                        </div>
+                        </div>
+                        <div class="tabs__content">
+                            Содержимое 3 блока
+                            <div class="wrapper mb_80">
+                                <a href="#" class="catalogFilters__grayLink">8х1</a>
+                                <a href="#" class="catalogFilters__grayLink">8х2</a>
+                                <a href="#" class="catalogFilters__grayLink">ст. 20</a>
+                                <a href="#" class="catalogFilters__grayLink">ст. 10</a>
+                                <a href="#" class="catalogFilters__grayLink">09г2с</a>
+                                <a href="#" class="catalogFilters__grayLink">8х20</a>
+                                <a href="#" class="catalogFilters__grayLink">8х1</a>
+                                <a href="#" class="catalogFilters__grayLink">8х2</a>
+                                <a href="#" class="catalogFilters__grayLink">ст. 20</a>
+                                <a href="#" class="catalogFilters__grayLink">ст. 10</a>
+                                <a href="#" class="catalogFilters__grayLink">09г2с</a>
+                                <a href="#" class="catalogFilters__grayLink">8х20</a>
+                                <a href="#" class="catalogFilters__grayLink">Показать еще</a>
+                            </div>
+                          </div>
+                          <div class="tabs__content">
+                            Содержимое 4 блока
+                            <div class="wrapper mb_80">
+                                <a href="#" class="catalogFilters__grayLink">8х1</a>
+                                <a href="#" class="catalogFilters__grayLink">8х2</a>
+                                <a href="#" class="catalogFilters__grayLink">ст. 20</a>
+                                <a href="#" class="catalogFilters__grayLink">ст. 10</a>
+                                <a href="#" class="catalogFilters__grayLink">09г2с</a>
+                                <a href="#" class="catalogFilters__grayLink">8х20</a>
+                                <a href="#" class="catalogFilters__grayLink">8х1</a>
+                                <a href="#" class="catalogFilters__grayLink">8х2</a>
+                                <a href="#" class="catalogFilters__grayLink">ст. 20</a>
+                                <a href="#" class="catalogFilters__grayLink">ст. 10</a>
+                                <a href="#" class="catalogFilters__grayLink">09г2с</a>
+                                <a href="#" class="catalogFilters__grayLink">8х20</a>
+                                <a href="#" class="catalogFilters__grayLink">Показать еще</a>
+                            </div>
+                          </div>
+                        
+                      </div>
+                    
+                    
                     <p class="fs_28 fw_600 mb_24">Труба стальная 8 мм</p>
                    <div class="catalogFilters__product">
                     <div class="wrapper mb_80">
@@ -473,6 +540,8 @@
             </div>
         </section>
     </main>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
