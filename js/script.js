@@ -162,5 +162,14 @@ $('.catalogFilters__close').on('click', function() {
     $('.catalogFilters__header').fadeOut();
     $('.showFilters').fadeIn();
 });
+//меняется фон у селекта в форме при фокусе и выборе
+const selects = document.querySelectorAll('.select');
 
+selects.forEach(select => {
+  select.addEventListener('focus', () => {
+    
+    select.classList.add('select_active');
+  });
+});
+  
     });

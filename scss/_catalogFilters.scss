@@ -11,10 +11,29 @@
     input[list="sizeoption"]::-webkit-calendar-picker-indicator {
         display: none !important;
       }
-      input[list="metallobazaoption"]::-webkit-calendar-picker-indicator {
+    input[list="metallobazalist"]::-webkit-calendar-picker-indicator {
         display: none !important;
       }
-    
+    input[list="standartlist"]::-webkit-calendar-picker-indicator {
+        display: none !important;
+      }
+    input[list="markalist"]::-webkit-calendar-picker-indicator {
+        display: none !important;
+      }
+    input[list="tollist"]::-webkit-calendar-picker-indicator {
+        display: none !important;
+      }
+      .select {
+        background: #FFFFFF;
+        border: 1px solid #DDDDDD;
+        position: relative;
+        
+
+      }
+      .select_active {
+        background: #E9F0FC;
+        border: 1px solid #8EB1ED;
+        }
    .showFilters {
     padding: 12px 24px;
     background: #e9f0fc;
@@ -275,5 +294,36 @@
   }
   .tabs__content.active {
     display: block; 
+  }
+}
+.table {
+  &__filters {
+    margin: 20px 0;
+    padding: 16px 0;
+    border-bottom: 1px solid #F2F2F4;
+  }
+  &__filter {
+    &__img {
+      width: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      margin-right: 8px;
+      margin-top: 3px;
+      span {
+        display: block;
+        height: 1px;
+        background: $text-color;
+        &:nth-child(1) {
+          width: 100%;
+        }
+        &:nth-child(2) {
+          width: 60%;
+        }
+        &:nth-child(3) {
+          width: 20%;
+        }
+      }
+    }
   }
 }

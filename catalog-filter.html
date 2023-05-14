@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -130,28 +130,29 @@
                 </div>
             </div>
         </div>
-        <div class="catalogFilters__header">
-            <div class="catalogFilters__close">&times;</div>
-            <p class="fs_16 fw_600">Фильтры</p>
-        </div>   
+          
            
     </header>
     <main>
         <section class="catalogFilters">
             <div class="container container__map">
 
-                <h2 class="fs_28 catalogFilters__title desktop">Труба профильная 50х50х3, ст.0-20, 6м</h2>
-                <p class="fs_14 gray catalogFilters__subtitle desktop">2 618 предложений от 39 металлобаз со всей России</p>
+                <h2 class="fs_28 catalogFilters__title">Труба профильная 50х50х3, ст.0-20, 6м</h2>
+                <p class="fs_14 gray catalogFilters__subtitle">2 618 предложений от 39 металлобаз со всей России</p>
                 
                 <div class="wrapper">
                     <div>
-                        <p class="fs_16 fw_600 showFilters mobile">Фильтры</p>
+                        <!-- <p class="fs_16 fw_600 showFilters mobile">Фильтры</p> -->
                         <form action="#" class="catalogFilters__form desktop">
+                            <div class="catalogFilters__header mobile">
+                                <div class="catalogFilters__close">&times;</div>
+                                <p class="fs_16 fw_600">Фильтры</p>
+                            </div> 
                             <div class="wrapper form__wrapper">
-                              <div class="form__item_286">
+                              <div class="form__item_286 w151">
                                   <label for="chapter" class="label">Раздел</label>
-                              <select name="chapter" id="chapter" class="form__input">
-                                  
+                              <select name="chapter" id="chapter" class="form__input select">
+                                  <option value="" selected disabled></option>
                                   <option value="Арматура">Арматура</option>
                                   <option value="Балка">Балка</option>
                                   <option value="Баллоны">Баллоны</option>
@@ -195,9 +196,10 @@
                               </select>
                               <p class="fs_12 gray2">Выберите раздел</p>
                               </div>
-                              <div class="form__item_286">
+                              <div class="form__item_286 w158">
                                   <label for="chapter2" class="label">Подраздел</label>
-                              <select name="chapter2" id="chapter2" class="form__input">
+                              <select name="chapter2" id="chapter2" class="form__input select">
+                                        <option value="" selected disabled></option>
                                           <option value="Арматура">ППУ</option>
                                           <option value="Балка">Треугольная</option>
                                           <option value="Баллоны">Овальная</option>
@@ -209,15 +211,16 @@
                               </select>
                               <p class="fs_12 gray2">Выберите подраздел</p>
                               </div>
-                              <div class="form__item_286">
+                              <div class="form__item_286 w100">
                                   <label for="city" class="label">Город</label>
-                              <select name="city" id="city" class="form__input">
-                                          <option value="Арматура">Санкт-Петербург</option>
-                                          <option value="Балка">Москва</option>
-                                          <option value="Баллоны">Город1</option>
-                                          <option value="Дробь">Город2</option>
-                                          <option value="Заглушки">Город3</option>
-                                          <option value="Задвижки">Город4</option>
+                              <select name="city" id="city" class="form__input select">
+                                        <option value="" selected disabled></option>
+                                          <option value="Санкт-Петербург">Санкт-Петербург</option>
+                                          <option value="Москва">Москва</option>
+                                          <option value="Город1">Город1</option>
+                                          <option value="Город2">Город2</option>
+                                          <option value="Город3">Город3</option>
+                                          <option value="Город4">Город4</option>
                                           
               
                               </select>
@@ -227,7 +230,7 @@
                             <div class="wrapper form__wrapper">
                               <div class="form__item_210">
                               <label for="size" class="label">Размер</label>
-                              <input name="size" id="size" class="form__input" list="sizeoption">
+                              <input name="size" id="size" class="form__input select" list="sizeoption">
                                <datalist id="sizeoption">
                                   <option value="50 x 50"></option>
                                   <option value="100 x 100"></option>
@@ -241,17 +244,35 @@
                               </div>
                               <div class="form__item_210">
                                   <label for="tol" class="label">Толщина стенки</label>
-                                  <input id="tol" class="form__input">
+                                  <input id="tol" class="form__input select" list="tollist">
+                                  <datalist id="tollist">
+                                    <option value="50"></option>
+                                    <option value="100"></option>
+                                    <option value="150"></option>
+                                    <option value="200"></option>
+                                 </datalist>  
                                     <p class="fs_12 gray2">Начните вводить толщину</p>
                               </div>
                               <div class="form__item_210">
                                   <label for="marka" class="label">Марка стали</label>
-                                  <input id="marka" class="form__input">
+                                  <input id="marka" class="form__input select" list="markalist">
+                                  <datalist id="markalist">
+                                    <option value="50"></option>
+                                    <option value="100"></option>
+                                    <option value="150"></option>
+                                    <option value="200"></option>
+                                 </datalist>  
                                     <p class="fs_12 gray2">Начните вводить сталь</p>
                               </div>
                               <div class="form__item_210">
-                                  <label for="marka" class="label">Стандарт</label>
-                                  <input id="marka" class="form__input">
+                                  <label for="standart" class="label">Стандарт</label>
+                                  <input id="standart" class="form__input select" list="standartlist">
+                                  <datalist id="standartlist">
+                                    <option value="50"></option>
+                                    <option value="100"></option>
+                                    <option value="150"></option>
+                                    <option value="200"></option>
+                                 </datalist>  
                                     <p class="fs_12 gray2">Начните вводить стандарт</p>
                               </div>
                             </div>
@@ -259,8 +280,9 @@
                             <div class="wrapper form__wrapper">
                               <div class="form__item_286 w100">
                                   <label for="metallobaza" class="label">Металлобаза</label>
-                                  <input name="metallobaza" id="metallobaza" class="form__input" list="metallobazaoption">
-                                  <datalist id="metallobazaoption">
+                                  <input name="metallobaza" id="metallobaza" class="form__input select" list="metallobazalist">
+                                  <datalist id="metallobazalist">
+
                                       <option value="Металлобаза1"></option>
                                       <option value="Металлобаза2"></option>
                                       <option value="Металлобаза3"></option>
@@ -329,10 +351,32 @@
         </section>
         <section class="table">
             <div class="container">
-                <h2>Таблица</h2>
+                
+                <div class="wrapper table__filters">
+                    <div class="wrapper_start">
+                        <a href="#" class="blue mr_32">По актуальности</a>
+                        <a href="#" class="wrapper table__filter1 mr_32 textColor">
+                            <div class="table__filter__img">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <p class="fs_16">По цене</p>
+                        </a>
+                        <a href="#" class="blue">По рейтингу</a>
+                    </div>
+                    <a href="#" class="blue"><svg class="mr_12" width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.9417 0.493955C17.9032 0.395491 17.8472 0.307447 17.7776 0.233767C17.7731 0.228966 17.7686 0.228148 17.7648 0.224166C17.6967 0.156105 17.6188 0.0992822 17.5311 0.060842C17.4592 0.029621 17.3836 0.0200202 17.308 0.0128011C17.2853 0.0112009 17.2664 0 17.2437 0H11.1934C10.7752 0 10.4371 0.357832 10.4371 0.800546C10.4371 1.24326 10.7751 1.60109 11.1934 1.60109H15.4256L9.43876 7.97412L7.16082 4.88726C7.02923 4.70876 6.83334 4.59827 6.6216 4.58145C6.40153 4.56463 6.19882 4.64389 6.04456 4.7984L0.236249 10.6191C-0.0670383 10.9233 -0.0798701 11.43 0.206754 11.751C0.356517 11.9168 0.556165 12 0.756588 12C0.943405 12 1.13019 11.9271 1.27615 11.7815L6.48017 6.56598L8.774 9.67442C8.90788 9.85613 9.1083 9.96743 9.32535 9.98102C9.5424 9.99382 9.7534 9.90897 9.90693 9.74647L16.4874 2.74101V7.2048C16.4874 7.64748 16.8254 8.00535 17.2437 8.00535C17.6619 8.00535 18 7.64751 18 7.2048V0.800583V0.799764C17.9992 0.694901 17.9795 0.591637 17.9417 0.493955Z" fill="#2764E0"/>
+                        </svg>Показать график цен</a>
+                </div>
+                <div class="table__block">
+                    <div class="table__header">
+                        
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="catalogFilters2">
+        <section class="catalogFilters2 desktop">
             <div class="container">
                 <h2 class="fs_32 fw_600 center">Не нашли, что искали?</h2>
                 <div class="wrapper catalogFilters2__wrapper">
@@ -372,12 +416,12 @@
                         <ul class="tabs__caption">
                           <li class="active">Все</li>
                           <li>Диаметр</li>
-                          <li>Толщина стенки</li>
-                          <li>Марка стали</li>
+                          <li>Толщина&nbsp;стенки</li>
+                          <li>Марка&nbsp;стали</li>
                         </ul>
                         
                         <div class="tabs__content active">
-                            <div class="wrapper mb_80">
+                            <div class="wrapper flexWrap mb_80">
                                 <a href="#" class="catalogFilters__grayLink">8х1</a>
                                 <a href="#" class="catalogFilters__grayLink">8х2</a>
                                 <a href="#" class="catalogFilters__grayLink">ст. 20</a>
@@ -454,12 +498,12 @@
                     
                     <p class="fs_28 fw_600 mb_24">Труба стальная 8 мм</p>
                    <div class="catalogFilters__product">
-                    <div class="wrapper mb_80">
+                    <div class="wrapper mb_80 flexWrap">
                         <div>
                             <p class="fs_16 lh_175 mb_24 catalogFilters__text">
-                                Вы можите отправить Заявку всем поставщикам трубы стально через наш Сервис! Огромный выбор электросварных труб размера 219х6 мм со складов в г. Москве и Московской области. Высокое качество стали, соответствие ГОСТу. Каталог поставщиков трубы d 219х6, а также информация о стоимости и наличии различных труб на нашем сайте. Ежедневное обновлениецен поставщиков трубы диаметром 219 с цено! В Москве и области! 
-                                <br><br>
-                                Прежде чем приступить к покупке электросварной трубы, необходимо выяснить, что же она из себя, собственно, представляет. Начнем с того, что труба электросварная 219 х 6 является обыкновенной стальной трубой с той лишь разницей.
+                                Вы можете отправить Заявку всем поставщикам трубы стальной через наш Сервис! Огромный выбор электросварных труб размера 219х6 мм со складов в г. Москве и Московской области. Высокое качество стали, соответствие ГОСТу. <span class="desktop">Каталог поставщиков трубы d 219х6, а также информация о стоимости и наличии различных труб на нашем сайте. Ежедневное обновление цен поставщиков трубы диаметром 219 с ценой! В Москве и области! 
+                                    <br><br>
+                                    Прежде чем приступить к покупке электросварной трубы, необходимо выяснить, что же она из себя, собственно, представляет. Начнем с того, что труба электросварная 219 х 6 является обыкновенной стальной трубой с той лишь разницей.</span>
                             </p>
                             <a href="#" class="blue fs_16 text-color">Подробнее</a>
                         </div>
@@ -469,7 +513,7 @@
                     </div>
                     
                    </div>
-                   <div class="catalogFilters__block">
+                   <div class="catalogFilters__block desktop">
                     <p class="fs_28 fw_600 mb_24">Наличие в других городах</p>
                     <div class="wrapper_start flexWrap mb_80">
                         <a href="#" class="catalogFilters__block__link">Труба 8 мм в Челябинске</a>
@@ -512,7 +556,7 @@
                    </div>
                    <div class="catalogFilters__block">
                     <p class="fs_28 fw_600 mb_24">Смотрите также</p>
-                    <div class="wrapper_start flexWrap mb_60">
+                    <div class="wrapper_start flexWrap mb_60 catalogFilters__more">
                         <a href="#" class="catalogFilters__block__link">Трубы нержавеющие</a>
                         <a href="#" class="catalogFilters__block__link">Трубы латунные</a>
                         <a href="#" class="catalogFilters__block__link">Трубы бронзовые</a>
@@ -532,7 +576,7 @@
                                 <img src="img/star_blue.svg" alt="star">
                                 <img src="img/star2.svg" alt="star">
                             </div>
-                            <p class="fs_167">Рейтинг: 4.6 Голосов: 8</p>
+                            <p class="fs_167">Рейтинг: <span class="fw_600">4.6</span> Голосов: <span class="fw_600">8</span></p>
                         </div>
                         
                    </div>
