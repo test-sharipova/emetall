@@ -251,6 +251,9 @@
       height: 126px;
       min-width: 126px;
       margin-right: 48px;
+      img {
+        max-width: 100%;
+      }
     }
     .blue {
       margin-top: 13px;

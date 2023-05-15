@@ -15,6 +15,38 @@
     margin-top: 20px;
         }
     }
+    .catalogFilters {
+        &__banners {
+            display: flex;
+            overflow-x: scroll;
+            margin-top: 24px;
+        }
+        &__banner {
+            margin-right: 12px;
+        }
+    }
+    .catalogFilters2 {
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__item {
+            padding: 51px 24px 50px;
+            .fs_18 {
+                font-size: 16px;
+                line-height: 130%;
+            }
+            &__img {
+                width: 70px;
+                height: 70px;
+                min-width: 70px;
+                margin-right: 24px;
+                img {
+                    max-width: 60%;
+                }
+            }
+        }
+    }
     .footer {
         &__wrapper {
             flex-wrap: wrap;
@@ -148,7 +180,7 @@
                 position: fixed;
                 width: 100%;
                 bottom: 0;
-                z-index: 10;
+                z-index: 12;
             }
         }
         
@@ -586,8 +618,9 @@
         background: #f2f2f4;
         .tabs {
             &__caption {
-                width: 390px;
-                min-width: 390px;
+                width: 100%;
+                min-width: 100%;
+                
                 overflow-x: scroll;
                 margin-bottom: 32px;
                 li {
