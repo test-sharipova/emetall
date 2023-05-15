@@ -970,6 +970,81 @@
             }
         }
     }
-    
+    .table {
+        &__filters {
+            margin: 0;
+        }
+        &__item {
+            flex-wrap: wrap;
+            .mobile {
+                width: 45%;
+            }
+            border-radius: 10px;
+            padding: 0 24px;
+            background: #fff;
+            margin-bottom: 16px;
+        }
+        &__block {
+            overflow: hidden;
+        }
+        &__row {
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #F2F2F4;
+            padding: 16px 0;
+            background: #fff;
+            &_bottom {
+                padding-bottom: 20px;
+                .table__metallobaza {
+                    order: 1;
+                    width: 100%;
+                    margin-bottom: 4px;
+                   .blue {
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: $text-color;
+                   }
+                   img {
+                    max-width: 12px;
+                   }
+                }
+                .city {
+                    order: 2;
+                    color: #9295AE;
+                    font-size: 16px;
+                }
+                .prov {
+                    order: 3;
+                    color: $gray;
+                }
+                .price {
+                    order: 4;
+                    font-size: 16px;
+                    margin-top: 10px;
+                }
+                .order {
+                    order: 6;
+                    width: 50%;
+                    margin-top: 16px;
+                    .btn_small {
+                        padding: 9px 41px;
+                        font-weight: 400;
+                        font-size: 14px;
+                    }
+                }
+                .table__td {
+                    text-align: left;
+                }
+            }
+        }
+        &__td {
+            width: 45%;
+            min-width: 45%;
+            font-weight: 600;
+            text-align: right;
+        }
+    }
 
 }
