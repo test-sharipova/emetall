@@ -396,6 +396,26 @@
     }
     &_spec {
       background: #FFF5E1;
+      border-top: 1px solid #20960D;
+      height: 67px;
+      padding-top: 14px;
+      &::before {
+        content: 'Спецпредложение';
+        position: absolute;
+        background: url(../img/catalog/table_item_spec_bg.png) no-repeat top left;
+        width: 150px;
+        height: 21px;
+        font-weight: 400;
+        font-size: 12px;  
+        color: #fff;  
+        left: 0;
+        top: 0;  
+        padding: 2px 14px 5px;
+        
+      }
+      .table__td {
+        font-weight: 600;
+      }
     }
   }
   &__row {

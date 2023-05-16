@@ -996,6 +996,21 @@
                 width: 100%;
                 padding-left: 24px;
             }
+            &_spec {
+                overflow: visible;
+                border-top: none;
+                height: auto;
+                &:before {
+                    background: #20960D;
+                    border-radius: 10px;
+                    left: 24px;
+                    top: -10px;
+                    width: 128px;
+                    height: 21px;
+                    line-height: 14px;
+                    z-index: 10;
+                }
+            }
         }
         &__block {
             overflow: hidden;
