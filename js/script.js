@@ -150,7 +150,7 @@ $('.providerscard__slider-for').slick({
     });
 }
 showAdress('.providerscard__map__block');
-
+// страница каталог фильтры
 //show catalogFilters
 $('.showFilters').on('click', function() {
     $('.catalogFilters__form').fadeIn();
@@ -162,6 +162,7 @@ $('.catalogFilters__close').on('click', function() {
     $('.catalogFilters__header').fadeOut();
     $('.showFilters').fadeIn();
 });
+
 //меняется фон у селекта в форме при фокусе и выборе
 const selects = document.querySelectorAll('.select');
 
@@ -171,5 +172,19 @@ selects.forEach(select => {
     select.classList.add('select_active');
   });
 });
+
+// показать все характериситки в моб
+function tableShowMore(item) {
+    $(item).each(function(i) {
+        $(this).on('click', function(e) {
+            
+            $('.table__row_top').eq(i).toggleClass('heightAuto');
+            $('.table__showMore').eq(i).toggleClass('hide');
+            $('.table__hide').eq(i).toggleClass('hide');
+        });
+    });
+}
+tableShowMore('.table__showMore');
+tableShowMore('.table__hide');
   
     });

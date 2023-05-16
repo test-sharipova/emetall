@@ -305,6 +305,7 @@
   }
 }
 .table {
+  padding-bottom: 80px;
   &__filters {
     margin: 20px 0;
     padding: 16px 0;
@@ -316,7 +317,7 @@
       display: flex;
       flex-direction: column;
       gap: 3px;
-      margin-right: 8px;
+      margin-left: 8px;
       margin-top: 3px;
       span {
         display: block;
@@ -338,7 +339,7 @@
     
     &::-webkit-scrollbar {
       height: 4px;
-      
+      width: 4px;
     }
   &::-webkit-scrollbar-track {
       background: #F2F2F4;
@@ -347,6 +348,8 @@
       background-color: #aaaaaa;
       border-radius: 5px;
     }
+    scrollbar-width: thin;          /* "auto" или "thin"  */
+    scrollbar-color: #aaaaaa #F2F2F4;
     
   }
   .btn_small {
@@ -383,16 +386,29 @@
       }
     }
   }
+  &__item {
+    background: #F8F8F8;
+    padding: 0 8px 0 12px;
+    border-bottom: 1px solid #DFE2E6;
+    position: relative;
+    &:nth-child(odd) {
+      background: #fff;
+    }
+    &_spec {
+      background: #FFF5E1;
+    }
+  }
   &__row {
     display: flex;
     justify-content: flex-start;
     height: 44px;
     align-items: center;
-    background: #F8F8F8;
+    
     
   }
   &__header {
     background: #fff;
+    padding: 0 8px 0 14px;
   }
   &__th {
     font-weight: 600;
@@ -475,9 +491,19 @@
       width: 357px;
       height: 263px;
       opacity: 1;
-      
+      display: block;
     }
   }
+  &__note {
+    &:hover {
+      .table__note {
+        width: 357px;
+        height: 263px;
+        opacity: 1;
+      }
+    }
+  }
+  
   &__metallobaza {
     .table__btns {
       width: 0;
@@ -494,5 +520,31 @@
       display: none;
     } 
   }
-
+  &__banner {
+    width: 100%;
+    background: #F8F8F8;
+    padding: 40px 0;
+    border-bottom: 1px solid #DFE2E6;
+    img {
+      max-width: 1024px;
+      display: block;
+      margin: 0 auto;
+      width: 70%;
+    }
+  }
+  .btn_transparent {
+    opacity: 0;
+    cursor: auto;
+  }
+  &__showMore, &__hide {
+    border-bottom: 1px solid #F2F2F4;
+    padding-bottom: 16px;
+    
+  }
+  .hide {
+    display: none;
+  }
+  .heightAuto {
+    height: auto;
+  }
 }

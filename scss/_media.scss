@@ -47,6 +47,12 @@
             }
         }
     }
+    .table{
+        &__block {
+            overflow-x: scroll;
+            
+        }
+    }
     .footer {
         &__wrapper {
             flex-wrap: wrap;
@@ -971,18 +977,25 @@
         }
     }
     .table {
+        padding-bottom: 48px;
         &__filters {
             margin: 0;
         }
         &__item {
             flex-wrap: wrap;
+            max-width: 425px;
             .mobile {
                 width: 45%;
             }
             border-radius: 10px;
-            padding: 0 24px;
+            padding: 0;
             background: #fff;
             margin-bottom: 16px;
+            overflow: hidden;
+            .table__showMore, .table__hide {
+                width: 100%;
+                padding-left: 24px;
+            }
         }
         &__block {
             overflow: hidden;
@@ -992,9 +1005,13 @@
             justify-content: space-between;
             width: 100%;
             height: auto;
-            border-bottom: 1px solid #F2F2F4;
-            padding: 16px 0;
+            
+            padding: 16px 24px;
             background: #fff;
+            &_top {
+                height: 122px;
+                overflow: hidden;
+            }
             &_bottom {
                 padding-bottom: 20px;
                 .table__metallobaza {
@@ -1044,6 +1061,34 @@
             min-width: 45%;
             font-weight: 600;
             text-align: right;
+        }
+        .btn_transparent {
+            opacity: 1;
+            order: 2;
+           
+            width: 100%;
+            max-width: 343px;
+            margin: 24px auto 0;
+        }
+        .mb_80 {
+            margin-bottom: 48px;
+        }
+        .mb_48 {
+            margin-bottom: 20px;
+        }
+        &__count {
+            flex-direction: column;
+            .sitesCount {
+                order: 3;
+                margin: 32px 0 0;
+                &__site {
+                    background: #fff;
+                    &_active {
+                        background: $blue;
+                    }
+                }
+            }
+            
         }
     }
 
