@@ -20,6 +20,9 @@ window.addEventListener('DOMContentLoaded', () => {
         $('.overlay, .modal__login').fadeIn();
         
     })
+    $('.help').on('click', function() {
+        $('.overlay, .modal__help').fadeIn();
+    })
     $('.modal__close').on('click', function() {
         $('.overlay, .modal').fadeOut();
         
