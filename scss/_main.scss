@@ -173,7 +173,18 @@
     &__wrapper {
         gap: 32px;
         margin-top: 32px;
-       overflow-x: scroll;
+       overflow-x: auto;
+       &::-webkit-scrollbar {
+        width: 4px;
+        
+      }
+    &::-webkit-scrollbar-track {
+        background: transparent;
+      }
+    &::-webkit-scrollbar-thumb {
+        background-color: #B7B7B7;;
+        border-radius: 3px;
+      }
     }
     &__img {
         position: absolute;

@@ -327,6 +327,16 @@
     line-height: 156%;
   }
   //form
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none; 
+  }
+  input[type='number'],
+  input[type="number"]:hover,
+  input[type="number"]:focus {
+      appearance: none;
+      -moz-appearance: textfield;
+  }
   .label {
     font-weight: 600;
     font-size: 14px;
@@ -474,6 +484,9 @@
     .mb_24 {
       margin-bottom: 24px;
     }
+    .mb_22 {
+      margin-bottom: 22px;
+    }
     .mb_20 {
       margin-bottom: 20px;
     }
@@ -540,6 +553,7 @@
   @import '_catalogFilters';
   @import '_providerscard.scss';
   @import '_serv.scss';
+  @import '_modal.scss';
   @import '_footer.scss';
   @import '_media.scss';
 

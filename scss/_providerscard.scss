@@ -13,10 +13,56 @@
 .providerscard {
     &__content {
         width: 100%;
+        
     }
-    .banners {
+    .wrapper {
+        position: relative;
+    }
+    &__right {
         position: absolute;
         right: 0;
+        top: 0;
+        z-index: 10;
+    }
+    &__watched {
+        width: 400px;
+        height: auto;
+        background: #FFFFFF;
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        padding: 27px 24px 16px;
+        &__subtitle {
+            max-width: 309px;
+            padding: 2px 14px;
+            background: #E9F0FC;
+            border-radius: 6px;
+            color: $blue;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        svg {
+            width: 16px;
+            height: 16px;
+            margin-left: 8px;
+            path {
+                fill: #DDD;
+            }
+        }
+        &__price {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+        .divider {
+            margin: 29px 0 18px;
+        }
+    }
+    
+    .banners {
+        margin: 50px auto 0;
+        &__block {
+            margin: 0 auto 20px;
+        }
     }
     &__name {
         margin-left: 48px;
@@ -33,6 +79,7 @@
         list-style-type: none;
         border-bottom: 1px solid #F2F2F4;
         margin: 65px 0 32px;
+        max-width: 960px;
         &__item {
             height: 41px;
             margin-right: 47px;

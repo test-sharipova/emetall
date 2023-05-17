@@ -53,6 +53,11 @@
             
         }
     }
+    .providerscard {
+        &__right {
+            display: none;
+        }
+    }
     .footer {
         &__wrapper {
             flex-wrap: wrap;
@@ -135,6 +140,12 @@
             &:first-child {
                 width: 100%;
             }
+        }
+    }
+    .login {
+        width: auto;
+        &__wins {
+            display: none;
         }
     }
 }
@@ -919,6 +930,7 @@
              
         
         &__info {
+            margin-bottom: 48px;
             &__info {
                 margin-top: 13px;
             }
@@ -973,6 +985,39 @@
                 width: 42px;
                 height: 42px;
                 top: 3.2px;
+            }
+        }
+        &__watched {
+            margin-bottom: 48px;
+            width: 343px;
+            background: #E9F0FC;
+            border-radius: 10px;
+            &__subtitle {
+                background: #fff;
+                max-width: 217px;
+                padding: 2px 9px;
+            }
+            .fs_18 {
+                font-size: 16px;
+            }
+            svg {
+                path {
+                    fill: $text-color;
+                }
+            }
+            .fs_24 {
+                font-size: 24px;
+            }
+            .cart__quantity__count {
+                width: 142px;
+                margin-right: 37px;
+            }
+            .btn {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .divider {
+                display: none;
             }
         }
     }
@@ -1104,6 +1149,15 @@
                 }
             }
             
+        }
+    }
+    .login {
+        &__reg {
+            padding: 24px;
+            width: 300px;
+            .fs_24 {
+                font-size: 16px;
+            }
         }
     }
 

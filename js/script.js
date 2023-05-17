@@ -14,6 +14,17 @@ window.addEventListener('DOMContentLoaded', () => {
             menu.classList.remove('menu_active');
         });
     });
+
+    //modal
+    $('.header__profile').on('click', function() {
+        $('.overlay, .modal__login').fadeIn();
+        
+    })
+    $('.modal__close').on('click', function() {
+        $('.overlay, .modal').fadeOut();
+        
+    })
+
     //showMore catalog
     function showMore(item) {
         $(item).each(function(i) {
