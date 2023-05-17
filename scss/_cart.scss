@@ -243,6 +243,9 @@
         min-width: 400px;
         &__wrap {
             padding: 14px;
+            .btn {
+                width: 100%;
+            }
         }
         &__block {
             background: url(/img/back.png) no-repeat center;

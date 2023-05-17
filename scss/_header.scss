@@ -2,7 +2,7 @@ header {
     box-shadow: 0px 1px 14px rgba(47, 61, 84, 0.15);
     padding: 24px 0 0;
 }
-
+ 
 .header {
     &__wrapper {
         display: flex;
@@ -78,8 +78,30 @@ header {
     &__place {
         display: flex;
         align-items: center;
+        position: relative;
+        cursor: pointer;
         img {
             margin-right: 12px;
+        }
+        &__quest {
+            position: absolute;
+            background: #FFFFFF;
+            box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.12);
+            border-radius: 12px;
+            width: 357px;
+            height: 177px;
+            padding: 24px;
+            bottom: -206px;
+            right: 0;
+            z-index: 10;
+            
+            .fs_14 {
+                line-height: 150%;
+            }
+            .btn {
+                padding: 10px 21px 10px;
+                font-size: 14px;
+            }
         }
     }
     &__menu {

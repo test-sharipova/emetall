@@ -15,17 +15,28 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    //modal
+    //modal login
     $('.header__profile').on('click', function() {
         $('.overlay, .modal__login').fadeIn();
         
-    })
+    });
+    //help footer
     $('.help').on('click', function() {
         $('.overlay, .modal__help').fadeIn();
-    })
-    $('.modal__close').on('click', function() {
+    });
+    //order
+    $('.order_btn').on('click', function() {
+        $('.overlay, .modal__order').fadeIn();
+    });
+
+    $('.modal__close, .overlay, .order__close').on('click', function() {
         $('.overlay, .modal').fadeOut();
         
+    });
+
+    //показать вопрос с уточнением города
+    $('.header__place').on('click', function() {
+        $('.header__place__quest').toggleClass('hide');
     })
 
     //showMore catalog
