@@ -1,0 +1,171 @@
+.companyPromo {
+    background: #E9F0FC;
+    
+    position: relative;
+    &__content {
+        width: 70%;
+        max-width: 699px;
+        margin: 129px 0 182px;
+    }
+    &__h {
+        font-weight: 600;
+        font-size: 60px;
+        line-height: 60px;
+        span {
+            background: $blue;
+            color: #fff;
+            border-radius: 30px;
+            padding: 0 10px;
+            display: inline-block;
+            height: 65px;
+        }
+    }
+    &__img {
+        width: 43%;
+        position: absolute;
+        right: 156px;
+        bottom: 0;
+        margin-bottom: -6px;
+
+    }
+}
+.companyAbout {
+    padding: 57px 0 97px;
+    &__item {
+        width: 33%;
+        &__img {
+            width: 100%;
+            max-width: 383px;
+            height: 210px;
+            background: #F1F5F8;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    }
+    &__wrapper {
+        align-items: flex-start;
+    }
+}
+.companyMission {
+    background: #171C41;
+    border-radius: 30px;
+    position: relative;
+    margin: 0 24px;
+    &__content {
+        width: 70%;
+        max-width: 662px;
+        color: #fff;
+        padding: 154px 0 169px;
+        position: relative;
+        z-index: 2;
+    }
+    &__img {
+        width: 59%;
+        position: absolute;
+        right: 156px;
+        bottom: -5px;
+    }
+}
+.companyHistory {
+    padding: 106px 0 73px;
+    &__item {
+        padding: 38px 80px 64px 34px;
+        border-top: 1px dashed #212529;
+        border-bottom: 1px dashed #212529;
+        position: relative;
+        &:last-child {
+            border-radius: 0 30px 30px 0;
+            border-right: 1px dashed #212529;
+        }
+        &:first-child {
+            border-bottom: none;
+            padding-left: 0;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            min-width: 30px;
+            min-height: 30px;
+            width: 3px;
+            height: 30px;
+            border-radius: 100%;
+            border: 1px solid $text-color;
+            background: #fff;
+            top: -18px;
+        }
+        &_bottom {
+            position: relative;
+            padding: 64px 80px 38px 34px;
+            border-bottom: 1px dashed #212529;
+            &:first-child {
+                border-radius: 30px 0 0 30px;
+                border-left: 1px dashed #212529;
+                border-top: 1px dashed #212529;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                min-width: 30px;
+                min-height: 30px;
+                width: 3px;
+                height: 30px;
+                border-radius: 100%;
+                border: 1px solid $text-color;
+                background: #fff;
+                bottom: -18px;
+            }
+            &:last-child {
+                &:after {
+                    content: '';
+                    position: absolute;
+                    bottom: -7px;
+                    right: -3px;
+                    width: 14px;
+                    height: 14px;
+                    z-index: 10;
+                    background: url(../img/company/arrow.svg) no-repeat center;
+                    
+                }
+                
+
+            }
+
+        }
+    }
+}
+.companySupport {
+    padding: 73px 0 50px;
+    &__item {
+        width: 32%;
+        height: 146px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #F1F5F8;
+        border-radius: 12px;
+        padding: 30px;
+        margin-bottom: 32px;
+        img {
+            max-width: 100%;
+        }
+    }
+}
+.companyParty {
+    padding: 50px 0 120px;
+    &__wrapper {
+        align-items: flex-start;
+        
+    }
+    &__item {
+        width: 33%;
+        &__img {
+            img {
+                width: 100%;
+            }
+        }
+    }
+    
+}

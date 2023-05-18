@@ -305,17 +305,21 @@
   .fs_32 {
     font-size: 32px;
   }
+  .title_36 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px;
+  }
+  .fs_60 {
+    font-size: 60px;
+  }
   .fw_600 {
     font-weight: 600;
   }
   .fw_400 {
     font-weight: 400;
   }
-  .title_36 {
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 48px;
-  }
+ 
   .center {
     text-align: center;
     margin: 0 auto;
@@ -475,6 +479,9 @@
     .mb_48 {
       margin-bottom: 48px;
     }
+    .mb_36 {
+      margin-bottom: 36px;
+    }
     .mb_32 {
       margin-bottom: 32px;
     }
@@ -553,6 +560,7 @@
   @import '_catalogFilters';
   @import '_providerscard.scss';
   @import '_serv.scss';
+  @import '_company.scss';
   @import '_modal.scss';
   @import '_footer.scss';
   @import '_media.scss';

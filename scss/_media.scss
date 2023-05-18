@@ -68,6 +68,24 @@
             }
         }
     }
+    .companyPromo {
+        &__img {
+            width: 62%;
+            right: 0;
+           img {
+            width: 100%;
+           }
+        }
+    }
+    .companyMission {
+        &__img {
+            width: 62%;
+            right: 0;
+           img {
+            width: 100%;
+           }
+        }
+    }
 }
 @media screen and (max-width:1024px) {
     .banner {
@@ -146,6 +164,24 @@
         width: auto;
         &__wins {
             display: none;
+        }
+    }
+    .companyAbout {
+        &__item {
+            width: 300px;
+            margin-bottom: 24px;
+        }
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+    }
+    .companyParty {
+        &__item {
+            width: 300px;
+            margin-bottom: 24px;
+        }
+        &__wrapper {
+            flex-wrap: wrap;
         }
     }
 }
