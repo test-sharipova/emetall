@@ -250,7 +250,7 @@
                                         <div class="fs_24 fw_600">52 000 ₽</div>
                                     </div>
                                 </div>
-                                <div class="btn">Добавить в корзину</div>
+                                <div class="btn addincart">Добавить в корзину</div>
                                 <div class="divider"></div>
                                 <div class="wrapper">
                                     <div class="wrapper_start">
@@ -374,7 +374,7 @@
                                 <div class="fs_24 fw_600">52 000 ₽</div>
                             </div>
                         </div>
-                        <div class="btn">Добавить в корзину</div>
+                        <div class="btn addincart">Добавить в корзину</div>
                         <div class="divider"></div>
                         <div class="wrapper">
                             <div class="wrapper_start">
@@ -804,6 +804,48 @@
         </section>
        
     </main>
+
+    <!-- modal -->
+    <!-- add in cart -->
+    <div class="modal modal__addincart">
+        <div class="modal__close">&times;</div>
+       <div class="modal__addincart__top">
+        <p class="fs_24 fs_600">Товар добавлен в корзину</p>
+        <div class="wrapper mb_12">
+            <div class="wrapper_start modal__addincart__product">
+                <img src="img/modal/addincart1.png" alt="product" class="mr_26">
+                <p class="fs_16 fw_600">Труба профильная 50х50x3, ст.0-20, ГОСТ 13663-86</p>
+            </div>
+            <div class="modal__addincart__count">
+                <div class="wrapper">
+                    <div class="modal__addincart__tonn active">
+                        Тонны
+                    </div>
+                    <div class="modal__addincart__metr">
+                        Метры
+                    </div>
+                </div>
+                <div class="cart__quantity__count">
+                    <span class="minus"><img src="img/minus.svg" alt="minus"></span>
+                    <input type="number" class="quantity" placeholder="1,00">
+                    <span class="plus">
+                       <img src="img/plus.svg" alt="plus">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper_start">
+            <p class="fs_14 mr_20">58 920 ₽/т</p>
+            <p class="fs_20">59 920 ₽</p>
+        </div>
+       </div> 
+       <div class="modal__addincart__bottom">
+            <div class="wrapper">
+                <a href class="btn_order">Продолжить покупки</a>
+                <a href class="btn">Перейти в корзину</a>
+            </div>
+       </div>   
+    </div>
     <script src="js/jquery-3.6.3.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>

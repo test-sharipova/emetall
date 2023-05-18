@@ -15,20 +15,34 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    //modal login
+    //modal login войти зарегистрироваться
     $('.header__profile').on('click', function() {
         $('.overlay, .modal__login').fadeIn();
         
     });
-    //help footer
+    //modal help footer
     $('.help').on('click', function() {
         $('.overlay, .modal__help').fadeIn();
     });
-    //order
+    //modal order оформить заказ
     $('.order_btn').on('click', function() {
         $('.overlay, .modal__order').fadeIn();
     });
+    // товар добавлен в корзину тогглер
+    $('.modal__addincart__tonn').on('click', function() {
+        $('.modal__addincart__tonn').addClass('active');
+        $('.modal__addincart__metr').removeClass('active');
+    });
+    $('.modal__addincart__metr').on('click', function() {
+        $('.modal__addincart__metr').addClass('active');
+        $('.modal__addincart__tonn').removeClass('active');
+    })
+    //providerscard добавить в корзину товар
+    $('.addincart').on('click', function() {
+        $('.overlay, .modal__addincart').fadeIn();
+    });
 
+    //закрыть модальное окно
     $('.modal__close, .overlay, .order__close').on('click', function() {
         $('.overlay, .modal').fadeOut();
         
@@ -164,7 +178,7 @@ $('.providerscard__slider-for').slick({
     
   });
 
-  // show map adresses
+  // show map adresses providerscard
   function showAdress(item) {
     $(item).each(function(i) {
         $(this).on('click', function(e) {
@@ -175,6 +189,9 @@ $('.providerscard__slider-for').slick({
     });
 }
 showAdress('.providerscard__map__block');
+
+
+
 // страница каталог фильтры
 //show catalogFilters
 $('.showFilters').on('click', function() {
