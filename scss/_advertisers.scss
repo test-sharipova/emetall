@@ -1,0 +1,194 @@
+.advPromo {
+    background: linear-gradient(93.29deg, #161B41 11.57%, rgba(22, 27, 65, 0) 77.08%), #1C203A;
+    border-radius: 15px;
+    margin: 0 15px;
+    position: relative;
+    &__content {
+        max-width: 493px;
+        margin: 82px 0 126px;
+        .fs_18 {
+            max-width: 418px;
+        }
+    }
+    &__h {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 48px;
+
+        color: #FFFFFF;
+    }
+    &__img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        width: 60%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: left;
+        }
+    }
+}
+.advNumbers {
+    padding: 55px 0 120px;
+    &__item {
+        padding: 47px 48px 40px;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.12);
+        border-radius: 30px;
+        max-width: 32%;
+        max-height: 284px;
+        .fs_16 {
+            line-height: 138%;
+        }
+    }
+    &__number {
+        font-family: 'Bebas Neue';
+        font-style: normal;
+        
+        font-size: 80px;
+        line-height: 80px;
+        color: $blue;
+    }
+}
+.advInfo {
+    padding: 120px 70px;
+    &__content {
+       
+        max-width: 446px;
+    }
+    &__graph {
+        max-width: 300px;
+        img {
+            max-width: 100%;
+        }
+    }
+    &__graphList {
+        max-width: 300px;
+        position: relative;
+        &__img {
+            position: absolute;
+            top: -130px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+    }
+    &__list {
+        &__item {
+            position: relative;
+            font-size: 15px;
+            line-height: 20px;
+            margin-top: 16px;
+            padding-left: 30px;
+            &:before {
+                content: '';
+                display: block;
+                width: 5px;
+                height: 5px;
+                border-radius: 100%;
+                border: 5px solid;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+            }
+            &:nth-child(1) {
+                &:before {
+                    border-color: #C6E027;
+                }
+            }
+            &:nth-child(2) {
+                &:before {
+                    border-color: #E02748;
+                }
+            }
+            &:nth-child(3) {
+                &:before {
+                    border-color: #2764E0;
+                }
+            }
+            &:nth-child(4) {
+                &:before {
+                    border-color: #27BFE0;
+                }
+            }
+            &:nth-child(5) {
+                &:before {
+                    border-color: #DCDCDC;
+                }
+            }
+        }
+    }
+}
+.advRew {
+    padding: 70px 0 60px;
+    img {
+        max-width: 100%;
+    }
+    .slick-arrow {
+        position: absolute;
+        top: -80px;
+        right: 0;
+        width: 48px;
+        height: 48px;
+        border: none;
+        border-radius: 100%;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.12);
+        cursor: pointer;
+        transition: all .3s;
+        &:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+
+        }
+        &:hover {
+           background: $blue;
+           img {
+            opacity: 0;
+            }
+        }
+    }
+    .slick-prev {
+        right: 64px;
+        z-index: 10;
+        &:hover {
+            &:before {
+                background: url('../img/advertaisers/rew_arrow2.svg') no-repeat center;
+            }
+        }
+        
+    }
+    .slick-next {
+        &:hover {
+            &:before {
+                background: url('../img/advertaisers/rew_arrow.svg') no-repeat center;
+            }
+        }
+        
+    }
+}
+.white-popup {
+    position: relative;
+    background: #FFF;
+    padding: 20px;
+    width: auto;
+    max-width: 700px;
+    margin: 20px auto;
+}
+.advBlog {
+    padding: 60px 0 0;
+    .about__soc {
+        margin-left: 0;
+    }
+    .fs_18 {
+        max-width: 372px;
+    }
+}

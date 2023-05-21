@@ -68,6 +68,7 @@
             }
         }
     }
+    //about company site
     .companyPromo {
         &__img {
             width: 62%;
@@ -85,6 +86,37 @@
             width: 100%;
            }
         }
+    }
+    // for advertisers site
+    .advNumbers {
+        &__number {
+            font-size: 70px;
+        }
+        &__item {
+            .fs_24 {
+                font-size: 20px;
+                line-height: 25px;
+            }
+            .fs_16 {
+                font-size: 14px;
+            }
+        }
+    }
+    .advInfo {
+        .wrapper {
+            gap: 30px;
+        }
+        &__content {
+            max-width: 300px;
+        }
+        &__graph, &__graphList {
+            max-width: 200px;
+        }
+        .title_36 {
+            font-size: 28px;
+            line-height: 120%;
+        }
+        
     }
 }
 @media screen and (max-width:1024px) {
@@ -182,6 +214,33 @@
         }
         &__wrapper {
             flex-wrap: wrap;
+        }
+    }
+    // for advertisers site
+    .advNumbers {
+        &__number {
+            font-size: 50px;
+        }
+        &__item {
+            padding: 24px 16px;
+            height: 250px;
+        }
+    }
+    .advInfo {
+        padding: 0 0 70px;
+        .wrapper {
+            flex-wrap: wrap;
+        }
+        &__content {
+            width: 100%;
+            max-width: 100%;
+        }
+        &__graph, &__graphList {
+            max-width: 45%;
+            width: 45%;
+            &__img {
+                display: none;
+            }
         }
     }
 }

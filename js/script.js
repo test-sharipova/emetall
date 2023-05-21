@@ -36,7 +36,7 @@ window.addEventListener('DOMContentLoaded', () => {
     $('.modal__addincart__metr').on('click', function() {
         $('.modal__addincart__metr').addClass('active');
         $('.modal__addincart__tonn').removeClass('active');
-    })
+    });
     //providerscard добавить в корзину товар
     $('.addincart').on('click', function() {
         $('.overlay, .modal__addincart').fadeIn();
@@ -51,7 +51,7 @@ window.addEventListener('DOMContentLoaded', () => {
     //показать вопрос с уточнением города
     $('.header__place').on('click', function() {
         $('.header__place__quest').toggleClass('hide');
-    })
+    });
 
     //showMore catalog
     function showMore(item) {
@@ -193,12 +193,13 @@ showAdress('.providerscard__map__block');
 
 
 // страница каталог фильтры
+
 //show catalogFilters
 $('.showFilters').on('click', function() {
     $('.catalogFilters__form').fadeIn();
     $('.catalogFilters__header').fadeIn();
     $('.showFilters').fadeOut();
-})
+});
 $('.catalogFilters__close').on('click', function() {
     $('.catalogFilters__form').fadeOut();
     $('.catalogFilters__header').fadeOut();
@@ -228,5 +229,38 @@ function tableShowMore(item) {
 }
 tableShowMore('.table__showMore');
 tableShowMore('.table__hide');
+
+//страница рекламодателям
+
+// rew slider
+$('.advRew__slider').slick({
+    dots: false,
+    prevArrow: '<button type="button" class="slick-prev"><img src="img/prev.svg"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="img/next.svg"></button>',
+    slidesToShow: 4,
+    responsive: [
+        {
+            breakpoint: 1023,
+            settings: {
+                
+                slidesToShow: 2,                   
+            }
+           
+        }
+    ]
+  });
+  //rew popup
+  $('.advRew__slider').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    tLoading: 'Загрузка изображения #%curr%...',
+    gallery: {
+        enabled: true,
+        navigateByImgClick: true,
+        preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+    }
+    });
+
+    
   
     });
