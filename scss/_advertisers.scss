@@ -207,8 +207,20 @@
     padding: 60px 0 40px;
     &__wrapper {
         width: 1439px;
-        overflow-y: auto;
+        overflow-x: auto;
         gap: 32px;
+        &::-webkit-scrollbar {
+            width: 4px;
+            height: 4px;
+            
+          }
+        &::-webkit-scrollbar-track {
+            background: transparent;
+          }
+        &::-webkit-scrollbar-thumb {
+            background-color: #B7B7B7;
+            border-radius: 3px;
+          }
     }
     &__item {
         background: #EFF2F6;
@@ -230,5 +242,41 @@
     }
     .fs_16 {
         line-height: 22px;
+    }
+}
+.advForm {
+    padding: 40px 0 120px;
+    &__wrapper {
+        background: #FFFFFF;
+        box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.12);
+        border-radius: 30px;
+        padding: 75px 96px 107px 86px;
+    }
+    &__content {
+        max-width: 403px;
+        .fs_18 {
+            max-width: 369px;
+        }
+    }
+    &__wrap {
+        gap: 61px;
+    }
+    &__form {
+        width: 524px;
+        .wrapper_start {
+            gap: 20px;
+        }
+        .form__input {
+            padding: 12px 20px;
+            width: 257px;
+            margin-bottom: 32px;
+            background: #FFFFFF;
+            border: 1px solid #DDDDDD;
+            color: $text-color;
+        }
+        .btn {
+            width: 214px;
+            padding: 16px 24px;
+        }
     }
 }
