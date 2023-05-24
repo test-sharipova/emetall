@@ -34,6 +34,7 @@
         height: 100%;
         display: flex;
         align-items: center;
+        transition: all .3s;
         &::after {
             content: '';
             position: absolute;
@@ -49,7 +50,7 @@
     }
     &__input {
         display: none;
-       
+        transition: all .3s;
         &:checked + .providerSite__label {
             &::after {
                 background: #2764E0;

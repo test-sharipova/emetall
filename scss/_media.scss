@@ -1,3 +1,15 @@
+@media screen and (max-width:1670px) {
+    .providerSite {
+        &__item {
+            width: 460px;
+        }
+    }
+    .offers {
+        &__item {
+            width: 31%;
+        }
+    }
+}
 @media screen and (max-width:1439px) {
     .header {
         &__wrapper {
@@ -125,6 +137,11 @@
             }
         }
     }
+    .offers {
+        &__item {
+            width: 48%;
+        }
+    }
     
 }
 @media screen and (max-width:1024px) {
@@ -249,6 +266,11 @@
             &__img {
                 display: none;
             }
+        }
+    }
+    .offers {
+        &__item {
+            width: 464px;
         }
     }
     

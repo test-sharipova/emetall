@@ -67,6 +67,15 @@ window.addEventListener('DOMContentLoaded', () => {
     showMore('.catalogShowMore');
     showMore('.catalogHide');
 
+    //меняется фон у селекта в форме при фокусе и выборе
+const selects = document.querySelectorAll('.select');
+
+selects.forEach(select => {
+  select.addEventListener('focus', () => {
+    
+    select.classList.add('select_active');
+  });
+});
     
     // promo slider
     $('.promo__slider').slick({
@@ -206,15 +215,7 @@ $('.catalogFilters__close').on('click', function() {
     $('.showFilters').fadeIn();
 });
 
-//меняется фон у селекта в форме при фокусе и выборе
-const selects = document.querySelectorAll('.select');
 
-selects.forEach(select => {
-  select.addEventListener('focus', () => {
-    
-    select.classList.add('select_active');
-  });
-});
 
 // показать все характериситки в моб
 function tableShowMore(item) {
