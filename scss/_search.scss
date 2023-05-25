@@ -22,6 +22,74 @@
     .labelRadio {
         padding: 11px 16px;
     }
+    &__wrapper {
+       margin-top: 32px; 
+       gap: 32px;
+    }
+    &__item {
+        display: block;
+        text-decoration: none;
+        background: #FFFFFF;
+        outline: 1px solid #F2F2F4;
+        border-radius: 10px;
+        width: 464px;
+        height: 236px;
+        cursor: pointer;
+        transition: all .3s;
+        &:hover {
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+            border: none;
+        }
+        &__top {
+            border-bottom: 1px solid #F2F2F4;
+            padding: 32px 40px 24px;
+            .fs_16 {
+                max-width: 357px;
+            }
+        }
+        &__bottom {
+            padding: 24px 40px 24px;
+            display: flex;
+            justify-content: space-between;
+            .gray {
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                img {
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+    &__property {
+        background: #E9F0FC;
+        border-radius: 4px;
+       white-space: nowrap;
+        color: $blue;
+        padding: 4px 8px;
+        font-size: 12px;
+        text-decoration: none;
+        &__wrapper {
+            gap: 8px;
+            width: 100%;
+            overflow-x: auto;
+            &::-webkit-scrollbar {
+                width: 4px;
+                height: 2px;
+              }
+            &::-webkit-scrollbar-track {
+                background: transparent;
+              }
+            &::-webkit-scrollbar-thumb {
+                background-color: #B7B7B7;
+                border-radius: 3px;
+              }
+        }
+    }
+}
+.toggler {
+    display: flex;
+    align-items: center;
 }
 .toggle-button {
     position: relative;
@@ -29,7 +97,6 @@
     width: 38px;
     height: 22px;
     margin-left: 16px;
-    
     background: #DDDDDD;
     border-radius: 30px;
     

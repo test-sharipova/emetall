@@ -9,6 +9,11 @@
             width: 31%;
         }
     }
+    .search {
+        &__item {
+            width: 407px;
+        }
+    }
 }
 @media screen and (max-width:1439px) {
     .header {
@@ -140,6 +145,11 @@
     .offers {
         &__item {
             width: 48%;
+        }
+    }
+    .search {
+        &__item {
+            width: 442px;
         }
     }
     
