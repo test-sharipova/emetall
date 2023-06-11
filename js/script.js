@@ -250,7 +250,42 @@ $('.advRew__slider').slick({
         }
     ]
   });
-  //rew popup
+  
+
+    //страница blog
+    //blog slider
+
+    $('.blog__slider').slick({
+        dots: false,
+        slidesToShow: 6,
+        
+        prevArrow: '<button type="button" class="slick-prev"><img src="img/prev.svg"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="img/next.svg"></button>',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 4,
+                    variableWidth: true,
+                    centerMode: true,
+                                       
+                } 
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 2,
+                    variableWidth: true,
+                    centerMode: true,
+                                       
+                } 
+            }
+        ]
+    });
+    
+    //rew popup
   $('.advRew__slider').magnificPopup({
     delegate: 'a',
     type: 'image',
@@ -261,7 +296,5 @@ $('.advRew__slider').slick({
         preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
     }
     });
-
-    
   
     });
