@@ -30,6 +30,11 @@
     width: 90%;
     margin: 0 auto;
   }
+  .container_1208 {
+    max-width: 1208px;
+    width: 90%;
+    margin: 0 auto;
+  }
   .container_992 {
     max-width: 992px;
     width: 90%;
@@ -327,8 +332,14 @@
   .lh_175 {
     line-height: 175%;
   }
+  .lh_167 {
+    line-height: 167%;
+  }
   .lh_156 {
     line-height: 156%;
+  }
+  .lh_139 {
+    line-height: 139%;
   }
   //form
   input[type="number"]::-webkit-outer-spin-button,
@@ -572,6 +583,7 @@
   @import '_offers.scss';
   @import '_search.scss';
   @import '_error.scss';
+  @import '_proverka.scss';
   @import '_modal.scss';
   @import '_footer.scss';
   @import '_media.scss';
