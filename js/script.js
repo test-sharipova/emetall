@@ -276,7 +276,7 @@ $('.advRew__slider').slick({
                 breakpoint: 768,
                 settings: {
                     arrows: false,
-                    slidesToShow: 2,
+                    slidesToShow: 3,
                     variableWidth: true,
                     centerMode: true,
                                        
