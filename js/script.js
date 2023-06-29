@@ -201,17 +201,19 @@ showAdress('.providerscard__map__block');
 
 
 
-// страница каталог фильтры
+// страница каталог фильтры, Страница Поставщики фильтры
 
 //show catalogFilters
 $('.showFilters').on('click', function() {
     $('.catalogFilters__form').fadeIn();
     $('.catalogFilters__header').fadeIn();
+    $('.overlay').fadeIn();
     $('.showFilters').fadeOut();
 });
 $('.catalogFilters__close').on('click', function() {
     $('.catalogFilters__form').fadeOut();
     $('.catalogFilters__header').fadeOut();
+    $('.overlay').fadeOut();
     $('.showFilters').fadeIn();
 });
 
