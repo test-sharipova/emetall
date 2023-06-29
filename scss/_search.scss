@@ -72,18 +72,8 @@
         &__wrapper {
             gap: 8px;
             width: 100%;
-            overflow-x: auto;
-            &::-webkit-scrollbar {
-                width: 4px;
-                height: 2px;
-              }
-            &::-webkit-scrollbar-track {
-                background: transparent;
-              }
-            &::-webkit-scrollbar-thumb {
-                background-color: #B7B7B7;
-                border-radius: 3px;
-              }
+            flex-wrap: wrap;
+           
         }
     }
 }

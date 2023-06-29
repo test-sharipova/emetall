@@ -1524,4 +1524,33 @@
             }
         }
     }
+    .search {
+        background: #F2F2F4;
+        .fs_28 {
+            margin-top: 0;
+            padding-top: 16px;
+        }
+        &__topWrap {
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        &__wrapper {
+            margin-top: 24px;
+        }
+        &__item {
+            width: 100%;
+        }
+       
+        &__item {
+            &__top {
+                padding: 20px 24px 24px;
+            }
+            &__bottom {
+                padding: 20px 24px;
+            }
+            .toggler {
+                font-size: 14px;
+            }
+        }
+    }
 }
