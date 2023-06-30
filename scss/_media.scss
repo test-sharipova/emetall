@@ -238,24 +238,7 @@
             display: none;
         }
     }
-    .companyAbout {
-        &__item {
-            width: 300px;
-            margin-bottom: 24px;
-        }
-        &__wrapper {
-            flex-wrap: wrap;
-        }
-    }
-    .companyParty {
-        &__item {
-            width: 300px;
-            margin-bottom: 24px;
-        }
-        &__wrapper {
-            flex-wrap: wrap;
-        }
-    }
+    
     // for advertisers site
     .advNumbers {
         &__number {
@@ -318,6 +301,66 @@
         }
         &__item {
             height: auto;
+        }
+    }
+   
+    .company {
+        
+        .fs_60 {
+            font-size: 32px;
+        }
+        &Promo {
+            &__content {
+                margin-top: 48px;
+                h1 {
+                    margin: 0;
+                }
+                .fs_24 {
+                    font-size: 16px;
+                    line-height: 140%;
+                    margin-top: 16px;
+                }
+            }
+            &__h {
+                font-size: 28px;
+                line-height: 120%;
+                span {
+                    height: auto;
+                }
+            }
+            
+        }
+        &About {
+            &__wrapper {
+                gap: 24px;
+                justify-content: flex-start;
+            }
+            &__item {
+                width: 300px;
+                margin-bottom: 24px;
+            }
+            
+        }
+        &Mission {
+            &__content {
+                padding: 40px 0;
+            }
+        }
+        &History {
+            &__item, &__item_bottom {
+                padding: 16px;
+            }
+        }
+        &Party {
+            &__wrapper {
+                gap: 16px;
+                flex-wrap: nowrap;
+                overflow: visible;
+            }
+            &__item {
+                width: 300px;
+                margin-bottom: 24px;
+            }
         }
     }
     
@@ -1892,6 +1935,127 @@
                 margin-top: 16px;
                 width: 100%;
                 max-width: 279px;
+            }
+        }
+    }
+    .company {
+        &Promo {
+            .wrapper {
+                flex-wrap: wrap;
+            }
+            &__content {
+                width: 100%;
+                margin-left: 16px;
+                margin-bottom: 0;
+                .fs_24 {
+                    max-width: 316px;
+                }
+            }
+            &__img {
+                position: relative;
+                width: 100%;
+                margin-top: 37px;
+            }
+            &__h {
+                span {
+                    padding: 0 5px 5px;
+                }
+            }
+        }
+        &About {
+            padding: 34px 0 48px;
+            &__wrapper {
+                flex-wrap: wrap;
+            }
+            &__item {
+                width: 100%;
+                margin-bottom: 0;
+            }
+            .mb_36, .mb_24 {
+                margin-bottom: 16px;
+            }
+        }
+        &Mission {
+            margin: 0;
+            border-radius: 0;
+            &__content {
+                padding: 40px 10px 0 16px;
+                width: 100%;
+                .fs_24 {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                .mb_32 {
+                    margin-bottom: 16px;
+                }
+                
+            }
+            &__img {
+                position: relative;
+                width: 100%;
+                width: 122%;
+                left: -40px;
+            }
+        }
+        &History {
+            padding:  48px 0;
+            .mb_60 {
+                margin-bottom: 44px;
+            }
+            .wrapper_start {
+                flex-wrap: wrap;
+            }
+            &__item, &__item_bottom {
+                margin-left: 30px;
+                border: none;
+                padding-left: 34px;
+                padding-right: 0;
+                &:first-child {
+                    padding-left: 34px;
+                    border-top: none;
+                    border-radius: 0;
+                }
+                &:last-child {
+                    border: none;
+                    border-left: 1px dashed #212529;
+                    &:after {
+                        right: auto;
+                        left: -8px;
+                        transform: rotate(90deg);
+                    }
+                }
+                border-left: 1px dashed #212529;
+                &:before {
+                    left: -18px;
+                    top: 5px;
+                }
+            }
+        }
+        &Support {
+            .wrapper {
+                gap: 12px;
+            }
+            &__item {
+                width: 50%;
+                max-width: 164px;
+                margin-bottom: 0;
+                &:nth-child(3n) {
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+        &Party {
+            &__wrapper {
+                overflow: auto;
+            }
+            &__item {
+                min-width: 311px;
+                width: 311px;
+                .fs_18 {
+                    font-size: 16px;
+                    line-height: 120%;
+                }
             }
         }
     }
