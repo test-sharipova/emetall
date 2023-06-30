@@ -245,8 +245,9 @@ $('.advRew__slider').slick({
         {
             breakpoint: 1023,
             settings: {
-                
-                slidesToShow: 2,                   
+                centerMode: true,
+                slidesToShow: 2,  
+                arrows: false,                 
             }
            
         }

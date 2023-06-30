@@ -273,6 +273,9 @@
             background: #FFFFFF;
             border: 1px solid #DDDDDD;
             color: $text-color;
+            &:focus {
+                border: 1px solid #2764e0;
+            }
         }
         .btn {
             width: 214px;
