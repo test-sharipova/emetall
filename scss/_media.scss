@@ -2195,4 +2195,63 @@
             }
         }
     }
+    .help {
+        .title_36 {
+            font-size: 24px;
+            max-width: 257px;
+            line-height: 120%;
+        }
+        .fs_28 {
+            font-size: 24px;
+        }
+        &__subtitle {
+            font-size: 14px;
+            line-height: 20px;
+            max-width: 316px;
+            margin-bottom: 24px;
+        }
+        .help__item {
+            width: 100%;
+            padding: 24px;
+            min-height: 219px;
+            &:nth-child(1) {
+                margin-bottom: 16px;
+            }
+            .fs_24 {
+                font-size: 20px;
+            }
+            .fs_16 {
+                font-size: 14px;
+            }
+        }
+        .help__img {
+            right: 14px;
+        }
+        &__contact {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 12px;
+            background: #E9F0FC;
+            flex-direction: row;
+            padding: 24px;
+            min-height: auto;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 12px;
+            .fs_16 {
+                font-size: 14px;
+                line-height: 20px;
+                text-align: left;
+            }
+            &__img {
+                width: 40px;
+                height: 40px;
+                min-width: 40px;
+                min-height: 40px;
+                background: #fff;
+                margin-right: 16px;
+                margin-bottom: 0;
+            }
+        }
+    }
 }
