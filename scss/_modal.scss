@@ -24,7 +24,7 @@
         font-size: 34px;
         color: $dark_back;
     }
-    
+   
 }
 //login
 .login {
@@ -169,7 +169,7 @@
     }
 }
 // order
-
+//заявка успешно оформлена
 .modal {
     &__order {
         background: #FFFFFF;
@@ -185,7 +185,7 @@
         }
     }
 }
-
+//товар в корзине
 .modal {
     &__addincart {
         max-width: 712px;
