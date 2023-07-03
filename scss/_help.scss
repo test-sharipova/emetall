@@ -111,7 +111,7 @@
         &__questions {
             margin-bottom: 64px;
             .btn_transparent {
-                margin-top: 48px;
+                margin-top: 24px;
             }
         }
         &__question {
@@ -146,4 +146,44 @@
             
         }
     } 
+    &Article {
+        padding: 40px 0 120px;
+        &__article {
+            max-width: 712px;
+           
+        }
+        &__tag {
+            padding: 9px 16px;
+            border-radius: 6px;
+            background: #E9F0FC;
+            margin-right: 16px;
+            margin-top: 40px;
+        }
+        &__img {
+            padding-top: 71px;
+            text-align: center;
+            margin: 64px 0;
+            width: 100%;
+            border-radius: 12px;
+            background: #E9F0FC;
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        &__quest {
+            border-radius: 12px;
+            background: #E9F0FC;
+            padding: 32px;
+            margin: 64px 0 120px;
+            .btn {
+                font-weight: 400;
+                &:nth-child(2) {
+                    background: #fff;
+                    color: $blue;
+                    margin-left: 16px;
+                }
+            }
+        }
+    }
 }
