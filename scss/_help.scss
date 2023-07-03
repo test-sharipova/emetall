@@ -1,4 +1,11 @@
+.back a {
+    text-decoration: none;
+}
 .help {
+    details[open] > summary::after {
+        display: none;
+       
+    }
     padding: 40px 0 120px;
     &__subtitle {
         text-align: center;
@@ -82,5 +89,61 @@
     &__questions {
         margin-bottom: 48px;
     }
-   
+    &Providers {
+        
+        padding: 40px 0 120px;
+        &__promo {
+            margin-top: 40px;
+            margin-bottom: 64px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 51px 64px 37px;
+            border-radius: 15px;
+            background: #E9F0FC;
+            .title_36 {
+                margin: 0 0 16px;
+            }
+        }
+        &__content {
+            max-width: 416px;
+        }
+        &__questions {
+            margin-bottom: 64px;
+            .btn_transparent {
+                margin-top: 48px;
+            }
+        }
+        &__question {
+            position: relative;
+            font-size: 20px;
+            padding: 24px 0;
+            font-weight: 600;
+            width: 100%; 
+            padding-right: 12px;
+            display: block;
+            color: $text-color;
+            text-decoration: none;
+            border-bottom: 1px solid #F2F2F4;
+            &::after {
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 8px;
+                height: 16px;
+                background: url(../img/next.svg) no-repeat center;
+            }
+            &:hover {
+                opacity: .8;
+                cursor: pointer;
+            }
+            &:last-child {
+                border-bottom: none;
+                
+            }
+            
+        }
+    } 
 }
