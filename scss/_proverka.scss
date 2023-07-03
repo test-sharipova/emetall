@@ -23,6 +23,17 @@
             .wrapper_start {
                 align-items: center;
             }
+            .btn {
+                position: relative;
+                padding: 10px 24px 10px 52px;
+                line-height: 25px;
+                img {
+                    position: absolute;
+                    top: 50%;
+                    left: 16px;
+                    transform: translateY(-50%);
+                }
+            }
         }
     }
     &__price {

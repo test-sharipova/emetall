@@ -2074,4 +2074,81 @@
             margin-bottom: 20px;
         }
     }
+    .proverka {
+        padding: 32px 0 60px;
+        .title_36 {
+            font-size: 24px;
+            line-height: 120%;
+            max-width: 257px;
+        }
+        .fs_18 {
+            font-size: 14px;
+        }
+        .mb_32 {
+            margin-bottom: 24px;
+        }
+        &__wrapper {
+            flex-wrap: wrap;
+            
+        }
+        &__item {
+            width: 100%;
+            margin-bottom: 16px;
+            &:nth-child(2) {
+                margin-bottom: 0;
+            }
+            &__top {
+                padding: 24px;
+                height: auto;
+                .mb_48 {
+                    margin-bottom: 24px;
+                }
+                .mb_12 {
+                    margin-bottom: 8px;
+                }
+                .fs_15 {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+            &__bottom {
+                padding: 24px 24px 32px;
+                .fs_15 {
+                    font-size: 12px;
+                    line-height: 120%;
+                }
+                .wrapper_start {
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    .btn {
+                        width: 100%;
+                        margin-bottom: 24px;
+                        padding-left: 24px;
+                        padding-right: 24px;
+                    }
+                }
+            }
+        }
+        &__kontur {
+            order: 2;
+            padding: 20px 24px 32px;
+            border-radius: 0 0 12px 12px;
+            .title_36 {
+                font-size: 20px;
+                max-width: 100%;
+            }
+            .mb_24 {
+                margin-bottom: 12px;
+            }
+            &__img {
+                border-radius: 12px 12px 0px 0px;
+                width: 100%;
+                padding: 57px 99px;
+                img {
+                    width: 156px;
+                    
+                }
+            }
+        }
+    }
 }
