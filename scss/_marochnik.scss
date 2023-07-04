@@ -81,4 +81,64 @@
             font-weight: 600;
         }
     }
+    //марочник 3
+    &__component {
+        margin-top: 25px;
+        border-radius: 12px;
+        background: #E9F0FC;
+        width: 262px;
+        height: 147px;
+        padding: 23px 36px 20px;
+        margin-right: 40px;
+    }
+    &__wrapper {
+        &_start {
+            align-items: center;
+            margin-bottom: 48px;
+        }
+    }
+    &__name {
+        border-bottom: 1px solid #F2F2F4;
+        padding: 16px 0;
+        gap: 38px;
+        .gray {
+            width: 115px;
+        }
+    }
+    &__block {
+        margin-bottom: 48px;
+        .btn_small {
+            background: $blue;
+            color: #fff;
+        }
+        .wrapper_start {
+            gap: 12px;
+        }
+    }
+    .article__table {
+        &__item {
+            flex-grow: 1;
+        }
+    }
+    &__value {
+        margin-top: 49px;
+        display: grid;
+        grid-template-columns: 66px 1fr;
+        gap: 6px 0;
+        align-items: center;
+        &__abbr {
+            width: 46px;
+            height: 32px;
+            border-radius: 6px;
+            background: #F2F2F4;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 500;
+            padding-top: 7px;
+        }
+        &__descr {
+            font-size: 14px;
+        }
+       
+    }
 }
