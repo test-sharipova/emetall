@@ -1,0 +1,168 @@
+.orders {
+    padding: 32px 0 100px;
+    &__wrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .search__topWrap {
+        margin-bottom: 33px;
+    }
+    &__content {
+        max-width: 960px;
+        width: 66%;
+    }
+    &__help {
+        max-width: 400px;
+        width: 28%;
+    }
+    &__details {
+        list-style: none;
+        border-radius: 10px;
+        border: 1px solid #F2F2F4;
+        transition: all .3s;
+        margin-bottom: 24px;
+        padding-bottom: 53px;
+        position: relative;
+        &__item {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 4px;
+            padding: 13px 40px 16px;
+            position: relative;
+            &_read {
+                &:before {
+                    content: '';
+                    width: 14px;
+                    height: 100%;
+                    opacity: 0.1;
+                    background: #37A71A;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                &::after {
+                    content: 'Прочитано';
+                    color: #218D2C;
+                    font-size: 14px;
+                    padding-left: 20px;
+                    background: url(../img/check_green.svg) no-repeat left;
+                    margin-top: 15px;
+                }
+            }
+            &_wait {
+                &::after {
+                    content: 'Ожидает';
+                    color: #DA621E;
+                    font-size: 14px;
+                    margin-top: 15px;
+                }
+            }
+        }
+        &__volume {
+            text-align: right;
+        }
+        &__prise {
+            text-align: right;
+        }
+    }
+    summary {
+        display: block;
+    }
+    &__summary {
+        list-style: none;
+        display: block;
+        transition: all .2s;
+        padding: 24px 40px 0;
+        &__top {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            justify-content: space-between;
+            padding-bottom: 24px;
+            border-bottom: 1px solid #F2F2F4;
+           
+        }
+        .gray {
+            display: flex;
+            align-items: center;
+        }
+    }
+    .hide_order {
+        display: none;
+    }
+    &__date {
+        text-align: right;
+    }
+    &__showOrder {
+        padding: 9px 0 16px;
+        cursor: pointer;
+        position: absolute;
+        bottom: 0;
+    }
+    
+    details[open] > summary .orders__showOrder .hide_order {
+       display: inline-block;
+       
+    }
+    details[open] > summary .orders__showOrder .show {
+        display: none;
+        
+     }
+     details[open] > summary .orders__showOrder img {
+       transform: rotate(180deg);
+       
+    }
+    details[open] {
+        box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.10);
+    }
+    &__btns {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding-left: 40px;
+        padding-bottom: 24px;
+        margin-top: 40px;
+        border-bottom: 1px solid #F2F2F4;
+        .btn_order {
+            &:hover {
+                opacity: .85;
+                color: $blue;;
+                background: #e9f0fc;
+            }
+        }
+        
+    }
+    &__help {
+        &__help {
+            border-radius: 12px;
+            background: #FFF;
+            box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.10);
+            padding: 40px;
+            margin-bottom: 24px;
+            .fs_21 {
+                margin-bottom: 18px;
+            }
+            .blue {
+                display: block;
+                margin-bottom: 12px;
+                line-height: 25px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        &__emetall {
+            background: url(../img/back.png) no-repeat center;
+            background-size: cover;
+            border-radius: 12px;
+            padding: 24px 32px;
+            .btn {
+                width: 100%;
+                background: linear-gradient(90deg, #2864E0 0%, #DB0A5B 100%);
+                font-weight: 400;
+                line-height: 25px;
+                padding: 8px 0 11px;
+            }
+        }
+    }
+}
