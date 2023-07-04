@@ -1,5 +1,9 @@
 .marochnik {
     padding: 40px 0 200px;
+    .back {
+        margin-top: 0;
+        text-align: left;
+    }
     .catalog__search__btn {
         width: 36px;
         height: 36px;
@@ -24,6 +28,57 @@
         transition: all .3s;
         &:hover {
             color: $blue;
+        }
+    }
+    //марочник2
+    &__th {
+        display: grid;
+        grid-template-columns: 168px 180px 1fr;
+        gap: 0 47px;
+        font-weight: 600;
+        border-bottom: 1px solid #F2F2F4;
+        padding-bottom: 20px;
+        margin-top: 40px;
+    }
+    &__link {
+        display: grid;
+        grid-template-columns: 168px 180px 1fr;
+        gap: 0 47px;
+        align-items: center;
+        padding: 13px 0;
+        border-bottom: 1px solid #F2F2F4;
+        color: $text-color;
+        text-decoration: none;
+        &__abbr {
+            display: flex;
+            justify-content: flex-start;
+            border-radius: 6px;
+            border: 1px solid #8EB1ED;
+            background: #FFF;
+            font-size: 14px;
+            overflow: hidden;
+            color: $text-color;
+            text-decoration: none;
+            width: 121px;
+            height: 26px;
+            &_blue {
+               background: #E9F0FC;
+               width: 40px;
+                height: 26px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-right: 1px solid #8EB1ED;
+            }
+            &_transparent {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 4px 7px;
+            }
+        }
+        &__marka {
+            font-weight: 600;
         }
     }
 }
