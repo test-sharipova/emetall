@@ -14,6 +14,25 @@ window.addEventListener('DOMContentLoaded', () => {
             menu.classList.remove('menu_active');
         });
     });
+    //показать каталог меню
+    $('.showCatalog').on('click', function(){
+        $('.menu__catalog').toggleClass('menu__catalog_hide');
+        $('.btn__burger').toggleClass('btn__burger_active');
+        $('.menu__catalog__overlay').toggleClass('menu__catalog__overlay_active');
+        
+    });
+    
+
+    $(function() {
+  
+        $('ul.menu__catalog__scroll').on('mouseenter', 'li:not(.menu__catalog__link_active)', function() {
+          $(this)
+            .addClass('menu__catalog__link_active').siblings().removeClass('menu__catalog__link_active')
+            .closest('div.menu__catalog__wrap').find('div.menu__catalog__content').removeClass('menu__catalog__content_active').eq($(this).index()).addClass('menu__catalog__content_active');
+        });
+        
+      });
+    
 
     //modal login войти зарегистрироваться
     $('.header__profile').on('click', function() {

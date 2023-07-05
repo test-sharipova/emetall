@@ -224,6 +224,7 @@
     justify-content: flex-start;
   }
   
+  
   //products
   .product {
     &__item {
@@ -551,8 +552,14 @@
     .mr_12 {
       margin-right: 12px;
     }
+    .mr_16 {
+      margin-right: 16px;
+    }
     .mr_20 {
       margin-right: 20px;
+    }
+    .mr_24 {
+      margin-right: 24px;
     }
     .mr_26 {
       margin-right: 26px;
