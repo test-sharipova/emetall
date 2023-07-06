@@ -33,6 +33,18 @@ window.addEventListener('DOMContentLoaded', () => {
         
       });
     
+//overlay
+function consoleBG() {
+    if ($(window).scrollTop() == 160) {
+      $('.menu__catalog__overlay').css({
+        'top' : '0px',
+        
+      });
+      
+    } 
+    
+  }
+  consoleBG();
 
     //modal login войти зарегистрироваться
     $('.header__profile').on('click', function() {

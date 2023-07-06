@@ -58,6 +58,13 @@
             background: #F1F5F8;
             margin: 0;
             box-shadow: none;
+            transition: all .3s;
+            img {
+                filter: grayscale(.7);
+            }
+            &:hover img {
+                filter: grayscale(0);
+            }
         }
     }
     &__link {

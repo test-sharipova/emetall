@@ -196,7 +196,9 @@ header {
         z-index: 101;
         background: #fff;
         width: 100%;
+        
         top: 160px;
+        left: 0;
         transition: all .3s;
         &__wrap {
             display: grid;
@@ -307,11 +309,12 @@ header {
         }
         &_hide {
             top: -100%;
+            opacity: 0;
         }
         &__overlay {
             position: fixed;
             z-index: 100;
-            
+            left: 0;
             width: 100%;
             top: 160px;
             transition: all .3s;
