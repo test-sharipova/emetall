@@ -54,6 +54,13 @@
                     fill: #fff;
                 }
             }
+            &_active {
+                background: $blue;
+                color: #fff;
+                svg path {
+                    fill: #fff;
+                }
+            }
         }
 
      }
@@ -61,6 +68,16 @@
         background: #fff;
         border-radius: 15px; 
         flex-grow: 1;
+        
+        .form__input {
+            background: #fff;
+            border: 1px solid #ddd;
+            width: 280px;
+            margin-bottom: 8px;
+            &:focus {
+                border: 1px solid $blue;
+            }
+        }
      }
      &__title {
         font-size: 20px;
@@ -72,15 +89,7 @@
      &__data {
         padding: 0 48px;
         margin-bottom: 60px;
-        .form__input {
-            background: #fff;
-            border: 1px solid #ddd;
-            width: 280px;
-            margin-bottom: 8px;
-            &:focus {
-                border: 1px solid $blue;
-            }
-        }
+        
         .wrapper_start {
             gap: 24px;
         }
@@ -106,6 +115,131 @@
         &__label {
             margin-bottom: 24px;
             display: block;
+        }
+     }
+
+     //история проверок
+     &__content {
+        &__history {
+            flex-grow: 1;
+            .profile__title {
+                padding: 0 0 24px;
+                margin-bottom: 31px;
+            }
+        }
+        &__block {
+            width: 50%;
+            max-width: 506px;
+            padding: 32px 32px 41px;
+            border-radius: 10px;
+            background: #FFF;
+            box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.12);
+            .fs_15 {
+                max-width: 410px;
+            }
+        }
+     }
+     &__kontur {
+        width: 50%;
+        max-width: 458px;
+        border-radius: 10px;
+        background: #E9F0FC;
+        padding: 38px 32px 32px;
+        .btn {
+            background: #33364E;
+            font-weight: 400;
+        }
+     }
+     &__history {
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+            border-radius: 15px;
+            background: #FFF;
+            padding: 48px;
+            gap: 24px;
+            &:nth-child(2) {
+                padding: 32px 48px 32px 32px;
+                margin-top: 16px;
+                display: block;
+            }
+        }
+     }
+     &__form {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        gap: 20px;
+        .btn_order {
+            border: none;
+        }
+        .form__input {
+            margin: 0;
+            background: #fff;
+            border: 1px solid #ddd;
+            max-width: 280px;
+            &:focus {
+                border: 1px solid $blue;
+            }
+        }
+     }
+     &__table {
+        &__head {
+            display: grid;
+            grid-template-columns: 297px 252px 262px 1fr;
+            padding: 8px 16px 16px 16px;
+        }
+        &__row {
+            display: grid;
+            grid-template-columns: 297px 252px 262px 1fr;
+            margin-bottom: 2px;
+            position: relative;
+            height: 36px;
+            &:nth-child(2n) {
+                background: #F0F2F4;
+            }
+            .fs_14 {
+                border-right: 2px solid #fff;
+                padding: 8px 16px 9px 16px;
+                line-height: 100%;
+            }
+            &:hover {
+                background: #FFF5E1;
+                &::before {
+                    content: '';
+                    width: 2px;
+                    height: 36px;
+                    background: $blue;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                .profile__table__download {
+                    background: $blue;
+                    color: #fff;
+                    &:after {
+                        background: url(../img/download_white.svg) no-repeat center;
+                    }
+                }
+            }
+        }
+        &__download {
+            width: 100%;
+            background: #E9F0FF;
+            color: $blue;
+            text-decoration: none;
+            padding: 8px 16px 9px 16px;
+            
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &::after {
+                content: '';
+                width: 16px;
+                height: 16px;
+                background: url(../img/download_blue.svg) no-repeat center;
+                background-size: cover;
+            }
         }
      }
 }
