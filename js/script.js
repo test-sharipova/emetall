@@ -107,6 +107,25 @@ selects.forEach(select => {
     select.classList.add('select_active');
   });
 });
+
+// страница профиль статистика. всплывающая подсказка
+// $('.profile__stat__circle__pie').each(function(i) {
+//     $(this).on('mouseenter', function(e) {
+//         e.preventDefault();
+//         $('.profile__stat__tooltip').eq(i).fadeIn();
+        
+//     });
+    
+// });
+// $('.profile__stat__circle__pie').each(function(i) {
+//     $(this).on('mouseleave', function(e) {
+//         e.preventDefault();
+//         $('.profile__stat__tooltip').eq(i).fadeOut();
+        
+//     });
+    
+// });
+
     
     // promo slider
     $('.promo__slider').slick({
@@ -330,5 +349,7 @@ $('.advRew__slider').slick({
         preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
     }
     });
+
+
   
     });
