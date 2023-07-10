@@ -198,6 +198,10 @@
         box-shadow: inset 2px 2px 2px rgba(16, 16, 16, 0.68);
       }
     }
+    &_black {
+      border-radius: 6px;
+      background: #33364E;
+    }
   }
   .title {
     font-weight: 600;
@@ -600,6 +604,46 @@
         }
       }
     }
+    //radio tabs
+    .radio {
+      &__tabs {
+          
+          display: flex;
+          margin-right: 32px;
+          label {
+              display: block;
+             &:first-child {
+              .radio__mark {
+                  border-radius: 6px 0px 0px 6px;
+              }
+             }
+             &:last-child {
+              .radio__mark {
+                  border-radius: 0px 6px 6px 0px;
+              }
+             }
+          }
+          input[type=radio] {
+              display: none;
+          }
+          input[type=radio]:checked + .radio__mark {
+              border: 1px solid #2764E0;
+              background: #E9F0FC;
+          }
+      }
+      &__mark {
+          font-size: 14px;
+          padding: 9px 16px;
+          border: 1px solid #DDD;
+          background: #FFF;
+          cursor: pointer;
+          display: block;
+          height: 38px;
+      }
+      
+  }
+  
+
 
  
   @import '_banner.scss';
