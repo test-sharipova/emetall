@@ -326,6 +326,7 @@
                     opacity: 1;
                     width: auto;
                     height: auto;
+                    
                 }
                 &:nth-child(1) {
                     background: conic-gradient(#A13960 86deg, transparent 86deg 360deg);
@@ -379,7 +380,7 @@
             width: 1px;
             height: 1px;
             transition: all .3s;
-            overflow: hidden;
+            
             .path {
                 position: absolute;
                 background: #000;
@@ -405,6 +406,15 @@
                     text-align: right;
                 }
             }
+        }
+        &__btn {
+            width: 42px;
+            height: 38px;
+            border-radius: 3px;
+            background: #F6F7F8;
+            border: none;
+            margin-right: 4px;
+            cursor: pointer;
         }
      }
      
