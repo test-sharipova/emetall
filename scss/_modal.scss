@@ -248,3 +248,21 @@
         }
     }
 }
+
+
+//размещение баннера истекает продлить
+.modal{
+    &__banners {
+        position: relative;
+        padding: 57px 100px 63px 92px;
+        max-width: 588px;
+        border-radius: 15px;
+        background: #FFF;
+        box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.12);
+        .btn {
+            width: 100%;
+            font-weight: 400;
+            height: 50px;
+        }
+    }
+}

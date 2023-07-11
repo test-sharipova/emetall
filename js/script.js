@@ -46,6 +46,8 @@ function consoleBG() {
   }
   consoleBG();
 
+// ПОКАЗ МОДАЛЬНЫХ ОКОН
+
     //modal login войти зарегистрироваться
     $('.header__profile').on('click', function() {
         $('.overlay, .modal__login').fadeIn();
@@ -84,6 +86,14 @@ function consoleBG() {
         $('.header__place__quest').toggleClass('hide');
     });
 
+    //показать продление медийного баннера/оплата
+    
+    $('.payBanner').on('click', function() {
+        $('.overlay, .modal').fadeIn();
+        console.log('ok');
+    });
+
+
     //showMore catalog
     function showMore(item) {
         $(item).each(function(i) {
@@ -107,24 +117,6 @@ selects.forEach(select => {
     select.classList.add('select_active');
   });
 });
-
-// страница профиль статистика. всплывающая подсказка
-// $('.profile__stat__circle__pie').each(function(i) {
-//     $(this).on('mouseenter', function(e) {
-//         e.preventDefault();
-//         $('.profile__stat__tooltip').eq(i).fadeIn();
-        
-//     });
-    
-// });
-// $('.profile__stat__circle__pie').each(function(i) {
-//     $(this).on('mouseleave', function(e) {
-//         e.preventDefault();
-//         $('.profile__stat__tooltip').eq(i).fadeOut();
-        
-//     });
-    
-// });
 
     
     // promo slider
