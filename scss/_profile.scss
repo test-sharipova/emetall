@@ -416,8 +416,43 @@
             margin-right: 4px;
             cursor: pointer;
         }
+        &__select {
+            text-align: right;
+            &__wrap {
+                position: relative;
+                &::before {
+                    content: 'Показано:';
+                    position: absolute;
+                    top: 50%;
+                    left: 16px;
+                    transform: translateY(-50%);
+                    font-size: 14px;
+                }
+            }
+        }
      }
-     
+     &__table {
+        &__stat {
+            .profile__table__head {
+                grid-template-columns: 191px 157px 145px 185px 192px 108px;
+            }
+            .profile__table__row {
+                grid-template-columns: 191px 157px 145px 185px 192px 108px;
+                .fs_14 {
+                    font-weight: 600;
+                    &:last-child {
+                        border-right: none;
+                    }
+                    &:first-child {
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+     }
+     .profile__media__head__stat {
+        margin-bottom: 32px;
+     }
 }
 // синий крг с пустым центорм
 .circle {
