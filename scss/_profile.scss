@@ -117,6 +117,21 @@
             margin-bottom: 24px;
             display: block;
         }
+        &__wrap {
+            position: relative;
+            &::before {
+                content: '+7';
+                position: absolute;
+                top: 61%;
+                left: 16px;
+                transform: translateY(-50%);
+                font-size: 15px;
+
+            }
+            .form__input {
+                padding-left: 38px;
+            }
+        }
      }
 
      //история проверок
