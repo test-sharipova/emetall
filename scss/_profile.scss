@@ -453,6 +453,12 @@
      .profile__media__head__stat {
         margin-bottom: 32px;
      }
+     //страница нет оплаченных баннеров
+     &__media {
+        &__text {
+            max-width: 428px;
+        }
+     }
 }
 // синий крг с пустым центорм
 .circle {
