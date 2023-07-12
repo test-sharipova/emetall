@@ -5,19 +5,24 @@
         margin-right: 32px;
     }
     &__calend {
-        background: #FFFFFF;
-        border: 1px solid #DDDDDD;
-        border-radius: 6px;
-        padding: 10px 16px;
-        display: flex;
-        align-items: center;
-        .fs_14 {
-            line-height: 100%;
+        &__wrap {
+            position: relative;
+            &::before {
+                content: '';
+                width: 15px;
+                height: 16px;
+                position: absolute;
+                background: url(../img/search/calendar.svg) no-repeat center;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 16px;
+            }
         }
-        img {
-            margin-right: 16px;
-            display: block;
-        }
+        background: #fff;
+        border: 1px solid #ddd;
+        padding-left: 48px;   
+        margin-bottom: 0; 
+        height: 38px;
     }
     .labelRadio {
         padding: 11px 16px;

@@ -93,6 +93,18 @@ function consoleBG() {
         console.log('ok');
     });
 
+//показать календарь
+new AirDatepicker('#calend', {
+        isMobile: true,
+        autoClose: true,
+        range: true,
+        multipleDatesSeparator: ' - ',
+        showOtherMonths: true,
+        dateFormat: 'dd MMM yyyy',
+        selectOtherMonths:true,
+        moveToOtherMonthsOnSelect: true
+    });
+
 
     //showMore catalog
     function showMore(item) {
@@ -240,6 +252,7 @@ $('.providerscard__slider-for').slick({
     });
 }
 showAdress('.providerscard__map__block');
+
 
 
 
