@@ -9,6 +9,7 @@
 
 
     <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/air-datepicker.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -152,10 +153,9 @@
                     <input type="radio" name="avail" value="yesterday" id="yesterday" class="catalogFilters__radio"> <label class="labelRadio" for="avial">Вчера</label>
                     <input type="radio" name="avail" value="last" id="last" class="catalogFilters__radio"> <label class="labelRadio" for="order">2 дня назад</label>
                 </div>
-                <a href="#" class="search__calend textColor">
-                    <img src="img/search/calendar.svg" alt="calendar">
-                    <p class="fs_14">31 авг – 30 сен 2022</p>
-                </a>
+                <label class="search__calend__wrap">
+                    <input type="text" class="form__input search__calend textColor" id="calend">
+                </label>
             </div>
             <div class="wrapper search__wrapper flexWrap">
                 <div class="search__item">
@@ -364,6 +364,7 @@
     </section>
 </main>
 <script src="js/jquery-3.6.3.min.js"></script>
+<script src="js/air-datepicker.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

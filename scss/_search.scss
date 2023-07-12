@@ -7,6 +7,7 @@
     &__calend {
         &__wrap {
             position: relative;
+            margin-right: 24px;
             &::before {
                 content: '';
                 width: 15px;
@@ -50,6 +51,7 @@
             .fs_16 {
                 max-width: 357px;
                 line-height: 21px;
+                display: block;
             }
         }
         &__bottom {
