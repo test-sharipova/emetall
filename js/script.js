@@ -100,11 +100,12 @@ new AirDatepicker('#calend', {
         range: true,
         multipleDatesSeparator: ' - ',
         showOtherMonths: true,
-        dateFormat: 'dd MMM yyyy',
+        dateFormat: 'dd MMM yy',
         selectOtherMonths:true,
-        moveToOtherMonthsOnSelect: true
+        moveToOtherMonthsOnSelect: true,
+        numberOfMonths: 3
     });
-
+    
 
     //showMore catalog
     function showMore(item) {
