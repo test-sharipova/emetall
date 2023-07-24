@@ -93,6 +93,9 @@
         
         padding: 40px 0 120px;
         &__promo {
+            &_mobile {
+                display: none;
+            }
             margin-top: 40px;
             margin-bottom: 64px;
             display: flex;
@@ -103,6 +106,7 @@
             background: #E9F0FC;
             .title_36 {
                 margin: 0 0 16px;
+                font-weight: 600;
             }
         }
         &__content {

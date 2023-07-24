@@ -2207,6 +2207,7 @@
         }
     }
     .help {
+        padding-top: 32px;
         .title_36 {
             font-size: 24px;
             max-width: 257px;
@@ -2249,6 +2250,7 @@
             justify-content: flex-start;
             align-items: center;
             margin-bottom: 12px;
+            box-shadow: none;
             .fs_16 {
                 font-size: 14px;
                 line-height: 20px;
@@ -2359,5 +2361,52 @@
                 }
             }
         }
+    }
+    .helpProviders {
+        padding-top: 0;
+        .fs_28 {
+            font-size: 24px;
+            .mobile {
+                display: inline-block;
+            }
+        }
+        &__promo {
+            &_mobile {
+                display: flex;
+            }
+            margin: 0 0 48px 0;
+            border-radius: 0;
+            flex-direction: column;
+            padding: 52px 32px 32px;
+            gap: 32px;
+            .title_36 {
+                font-size: 24px;
+                line-height: 120%;
+                margin-bottom: 12px;
+            }
+        }
+        &__img {
+            order: 1;
+            margin: 0 auto;
+            width: 232px;
+            img {
+                width: 100%;
+            }
+        }
+        &__content {
+            order: 2;
+            .fs_18 {
+                font-size: 16px;
+            }
+        }
+        &__questions {
+            .fs_28 {
+                font-size: 20px;
+            }
+        }
+        &__question {
+            font-size: 16px;
+        }
+        
     }
 }
