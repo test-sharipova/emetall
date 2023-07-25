@@ -197,6 +197,7 @@
                 background: #E9F0FC;
                 border: 1px solid #8EB1ED;
                 appearance: auto;
+                padding: 10px 16px;
             }
             &:nth-child(1) {
                 .calc__input {
@@ -227,6 +228,7 @@
             position: relative;
             .calc__input {
                 border-radius: 6px;
+                padding: 12px 16px;
             }
             
             
@@ -307,6 +309,9 @@
             max-width: 100%;
             object-fit: cover;
         }
+    }
+    &_mobile {
+        display: none;
     }
     
     

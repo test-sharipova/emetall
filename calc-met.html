@@ -149,7 +149,20 @@
             <div class="wrapper calc__wrap">
                 <div class="calc__calc">
                     <form action="#" class="calc__form">
-                        <div class="wrapper mb_32">
+                        <div class="wrapper_start mb_20 calc_mobile">
+                            <input type="radio" class="catalogFilters__radio" name="calc_metall" id="metall" checked> 
+                            <label for="metall" class="labelRadio">
+                            <p class="fs_14">Расчет веса</p> 
+                            </label>
+                            <input type="radio" class="catalogFilters__radio" name="calc_metall" id="metall2">
+                            <label for="metall2" class="labelRadio">
+                            <p class="fs_14">Расчет длины</p>  
+                            </label>
+                            
+                            
+                            
+                        </div>
+                        <div class="wrapper mb_32 calc__met__wrap">
                             <label class="calc__label calc__label_220">
                                 <p class="fs_14 fw_600 mb_8">Тип металлопроката</p>
                                 <div class="calc__input__wrap">
@@ -187,9 +200,9 @@
                                 </div>
                             </label>
                         </div>
-                        <div class="wrapper">
+                        <div class="wrapper flexWrap">
                             <div class="calc__item_280">
-                                <div class="wrapper_start mb_20">
+                                <div class="wrapper_start mb_20 desktop">
                                     <input type="radio" class="catalogFilters__radio" name="calc_metall" id="metall" checked> 
                                     <label for="metall" class="labelRadio">
                                     <p class="fs_14">Расчет веса</p> 
@@ -217,14 +230,14 @@
                                 <button class="btn" type="submit">Рассчитать вес</button>
                             </div>
                             <div class="calc__form__img">
-                                <div class="calc__img">
+                                <div class="calc__img desktop">
                                     <img src="img/calc/calc.png" alt="расчет веста стальной круглой турбы">
                                 </div>
                                 <div class="calc__form__text">
                                     <p class="fs_16 blue center">Вес</p>
                                 <p class="fs_28 blue fw_600 center">93 кг.</p>
                                 </div>
-                                <p class="calc__form__img__name">Расчет веса стальной круглой трубы</p>
+                                <p class="calc__form__img__name desktop">Расчет веса стальной круглой трубы</p>
                             </div>
                         </div>
                     </form>
