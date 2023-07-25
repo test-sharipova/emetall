@@ -135,6 +135,9 @@
 }
 .help {
     &__item {
+        color: $text-color;
+        text-decoration: none;
+        display: block;
         position: relative;
         padding: 20px 24px 0;
         width: 176px;

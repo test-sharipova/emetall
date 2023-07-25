@@ -1,5 +1,8 @@
 .marochnik {
     padding: 40px 0 200px;
+    h1 {
+        font-weight: 600;
+    }
     .back {
         margin-top: 0;
         text-align: left;
@@ -14,6 +17,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 20px 16px;
+        margin-bottom: 80px;
     }
     &__item {
         display: block;
@@ -29,6 +33,9 @@
         &:hover {
             color: $blue;
         }
+    }
+    .catalog__search__input::placeholder {
+        color: #9295AE;
     }
     //марочник2
     &__th {

@@ -54,7 +54,7 @@ function consoleBG() {
         
     });
     //modal help footer
-    $('.help').on('click', function() {
+    $('.showHelp').on('click', function() {
         $('.overlay, .modal__help').fadeIn();
     });
     //modal order оформить заказ
