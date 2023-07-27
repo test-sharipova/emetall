@@ -22,6 +22,35 @@ header {
         &:last-child {
             margin-right: 0;
         }
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+        &__counter {
+            .header__item__img {
+                position: relative;
+                &::before {
+                    content: '2';
+                    border-radius: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #DD0858;
+                    width: fit-content;
+                    padding: 0 2px;
+                    min-width: 13px;
+                    height: 16px;
+                    color: #FFF;
+                    text-align: center;
+                    position: absolute;
+                    top: -6px;
+                    right: 6px;
+                    font-size: 11px;
+                    
+                    font-weight: 600;
+                }
+            }
+        }
     }
     &__indicator {
         display: flex;
@@ -98,7 +127,7 @@ header {
             width: 357px;
             height: 177px;
             padding: 24px;
-            bottom: -206px;
+            bottom: -202px;
             right: 0;
             z-index: 10;
             

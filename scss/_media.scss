@@ -2785,5 +2785,57 @@
         width: 100%;
       }
     }
+    //анкета поставщика
+    &__content {
+      &_whiteBack {
+        background: #fff;
+        padding-top: 20px;
+        padding-bottom: 32px;
+        .profile__title {
+          padding-left: 16px;
+        }
+      }
+    }
+    &__anketa {
+      padding: 0 16px 32px;
+      margin-bottom: 12px;
+      .fs_15 {
+        font-size: 14px;
+      }
+      .lh_167 {
+        line-height: 144%;
+      }
+      .raiting {
+        width: 48px;
+        height: 48px;
+        min-width: 48px;
+        min-height: 48px;
+        &::after {
+          width: 88%;
+          height: 88%;
+
+        }
+      }
+    }
+    &__adress {
+      .fs_15 {
+        font-size: 14px;
+        line-height: 142%;
+      }
+      &__wrap {
+        &:after {
+          background: url(../img/blue_pencil.svg) no-repeat center;
+          background-size: contain;
+        }
+        
+      }
+    }
+    .form__input__serv {
+      &:nth-child(1) {
+        width: 100%;
+        border-right: 1px solid #ddd;
+        border-radius: 6px;
+      }
+    }
   }
 }
