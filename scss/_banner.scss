@@ -1,7 +1,7 @@
 //banner header
 .banner {
     background: #E9F0FC;
-    height: 56px;
+    height: 71px;
     overflow: hidden;
     &__wrap {
         max-width: 1017px;
@@ -12,6 +12,7 @@
         align-items: center;
         gap: 10px;
         height: 100%;
+        padding-top: 17px;
     }
     &__name {
         font-weight: 600;

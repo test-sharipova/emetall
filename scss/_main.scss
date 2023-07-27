@@ -117,14 +117,15 @@
         background: #FFFFFF;
         box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.12);
         border-radius: 15px;
-        padding: 60px 60px 60px 60px;
+        padding: 60px 60px 73px 60px;
         gap: 74px;
+        align-items: flex-start;
     }
     &__link {
         display: block;
         text-decoration: none;
         color: $text-color;
-        margin-bottom: 24px;
+        margin-bottom: 15px;
         &:hover {
             color: $blue;
             transition: all .3s;
@@ -241,15 +242,17 @@
 }
 .about {
     &__content {
-        width: 470px;
+        width: 493px;
+        padding-top: 63px;
         .fs_18 {
             margin: 24px 0;
+            max-width: 471px;
         }
     }
     &__info {
         width: 50%;
         background: radial-gradient(circle at center,  #F5F5F5 0%,#F5F5F5 55%, #fff 55%);
-        padding: 52px;
+        padding: 20px 38px;
     }
     
     &__stick{
@@ -309,12 +312,13 @@
         
     }
     &__wrapper {
-        margin-bottom: 70px;
-        margin-top: 32px;
+        margin-bottom: 74px;
+        margin-top: 27px;
+        align-items: flex-start;
     }
     .center {
         margin: 24px auto 24px;
-        max-width: 772px;
+        max-width: 750px;
     }
     &__item {
         background: #EFF2F7;
@@ -374,12 +378,12 @@
         }
     }
     &__link {
-        margin-bottom: 80px;
+        margin-bottom: 70px;
     }
     &__question {
-        margin: 32px 0;
+        margin: 29px 0;
         border-bottom: 1px solid #F2F2F4;
-        padding-bottom: 21px;
+        padding: 10px 0 0 0;
     }
     summary {
         display: block;
@@ -425,6 +429,10 @@
         &:hover::before {
             background: $blue;
         }
+        &__span {
+            max-width: 744px;
+            display: block;
+        }
     }
 
     details[open] > summary::after {
@@ -434,9 +442,9 @@
     &__person {
         background: #DFECF5;
         border-radius: 15px;
-        padding: 114px 80px;
+        padding: 118px 80px;
         position: relative;
-        margin: 80px 0 100px;
+        margin: 85px 0 100px;
         &__content {
             max-width: 44%;
             display: flex;
@@ -447,6 +455,12 @@
             position: absolute;
             right: 100px;
             bottom: -4px;
+        }
+    }
+    &__block {
+        &__text {
+            max-width: 315px;
+            text-align: center;
         }
     }
 }
