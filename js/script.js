@@ -93,6 +93,8 @@ function consoleBG() {
         console.log('ok');
     });
 
+
+
 //показать календарь
 new AirDatepicker('#calend', {
         isMobile: true,
