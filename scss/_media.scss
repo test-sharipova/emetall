@@ -1011,6 +1011,11 @@
       display: none;
     }
   }
+
+
+  .desktop2 {
+    display: none;
+  }
 }
 @media screen and (max-width: 767px) {
   .container {
@@ -3089,6 +3094,7 @@
       }
       &__item {
         padding: 20px 16px 32px;
+        max-width: 359px;
       }
       &__li {
         max-width: 100%;
