@@ -275,6 +275,9 @@
   }
   &__media {
     &__count {
+      .gray {
+        text-transform: uppercase;
+      }
       .wrapper_start {
         align-items: center;
       }
@@ -470,6 +473,41 @@
   }
   .profile__media__head__stat {
     margin-bottom: 32px;
+  }
+  //табы в моб.версии
+  &__stat {
+    &__tabs {
+      &__caption {
+        display: flex;
+        gap: 12px;
+        list-style-type: none;
+        max-width: 350px;
+        overflow-x: scroll;
+        margin: 32px 0 16px;
+      }
+    }
+    &__tab {
+      padding: 9px 16px;
+      border-radius: 6px;
+      border: 1px solid #DDD;
+      background: #FFF;
+      text-align: center;
+      white-space: nowrap;
+      font-size: 14px;
+      &_active {
+        background: $blue;
+        color: #fff;
+      }
+      &__content {
+        
+          display: none;
+          margin-bottom: 16px;
+          &_active {
+            display: block;
+          }
+        
+      }
+    }
   }
   //страница нет оплаченных баннеров
   &__media {

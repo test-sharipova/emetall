@@ -107,6 +107,18 @@ new AirDatepicker('#calend', {
         moveToOtherMonthsOnSelect: true,
         numberOfMonths: 3
     });
+
+    new AirDatepicker('#calend2', {
+        isMobile: true,
+        autoClose: true,
+        range: true,
+        multipleDatesSeparator: ' - ',
+        showOtherMonths: true,
+        dateFormat: 'dd MMM yy',
+        selectOtherMonths:true,
+        moveToOtherMonthsOnSelect: true,
+        numberOfMonths: 3
+    });
     
 
     //showMore catalog
@@ -133,6 +145,13 @@ selects.forEach(select => {
   });
 });
 
+//страница профиль статистика
+//табы в моб. версии
+$('ul.profile__stat__tabs__caption').on('click', 'li:not(.profile__stat__tab_active)', function() {
+    $(this)
+      .addClass('profile__stat__tab_active').siblings().removeClass('profile__stat__tab_active')
+      .closest('div.profile__stat__tabs').find('div.profile__stat__tab__content').removeClass('profile__stat__tab__content_active').eq($(this).index()).addClass('profile__stat__tab__content_active');
+  });
     
     // promo slider
     $('.promo__slider').slick({

@@ -227,6 +227,11 @@
     align-items: flex-start;
     justify-content: flex-start;
   }
+  .wrapper_end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
   
   
   //products
@@ -645,7 +650,25 @@
       }
       
   }
-  
+  //checkbox
+  .checkbox {
+    display: none;
+    &:checked + .checkbox__mark {
+      background-color: $blue;
+      background-image: url(../img/checked.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      
+    }
+    &__mark {
+      border-radius: 6px;
+      border: 1px solid $blue;
+      width: 24px;
+      height: 24px;
+      display: block;
+      background: #fff;
+    }
+  }
 
 
  

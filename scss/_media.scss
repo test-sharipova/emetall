@@ -1046,9 +1046,7 @@
       padding: 0;
     }
   }
-  .desktop {
-    display: none;
-  }
+  
   .catalog {
     &__search {
       &__img {
@@ -2944,7 +2942,7 @@
     &__table {
       &__row {
         border-radius: 3px;
-        padding: 16px 16px 12px;
+        padding: 16px 16px 8px;
         .fs_14 {
           padding: 0;
           margin-bottom: 16px;
@@ -2981,5 +2979,195 @@
     &__img {
       margin-bottom: 16px;
     }
+    //Статистика профиль
+    &__content {
+      &__history {
+        margin-top: 16px;
+      }
+      &__media {
+        padding: 20px 16px 32px;
+        .btn_black {
+          display: none;
+        }
+        .search__calend {
+          border-radius: 0 6px 6px 0;
+          padding-left: 11px;
+          padding-right: 38px;
+          &__wrap {
+            margin-right: 0;
+            &::before {
+              left: auto;
+              right: 11px;
+            }
+          }
+        }
+      }
+    }
+    &__media {
+      &__wrapper {
+        grid-template-columns: 1fr;
+        width: 100%;
+        row-gap: 20px;
+      }
+      &__count {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .fs_28 {
+          font-size: 16px;
+        }
+        .gray {
+          font-size: 16px;
+          color: $text-color;
+          text-transform: lowercase;
+          &::first-letter {
+            text-transform: uppercase;
+          }
+        }
+        
+        &:nth-child(1) {
+          order: 1;
+        }
+        &:nth-child(2) {
+          order: 3;
+        }
+        &:nth-child(3) {
+          order: 4;
+        }
+        &:nth-child(4) {
+          order: 5;
+        }
+        &:nth-child(5) {
+          order: 2;
+        }
+        &:nth-child(6) {
+          order: 6;
+        }
+        &:nth-child(7) {
+          order: 7;
+        }
+      }
+      &__btns {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        .btn {
+          width: 100%;
+          margin-right: 0;
+          text-align: center;
+        }
+      }
+      &__head {
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+        margin-bottom: 20px;
+        &__stat {
+          flex-direction: row;
+        }
+      }
+      &__select {
+        margin-right: 0;
+        width: 158px;
+      }
+    }
+    &__stat {
+      &__select {
+        select {
+          border-radius: 6px 0px 0px 6px;
+          border: 1px solid #DDD;
+          background: #FFF;
+          padding: 8px 16px;
+          font-size: 14px;
+          height: 38px;
+          width: 143px;
+          &:focus {
+            border: 1px solid $blue;
+            outline: 4px solid #e9effc;
+          }
+        }
+      }
+      &__item {
+        padding: 20px 16px 32px;
+      }
+      &__li {
+        max-width: 100%;
+        grid-template-columns: 24px 1fr 50px 50px;
+      }
+    }
+    &__table {
+      &__stat {
+        .profile__table__row {
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: repeat(4, 1fr);
+          padding-bottom: 16px;
+          grid-template-areas: 
+            'name prise' 
+            'size date'
+            'stal . '
+            'standart . ';
+          
+          .fs_14 {
+            &:nth-child(1) {
+              grid-area: name;
+              font-weight: 600;
+              margin-bottom: 8px;
+            }
+            &:nth-child(2) {
+              grid-area: size;
+              font-weight: 400;
+              &::before {
+                content: 'Размер '
+              }
+              margin-bottom: 8px;
+            }
+            &:nth-child(3) {
+              grid-area: stal;
+              font-weight: 400;
+              &::before {
+                content: 'Сталь '
+              }
+              margin-bottom: 8px;
+              }
+
+            
+            &:nth-child(4) {
+              grid-area: standart;
+              font-weight: 400;
+              &::before {
+                content: 'Стандарт '
+              }
+              margin-bottom: 8px;
+            }
+            &:nth-child(5) {
+              grid-area: prise;
+              font-weight: 400;
+              margin-bottom: 8px;
+              text-align: right;
+            }
+            &:nth-child(6) {
+              grid-area: date;
+              font-size: 12px;
+              color: $gray;
+              font-weight: 400;
+              margin-bottom: 8px;
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+    .wrapper_end {
+      margin-bottom: 11px;
+      
+    }
+  }
+  
+
+
+
+
+  .desktop {
+    display: none;
   }
 }
