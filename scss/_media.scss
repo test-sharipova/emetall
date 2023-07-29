@@ -1016,6 +1016,302 @@
   .desktop2 {
     display: none;
   }
+  .profile {
+    //история проверок профиль
+    &__history {
+      &__wrapper {
+        margin-top: 16px;
+        padding: 24px 16px;
+        gap: 32px;
+        .profile__content__block {
+          padding: 0;
+          box-shadow: none;
+          .fs_15 {
+            font-size: 14px;
+            max-width: 304px;
+          }
+          .lh_167 {
+            line-height: 142%;
+          }
+          .mb_32 {
+            margin-bottom: 16px;
+          }
+          .profile__form {
+            flex-wrap: wrap;
+            gap: 16px;
+            label {
+              width: 100%;
+            }
+            .form__input {
+              width: 100%;
+              max-width: 375px;
+            }
+          }
+          .btn_order {
+            background: #fff;
+            border: 2px solid $blue;
+            width: 100%;
+          }
+        }
+        &:nth-child(2) {
+          padding: 20px 16px 32px;
+          .profile__title {
+            padding: 0 0 20px;
+            margin-bottom: 24px;
+          }
+        }
+      }
+      
+    }
+    &__table {
+      &__row {
+        border-radius: 3px;
+        padding: 16px 16px 8px;
+        .fs_14 {
+          padding: 0;
+          margin-bottom: 16px;
+         
+        }
+      }
+      &__download {
+        padding: 0;
+      }
+    }
+    &__kontur {
+      padding: 24px;
+      img {
+        width: 160px;
+      }
+      .fs_18 {
+        font-size: 16px;
+        max-width: 243px;
+        line-height: 120%;
+      }
+      .fs_15 {
+        font-size: 14px;
+        max-width: 266px;
+      }
+      .lh_167 {
+        line-height: 142%;
+      }
+      .btn {
+        font-size: 14px;
+        font-weight: 400;
+        height: 38px;
+      }
+    }
+    &__img {
+      margin-bottom: 16px;
+    }
+    //Статистика профиль
+    &__content {
+      &__history {
+        margin-top: 16px;
+      }
+      &__media {
+        padding: 20px 16px 32px;
+        .btn_black {
+          display: none;
+        }
+        .search__calend {
+          border-radius: 0 6px 6px 0;
+          padding-left: 11px;
+          padding-right: 38px;
+          &__wrap {
+            margin-right: 0;
+            &::before {
+              left: auto;
+              right: 11px;
+            }
+          }
+        }
+        .profile__title {
+          font-size: 24px;
+          margin-bottom: 0;
+          padding-bottom: 13px;
+          line-height: 130%;
+        }
+        .profile__subtitle {
+          font-size: 20px;
+          line-height: 130%;
+          margin-bottom: 24px;
+        }
+        .mb_40 {
+          margin-bottom: 29px;
+        }
+        .profile__media__wrapper {
+          row-gap: 12px;
+        }
+      }
+    }
+    &__media {
+      &__wrapper {
+        grid-template-columns: 1fr;
+        width: 100%;
+        row-gap: 20px;
+      }
+      &__count {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .fs_28 {
+          font-size: 16px;
+        }
+        .gray {
+          font-size: 16px;
+          color: $text-color;
+          text-transform: lowercase;
+          &::first-letter {
+            text-transform: uppercase;
+          }
+        }
+        
+        &:nth-child(1) {
+          order: 1;
+        }
+        &:nth-child(2) {
+          order: 3;
+        }
+        &:nth-child(3) {
+          order: 4;
+        }
+        &:nth-child(4) {
+          order: 5;
+        }
+        &:nth-child(5) {
+          order: 2;
+        }
+        &:nth-child(6) {
+          order: 6;
+        }
+        &:nth-child(7) {
+          order: 7;
+        }
+      }
+      &__btns {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        .btn {
+          width: 100%;
+          margin-right: 0;
+          text-align: center;
+        }
+      }
+      &__head {
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+        margin-bottom: 20px;
+        &__stat {
+          flex-direction: row;
+        }
+      }
+      &__select {
+        margin-right: 0;
+        width: 158px;
+      }
+    }
+    &__stat {
+      &__select {
+        select {
+          border-radius: 6px 0px 0px 6px;
+          border: 1px solid #DDD;
+          background: #FFF;
+          padding: 8px 16px;
+          font-size: 14px;
+          height: 38px;
+          width: 143px;
+          &:focus {
+            border: 1px solid $blue;
+            outline: 4px solid #e9effc;
+          }
+        }
+      }
+      &__item {
+        padding: 20px 16px 32px;
+        max-width: 359px;
+      }
+      &__li {
+        max-width: 100%;
+        grid-template-columns: 24px 1fr 50px 50px;
+      }
+    }
+    &__table {
+      &__stat {
+        .profile__table__row {
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: repeat(4, 1fr);
+          padding-bottom: 16px;
+          grid-template-areas: 
+            'name prise' 
+            'size date'
+            'stal . '
+            'standart . ';
+          
+          .fs_14 {
+            &:nth-child(1) {
+              grid-area: name;
+              font-weight: 600;
+              margin-bottom: 8px;
+            }
+            &:nth-child(2) {
+              grid-area: size;
+              font-weight: 400;
+              &::before {
+                content: 'Размер '
+              }
+              margin-bottom: 8px;
+            }
+            &:nth-child(3) {
+              grid-area: stal;
+              font-weight: 400;
+              &::before {
+                content: 'Сталь '
+              }
+              margin-bottom: 8px;
+              }
+
+            
+            &:nth-child(4) {
+              grid-area: standart;
+              font-weight: 400;
+              &::before {
+                content: 'Стандарт '
+              }
+              margin-bottom: 8px;
+            }
+            &:nth-child(5) {
+              grid-area: prise;
+              font-weight: 400;
+              margin-bottom: 8px;
+              text-align: right;
+            }
+            &:nth-child(6) {
+              grid-area: date;
+              font-size: 12px;
+              color: $gray;
+              font-weight: 400;
+              margin-bottom: 8px;
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+
+
+    .wrapper_end {
+      margin-bottom: 11px;
+      
+    }
+
+    //медийные баннеры
+    &__subtitle {
+      font-size: 20px;
+      line-height: 130%;
+    }
+  }
 }
 @media screen and (max-width: 767px) {
   .container {
@@ -2898,277 +3194,32 @@
         border-radius: 6px;
       }
     }
-    //история проверок профиль
-    &__history {
-      &__wrapper {
-        margin-top: 16px;
-        padding: 24px 16px;
-        gap: 32px;
-        .profile__content__block {
-          padding: 0;
-          box-shadow: none;
-          .fs_15 {
-            font-size: 14px;
-            max-width: 304px;
-          }
-          .lh_167 {
-            line-height: 142%;
-          }
-          .mb_32 {
-            margin-bottom: 16px;
-          }
-          .profile__form {
-            flex-wrap: wrap;
-            gap: 16px;
-            label {
-              width: 100%;
-            }
-            .form__input {
-              width: 100%;
-              max-width: 375px;
-            }
-          }
-          .btn_order {
-            background: #fff;
-            border: 2px solid $blue;
-            width: 100%;
-          }
-        }
-        &:nth-child(2) {
-          padding: 20px 16px 32px;
-          .profile__title {
-            padding: 0 0 20px;
-            margin-bottom: 24px;
-          }
-        }
-      }
-      
-    }
-    &__table {
-      &__row {
-        border-radius: 3px;
-        padding: 16px 16px 8px;
-        .fs_14 {
-          padding: 0;
-          margin-bottom: 16px;
-         
-        }
-      }
-      &__download {
-        padding: 0;
-      }
-    }
-    &__kontur {
-      padding: 24px;
-      img {
-        width: 160px;
-      }
-      .fs_18 {
-        font-size: 16px;
-        max-width: 243px;
-        line-height: 120%;
-      }
-      .fs_15 {
-        font-size: 14px;
-        max-width: 266px;
-      }
-      .lh_167 {
-        line-height: 142%;
-      }
-      .btn {
-        font-size: 14px;
-        font-weight: 400;
-        height: 38px;
-      }
-    }
-    &__img {
-      margin-bottom: 16px;
-    }
-    //Статистика профиль
-    &__content {
-      &__history {
-        margin-top: 16px;
-      }
-      &__media {
-        padding: 20px 16px 32px;
-        .btn_black {
-          display: none;
-        }
-        .search__calend {
-          border-radius: 0 6px 6px 0;
-          padding-left: 11px;
-          padding-right: 38px;
-          &__wrap {
-            margin-right: 0;
-            &::before {
-              left: auto;
-              right: 11px;
-            }
-          }
-        }
-      }
-    }
-    &__media {
-      &__wrapper {
-        grid-template-columns: 1fr;
-        width: 100%;
-        row-gap: 20px;
-      }
-      &__count {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        .fs_28 {
-          font-size: 16px;
-        }
-        .gray {
-          font-size: 16px;
-          color: $text-color;
-          text-transform: lowercase;
-          &::first-letter {
-            text-transform: uppercase;
-          }
-        }
-        
-        &:nth-child(1) {
-          order: 1;
-        }
-        &:nth-child(2) {
-          order: 3;
-        }
-        &:nth-child(3) {
-          order: 4;
-        }
-        &:nth-child(4) {
-          order: 5;
-        }
-        &:nth-child(5) {
-          order: 2;
-        }
-        &:nth-child(6) {
-          order: 6;
-        }
-        &:nth-child(7) {
-          order: 7;
-        }
-      }
-      &__btns {
-        flex-direction: column;
-        align-items: center;
-        gap: 16px;
-        .btn {
-          width: 100%;
-          margin-right: 0;
-          text-align: center;
-        }
-      }
-      &__head {
-        flex-direction: column;
-        gap: 16px;
-        align-items: flex-start;
-        margin-bottom: 20px;
-        &__stat {
-          flex-direction: row;
-        }
-      }
-      &__select {
-        margin-right: 0;
-        width: 158px;
-      }
-    }
-    &__stat {
-      &__select {
-        select {
-          border-radius: 6px 0px 0px 6px;
-          border: 1px solid #DDD;
-          background: #FFF;
-          padding: 8px 16px;
-          font-size: 14px;
-          height: 38px;
-          width: 143px;
-          &:focus {
-            border: 1px solid $blue;
-            outline: 4px solid #e9effc;
-          }
-        }
-      }
-      &__item {
-        padding: 20px 16px 32px;
-        max-width: 359px;
-      }
-      &__li {
-        max-width: 100%;
-        grid-template-columns: 24px 1fr 50px 50px;
-      }
-    }
-    &__table {
-      &__stat {
-        .profile__table__row {
-          grid-template-columns: 1fr 1fr;
-          grid-template-rows: repeat(4, 1fr);
-          padding-bottom: 16px;
-          grid-template-areas: 
-            'name prise' 
-            'size date'
-            'stal . '
-            'standart . ';
-          
-          .fs_14 {
-            &:nth-child(1) {
-              grid-area: name;
-              font-weight: 600;
-              margin-bottom: 8px;
-            }
-            &:nth-child(2) {
-              grid-area: size;
-              font-weight: 400;
-              &::before {
-                content: 'Размер '
-              }
-              margin-bottom: 8px;
-            }
-            &:nth-child(3) {
-              grid-area: stal;
-              font-weight: 400;
-              &::before {
-                content: 'Сталь '
-              }
-              margin-bottom: 8px;
-              }
-
-            
-            &:nth-child(4) {
-              grid-area: standart;
-              font-weight: 400;
-              &::before {
-                content: 'Стандарт '
-              }
-              margin-bottom: 8px;
-            }
-            &:nth-child(5) {
-              grid-area: prise;
-              font-weight: 400;
-              margin-bottom: 8px;
-              text-align: right;
-            }
-            &:nth-child(6) {
-              grid-area: date;
-              font-size: 12px;
-              color: $gray;
-              font-weight: 400;
-              margin-bottom: 8px;
-              text-align: right;
-            }
-          }
-        }
-      }
-    }
-    .wrapper_end {
-      margin-bottom: 11px;
-      
-    }
+    
   }
   
+//у вас нет неоплаченных баннеров
+.profile {
+  &__media2 {
+    .profile__title {
+      border-bottom: none;
+      padding-bottom: 19px;
+    }
+    .gray {
+      font-size: 16px;
+      margin-bottom: 36px;
+    }
+    .fs_20 {
+      font-size: 16px;
+    }
+    .fs_14 {
+      line-height: 146%;
+      margin-bottom: 14px;
+    }
+    .btn {
+      font-size: 14px;
+    }
+  }
+}
 
 
 
