@@ -8,12 +8,31 @@
     border-radius: 15px;
     background: #fff;
     padding: 28px 32px 30px;
-    margin-bottom: 39px;
+    margin-bottom: 47px;
+    .fs_14 {
+      margin-top: 11px;
+    }
   }
   &__nav {
     width: 340px;
     max-width: 340px;
+    min-width: 340px;
     margin-right: 32px;
+    .header__profile {
+      width: 60px;
+      height: 60px;
+      &__back {
+        &_gray {
+          width: 90%;
+          height: 90%;
+        }
+        &_white {
+          width: 90%;
+          height: 90%;
+        }
+      }
+      
+    }
   }
   &__days {
     margin-top: 8px;
@@ -46,6 +65,7 @@
       text-decoration: none;
       border-radius: 6px;
       transition: all 0.3s;
+      margin-bottom: 7px;
       &:hover {
         background: $blue;
         color: #fff;
@@ -265,6 +285,9 @@
       background: #fff;
       padding: 24px 48px 48px;
       margin-bottom: 16px;
+      &_stat {
+        padding-bottom: 27px;
+      }
       .search__calend {
         margin-right: 24px;
       }
@@ -289,7 +312,7 @@
       width: 214px;
       font-size: 14px;
       padding: 8px 16px 8px;
-      margin: 0 53px 0 0;
+      margin: 0 18px 0 0;
     }
     &__head {
       align-items: center;
@@ -298,12 +321,24 @@
     //статистика
     &__wrapper {
       display: grid;
-      grid-template-columns: repeat(4, 240px);
-      row-gap: 40px;
+      grid-template-columns: 265px 260px 246px 260px;
+      row-gap: 31px;
     }
   }
   &__content {
     &__media {
+      
+      &_p63 {
+        padding-top: 63px;
+        padding-bottom: 49px;
+      }
+      .radio__tabs {
+        margin-right: 13px;
+      }
+      .search__calend {
+        width: 193px;
+        margin-right: 0;
+      }
       .btn {
         font-weight: 400;
         display: block;
@@ -317,6 +352,9 @@
     }
   }
   &__stat {
+    &__category {
+      column-gap: 17px;
+    }
     &__item {
       border-radius: 15px;
       background: #fff;
@@ -421,7 +459,7 @@
       display: grid;
       grid-template-columns: 24px 164px 86px 1fr;
       align-items: center;
-      margin-bottom: 18px;
+      margin-bottom: 13px;
       .fs_14 {
         &:last-child {
           text-align: right;
@@ -472,7 +510,7 @@
     }
   }
   .profile__media__head__stat {
-    margin-bottom: 32px;
+    margin-bottom: 25px;
   }
   //табы в моб.версии
   &__stat {

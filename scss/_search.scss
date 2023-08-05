@@ -1,5 +1,5 @@
 .search {
-    padding-bottom: 100px;
+    padding: 34px 0 100px;
     &__tabs {
         min-width: 260px;
         margin-right: 32px;
@@ -40,7 +40,7 @@
         outline: 1px solid #F2F2F4;
         border-radius: 10px;
         width: 464px;
-        height: 236px;
+        
         transition: all .3s;
         &:hover {
             box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
@@ -53,10 +53,11 @@
                 max-width: 357px;
                 line-height: 21px;
                 display: block;
+                margin-bottom: 9px;
             }
         }
         &__bottom {
-            padding: 24px 40px 24px;
+            padding: 20px 26px 24px 40px;
             display: flex;
             justify-content: space-between;
             .gray {
