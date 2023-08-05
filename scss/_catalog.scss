@@ -1,7 +1,7 @@
 .catalog {
     padding: 32px 0 250px;
     .fs_28 {
-        margin-bottom: 32px;
+        margin-bottom: 34px;
     }
     &__content {
         align-self: flex-start;
@@ -47,8 +47,14 @@
             margin: 0;
             background: #F1F5F8;
             box-shadow: none;
-            
+            line-height: 141%;
             z-index: 1;
+            overflow: hidden;
+            &:nth-child(9), &:nth-child(3) {
+                .product__item__title {
+                    margin-bottom: 0;
+                }
+            }
             &::after {
                 position: absolute;
                 content: '';
@@ -79,7 +85,10 @@
         
         &__item {
             position: relative;
-            
+            margin-bottom: 54px;
+            .fs_18 {
+                margin-bottom: 9px;
+            }
         }
         &__wrap {
             margin-bottom: 32px;
@@ -102,7 +111,7 @@
     .catalogShowMore {
         position: absolute;
         cursor: pointer;
-        bottom: -20px;
+        bottom: -28px;
     }
     .catalogHide {
         position: absolute;
