@@ -11,6 +11,7 @@
     }
 }
 .providerscard {
+    padding-top: 15px;
     &__content {
         width: 100%;
         
@@ -59,10 +60,14 @@
     }
     
     .banners {
-        margin: 50px auto 0;
+        margin: 59px auto 0;
         &__block {
             margin: 0 auto 20px;
         }
+    }
+    .providers__logo {
+        width: 180px;
+        height: 180px;
     }
     &__name {
         margin-left: 48px;
@@ -78,11 +83,11 @@
     &__menu {
         list-style-type: none;
         border-bottom: 1px solid #F2F2F4;
-        margin: 65px 0 32px;
+        margin: 14px 0 30px;
         max-width: 960px;
         &__item {
             height: 41px;
-            margin-right: 47px;
+            margin-right: 67px;
             &_active {
                 border-bottom: 2px solid #212529;
             }
@@ -120,7 +125,7 @@
         max-width: 960px;
         &__item {
             border-bottom: 1px solid #F2F2F4;
-            padding: 16px 0;
+            padding: 18px 0;
             img {
                 margin-right: 12px;
             }
@@ -205,7 +210,7 @@
         &__item {
             border: 1px solid #F2F2F4;
             border-radius: 10px;
-            padding: 18px 24px;
+            padding: 12px 24px;
             margin-bottom: 12px;
             background: #FFFFFF;
             transition: all .3s;
@@ -221,7 +226,10 @@
         max-width: 960px;
         &__item {
             border-bottom: 1px solid #F2F2F4;
-            padding: 32px 0 24px;
+            padding: 32px 0 30px;
+            .fs_16 {
+                max-width: 816px;
+            }
             .checkmark_blue {
                 margin-left: 8px;
             }
@@ -430,6 +438,9 @@
         padding: 16px;
         position: fixed;
         bottom: 65px;
+        width: 100%;
+    }
+    .addincart {
         width: 100%;
     }
     
