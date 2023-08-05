@@ -19,7 +19,7 @@
     font-family: 'Segoe UI', 'Arial', sans-serif;
     color: $text-color;
   }
-  h1 {
+  h1, h2 {
     font-weight: 600;
     margin: 0;
   }
@@ -257,7 +257,7 @@
         font-size: 16px;
         color: $text-color2;
         margin-bottom: 20px;
-        line-height: 141%;
+        
       }
       img {
         display: block;
@@ -514,8 +514,14 @@
     .mt_48 {
       margin-top: 48px;
     }
+    .mb_86 {
+      margin-bottom: 86px;
+    }
     .mb_80 {
       margin-bottom: 80px;
+    }
+    .mb_71 {
+      margin-bottom: 71px;
     }
     .mb_64 {
       margin-bottom: 64px;
@@ -541,6 +547,9 @@
     }
     .mt_32 {
       margin-top: 32px;
+    }
+    .mb_26 {
+      margin-bottom: 26px;
     }
     .mb_24 {
       margin-bottom: 24px;

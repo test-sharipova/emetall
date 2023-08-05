@@ -45,8 +45,19 @@
       background: #FFFFFF;
       box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
       border-radius: 15px;
-      padding: 32px 34px 29px 36px;
+      padding: 35px 34px 29px 35px;
       align-self: flex-start;
+    }
+    .form__wrapper {
+      margin-bottom: 26px;
+     
+    }
+    .form__divider {
+      margin-bottom: 37px;
+    }
+    .btn {
+      margin-right: 7px;
+      padding: 13px 40px 14px;
     }
     &__radio {
       display: none;
@@ -103,7 +114,7 @@
     &__count {
       background: #E9F0FC;
       border-radius: 10px;
-      width: 100%;
+      width: 99%;
       color: $blue;
       padding: 16px 0;
       text-align: center;
@@ -147,7 +158,7 @@
         text-decoration: none;
         color: $text-color;
         display: block;
-        margin: 0 14px 16px 0;
+        margin: 0 14px 20px 0;
         transition: all .3s;
         &:hover {
           background: #E9F0FC;
@@ -158,7 +169,10 @@
       background: #FFFFFF;
       box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.1);
       border-radius: 15px;
-      padding: 40px 48px 46px;
+      padding: 26px 48px 46px;
+      .wrapper_start {
+        margin-right: 51px;
+      }
     }
     &__header {
       width: 100%;
@@ -237,12 +251,17 @@
     gap: 32px;
     margin-top: 32px;
   }
-  padding: 80px 0;
+  padding: 0;
   &__item {
     background: $light;
     border-radius: 12px;
     padding: 51px 56px 50px;
+    width: 49%;
     max-width: 712px;
+    .wrapper_start {
+      align-items: center;
+    }
+    
     &__img {
       background: #FFFFFF;
       box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.12);
@@ -263,7 +282,9 @@
 }
 .catalogFilters3 {
   padding-bottom: 100px;
+  padding-top: 80px;
   .tabs{
+    margin-bottom: 20px;
     &__caption {
       border-radius: 6px;
       
@@ -307,8 +328,8 @@
 .table {
   padding-bottom: 80px;
   &__filters {
-    margin: 20px 0;
-    padding: 16px 0;
+    margin: 20px 0 12px;
+    padding: 13px 0;
     border-bottom: 1px solid #F2F2F4;
   }
   &__filter {
@@ -388,7 +409,7 @@
   }
   &__item {
     background: #F8F8F8;
-    padding: 0 8px 0 12px;
+    padding: 4px 8px 0 12px;
     border-bottom: 1px solid #DFE2E6;
     position: relative;
     &:nth-child(odd) {
@@ -417,11 +438,26 @@
         font-weight: 600;
       }
     }
+   
+    &:hover:not(.table__item_spec) {
+      &::before {
+        content: '';
+      
+        width: 2px;
+        height: 100%;
+        background: $blue;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        
+      }
+    }
   }
   &__row {
     display: flex;
     justify-content: flex-start;
-    height: 44px;
+    height: 40px;
     align-items: center;
     
     
@@ -447,22 +483,86 @@
       width: 30px;
       min-width: 30px;
       position: relative;
+      
+    }
+    &_w38 {
+      width: 38px;
+      min-width: 38px;
+      position: relative;
+      
+    }
+    &_w41 {
+      width: 41px;
+      min-width: 41px;
+      position: relative;
     }
     &_w73 {
       width: 73px;
       min-width: 73px;
     }
+    &_w80 {
+      width: 80px;
+      min-width: 80px;
+    }
+    &_w85 {
+      width: 85px;
+      min-width: 85px;
+    }
+    &_w88 {
+      width: 88px;
+      min-width: 85px;
+    }
     &_w110 {
       width: 110px;
       min-width: 110px;
+    }
+    &_w106 {
+      width: 106px;
+      min-width: 106px;
+    }
+    &_w120 {
+      width: 120px;
+      min-width: 120px;
+    }
+    &_w123 {
+      width: 123px;
+      min-width: 123px;
+    }
+    &_w125 {
+      width: 125px;
+      min-width: 125px;
     }
     &_w137 {
       width: 137px;
       min-width: 137px;
     }
+    &_w142 {
+      width: 142px;
+      min-width: 142px; 
+    }
+    &_w144 {
+      width: 144px;
+      min-width: 144px; 
+    }
+    &_w147 {
+      width: 147px;
+      min-width: 147px; 
+    }
+    &_w158 {
+      width: 158px;
+      min-width: 158px; 
+    }
+    &_w158 {
+      width: 158px;
+      min-width: 158px;
+    }
     &_w165 {
       width: 165px;
       min-width: 165px;
+    }
+    &_w192 {
+      width: 192px;
+      min-width: 192px;
     }
     &_w200 {
       width: 200px;
@@ -471,6 +571,10 @@
     &_w235 {
       width: 235px;
       min-width: 235px;
+    }
+    &_w246 {
+      width: 246px;
+      min-width: 246px;
     }
   }
   &__note {
@@ -484,7 +588,9 @@
     left: 15px;
     z-index: 11;
     opacity: 0;
-    
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
     transition: all .3s;
     .wrapper_start {
       margin-bottom: 12px;
@@ -506,12 +612,13 @@
       }
     }
   }
-  &__td_w30 {
+  &__td_w38 {
     &:hover .table__note {
       width: 357px;
       height: 263px;
       opacity: 1;
       display: block;
+      clip: inherit;
     }
   }
   &__note {
