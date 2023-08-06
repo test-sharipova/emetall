@@ -30,6 +30,7 @@
         padding: 12px 16px;
         text-decoration: none;
         transition: all .3s;
+        line-height: 131%;
         &:hover {
             color: $blue;
         }
@@ -37,19 +38,22 @@
     .catalog__search__input::placeholder {
         color: #9295AE;
     }
+    .catalog__search {
+        margin-bottom: 43px;
+    }
     //марочник2
     &__th {
         display: grid;
-        grid-template-columns: 168px 180px 1fr;
-        gap: 0 47px;
-        font-weight: 600;
-        border-bottom: 1px solid #F2F2F4;
-        padding-bottom: 20px;
-        margin-top: 40px;
+    grid-template-columns: 119px 143px 1fr;
+    gap: 0 47px;
+    font-weight: 600;
+    border-bottom: 1px solid #f2f2f4;
+    padding-bottom: 20px;
+    margin-top: 44px;
     }
     &__link {
         display: grid;
-        grid-template-columns: 168px 180px 1fr;
+        grid-template-columns: 119px 143px 1fr;
         gap: 0 47px;
         align-items: center;
         padding: 13px 0;
@@ -95,13 +99,13 @@
         background: #E9F0FC;
         width: 262px;
         height: 147px;
-        padding: 23px 36px 20px;
+        padding: 28px 36px 20px;
         margin-right: 40px;
     }
     &__wrapper {
         &_start {
             align-items: center;
-            margin-bottom: 48px;
+            margin-bottom: 52px;
         }
     }
     &__name {
@@ -113,7 +117,10 @@
         }
     }
     &__block {
-        margin-bottom: 48px;
+        margin-bottom: 55px;
+        &_mb67 {
+            margin-bottom: 67px;
+        }
         .btn_small {
             background: $blue;
             color: #fff;
@@ -122,13 +129,21 @@
             gap: 12px;
         }
     }
+    &__th {
+        &_mt34 {
+            margin-top: 34px;
+        }
+    }
+    &__list {
+        margin-bottom: 35px;
+    }
     .article__table {
         &__item {
             flex-grow: 1;
         }
     }
     &__value {
-        margin-top: 49px;
+        margin-top: 34px;
         display: grid;
         grid-template-columns: 66px 1fr;
         gap: 6px 0;

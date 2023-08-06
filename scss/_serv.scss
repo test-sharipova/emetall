@@ -1,6 +1,6 @@
 //сервисы
 .serv {
-    padding: 34px 0 105px;
+    padding: 0px 0 105px;
     &__wrapper {
         flex-wrap: wrap;
         gap: 32px;
@@ -37,7 +37,7 @@
         }
     }
     &__img {
-        margin-bottom: 27px;
+        margin-bottom: 22px;
         height: 35px;
         img {
             max-width: 100%;

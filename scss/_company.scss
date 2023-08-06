@@ -11,6 +11,7 @@
         font-weight: 600;
         font-size: 60px;
         line-height: 60px;
+        margin-bottom: 34px;
         span {
             background: $blue;
             color: #fff;
@@ -21,7 +22,7 @@
         }
     }
     &__img {
-        width: 43%;
+        width: 48%;
         position: absolute;
         right: 156px;
         bottom: 0;
@@ -30,7 +31,7 @@
     }
 }
 .companyAbout {
-    padding: 57px 0 97px;
+    padding: 78px 0 97px;
     &__item {
         width: 33%;
         &__img {
@@ -47,6 +48,8 @@
     }
     &__wrapper {
         align-items: flex-start;
+        justify-content: flex-start;
+        column-gap: 28px;
     }
 }
 .companyMission {
@@ -59,7 +62,7 @@
         width: 70%;
         max-width: 662px;
         color: #fff;
-        padding: 154px 0 169px;
+        padding: 146px 0 169px;
         position: relative;
         z-index: 2;
     }
@@ -71,7 +74,7 @@
     }
 }
 .companyHistory {
-    padding: 106px 0 73px;
+    padding: 106px 0 123px;
     &__item {
         padding: 38px 80px 64px 34px;
         border-top: 1px dashed #212529;
@@ -192,7 +195,7 @@
     }
 }
 .companySupport {
-    padding: 73px 0 50px;
+    padding: 85px 0 50px;
     &__item {
         width: 32%;
         height: 146px;
@@ -209,14 +212,16 @@
     }
 }
 .companyParty {
-    padding: 50px 0 120px;
+    padding: 26px 0 120px;
     &__wrapper {
         align-items: flex-start;
-        
+        justify-content: flex-start;
+    column-gap: 30px;
     }
     &__item {
         width: 33%;
         &__img {
+            max-width: 382px;
             img {
                 width: 100%;
             }

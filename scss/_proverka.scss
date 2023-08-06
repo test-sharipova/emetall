@@ -1,5 +1,5 @@
 .proverka {
-    padding: 24px 0 120px;
+    padding: 17px 0 120px;
     background: #F2F2F4;
     .center {
         display: flex;
@@ -14,12 +14,12 @@
         max-width: 588px;
        
         &__top {
-            padding: 44px 48px 29px;
+            padding: 48px 48px 29px;
             border-bottom: 1px solid #E1E1E1;
             height: 236px;
         }
         &__bottom {
-            padding: 24px 48px 40px;
+            padding: 28px 48px 40px;
             .wrapper_start {
                 align-items: center;
             }
@@ -34,6 +34,11 @@
                     transform: translateY(-50%);
                 }
             }
+        }
+    }
+    &__wrapper {
+        &_start {
+            column-gap: 54px;
         }
     }
     &__price {

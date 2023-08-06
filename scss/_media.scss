@@ -2255,6 +2255,9 @@
       }
       &__content {
         order: 2;
+        .title_36 {
+          margin-top: 0;
+        }
       }
       &__img {
         order: 1;
@@ -2793,6 +2796,15 @@
       .btn {
         font-size: 14px;
       }
+    }
+    &__text{
+      .fs_28 {
+        font-size: 19px;
+        font-weight: 600;
+    }
+    .mb_40, .mb_32 {
+        margin-bottom: 24px;
+    }
     }
   }
   .marochnik {

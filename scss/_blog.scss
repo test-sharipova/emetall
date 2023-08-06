@@ -104,7 +104,7 @@
         display: flex;
         gap: 64px 32px;
         flex-wrap: wrap;
-        margin-bottom: 64px;
+        margin-bottom: 40px;
         // display: grid;
         // grid-template-columns: repeat(4, 278px);
         &__item {
@@ -115,6 +115,7 @@
             }
             &_587 {
                 width: 587px;
+                margin-bottom: 8px;
             }
         }
     }
@@ -136,6 +137,7 @@
         background-size: cover;
         padding: 62px 64px;
         color: #fff;
+        letter-spacing: .25px;
         &__content {
             max-width: 588px;
         }
