@@ -92,7 +92,7 @@
       border: 1px solid #ddd;
       width: 280px;
       height: 44px;
-      margin-bottom: 8px;
+      margin-bottom: 12px;
       &:focus {
         border: 1px solid $blue;
       }
@@ -104,10 +104,14 @@
     font-weight: 600;
     border-bottom: 1px solid #ebebeb;
     margin-bottom: 40px;
+    &_pt30 {
+      padding-top: 30px;
+    }
+    
   }
   &__data {
     padding: 0 48px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 
     .wrapper_start {
       gap: 24px;
@@ -132,6 +136,10 @@
   &__bottom {
     padding: 24px 48px;
     border-top: 1px solid #ebebeb;
+    .btn {
+      width: 151px;
+      height: 50px;
+    }
   }
   &__input {
     &__label {
@@ -161,17 +169,27 @@
       .profile__title {
         padding: 0 0 24px;
         margin-bottom: 31px;
+        &_mb48 {
+          margin-bottom: 48px;
+        }
+        &_pl16 {
+          padding-left: 16px;
+          
+        }
       }
     }
     &__block {
       width: 50%;
       max-width: 506px;
-      padding: 32px 32px 41px;
+      padding: 35px 32px 41px;
       border-radius: 10px;
       background: #fff;
       box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.12);
       .fs_15 {
         max-width: 410px;
+      }
+      .form__input {
+        width: 280px;
       }
     }
   }
@@ -180,7 +198,7 @@
     max-width: 458px;
     border-radius: 10px;
     background: #e9f0fc;
-    padding: 38px 32px 32px;
+    padding: 42px 32px 32px;
     .btn {
       background: #33364e;
       font-weight: 400;
@@ -195,7 +213,7 @@
       padding: 48px;
       gap: 24px;
       &:nth-child(2) {
-        padding: 32px 48px 32px 32px;
+        padding: 26px 48px 32px 32px;
         margin-top: 16px;
         display: block;
       }
