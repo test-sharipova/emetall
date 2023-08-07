@@ -15,10 +15,13 @@ header {
         
     }
     &__item {
-        margin: 0 20px 0 23px;
+        margin: 0 20px 0 26px;
         text-align: center;
         text-decoration: none;
         position: relative;
+        &:first-child {
+            margin-right: 9px;
+        }
         &:last-child {
             margin-right: 0;
         }
