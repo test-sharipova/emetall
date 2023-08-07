@@ -20,7 +20,7 @@
         
     }
     &__text {
-        margin: 16px 0 30px;
+        margin: 19px 0 37px;
 
     }
     &__btn {
@@ -112,7 +112,7 @@
 }
 
 .choise {
-    padding: 0 0 60px;
+    padding: 0 0 59px;
     &__wrapper {
         background: #FFFFFF;
         box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.12);
@@ -152,6 +152,7 @@
     }
     &__links {
         flex-grow: 1;
+        padding-top: 6px;
     }
 }
 
@@ -243,7 +244,7 @@
 .about {
     &__content {
         width: 493px;
-        padding-top: 63px;
+        padding-top: 61px;
         .fs_18 {
             margin: 24px 0;
             max-width: 471px;
@@ -312,12 +313,15 @@
         
     }
     &__wrapper {
-        margin-bottom: 74px;
+        margin-bottom: 76px;
         margin-top: 27px;
         align-items: flex-start;
+        &2 {
+            margin-bottom: 56px;
+        }
     }
     .center {
-        margin: 24px auto 24px;
+        margin: 24px auto 28px;
         max-width: 750px;
     }
     &__item {
@@ -338,7 +342,7 @@
         }
     }
     &__img {
-        margin-right: 35px;
+        margin-right: 32px;
         width: 82px;
         height: 82px;
         min-width: 82px;
@@ -353,10 +357,10 @@
         background: #EFF2F7;
         border-radius: 12px;
         min-width: 583px;
-        padding: 40px 57px 0px;
+        padding: 44px 57px 0px;
         display: flex;
         flex-direction: column;
-        
+        margin-bottom: -5px;
         align-items: center;
         gap: 16px;
         &__img {
@@ -378,10 +382,10 @@
         }
     }
     &__link {
-        margin-bottom: 70px;
+        margin-bottom: 50px;
     }
     &__question {
-        margin: 29px 0;
+        margin: 38px 0 0;
         border-bottom: 1px solid #F2F2F4;
         padding: 10px 0 0 0;
     }
@@ -396,7 +400,7 @@
         font-weight: 600;
         font-size: 24px;
         line-height: 32px;
-        margin-bottom: 24px;
+        margin-bottom: 17px;
         cursor: pointer;
         padding-right: 40px;
         &::after {
@@ -442,9 +446,9 @@
     &__person {
         background: #DFECF5;
         border-radius: 15px;
-        padding: 118px 80px;
+        padding: 121px 76px;
         position: relative;
-        margin: 85px 0 100px;
+        margin: 85px 0 97px;
         &__content {
             max-width: 44%;
             display: flex;
@@ -453,14 +457,18 @@
         }
         &__img {
             position: absolute;
-            right: 100px;
-            bottom: -4px;
+            right: 109px;
+            bottom: 0px;
+            img {
+                display: block;
+            }
         }
     }
     &__block {
         &__text {
             max-width: 315px;
             text-align: center;
+            line-height: 129%;
         }
     }
 }

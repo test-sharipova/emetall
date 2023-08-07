@@ -31,7 +31,7 @@
         background: #FFFFFF;
         box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
         border-radius: 5px;
-        padding: 27px 24px 16px;
+        padding: 23px 24px 16px;
         &__subtitle {
             max-width: 309px;
             padding: 2px 14px;
@@ -57,6 +57,9 @@
         .divider {
             margin: 29px 0 18px;
         }
+    }
+    .cart__quantity__count {
+        margin-right: 33px;
     }
     
     .banners {
@@ -172,7 +175,7 @@
         border-radius: 8px;
         padding: 8px 14px;
         position: relative;
-        margin-bottom: 12px;
+        margin-bottom: 17px;
         cursor: pointer;
         &:before {
             content: '';
@@ -206,7 +209,7 @@
     }
     &__serv {
         max-width: 960px;
-        margin-bottom: 60px;
+        margin-bottom: 66px;
         &__item {
             border: 1px solid #F2F2F4;
             border-radius: 10px;
