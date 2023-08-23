@@ -1,7 +1,7 @@
 //banner header
 .banner {
     background: #E9F0FC;
-    height: 71px;
+    height: 56px;
     overflow: hidden;
     &__wrap {
         max-width: 1017px;
@@ -12,19 +12,20 @@
         align-items: center;
         gap: 10px;
         height: 100%;
-        padding-top: 17px;
+        
     }
     &__name {
-        font-weight: 600;
+        font-weight: 700;
         font-size: 18px;
-        border-right: 1px solid $text-color;
-        height: 24px;
+        border-right: 2px solid $text-color;
+        
         padding-right: 5px;
     }
     &__date {
-        padding-left: 5px;
-        font-size: 18px;
-        height: 24px;
+      padding-left: 0px;
+      font-size: 18px;
+      height: 24px;
+      padding-top: 2px;
     }
     &__btn {
         font-weight: 400;
@@ -35,7 +36,7 @@
         padding: 7px 16px;
         border: 1px solid rgba(33, 37, 41, .3);
         border-radius: 30px;
-        margin-left: 30px;
+        margin-left: 43px;
         &:hover {
             opacity: .5;
         }
@@ -46,9 +47,13 @@
     }
     &__cup {
         transform: rotate(-15deg) translateY(10px);
+        display: block;
+        margin-left: -18px;
     }
     &__logo {
         width: 109px;
+        display: block;
+        margin-left: -9px;
     }
 }
 //banner block

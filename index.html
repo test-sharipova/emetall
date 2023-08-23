@@ -37,7 +37,7 @@
             </div>
             <a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
             <a href="#" class="header__phone mobile"><img src="img/phone.svg" alt="phone"></a>
-        <a href="#" class="btn showCatalog">
+        <a href="#" class="btn btn_44 fw_600 showCatalog">
            <div class="btn__burger">
             <span></span>
             <span></span>
@@ -55,7 +55,7 @@
                 <p class="header__text">пользователей</p>
             </div>
             <div class="header__indicator__item">
-                <p class="header__indicator__number">3МЛН+</p>
+                <p class="header__indicator__number"><img src="img/header-icon3mln.svg" alt="3 млн +"></p>
                 <p class="header__text">позиций товаров</p>
             </div>
         </div>
@@ -111,9 +111,9 @@
             
             <div class="header__place">
                 <img src="img/place.svg" alt="place"> 
-                <p class="cart__text cart__text_14">Санкт-Петербург</p>
+                <p class="fs_14">Санкт-Петербург</p>
                 <div class="header__place__quest hide">
-                    <p class="fs_16 fw_600 mb_8">Ваш город – Санкт-Петербург?</p>
+                    <p class="fs_16 fw_600 mb_8 lh_156">Ваш город – Санкт-Петербург?</p>
                     <p class="fs_14 mb_16">Выбор города впервую очень важен для 
                         фильтрации металлобаз по удаленности от вас.</p>
                     <div class="wrapper_start">
@@ -2690,15 +2690,42 @@
                             <p class="text promo__text">
                                 Актуальное наличие металла без посредников
                             </p>
-                            <div class="btn promo__btn">Зарегистрироваться</div>
+                            <button type="button" class="btn btn_50 promo__btn">Зарегистрироваться</button>
                         </div>
                         <div class="promo__img">
                             <img src="img/promo_img.png" alt="promo">
                         </div>
                     </div>
                 </div>
-                <div>your content</div>
-                <div>your content</div>
+                <div>
+                    <div class="wrapper promo__wrapper">
+                        <div class="promo__content">
+                           <h1 class="promo__title"> Видеообзоры металлобаз</h1>
+                            <p class="text promo__text">
+                                Актуальное наличие металла без посредников
+                            </p>
+                            <div class="btn promo__btn">Зарегистрироваться</div>
+                        </div>
+                        <div class="promo__img">
+                            <img src="img/advertaisers/advBlog_img.png" alt="promo">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="wrapper promo__wrapper">
+                        <div class="promo__content">
+                           <h1 class="promo__title">Новый канал продаж металлопроката</h1>
+                            <p class="text promo__text">
+                                Актуальное наличие металла без посредников
+                            </p>
+                            <div class="btn promo__btn">Зарегистрироваться</div>
+                        </div>
+                        <div class="promo__img">
+                            <img src="img/about/about_img7.png" alt="promo">
+                        </div>
+                    </div>
+                </div>
+                
               </div>
         </div>
     </section>
@@ -2799,48 +2826,51 @@
                         <p class="subtitle fs_14 gray choise__subtitle">3 921 872 предложений от 704 металлобаз со всей России</p>
                         <form class="choise__form" action="#">
                             <label for="chapter" class="label">Раздел</label>
-                            <select name="chapter" id="chapter" class="form__input">
-                                <option value="Арматура">Арматура</option>
-                                <option value="Балка">Балка</option>
-                                <option value="Баллоны">Баллоны</option>
-                                <option value="Дробь">Дробь</option>
-                                <option value="Заглушки">Заглушки</option>
-                                <option value="Задвижки">Задвижки</option>
-                                <option value="Катанка">Катанка</option>
-                                <option value="Квадрат">Квадрат</option>
-                                <option value="Краны 
-                                шаровые">Краны 
-                                    шаровые</option>
-                                <option value="Круг">Круг</option>
-                                <option value="Лента и штрипс">Лента и штрипс</option>
-                                <option value="Металло-
-                                черепица">Лист</option>
-                                <option value="Лист">Металло-
-                                    черепица</option>
-                                <option value="Отводы">Отводы</option>
-                                <option value="Переходы">Переходы</option>
-                                <option value="Поковка">Поковка</option>
-                                <option value="Полоса">Полоса</option>
-                                <option value="Проволока">Проволока</option>
-                                <option value="Профнастил">Профнастил</option>
-                                <option value="Рельсы">Рельсы</option>
-                                <option value="Рулоны">Рулоны</option>
-                                <option value="Сетка">Сетка</option>
-                                <option value="Слитки">Слитки</option>
-                                <option value="Сэндвич-
-                                панели">Сэндвич-
-                                панели</option>
-                                <option value="Тройники">Тройники</option>
-                                <option value="Труба">Труба</option>
-                                <option value="Уголок">Уголок</option>
-                                <option value="Фланцы">Фланцы</option>
-                                <option value="Чушки">Чушки</option>
-                                <option value="Швеллер">Швеллер</option>
-                                <option value="Шестигранник">Шестигранник</option>
-                                <option value="Шина">Шина</option>
-                                <option value="Электроды">Электроды</option>
-    
-                            </select>
+                            
+                                <select name="chapter" id="chapter" class="form__input">
+                                    <option value="Арматура">Арматура</option>
+                                    <option value="Балка">Балка</option>
+                                    <option value="Баллоны">Баллоны</option>
+                                    <option value="Дробь">Дробь</option>
+                                    <option value="Заглушки">Заглушки</option>
+                                    <option value="Задвижки">Задвижки</option>
+                                    <option value="Катанка">Катанка</option>
+                                    <option value="Квадрат">Квадрат</option>
+                                    <option value="Краны 
+                                    шаровые">Краны 
+                                        шаровые</option>
+                                    <option value="Круг">Круг</option>
+                                    <option value="Лента и штрипс">Лента и штрипс</option>
+                                    <option value="Металло-
+                                    черепица">Лист</option>
+                                    <option value="Лист">Металло-
+                                        черепица</option>
+                                    <option value="Отводы">Отводы</option>
+                                    <option value="Переходы">Переходы</option>
+                                    <option value="Поковка">Поковка</option>
+                                    <option value="Полоса">Полоса</option>
+                                    <option value="Проволока">Проволока</option>
+                                    <option value="Профнастил">Профнастил</option>
+                                    <option value="Рельсы">Рельсы</option>
+                                    <option value="Рулоны">Рулоны</option>
+                                    <option value="Сетка">Сетка</option>
+                                    <option value="Слитки">Слитки</option>
+                                    <option value="Сэндвич-
+                                    панели">Сэндвич-
+                                    панели</option>
+                                    <option value="Тройники">Тройники</option>
+                                    <option value="Труба">Труба</option>
+                                    <option value="Уголок">Уголок</option>
+                                    <option value="Фланцы">Фланцы</option>
+                                    <option value="Чушки">Чушки</option>
+                                    <option value="Швеллер">Швеллер</option>
+                                    <option value="Шестигранник">Шестигранник</option>
+                                    <option value="Шина">Шина</option>
+                                    <option value="Электроды">Электроды</option>
+        
+                                </select>
+                               
+                            
                             <label for="chapter2" class="label">Подраздел</label>
                             <select name="chapter2" id="chapter2" class="form__input">
                                 <option value="Арматура">ППУ</option>
@@ -2852,7 +2882,7 @@
                                 
     
                             </select>
-                            <a href="catalog-filter.html" class="btn choise__btn">Показать &nbsp; <span>2 618 </span> &nbsp;предложений</a>
+                            <a href="catalog-filter.html" class="btn btn_50 fw_600 choise__btn">Показать &nbsp; <span>2 618 </span> &nbsp;предложений</a>
                         </form>
                     </div>
                     <div class="wrapper choise__links">
@@ -3046,7 +3076,7 @@
                 
                 <div class="about__info about__info2">
                    <div class="about__raiting">
-                        <div class="wrapper">
+                        <div class="wrapper mb_28">
                             <div>
                                 <p class="fs_18 fw_600">Рейтинг поставщика</p>
                                 <p class="fs_14 gray">133 отзыва</p>
@@ -3076,7 +3106,7 @@
                         </div>
                    </div> 
                    <div class="about__raiting about__raiting_hidden">
-                    <div class="wrapper">
+                    <div class="wrapper mb_28">
                         <div>
                             <p class="fs_18 fw_600">Рейтинг поставщика</p>
                             <p class="fs_14 gray">133 отзыва</p>
@@ -3108,7 +3138,7 @@
                    
                 </div>
                 <div class="about__content about__content2">
-                    <h2 class="title_36">Только проверенные поставщики</h2>
+                    <h2 class="title_36 mt_30">Только проверенные поставщики</h2>
                     <p class="fs_18 desktop">Собственный регламент проверки поставщиков позволяет избежать попадания в базу посредников и размещать на сервисе только металлотрейдеров с собственным складским наличием и производителей.</p>
                     <p class="fs_18 mobile">Размещаем на сервисе только металлотрейдеров с собственным складским наличием и производителей.</p>
 
@@ -3208,7 +3238,7 @@
                             </svg>
                             
                     </div>
-                    <p class="fs_18 fw_600">Калькулятор
+                    <p class="fs_18 fw_600">Калькулятор <br>
                         металла</p>
                     
                 </div>
@@ -3270,7 +3300,7 @@
                     <p class="fs_16 about__block__text">Дополнительные рекламные 
                         возможности площадки</p>
                     <a href="#" class="blue fs_18">Рекламодателям</a>
-                    <div class="about__block__img">
+                    <div class="about__block__img mr_30">
                         <img src="img/about/about_img8.png" alt="emetall">
                     </div>
                 </div>

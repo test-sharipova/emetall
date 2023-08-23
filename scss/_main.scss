@@ -20,17 +20,22 @@
         
     }
     &__text {
-        margin: 19px 0 37px;
-        letter-spacing: 1.1px;
+        margin: 19px 0 33px;
+        font-size: 18px;
     }
     &__btn {
         padding: 12px 32px;
+        font-weight: 600;
     }
     &__img {
         width: 656px;
         min-width: 656px;
         img {
+            
             width: 100%;
+            height: 400px;
+            object-fit: contain;
+            object-position: bottom;
         }
     }
     &__wrapper {
@@ -141,7 +146,7 @@
         padding-right: 60px;
     }
     &__subtitle {
-        margin: 12px 0 32px;
+        margin: 12px 0 34px;
         line-height: 180%;
     }
     &__form {
@@ -154,6 +159,15 @@
         flex-grow: 1;
         padding-top: 6px;
     }
+    select {
+        appearance: none;
+        background-image: url(../img/form_arrow.svg);
+        background-repeat: no-repeat;
+        background-position: center right 15px;
+        height: 38px;
+        margin-bottom: 26px; 
+      }
+     
 }
 
 .spec {
@@ -162,7 +176,7 @@
         position: relative;
         background: #EFF2F6;
         border-radius: 12px;
-        padding: 16px 28px;
+        padding: 19px 25px;
         flex-grow: 1;
         max-width: 464px;
         min-width: 332px;
@@ -196,12 +210,17 @@
     &__oldPrice {
         text-decoration: line-through;
         margin: 7px 0 6px;
+        line-height: 100%;
     }
     &__newPrice {
         background: #DD0858;
         width: fit-content;
-        padding: 4px 6px;
+        
         color: #FFFFFF;
+        font-size: 20px;
+        font-weight: 600;
+        
+        margin-top: 8px;
     }
 }
 
@@ -254,6 +273,9 @@
         width: 50%;
         background: radial-gradient(circle at center,  #F5F5F5 0%,#F5F5F5 55%, #fff 55%);
         padding: 20px 38px;
+        &2 {
+            margin: -8px 0 12px -42px;
+        }
     }
     
     &__stick{
@@ -288,7 +310,10 @@
         position: relative;
         z-index: 1;
         &__item {
-            margin-bottom: 22px;
+            margin-bottom: 27px;
+            .fs_14 {
+                line-height: 100%;
+            }
         }
         &__line {
             margin-top: 10px;
@@ -363,6 +388,7 @@
         margin-bottom: -5px;
         align-items: center;
         gap: 16px;
+        margin-bottom: 6px;
         &__img {
             margin-bottom: -3px;
         }
@@ -388,6 +414,9 @@
         margin: 38px 0 0;
         border-bottom: 1px solid #F2F2F4;
         padding: 10px 0 0 0;
+        .fs_18 {
+            padding: 0 60px 24px 0;
+        }
     }
     summary {
         display: block;
