@@ -94,6 +94,7 @@
       }
     }
     &_small {
+      height: 24px;
       background: #FFFFFF;
       border-radius: 5px;
       color: #007BFF;
@@ -389,6 +390,9 @@
   .lh_139 {
     line-height: 139%;
   }
+  .lh_norm {
+    line-height: normal;
+  }
   //form
   input[type="number"]::-webkit-outer-spin-button,
   input[type="number"]::-webkit-inner-spin-button {
@@ -568,6 +572,9 @@
     }
     .mb_46 {
       margin-bottom: 46px;
+    }
+    .mb_44 {
+      margin-bottom: 44px;
     }
     .mb_42 {
       margin-bottom: 42px;

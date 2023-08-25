@@ -53,11 +53,13 @@
       align-self: flex-start;
     }
     .form__wrapper {
-      margin-bottom: 26px;
-     
+      margin-bottom: 32px;
+     &_mb22 {
+      margin-bottom: 22px;
+     }
     }
     .form__divider {
-      margin-bottom: 37px;
+      margin-bottom: 17px;
     }
     .btn {
       margin-right: 7px;
@@ -77,6 +79,7 @@
     }
     &__banners {
       align-self: flex-start;
+      margin-right: 15px;
     }
     &__banner {
       &>img {
@@ -123,6 +126,8 @@
       padding: 16px 0;
       text-align: center;
       margin-top: 36px;
+      line-height: normal;
+      height: 51px;
       img {
         margin-right: 8px;
       }
@@ -148,6 +153,7 @@
     &__text {
       max-width: 579px;
       align-self: flex-start;
+      margin-bottom: 24px;
     }
     &__img {
       align-self: flex-start;
@@ -162,8 +168,9 @@
         text-decoration: none;
         color: $text-color;
         display: block;
-        margin: 0 14px 20px 0;
+        margin: 0 14px 16px 0;
         transition: all .3s;
+        line-height: normal;
         &:hover {
           background: #E9F0FC;
         }
@@ -173,9 +180,10 @@
       background: #FFFFFF;
       box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.1);
       border-radius: 15px;
-      padding: 26px 48px 46px;
+      padding: 40px 48px 46px;
       .wrapper_start {
-        margin-right: 51px;
+        margin-right: 30px;
+        gap: 4px;
       }
     }
     &__header {
@@ -201,6 +209,9 @@
     font-size: 36px;
     line-height: 36px;
     }
+    .labelRadio {
+      margin-top: 2px;
+    }
 }
 //radio buttons
 .labelRadio {
@@ -211,6 +222,8 @@
   font-weight: 400;
   font-size: 14px;
   position: relative;
+  height: 38px;
+  line-height: normal;
   &::after {
     content: '';
     position: absolute;
@@ -251,6 +264,9 @@
   
 }
 .catalogFilters2 {
+  h2 {
+    line-height: normal;
+  }
   &__wrapper {
     gap: 32px;
     margin-top: 32px;
@@ -262,6 +278,9 @@
     padding: 51px 56px 50px;
     width: 49%;
     max-width: 712px;
+    .fs_18 {
+      line-height: normal;
+    }
     .wrapper_start {
       align-items: center;
     }
@@ -279,16 +298,19 @@
       }
     }
     .blue {
-      margin-top: 13px;
+      margin-top: 16px;
       display: block;
     }
   }
 }
 .catalogFilters3 {
+  .fs_28 {
+    line-height: normal;
+  }
   padding-bottom: 100px;
   padding-top: 80px;
   .tabs{
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     &__caption {
       border-radius: 6px;
       
@@ -332,7 +354,7 @@
 .table {
   padding-bottom: 80px;
   &__filters {
-    margin: 20px 0 12px;
+    margin: 24px 0 12px;
     padding: 13px 0;
     border-bottom: 1px solid #F2F2F4;
   }
@@ -413,7 +435,7 @@
   }
   &__item {
     background: #F8F8F8;
-    padding: 4px 8px 0 12px;
+    padding: 3px 8px 0 12px;
     border-bottom: 1px solid #DFE2E6;
     position: relative;
     &:nth-child(odd) {
@@ -440,6 +462,9 @@
       }
       .table__td {
         font-weight: 600;
+        .btn_small {
+          font-weight: 400;
+        }
       }
     }
    
@@ -469,6 +494,7 @@
   &__header {
     background: #fff;
     padding: 0 8px 0 14px;
+    margin-bottom: 8px;
   }
   &__th {
     font-weight: 600;
@@ -489,9 +515,9 @@
       position: relative;
       
     }
-    &_w38 {
-      width: 38px;
-      min-width: 38px;
+    &_w35 {
+      width: 35px;
+      min-width: 35px;
       position: relative;
       
     }
@@ -520,25 +546,30 @@
       width: 110px;
       min-width: 110px;
     }
-    &_w106 {
-      width: 106px;
-      min-width: 106px;
+    &_w109 {
+      width: 109px;
+      min-width: 109px;
     }
     &_w120 {
       width: 120px;
       min-width: 120px;
     }
-    &_w123 {
-      width: 123px;
-      min-width: 123px;
+    &_w121 {
+      width: 121px;
+      min-width: 121px;
+    }
+    &_w119 {
+      width: 119px;
+      min-width: 119px;
     }
     &_w125 {
       width: 125px;
       min-width: 125px;
     }
-    &_w137 {
-      width: 137px;
-      min-width: 137px;
+   
+    &_w141 {
+      width: 141px;
+      min-width: 141px;
     }
     &_w142 {
       width: 142px;
@@ -556,9 +587,9 @@
       width: 158px;
       min-width: 158px; 
     }
-    &_w158 {
-      width: 158px;
-      min-width: 158px;
+    &_w162 {
+      width: 162px;
+      min-width: 162px;
     }
     &_w165 {
       width: 165px;
@@ -572,9 +603,9 @@
       width: 200px;
       min-width: 200px;
     }
-    &_w235 {
-      width: 235px;
-      min-width: 235px;
+    &_w245 {
+      width: 245px;
+      min-width: 245px;
     }
     &_w246 {
       width: 246px;
@@ -616,7 +647,7 @@
       }
     }
   }
-  &__td_w38 {
+  &__td_w35 {
     &:hover .table__note {
       width: 357px;
       height: 263px;
@@ -636,6 +667,7 @@
   }
   
   &__metallobaza {
+    color: $link;
     .table__btns {
       width: 0;
       height: 0;
@@ -647,7 +679,7 @@
       height: auto;
       opacity: 1;
     }
-    &:hover .blue {
+    &:hover .mr_8 {
       display: none;
     } 
   }

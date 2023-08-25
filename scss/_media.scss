@@ -803,6 +803,7 @@
 
   .catalogFilters {
     background: #f2f2f4;
+    
     .form__wrapper {
       flex-wrap: wrap;
       column-gap: 18px;
@@ -810,6 +811,7 @@
 
       .btn {
         width: 100%;
+        
       }
       .w100 {
         width: 100%;
@@ -1684,6 +1686,9 @@
     &__item {
       flex-wrap: wrap;
       max-width: 425px;
+      .btn_small {
+        height: auto;
+      }
       .mobile {
         width: 45%;
       }
