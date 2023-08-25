@@ -107,11 +107,13 @@
             text-decoration: underline;
             
         }
+        
     }
     .catalogShowMore {
         position: absolute;
         cursor: pointer;
         bottom: -28px;
+        line-height: 200%;
     }
     .catalogHide {
         position: absolute;

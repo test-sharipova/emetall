@@ -254,7 +254,7 @@
       margin: 32px 32px 32px 0;
       display: block;
       width: 154px;
-      height: 171px;
+      height: 172px;
       background: #FFFFFF;
       box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
       border-radius: 15px;
@@ -405,6 +405,7 @@
     font-size: 14px;
     margin-bottom: 8px;
     display: block;
+    line-height: normal;
   }
   .form {
     &__input {
@@ -436,8 +437,12 @@
       align-items: flex-start;
     }
     &__item {
+      
       &_286 {
         width: 286px;
+        .gray2 {
+          line-height: normal;
+        }
       }
       &__210 {
         width: 210px;
