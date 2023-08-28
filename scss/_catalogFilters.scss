@@ -6,8 +6,30 @@
     &__subtitle {
         margin: 11px 0 27px;
     }
+    
     .form__input {
       margin-bottom: 2px;
+      background-color: #E9F0FC;
+      appearance: none;
+        background: #E9F0FC;
+        border: 1px solid #8EB1ED;
+        
+        position: relative;
+        background-image: url(../img/form_arrow.svg);
+        background-repeat: no-repeat;
+        background-position: center right 15px;
+        height: 38px;
+      &:focus {
+        background-color: #E9F0FC;
+      }
+      &:placeholder-shown:not(&:focus) {
+        background-color: #fff;
+        border: 1px solid #DDDDDD;
+      }
+      &:not(input) {
+        background-color: #fff;
+        border: 1px solid #DDDDDD;
+      }
     }
     input[list="sizeoption"]::-webkit-calendar-picker-indicator {
         display: none !important;
@@ -24,17 +46,7 @@
     input[list="tollist"]::-webkit-calendar-picker-indicator {
         display: none !important;
       }
-      .select {
-        appearance: none;
-        background: #FFFFFF;
-        border: 1px solid #DDDDDD;
-        position: relative;
-        background-image: url(../img/form_arrow.svg);
-        background-repeat: no-repeat;
-        background-position: center right 15px;
-        height: 38px;
-      }
-      .select_active {
+   .select_active:not(input) {
         background-color: #E9F0FC;
         border: 1px solid #8EB1ED;
         }
