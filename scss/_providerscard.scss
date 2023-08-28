@@ -85,7 +85,10 @@
         margin-left: 48px;
         &__subtitle {
             span {
-                margin-right: 16px;
+                margin-right: 10px;
+                &:nth-child(3) {
+                    margin-right: 4px;
+                }
                 svg {
                     vertical-align: middle;
                 }
