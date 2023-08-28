@@ -176,7 +176,7 @@
         position: relative;
         background: #EFF2F6;
         border-radius: 12px;
-        padding: 19px 25px;
+        padding: 18px 25px;
         flex-grow: 1;
         max-width: 464px;
         min-width: 332px;
@@ -209,8 +209,8 @@
     }
     &__oldPrice {
         text-decoration: line-through;
-        margin: 7px 0 6px;
-        line-height: 100%;
+        margin: 7px 0 2px;
+        line-height: normal;
     }
     &__newPrice {
         background: #DD0858;
@@ -219,8 +219,8 @@
         color: #FFFFFF;
         font-size: 20px;
         font-weight: 600;
-        
-        margin-top: 8px;
+        line-height: normal;
+        margin-top: 2px;
     }
 }
 
@@ -266,7 +266,7 @@
 .about {
     &__content {
         width: 493px;
-        padding-top: 61px;
+        padding-top: 60px;
         .fs_18 {
             margin: 24px 0;
             max-width: 471px;
@@ -392,6 +392,7 @@
         align-items: center;
         gap: 16px;
         margin-bottom: 0;
+        margin-left: -5px;
         &__img {
             margin-bottom: -3px;
         }
@@ -411,7 +412,7 @@
         }
     }
     &__link {
-        margin-bottom: 50px;
+        margin-bottom: 55px;
     }
     &__question {
         margin: 38px 0 0;
@@ -483,7 +484,7 @@
         border-radius: 15px;
         padding: 115px 76px;
         position: relative;
-        margin: 98px 0 106px;
+        margin: 93px 0 100px;
         &__content {
             max-width: 44%;
             display: flex;
