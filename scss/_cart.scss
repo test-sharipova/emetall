@@ -170,7 +170,7 @@
                 position: absolute;
                 height: 100%;
                 width: 20px;
-                left: 14px;
+                left: 12px;
                 display: flex;
                 align-items: center;
             }
@@ -179,7 +179,9 @@
                align-items: center;
                cursor: pointer;
                position: absolute;
-               right: 14px;
+               right: 11px;
+               top: 50%;
+               transform: translateY(-50%);
                height: 100%;
                 width: 20px;
               
@@ -195,6 +197,10 @@
                 padding: 9px 35px;
                 text-align: center;
                 appearance: none;
+                height: 44px;
+                line-height: normal;
+                font-size: 15px;
+                margin-top: 10px;
                 &:focus {
                     outline: 4px solid #E9EFFC;
                     border: 1px solid $blue;

@@ -53,6 +53,7 @@
             display: flex;
             align-items: center;
             margin-bottom: 25px;
+            line-height: 156%;
         }
         .divider {
             margin: 29px 0 18px;
@@ -63,9 +64,12 @@
     }
     
     .banners {
-        margin: 59px auto 0;
+        margin: 50px auto 0;
+        a {
+            display: block;
+        }
         &__block {
-            margin: 0 auto 20px;
+            margin: 0 auto 25px;
         }
     }
     .providers__logo {
@@ -269,12 +273,19 @@
             max-width: 352px;
             width: 352px;
             margin-right: 49px;
-      
+            align-self: flex-start;
+            margin-top: -18px;
             .raiting {
                 margin-right: 24px;
             }
         }
         
+    }
+    .about__raiting__line {
+        margin-top: 8px;
+    }
+    .about__raiting__item {
+        margin-bottom: 22px;
     }
     &__slider {
         max-width: 960px;
