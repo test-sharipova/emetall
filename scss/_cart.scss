@@ -10,7 +10,8 @@
         color: $dark_back;
         font-weight: 400;
         font-size: 16px;
-        margin: 12px 0 24px;
+        margin: 12px 0 20px;
+        line-height: 156%;
     }
     &__wrap {
         display: flex;
@@ -57,6 +58,7 @@
         }
         label {
             cursor: pointer;
+            line-height: normal;
         }
     }
     &__menu {
@@ -67,13 +69,13 @@
     &__text {
         font-style: normal;
         font-weight: 600;
-        line-height: 22px;
+        
         &_14 {
            
             font-size: 14px;
         }
         &_16 {
-            max-width: 316px;
+            max-width: 364px;
             font-size: 16px;
         }
     }
@@ -82,17 +84,18 @@
     max-width: 992px;
   }
   &__block {
-    margin-bottom: 42px;
+    margin-bottom: 40px;
   }
     &__head {
         background: #F2F2F4;
         border-radius: 8px;
-        padding: 12px 24px;
+        padding: 11px 24px;
         font-style: normal;
         font-weight: 600;
         font-size: 16px;
-        margin-bottom: 34px;
-       
+        margin-bottom: 31px;
+        line-height: normal;
+       height: 44px;
     }
     &__item {
         display: flex;
@@ -101,11 +104,16 @@
         margin-bottom: 24px;
         border-bottom: 1px solid #F2F2F4;    
     }
+    &__price {
+        margin: 14px 8px 0 0;
+        line-height: normal;
+    }
     &__name {
         display: flex;
         justify-content: flex-start;
-        align-items: center;
+        align-items: flex-start;
         gap: 24px;
+        
         &__input {
             width: 19px;
             height: 19px;
@@ -113,11 +121,12 @@
             cursor: pointer;
             position: relative;
             outline: none;
+            margin-top: 5px;
             &::after {
                 content: '';
                 position: absolute;
                 background: #fff;
-                top: 0;
+                top: -1px;
                 left: 0;
                 width: 24px;
                 height: 24px;
@@ -141,6 +150,9 @@
             display: flex;
             gap: 12px;
             margin-top: 6px;
+            line-height: 156%;
+            font-size: 16px;
+            margin-left: -2px;
             span {
                 color: #37A71A;
                 display: flex;
@@ -197,10 +209,10 @@
                 padding: 9px 35px;
                 text-align: center;
                 appearance: none;
-                height: 44px;
+                height: 38px;
                 line-height: normal;
                 font-size: 15px;
-                margin-top: 10px;
+                
                 &:focus {
                     outline: 4px solid #E9EFFC;
                     border: 1px solid $blue;
@@ -259,18 +271,17 @@
             border-radius: 10px;
             padding: 24px;
             max-width: 400px;
-            margin-top: 15px;
+            margin-top: 18px;
         }
         &__btn {
             background: linear-gradient(90deg, #2864E0 0%, #DB0A5B 113.24%);
             border-radius: 6px;
             margin-top: 16px;
             width: 100%;
+            padding: 8px 0 11px;
         }
         
-        .cart__text {
-            margin-bottom: 8px;
-        }
+        
     }
     &__divider {
         height: 1px;
@@ -279,7 +290,8 @@
     }
     &__deli {
         text-decoration: none;
-        margin-top: 10px;
+        line-height: 156%;
+        font-size: 16px;
         display: flex;
         align-items: center;
         img {
@@ -300,5 +312,9 @@
     }
     .delete, .repost {
         cursor: pointer;
+        line-height: normal;
+    }
+    .repost {
+        margin-top: 2px;
     }
 }
