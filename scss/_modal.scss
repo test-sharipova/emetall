@@ -182,9 +182,17 @@
         padding: 67px 142px 54px;
         .btn {
             margin: 0 auto;
+            padding: 11px 30px 13px;
         }
         img {
             max-width: 204px;
+            margin-bottom: 37px;
+        }
+        .order {
+            width: 428px;
+            .fs_14 {
+                max-width: 100%;
+            }
         }
     }
 }

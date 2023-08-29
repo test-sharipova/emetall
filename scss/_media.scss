@@ -1314,6 +1314,59 @@
       line-height: 130%;
     }
   }
+  .modal {
+    &__order {
+      padding: 32px;
+      width: 343px;
+      height: 380px;
+      .order {
+        width: auto;
+      }
+      .fs_14 {
+        line-height: 120%;
+      }
+      .fs_24 {
+        font-size: 20px;
+      }
+      img {
+        width: 166px;
+      }
+    }
+    &__login {
+      top: 0;
+      left: 0;
+      position: absolute;
+      transform: none;
+    }
+    .login {
+      border-radius: 0;
+      .wrapper_start {
+        flex-wrap: wrap;
+      }
+      &__wins {
+        width: 100%;
+        order: 2;
+        padding: 32px;
+        border-radius: 0;
+        .fs_14 {
+          max-width: 226px;
+        }
+      }
+      &__reg {
+        width: 100%;
+        padding: 48px 16px;
+        .mb_16 {
+          margin-bottom: 12px;
+        }
+      }
+      &__form {
+        .btn_order {
+          border: 2px solid #2764e0;
+          background: #fff;
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 767px) {
   .container {
@@ -1821,56 +1874,7 @@
     transform: translate(-50%, -50%);
     max-width: 100%;
   }
-  .modal {
-    &__order {
-      padding: 32px;
-      width: 343px;
-      height: 380px;
-      .fs_14 {
-        line-height: 120%;
-      }
-      .fs_24 {
-        font-size: 20px;
-      }
-      img {
-        width: 166px;
-      }
-    }
-    &__login {
-      top: 0;
-      left: 0;
-      position: absolute;
-      transform: none;
-    }
-    .login {
-      border-radius: 0;
-      .wrapper_start {
-        flex-wrap: wrap;
-      }
-      &__wins {
-        width: 100%;
-        order: 2;
-        padding: 32px;
-        border-radius: 0;
-        .fs_14 {
-          max-width: 226px;
-        }
-      }
-      &__reg {
-        width: 100%;
-        padding: 48px 16px;
-        .mb_16 {
-          margin-bottom: 12px;
-        }
-      }
-      &__form {
-        .btn_order {
-          border: 2px solid #2764e0;
-          background: #fff;
-        }
-      }
-    }
-  }
+  
   .blog {
     .fs_28 {
       font-size: 24px;
