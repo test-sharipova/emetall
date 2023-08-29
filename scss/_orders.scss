@@ -31,10 +31,11 @@
         &__item {
             display: grid;
             grid-template-columns: 2fr 1fr;
-            gap: 4px;
-            padding: 13px 40px 16px;
+            
+            padding: 13px 38px 12px;
             position: relative;
             &_read {
+                line-height: 179%;
                 &:before {
                     content: '';
                     width: 14px;
@@ -55,6 +56,7 @@
                 }
             }
             &_wait {
+                line-height: 179%;
                 &::after {
                     content: 'Ожидает';
                     color: #DA621E;
@@ -65,9 +67,12 @@
         }
         &__volume {
             text-align: right;
+            line-height: 179%;
+            margin-right: 3px;
         }
         &__prise {
             text-align: right;
+            margin-right: 3px;
         }
     }
     summary {
@@ -83,7 +88,7 @@
             display: grid;
             grid-template-columns: 2fr 1fr;
             justify-content: space-between;
-            padding-bottom: 24px;
+            padding-bottom: 20px;
             
            
         }
@@ -104,7 +109,10 @@
         position: absolute;
         bottom: 0;
     }
-    
+    &__name {
+        line-height: normal;
+        margin-bottom: 4px;
+    }
     details[open] > summary .orders__showOrder .hide_order {
        display: inline-block;
        
@@ -135,6 +143,9 @@
                 background: #e9f0fc;
             }
         }
+        .brn_gray {
+            padding: 11px 24px;
+        }
         
     }
     &__help {
@@ -146,6 +157,7 @@
             margin-bottom: 24px;
             .fs_21 {
                 margin-bottom: 18px;
+                line-height: 119%;
             }
             .blue {
                 display: block;
@@ -161,12 +173,19 @@
             background-size: cover;
             border-radius: 12px;
             padding: 24px 32px;
+            overflow: hidden;
             .btn {
                 width: 100%;
                 background: linear-gradient(90deg, #2864E0 0%, #DB0A5B 100%);
                 font-weight: 400;
                 line-height: 25px;
                 padding: 8px 0 11px;
+            }
+            .wrapper_start {
+                align-items: center;
+            }
+            .fs_14 {
+                line-height: 157%;
             }
         }
     }
