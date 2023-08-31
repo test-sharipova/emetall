@@ -21,16 +21,17 @@
         }
         background: #fff;
         border: 1px solid #ddd;
-        padding: 0 0 0 48px;   
+        padding: 9px 0px 10px 47px;  
         margin-bottom: 0; 
         height: 38px;
         font-size: 14px;
+        line-height: normal;
     }
     .labelRadio {
-        padding: 11px 16px;
+        padding: 9px 15px 10px 16px;
     }
     &__wrapper {
-       margin-top: 32px; 
+       margin-top: 31px; 
        gap: 32px;
     }
     &__item {
@@ -53,11 +54,15 @@
                 max-width: 357px;
                 line-height: 21px;
                 display: block;
-                margin-bottom: 9px;
+                
+            }
+            .fs_14 {
+                line-height: normal;
+                
             }
         }
         &__bottom {
-            padding: 20px 26px 24px 40px;
+            padding: 24px 26px 27px 40px;
             display: flex;
             justify-content: space-between;
             .gray {
@@ -67,6 +72,9 @@
                 img {
                     margin-right: 8px;
                 }
+            }
+            .fs_14 {
+                line-height: normal;
             }
         }
     }
@@ -78,6 +86,7 @@
         padding: 4px 8px;
         font-size: 12px;
         text-decoration: none;
+        line-height: normal;
         &__wrapper {
             gap: 8px;
             width: 100%;
