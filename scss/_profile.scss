@@ -8,9 +8,9 @@
     border-radius: 15px;
     background: #fff;
     padding: 28px 32px 30px;
-    margin-bottom: 47px;
+    margin-bottom: 45px;
     .fs_14 {
-      margin-top: 11px;
+      margin-top: 8px;
     }
   }
   &__nav {
@@ -66,6 +66,7 @@
       border-radius: 6px;
       transition: all 0.3s;
       margin-bottom: 7px;
+      letter-spacing: -0.4px;
       &:hover {
         background: $blue;
         color: #fff;
@@ -103,7 +104,7 @@
     padding: 24px 48px;
     font-weight: 600;
     border-bottom: 1px solid #ebebeb;
-    margin-bottom: 40px;
+    
     &_pt30 {
       padding-top: 30px;
     }
@@ -179,8 +180,9 @@
     &__history {
       flex-grow: 1;
       .profile__title {
-        padding: 0 0 24px;
-        margin-bottom: 31px;
+        padding: 0 0 24px 0;
+        line-height: normal;
+        
         &_mb48 {
           margin-bottom: 48px;
         }
@@ -316,7 +318,8 @@
       padding: 24px 48px 48px;
       margin-bottom: 16px;
       &_stat {
-        padding-bottom: 27px;
+        padding-bottom: 51px;
+        max-width: 1084px;
       }
       .search__calend {
         margin-right: 24px;
@@ -330,19 +333,26 @@
     &__count {
       .gray {
         text-transform: uppercase;
+        letter-spacing: .6px;
+        line-height: normal;
       }
       .wrapper_start {
-        align-items: center;
+        align-items: flex-end;
       }
     }
     &__select {
       border-radius: 3px;
       border: 1px solid #ddd;
-      background: #fff;
+      background-color: #fff;
+      background-image: url(../img/form_arrow.svg);
+      background-repeat: no-repeat;
+      background-position: center right 15px;
+      appearance: none;
       width: 214px;
       font-size: 14px;
-      padding: 8px 16px 8px;
+      padding: 8px 36px 8px 16px;
       margin: 0 18px 0 0;
+      height: 38px;
     }
     &__head {
       align-items: center;
@@ -351,28 +361,40 @@
     //статистика
     &__wrapper {
       display: grid;
-      grid-template-columns: 265px 260px 246px 260px;
-      row-gap: 31px;
+      grid-template-columns: 262px 265px 243px 1fr;
+      row-gap: 40px;
+      margin-bottom: 31px;
     }
   }
   &__content {
     &__media {
       
-      &_p63 {
-        padding-top: 63px;
+      &_p60 {
+        padding-top: 60px;
         padding-bottom: 49px;
+        max-width: 1084px;
       }
       .radio__tabs {
-        margin-right: 13px;
+        margin-right: 32px;
       }
       .search__calend {
         width: 193px;
         margin-right: 0;
       }
+      .btn_gray {
+        padding: 11px 24px 13px;
+      }
       .btn {
         font-weight: 400;
         display: block;
         height: 38px;
+        &.mr_32 {
+          padding: 11px 16px 13px 14px;
+          svg {
+            margin-right: 7px;
+          }
+        }
+        
       }
     }
   }
@@ -389,6 +411,9 @@
       border-radius: 15px;
       background: #fff;
       padding: 24px 24px 32px;
+      .profile__title {
+        padding: 2px 0 24px 6px;
+      }
     }
     &__circle {
       width: 228px;
@@ -455,6 +480,7 @@
         justify-content: center;
         align-items: center;
         z-index: 6;
+        
       }
     }
     &__tooltip {
@@ -483,14 +509,15 @@
     }
     &__list {
       list-style-type: none;
-      margin-top: 32px;
+      margin: 34px 0 32px;
     }
     &__li {
       display: grid;
       grid-template-columns: 24px 164px 86px 1fr;
       align-items: center;
-      margin-bottom: 13px;
+      margin-bottom: 15px;
       .fs_14 {
+        line-height: normal;
         &:last-child {
           text-align: right;
         }
@@ -523,17 +550,29 @@
   &__table {
     &__stat {
       .profile__table__head {
-        grid-template-columns: 191px 157px 145px 185px 192px 108px;
+        grid-template-columns: 200px 161px 154px 185px 195px 1fr;
+        padding-left: 0;
       }
       .profile__table__row {
-        grid-template-columns: 191px 157px 145px 185px 192px 108px;
+        grid-template-columns: 191px 161px 146px 185px 196px 1fr;
+        height: 24px;
         .fs_14 {
+          line-height: normal;
           font-weight: 600;
+          padding: 4px 0 0 9px;
           &:last-child {
             border-right: none;
+            padding-left: 13px;
           }
           &:first-child {
             font-weight: 400;
+            padding: 4px 0 0 6px;
+          }
+          &:nth-child(4) {
+            padding-left: 14px;
+          }
+          &:nth-child(5) {
+            padding-left: 16px;
           }
         }
       }
@@ -541,6 +580,7 @@
   }
   .profile__media__head__stat {
     margin-bottom: 25px;
+    gap: 0;
   }
   //табы в моб.версии
   &__stat {

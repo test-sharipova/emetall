@@ -371,6 +371,9 @@
     text-align: center;
     margin: 0 auto;
   }
+  .lh_208 {
+    line-height: 208%;
+  }
   .lh_182 {
     line-height: 182%;
   }
@@ -733,6 +736,7 @@
              &:last-child {
               .radio__mark {
                   border-radius: 0px 6px 6px 0px;
+                  border-right: 1px solid #DDD;
               }
              }
           }
@@ -746,8 +750,9 @@
       }
       &__mark {
           font-size: 14px;
-          padding: 9px 16px;
+          padding: 9px 15px;
           border: 1px solid #DDD;
+          border-right: none;
           background: #FFF;
           cursor: pointer;
           display: block;
