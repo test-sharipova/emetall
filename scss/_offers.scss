@@ -3,15 +3,22 @@
     &__back {
         display: flex;
         align-items: center;
-        margin-top: 12px;
+        margin-top: 10px;
         margin-bottom: 5px;
+        line-height: 208%;
     }
     .select {
-        background: #FFFFFF;
+        background-color: #FFFFFF;
+        
+        background-image: url(../img/form_arrow.svg);
+        background-repeat: no-repeat;
+        background-position: center right 15px;
         border: 1px solid #DDDDDD;
+        appearance: none;
         position: relative;
+        height: 38px;
         &_active {
-            background: #E9F0FC;
+            background-color: #E9F0FC;
             border: 1px solid #8EB1ED;
         }
     }
@@ -26,12 +33,13 @@
         border-radius: 15px;
         padding: 32px 36px;
         .form__input {
-            margin-bottom: 4px;
+            margin-bottom: 2px;
         }
         .btn {
             width: 272px;
             height: 50px;
-            padding: 0;;
+            padding: 0;
+            line-height: 167%;
         }
     }
     &__wrapper {
@@ -51,15 +59,22 @@
             .fs_16 {
                 width: 54%;
                 margin-bottom: 22px;
-                line-height: 130%;
+                line-height: normal;
             }
         }
         &__bottom {
-            padding: 8px 24px 16px;
+            padding: 12px 24px 16px;
             .fs_14 {
-                
+                line-height: 179%;
                 
                 max-width: 280px;
+            }
+            .wrapper {
+                align-items: flex-end;
+            }
+            .btn {
+                height: 38px;
+                font-size: 14px;
             }
         }
     }
@@ -70,9 +85,15 @@
         object-fit: cover;
        };
     }
+    .spec {
+        &__oldPrice {
+            margin: 0 0 4px;
+            font-weight: 300;
+        }
+    }
     .btn_transparent {
         max-width: 464px;
         margin: 32px auto 0;
-
+        height: 44px;
     }
 }
