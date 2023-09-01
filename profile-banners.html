@@ -25,7 +25,7 @@
         </div>
     
 </section>
-<header class="desktop">
+<header>
     <div class="container">
         <div class="header__wrapper">
             <div class="hamburger">
@@ -35,7 +35,7 @@
             </div>
             <a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
             <a href="#" class="header__phone mobile"><img src="img/phone.svg" alt="phone"></a>
-        <a href="#" class="btn showCatalog">
+        <a href="#" class="btn btn_44 fw_600 showCatalog">
            <div class="btn__burger">
             <span></span>
             <span></span>
@@ -53,25 +53,33 @@
                 <p class="header__text">пользователей</p>
             </div>
             <div class="header__indicator__item">
-                <p class="header__indicator__number">3МЛН+</p>
+                <p class="header__indicator__number"><img src="img/header-icon3mln.svg" alt="3 млн +"></p>
                 <p class="header__text">позиций товаров</p>
             </div>
         </div>
         <div class="header__icons header__desktop">
             <a href="#" class="header__item">
-                <img src="img/Union.svg" alt="stat">
+                <div class="header__item__img">
+                    <img src="img/Union.svg" alt="stat">
+                </div>
                 <p class="header__text">Статистика</p>
             </a>
-            <a href="#" class="header__item">
-                <img src="img/Group.svg" alt="search">
+            <a href="#" class="header__item header__item__counter">
+                <div class="header__item__img">
+                    <img src="img/Group.svg" alt="search">
+                </div>
                 <p class="header__text">Поиски</p>
             </a>
             <a href="#" class="header__item">
-                <img src="img/Vector.svg" alt="order">
+                <div class="header__item__img">
+                    <img src="img/Vector.svg" alt="order">
+                </div>
                 <p class="header__text">Заказы</p>
             </a>
-            <a href="cart.html" class="header__item">
-                <img src="img/cart.svg" alt="cart">
+            <a href="cart.html" class="header__item header__item__counter">
+                <div class="header__item__img">
+                    <img src="img/cart.svg" alt="cart">
+                </div>
                 <p class="header__text">Корзина</p>
             </a>
             <div class="header__item">
@@ -101,14 +109,14 @@
             
             <div class="header__place">
                 <img src="img/place.svg" alt="place"> 
-                <p class="cart__text cart__text_14">Санкт-Петербург</p>
+                <p class="fs_14">Санкт-Петербург</p>
                 <div class="header__place__quest hide">
-                    <p class="fs_16 fw_600 mb_8">Ваш город – Санкт-Петербург?</p>
+                    <p class="fs_16 fw_600 mb_8 lh_156">Ваш город – Санкт-Петербург?</p>
                     <p class="fs_14 mb_16">Выбор города впервую очень важен для 
                         фильтрации металлобаз по удаленности от вас.</p>
                     <div class="wrapper_start">
-                        <a href="#" class="btn mr_12">Да, верно</a>
-                        <a href="#" class="btn_order">Изменить</a>
+                        <a href="#" class="btn btn_38 mr_12">Да, верно</a>
+                        <a href="#" class="btn_order btn_38">Изменить</a>
                     </div>
                 </div>
             </div>
@@ -451,7 +459,7 @@
                     
                    
                 </ul>
-                <div class="menu__catalog__content menu__catalog__content_active">
+                <div class="menu__catalog__content">
                     <div class="wrapper">
                         <div>
                             <div class="wrapper_start menu__catalog__head">
@@ -2668,7 +2676,7 @@
     <div class="menu__catalog__overlay"></div>
 </header>
     <main>
-        <section class="profile">
+        <section class="profile profile-banners">
             <a href="profile.html" class="mobile profile__back">
                     
                 <p class="fs_16">
@@ -2676,7 +2684,7 @@
                 </p>
             </a>
             <div class="container">
-                <h1 class="fs_28 fw_600 mb_26 desktop">
+                <h1 class="fs_28 fw_600 mb_26 desktop lh_norm">
                     Статистика
                 </h1>
                 <div class="wrapper_start">
@@ -2693,12 +2701,12 @@
                                     <p class="fs_14 fw_600">
                                         УралТрубДеталь
                                     </p>
-                                    <a href="mailto:hello@uraltrubdetal.ru" class="blue gray fs_12">hello@uraltrubdetal.ru</a>
+                                    <a href="mailto:hello@uraltrubdetal.ru" class="blue gray fs_12 lh_208">hello@uraltrubdetal.ru</a>
                                 </div>
                             </div>
                             <div class="wrapper">
-                                <p class="fs_12">Осталось <span class="fw_600">32 дня</span></p>
-                                <a href="#" class="blue fs_12">Продлить</a>
+                                <p class="fs_12 lh_norm">Осталось <span class="fw_600">32 дня</span></p>
+                                <a href="#" class="blue fs_12 lh_norm">Продлить</a>
                             </div>
                             <div class="profile__days">
                                 <div class="profile__days__range">
@@ -2768,7 +2776,7 @@
                            
                                 <div class="profile__content__media">
                                     
-                                    <p class="profile__title">Медийные баннеры</p>
+                                    <p class="profile__title lh_norm mb_24">Медийные баннеры</p>
                                     <div class="wrapper_start mb_40">
                                         <div class="radio__tabs desktop2">
                                             <label>
@@ -2811,11 +2819,11 @@
                                         </label>
                                         <a href="#" class="btn btn_black">Показать</a>
                                     </div>
-                                    <div class="profile__media__wrapper">
+                                    <div class="profile__media__wrapper profile__media__wrapper-banners">
                                         <div class="profile__media__count">
                                             <p class="gray fs_12">ПОКАЗЫ БАННЕРА</p>
                                             <div class="wrapper_start">
-                                                <p class="fs_28 mr_8 lh_175">1 938 659</p>
+                                                <p class="fs_28 mr_8 lh_norm">1 938 659</p>
                                                 <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                                                     <path d="M8.09998 8.09998V13.5H9.90002V8.09998H8.09998Z" fill="#778899"/>
                                                     <path d="M8.09998 6.30005V4.5H9.90002V6.30005H8.09998Z" fill="#778899"/>
@@ -2826,7 +2834,7 @@
                                         <div class="profile__media__count">
                                             <p class="gray fs_12">ПЕРЕХОДЫ ПО ССЫЛКЕ</p>
                                             <div class="wrapper_start">
-                                                <p class="fs_28 mr_8 lh_175">289</p>
+                                                <p class="fs_28 mr_8 lh_norm">289</p>
                                                 <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                                                     <path d="M8.09998 8.09998V13.5H9.90002V8.09998H8.09998Z" fill="#778899"/>
                                                     <path d="M8.09998 6.30005V4.5H9.90002V6.30005H8.09998Z" fill="#778899"/>
@@ -2838,7 +2846,7 @@
                                 </div>
                                 <div class="profile__content__media">
                                     
-                                    <p class="profile__title profile__subtitle">Трафик</p>
+                                    <p class="profile__title profile__subtitle mb_24 lh_norm">График</p>
                                     <div class="wrapper_start profile__media__head">
                                         <select name="" id="" class="form__input profile__media__select desktop2" id="legend">
                                             <option value="Переходы по сслыке">Переходы по сслыке</option>
@@ -2869,7 +2877,7 @@
                                             <span class="circle circle_blue">
 
                                             </span>
-                                            <p class="fs_14 lh_139">Переходы по ссылке из баннера</p>
+                                            <p class="fs_14 lh_norm">Переходы по ссылке из баннера</p>
                                         </div>
                                         <div class="mobile">
                                             <p class="fs_15 fw_600 center mb_8">15 переходов</p>
