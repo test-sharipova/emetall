@@ -57,6 +57,10 @@
     margin: 0 auto;
   }
   //btns
+  button {
+    background: transparent;
+    border: none;
+  }
   .btn {
     padding: 11px 24px 13px;
     background: $blue;
@@ -602,6 +606,9 @@
     
     .mb_34 {
       margin-bottom: 34px;
+    }
+    .mb_33 {
+      margin-bottom: 33px;
     }
     .mb_32 {
       margin-bottom: 32px;
