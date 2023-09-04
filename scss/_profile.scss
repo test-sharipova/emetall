@@ -15,6 +15,9 @@
     background: #fff;
     padding: 28px 32px 30px;
     margin-bottom: 45px;
+    &_mb39 {
+      margin-bottom: 39px;
+    }
     .fs_14 {
       margin-top: 8px;
     }
@@ -99,7 +102,7 @@
       border: 1px solid #ddd;
       width: 280px;
       height: 44px;
-      margin-bottom: 12px;
+      margin-bottom: 8px;
       &:focus {
         border: 1px solid $blue;
       }
@@ -121,7 +124,7 @@
   }
   &__data {
     padding: 0 48px;
-    margin-bottom: 50px;
+    margin-bottom: 52px;
     &_mb62 {
       margin-bottom: 62px;
     }
@@ -140,6 +143,7 @@
       align-items: center;
       width: fit-content;
       gap: 10px;
+      font-size: 15px;
       &:hover svg path {
         fill: #fff;
       }

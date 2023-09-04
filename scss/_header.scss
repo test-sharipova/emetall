@@ -65,7 +65,7 @@ header {
         display: flex;
         justify-content: space-between;
         &__item {
-            margin: 0 22px 0 32px;
+            margin: 0 20px 0 32px;
         }
         &__number {
             font-family: 'Bebas Neue';
@@ -73,6 +73,7 @@ header {
             font-size: 26px;
             color: #333333;
         }
+   
     }
     &__text {
         font-weight: 400;
