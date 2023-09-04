@@ -11,6 +11,10 @@ footer {
     }
 }
 .footer {
+    &_pt59 {
+        padding-top: 59px;
+    padding-bottom: 19px;
+    }
     &__wrapper {
         display: flex;
         align-items: center;

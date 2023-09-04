@@ -104,6 +104,9 @@
     }
   }
   // for advertisers site
+  .advPromo {
+    background-position: 51% top;
+  }
   .advNumbers {
     &__number {
       font-size: 70px;
@@ -2183,6 +2186,9 @@
       width: 100%;
       margin: 0;
       border-radius: 0;
+      background-image: url(../img/advertaisers/advpromo_bg-mob.png);
+      background-position: left bottom;
+      min-height: 619px;
       &__content {
         margin: 0;
         padding: 40px 1px 0 16px;

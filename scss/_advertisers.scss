@@ -1,5 +1,9 @@
 .advPromo {
     background: linear-gradient(93.29deg, #161B41 11.57%, rgba(22, 27, 65, 0) 77.08%), #1C203A;
+    background-image: url(../img/advertaisers/advpromo_bg.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover;
     border-radius: 15px;
     margin: 0 15px;
     position: relative;
@@ -20,9 +24,9 @@
     &__img {
         position: absolute;
         bottom: 0;
-        right: 0;
+        right: 17%;
         height: 100%;
-        width: 60%;
+        width: 34%;
         img {
             width: 100%;
             height: 100%;
@@ -38,15 +42,13 @@ height: 50px;
 .advNumbers {
     padding: 55px 0 120px;
     &__item {
-        padding: 41px 45px 40px;
+        padding: 47px 48px 40px;
         background: #FFFFFF;
         box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.12);
         border-radius: 30px;
-        max-width: 32%;
+        max-width: 31.623%;
         max-height: 284px;
-        &:nth-child(3) {
-            padding: 41px 56px 40px;
-        }
+       
         .fs_16 {
             line-height: 138%;
         }
@@ -61,7 +63,7 @@ height: 50px;
     }
 }
 .advInfo {
-    padding: 108px 70px;
+    padding: 104px 70px;
     &__wrapper {
         justify-content: flex-start;
         column-gap: 71px;
@@ -81,11 +83,11 @@ height: 50px;
     &__graphList {
         max-width: 300px;
         position: relative;
-        margin-top: 67px;
+        margin-top: 71px;
         &__img {
             position: absolute;
-            top: -124px;
-    left: 58%;
+            top: -129px;
+            left: 58%;
             transform: translateX(-50%);
         }
         
@@ -96,7 +98,7 @@ height: 50px;
             font-size: 15px;
             line-height: 20px;
             margin-top: 16px;
-            padding-left: 30px;
+            padding-left: 31px;
             &:before {
                 content: '';
                 display: block;
@@ -138,9 +140,14 @@ height: 50px;
     }
 }
 .advRew {
-    padding: 30px 0 0px;
+    padding: 36px 0 0px;
+    .slick-slide {
+        padding: 25px;
+    }
     img {
         max-width: 100%;
+        box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.12);
+        border-radius: 12px;
     }
     .slick-arrow {
         position: absolute;
@@ -205,22 +212,28 @@ height: 50px;
     .fs_18 {
         max-width: 372px;
     }
+    &__wrapper {
+        align-items: flex-start;
+    }
     &__content {
         max-width: 400px;
         .title_36 {
-            margin-top: -50px;
+            margin-top: 115px;
         }
     }
     &__img {
         max-width: 725px;
         width: 61%;
-        margin-top: 35px;
+        margin-top: 17px;
         img {
             width: 100%;
         }
     }
 }
 .advDop {
+    .title_36 {
+        margin-top: -6px;
+    }
     overflow: hidden;
     padding: 0px 0 40px;
     &__wrapper {
@@ -268,7 +281,7 @@ height: 50px;
         background: #FFFFFF;
         box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.12);
         border-radius: 30px;
-        padding: 68px 96px 107px 86px;
+        padding: 73px 96px 107px 86px;
     }
     &__content {
         max-width: 403px;
