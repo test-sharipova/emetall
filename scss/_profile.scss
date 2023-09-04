@@ -155,17 +155,20 @@
     .btn {
       width: 151px;
       height: 50px;
+      line-height: 167%;
+      padding-top: 12px;
+      padding-bottom: 13px;
     }
   }
   &__input {
     &__label {
       margin-bottom: 24px;
       display: block;
-      &_mb12 {
-        margin-bottom: 12px;
+      &_mb16 {
+        margin-bottom: 16px;
       }
-      &_mb37 {
-        margin-bottom: 37px;
+      &_mb40 {
+        margin-bottom: 40px;
       }
       
     }
@@ -201,11 +204,13 @@
           
         }
       }
+      
+      
     }
     &__block {
       width: 50%;
       max-width: 506px;
-      padding: 35px 32px 41px;
+      padding: 32px 32px 41px;
       border-radius: 10px;
       background: #fff;
       box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.12);
@@ -214,6 +219,7 @@
       }
       .form__input {
         width: 280px;
+        height: 44px;
       }
     }
   }
@@ -222,10 +228,13 @@
     max-width: 458px;
     border-radius: 10px;
     background: #e9f0fc;
-    padding: 42px 32px 32px;
+    padding: 38px 32px 32px;
     .btn {
       background: #33364e;
       font-weight: 400;
+      font-size: 14px;
+      line-height: normal;
+      padding: 9px 24px 10px;
     }
   }
   &__history {
@@ -237,9 +246,20 @@
       padding: 48px;
       gap: 24px;
       &:nth-child(2) {
-        padding: 26px 48px 32px 32px;
+        padding: 26px 48px 86px 32px;
         margin-top: 16px;
         display: block;
+      }
+      .profile__table {
+        &__head {
+          grid-template-columns: 303px 252px 266px 1fr;
+        }
+        &__row {
+          grid-template-columns: 301px 256px 265px 1fr;
+          .fs_14 {
+            line-height: normal;
+          }
+        }
       }
     }
   }
@@ -760,8 +780,8 @@
     }
     .profile__input__label {
       margin-bottom: 12px;
-      &_mb42 {
-        margin-bottom: 42px;
+      &_mb40 {
+        margin-bottom: 40px;
       }
     }
   }
@@ -774,7 +794,7 @@
     height: 100px;
     display: block;
     padding: 12px 16px;
-    margin-bottom: 53px;
+    margin-bottom: 48px;
     &::placeholder {
       color: $text-color;
       font-size: 15px;
@@ -794,7 +814,7 @@
       border: 1px dashed #ddd;
       max-width: 559px;
       height: 251px;
-      margin: 21px 0 41px;
+      margin: 21px 0 48px;
       cursor: pointer;
       input {
         display: none;
