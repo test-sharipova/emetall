@@ -236,6 +236,13 @@
     }
     //calc metall
     &__met {
+        .calc__label {
+            &:nth-child(2) {
+                .fs_14 {
+                    margin-left: 0px;
+                }
+            }
+        }
         padding-bottom: 117px;
         &__wrap {
             justify-content: flex-start;
