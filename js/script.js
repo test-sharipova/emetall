@@ -93,7 +93,25 @@ function consoleBG() {
         console.log('ok');
     });
 
-
+//показать даталист в поиске (справочник стандартов)
+$('.catalog__search__input').on('click', function() {
+    $('.overlay_light').fadeIn();
+    $('.directory__datalist').fadeIn();
+    $('.catalog__search').css('z-index', '110');
+    
+});
+$('.directory__datalist, .overlay_light').on('click', function() {
+    $('.overlay_light').fadeOut();
+    $('.directory__datalist').fadeOut();
+    $('.catalog__search').css('z-index', '1');
+    
+});
+$('.directory__datalist__link').each(function(i){
+    $(this).on('click', function() {
+        $('.catalog__search__input').val($('.directory__datalist__link').eq(i).text());
+      
+    });
+});
 
 //показать календарь
 new AirDatepicker('#calend', {

@@ -85,6 +85,32 @@
         border-radius: 36px;
         background: #F2F2F4;
     }
+    &__datalist {
+        width: 100%;
+        position: absolute;
+        border-radius: 12px;
+        background: #FFF;
+        box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.10);
+        padding: 12px 0 35px;
+        display: none;
+        z-index: 110;
+        &__link {
+            border-bottom: none;
+            padding: 16px 23px;
+            align-items: center;
+            transition: background-color .3s;
+           &:hover {
+            background-color: #F2F2F4;
+            cursor: pointer;
+           }
+            &::before {
+                content: '';
+                width: 11px;
+                height: 11px;
+                background: url(../img/catalog/search_img.svg) no-repeat center/contain;
+            }
+        }
+    }
 }
 .pdf {
     display: inline-block;
