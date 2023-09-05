@@ -1,5 +1,5 @@
 .directory {
-    padding: 51px 0 157px;
+    padding: 51px 0 153px;
     &__promo {
         padding: 13px 0 0 56px;
         border-radius: 15px;
@@ -18,7 +18,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: bottom;
+            object-position: right bottom;
             display: block;
         }
     }
@@ -37,6 +37,9 @@
     // .product__item:hover > img {
     //     mask: linear-gradient(rgba(43, 110, 199, 0.5), rgba(34, 200, 56, .7));
     // }
+    .catalog__search__input {
+        font-size: 15px;
+    }
     &__product {
         overflow-x: auto;
         gap: 8px;
@@ -98,6 +101,6 @@ margin-left: 17px;
 .directory2 {
     padding-top: 41px;
     .catalog__search {
-        margin-bottom: 46px;
+        margin-bottom: 44px;
     }
 }
