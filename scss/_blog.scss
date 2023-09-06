@@ -115,12 +115,12 @@
             }
             &_587 {
                 width: 587px;
-                margin-bottom: 8px;
+                margin-bottom: 24px;
             }
         }
     }
     &__img {
-        margin-bottom: 20px;
+        
         width: 100%;
         overflow: hidden;
         border-radius: 12px;
@@ -139,7 +139,7 @@
         color: #fff;
         letter-spacing: .25px;
         &__content {
-            max-width: 588px;
+            max-width: 594px;
         }
         &__form {
             margin-bottom: 44px;
@@ -152,10 +152,12 @@
             border-radius: 6px;
             border: 1px solid #9295AE;
             font-size: 14px;
-            padding: 10px 16px;
+            padding: 9px 16px 10px;
             width: 249px;
+            height: 38px;
             margin-right: 16px;
             color: #fff;
+            line-height: normal;
             &::placeholder {
                 color: #9295AE;
             }
