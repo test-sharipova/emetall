@@ -44,7 +44,7 @@
     border-radius: 15px;
     background: #fff;
     &__wins {
-        padding: 63px 60px 58px;
+        padding: 66px 60px 55px;
         background: #E9F0FC;
         border-radius: 15px 0px 0px 15px;
         width: 50%;
@@ -76,9 +76,8 @@
             line-height: 150%;
             max-width: 246px;
         }
-        .fs_12 {
-            line-height: 167%;
-        }
+        
+       
     }
     &__form {
         &__input {
@@ -114,6 +113,7 @@
         }
     }
     &__input {
+        height: 44px;
         background: #fff;
         border: 1px solid #DDDDDD;
         margin: 0;

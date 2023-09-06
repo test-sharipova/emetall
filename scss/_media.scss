@@ -95,6 +95,7 @@
     }
   }
   .companyMission {
+    background-position: right 58% bottom;
     &__img {
       width: 62%;
       right: 0;
@@ -2398,6 +2399,9 @@
       }
     }
     &Mission {
+      padding-bottom: 375px;
+      background-image: url(../img/company/company-mission-bg-mob.png);
+      background-position: bottom;
       margin: 0;
       border-radius: 0;
       &__content {

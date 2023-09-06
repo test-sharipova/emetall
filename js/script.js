@@ -336,6 +336,7 @@ $('.advRew__slider').slick({
     prevArrow: '<button type="button" class="slick-prev"><img src="img/prev.svg"></button>',
     nextArrow: '<button type="button" class="slick-next"><img src="img/next.svg"></button>',
     slidesToShow: 4,
+    infinite: false,
     responsive: [
         {
             breakpoint: 1023,
@@ -383,7 +384,7 @@ $('.advRew__slider').slick({
         ]
     });
     
-    //rew popup
+    //rew popup + company popup Достижения и награды страницы О сервисе
   $('.advRew__slider').magnificPopup({
     delegate: 'a',
     type: 'image',
@@ -394,6 +395,8 @@ $('.advRew__slider').slick({
         preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
     }
     });
+
+  
 
 
   

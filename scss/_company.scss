@@ -11,12 +11,12 @@
         font-weight: 600;
         font-size: 60px;
         line-height: 60px;
-        margin-bottom: 34px;
+        margin-bottom: 36px;
         span {
             background: $blue;
             color: #fff;
             border-radius: 30px;
-            padding: 0 10px;
+            padding: 0 17px;
             display: inline-block;
             height: 65px;
         }
@@ -31,7 +31,7 @@
     }
 }
 .companyAbout {
-    padding: 78px 0 97px;
+    padding: 80px 0 100px;
     &__item {
         width: 33%;
         &__img {
@@ -43,6 +43,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            img {
+                margin-top: 14px;
+                max-width: 80%;
+                max-height: 100%;
+            }
         }
         
     }
@@ -53,7 +58,11 @@
     }
 }
 .companyMission {
-    background: #171C41;
+    background-color: #171C41;
+    background-image: url(../img/company/company-mission-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
     border-radius: 30px;
     position: relative;
     margin: 0 24px;
@@ -62,24 +71,23 @@
         width: 70%;
         max-width: 662px;
         color: #fff;
-        padding: 146px 0 169px;
+        padding: 154px 0 189px;
         position: relative;
         z-index: 2;
     }
-    &__img {
-        width: 59%;
-        position: absolute;
-        right: 156px;
-        bottom: -5px;
-    }
+   
 }
 .companyHistory {
-    padding: 106px 0 123px;
+    padding: 80px 0 115px;
+    &__bottom {
+        margin-left: -34px;
+    }
     &__item {
-        padding: 38px 80px 64px 34px;
+        padding: 38px 65px 64px 26px;
         border-top: 1px dashed #212529;
         border-bottom: 1px dashed #212529;
         position: relative;
+        
         &:last-child {
             border-radius: 0 30px 30px 0;
             border-right: 1px dashed #212529;
@@ -87,6 +95,7 @@
         &:first-child {
             border-bottom: none;
             padding-left: 0;
+            
         }
         &:before {
             content: '';
@@ -102,13 +111,15 @@
         }
         &_bottom {
             position: relative;
-            padding: 64px 80px 38px 34px;
+            padding: 64px 65px 38px 26px;
             border-bottom: 1px dashed #212529;
             &:first-child {
                 border-radius: 30px 0 0 30px;
                 border-left: 1px dashed #212529;
                 border-top: 1px dashed #212529;
+                padding-left: 34px;
             }
+           
             &:before {
                 content: '';
                 position: absolute;
@@ -144,7 +155,9 @@
     &__img {
         
         img {
-            width: 100%;
+            width: 93%;
+            border-radius: 12px;
+            box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
         }
     }
     .slick-arrow {
@@ -195,7 +208,7 @@
     }
 }
 .companySupport {
-    padding: 85px 0 50px;
+    padding: 100px 0 50px;
     &__item {
         width: 32%;
         height: 146px;
@@ -212,7 +225,7 @@
     }
 }
 .companyParty {
-    padding: 26px 0 120px;
+    padding: 18px 0 120px;
     &__wrapper {
         align-items: flex-start;
         justify-content: flex-start;
@@ -222,10 +235,16 @@
         width: 33%;
         &__img {
             max-width: 382px;
+            height: 216px;
+
             img {
                 width: 100%;
+                height: 100%;
+                object-fit: cover;
             }
         }
     }
-    
+    .btn_transparent {
+        padding: 13px 0;
+    }
 }
