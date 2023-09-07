@@ -133,7 +133,10 @@
     &__subscribe {
         border-radius: 12px;
         margin-top: 64px;
-        background: url(../img/blog/blog_bg_subscribe.png) no-repeat right;
+        background-color: #1C203A;
+        background-image: url(../img/blog/blog_bg_subscribe.png);
+        background-repeat: no-repeat;
+        background-position: right bottom;
         background-size: cover;
         padding: 62px 64px;
         color: #fff;

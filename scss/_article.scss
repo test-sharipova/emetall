@@ -48,9 +48,7 @@
     &__text {
         width: 712px;
         max-width: 712px;
-        .fs_18 {
-            line-height: 28px;
-        }
+        
        
     }
     &__img {
@@ -58,15 +56,15 @@
         overflow: hidden;
         img {
             width: 100%;
-            display: block;
+           
         }
     }
     &__blockquote {
-        max-width: 664px;
+        
         border-left: 2px solid $text-color;
         padding-left: 40px;
         line-height: 30px;
-        margin-bottom: 53px;
+        margin-bottom: 49px;
     }
     &__table {
         display: flex;
@@ -74,13 +72,13 @@
         // border: 1px solid #E7E7E7;
         &__name {
             border: 1px solid #E7E7E7;
-            padding: 24px 34px;
+            padding: 21px 34px;
             font-weight: 600;
             white-space: nowrap;
         }
         &__value {
             border: 1px solid #E7E7E7;
-            padding: 24px 25px;
+            padding: 22px 25px;
             white-space: nowrap;
         }
     }
@@ -88,17 +86,24 @@
         padding-left: 28px;
     }
     &__autor {
+        img {
+            display: block;
+        }
         max-width: 712px;
         border-radius: 12px;
         background: #FFF;
         box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.12);
         padding: 32px 48px 32px 32px;
-        margin-bottom: 24px;
+        margin-bottom: 22px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .fs_14 {
-            line-height: 100%;
+        .snow-checkmark {
+            width: 17px;
+            height: 17px;
+        }
+        .btn_gray {
+            padding-top: 7px;
         }
     }
     &__newautor {
@@ -107,7 +112,7 @@
         border: 1px solid #E9F0FC;
         background: #E9F0FC;
         padding: 32px 34px 32px 32px;
-        margin-bottom: 66px;
+        margin-bottom: 64px;
     }
     &__form {
         max-width: 712px;
@@ -145,7 +150,7 @@
             grid-template-columns: 40px 63px;
             grid-template-rows: 20px 20px;
             gap: 1px 16px;
-            margin-bottom: 12px;
+            margin-bottom: 16px;
         }
         &__profile {
             grid-row: 1/3;
@@ -163,23 +168,27 @@
             min-width: 40px;
         }
         .fs_14 {
-            margin-left: 56px;
+            margin-left: 61px;
             max-width: 651px;
         }
         &_sub {
-            margin-left: 56px;
-            margin-top: 25px;
-            
+            margin-left: 61px;
+            margin-top: 22px;
+            .fs_14 {
+                margin-left: 56px;
+                
+            }
         }
     }
     .blog__subscribe {
         margin-top: 80px;
-        margin-bottom: 69px;
-        padding: 33px 21px 35px 33px;
+        margin-bottom: 64px;
+        padding: 32px 21px 32px 32px;
+        background-image: url(../img/blog/article/article-subscribe-bg.png);
     }
     &__top {
         &__items {
-            margin: 32px 0 40px;
+            margin: 32px 0 46px;
             display: grid;
             grid-template-columns: repeat(3, 296px);
             gap: 34px;

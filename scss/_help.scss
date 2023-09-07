@@ -43,13 +43,14 @@
         }
         .fs_16 {
             max-width: 293px;
-            line-height: 131%;
+            
         }
         .btn {
             display: block;
             margin-bottom: auto;
             width: 145px;
             height: 44px;
+            text-align: center;
         }
     }
     .help__img {
@@ -88,14 +89,21 @@
         
     }
     .about__question {
-        padding-bottom: 0;
-        margin: 0 0 15px;
+        padding: 24px 0;
+        margin: 0;
+        .fs_18 {
+            padding-top: 24px;
+        }
     }
     .about__summary {
         font-size: 20px;
+        margin-bottom: 0;
+        &__span {
+            max-width: 678px;
+        }
     }
     &__questions {
-        margin-bottom: 48px;
+        margin-bottom: 40px;
     }
     &Providers {
         
@@ -122,15 +130,15 @@
             margin-top: 15px;
         }
         &__questions {
-            margin-bottom: 71px;
+            margin-bottom: 66px;
             .btn_transparent {
-                margin-top: 23px;
+                margin-top: 24px;
             }
         }
         &__question {
             position: relative;
             font-size: 20px;
-            padding: 24px 0 28px;
+            padding: 24px 0 24px;
             font-weight: 600;
             width: 100%; 
             padding-right: 12px;
@@ -138,10 +146,11 @@
             color: $text-color;
             text-decoration: none;
             border-bottom: 1px solid #F2F2F4;
+            line-height: normal;
             &::after {
                 content: '';
                 position: absolute;
-                right: 0;
+                right: 11px;
                 top: 50%;
                 transform: translateY(-50%);
                 width: 8px;
@@ -172,11 +181,13 @@
             margin-right: 16px;
             margin-top: 40px;
             font-size: 14px;
+            line-height: normal;
+            width: fit-content;
         }
         &__img {
             padding-top: 71px;
             text-align: center;
-            margin: 64px 0 71px;
+            margin: 64px 0 64px;
             width: 100%;
             border-radius: 12px;
             background: #E9F0FC;
@@ -189,15 +200,22 @@
         &__quest {
             border-radius: 12px;
             background: #E9F0FC;
-            padding: 39px 32px 32px;
+            padding: 32px;
             margin: 64px 0 120px;
             .btn {
+                font-size: 14px;
                 font-weight: 400;
+                height: 38px;
                 &:nth-child(2) {
                     background: #fff;
                     color: $blue;
                     margin-left: 16px;
                 }
+            }
+        }
+        .helpProviders__question {
+            &::after {
+                right: 0;
             }
         }
     }
