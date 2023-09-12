@@ -32,6 +32,15 @@
       margin-top: 20px;
     }
   }
+  .promo {
+    &__wrapper {
+      padding: 0 24px;
+    }
+    &__img {
+      width: auto;
+      min-width: auto;
+    }
+  }
   .catalogFilters {
     &__banners {
       display: flex;
@@ -427,6 +436,21 @@
   }
 }
 @media screen and (max-width: 768px) {
+  header {
+    padding: 14px 0;
+    
+  }
+  .header {
+    &__wrapper {
+      align-items: center;
+      padding: 0 4px;
+    }
+  }
+  .logo {
+    width: 118px;
+    height: 32px;
+    margin-right: 0;
+  }
   .menu {
     position: fixed;
 
@@ -451,6 +475,9 @@
   }
   .hamburger {
     display: flex;
+    width: 22px;
+height: 18px;
+padding: 0;
   }
   .banner {
     display: none;
@@ -491,9 +518,10 @@
   }
   .promo {
     &__wrapper {
-      padding: 40px 34px 0;
+      padding: 40px 32px 0;
       flex-direction: column;
       height: auto;
+      align-items: flex-start;
     }
     &__slider {
       height: auto;
@@ -504,6 +532,7 @@
     &__title {
       width: auto;
       font-size: 32px;
+      line-height: 137%;
     }
     &__content {
       padding: 0;
@@ -511,24 +540,30 @@
     &__text {
       margin: 12px 0 24px;
       max-width: 239px;
+      line-height: 156%;
+      font-size: 16px;
     }
     &__img {
       width: auto;
       min-width: auto;
+      height: 251px;
+      margin-top: 32px;
       img {
         width: 139%;
+        height: 100%;
         transform: translateX(-14%);
       }
     }
   }
   .popular {
+    padding-top: 73px;
     .slick-active {
       width: 130px;
     }
     .product {
       &__item {
-        margin-top: 20px;
-        margin-right: 16px;
+        margin: 20px 16px 10px 0;
+       
         width: 126px;
         height: 130px;
         background: #f1f5f8;
@@ -540,40 +575,67 @@
     }
   }
   .choise {
+    padding-bottom: 45px;
+    &__subtitle {
+      margin-top: 0;
+      margin-bottom: 26px;
+      line-height: 143%;
+      max-width: 260px;
+    }
     &__wrapper {
       flex-direction: column;
       padding: 24px 20px;
-      gap: 45px;
+      gap: 24px;
     }
     &__content {
       padding-right: 0;
-      width: auto;
+      width: 100%;
       height: auto;
+    }
+    &__form {
+      width: 100%;
+      margin-bottom: 21px;
+    }
+    select {
+      margin-bottom: 2px;
     }
     &__links {
       width: 100%;
+     
+      padding-top: 0;
+      justify-content: flex-start;
+    gap: 94px;
       .fs_18 {
         font-size: 14px;
+        line-height: 285%;;
       }
     }
+   
     .btn_transparent {
       width: 100%;
-      margin-top: -25px;
+      line-height: 166%;
+      height: 44px;
     }
   }
   .spec {
-    padding-bottom: 48px;
+    padding-bottom: 39px;
     &__wrapper {
       gap: 12px;
+      margin-top: 15px;
     }
     &__img {
       width: 60%;
     }
+    &__content {
+      width: 60%;
+
+    }
   }
   .providers {
-    padding-bottom: 48px;
+    padding-bottom: 39px;
     &__wrapper {
       gap: 16px;
+      margin-top: 15px;
     }
     &__item {
       .fs_18 {
@@ -1395,17 +1457,8 @@
   .container_992 {
     width: 100%;
   }
-  header {
-    padding: 14px 0;
-    .mobile {
-      margin-right: 20px;
-    }
-  }
-  .header {
-    &__wrapper {
-      padding: 0;
-    }
-  }
+ 
+ 
   
   .catalog {
     &__search {
