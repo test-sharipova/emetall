@@ -453,6 +453,7 @@
     &:nth-child(odd) {
       background: #fff;
     }
+    
     &_spec {
       background: #FFF5E1;
       border-top: 1px solid #20960D;
@@ -472,6 +473,7 @@
         padding: 2px 14px 5px;
         
       }
+     
       .table__td {
         font-weight: 600;
         .btn_small {
@@ -495,6 +497,7 @@
       }
     }
   }
+  
   &__row {
     display: flex;
     justify-content: flex-start;
@@ -716,8 +719,14 @@
     padding-bottom: 16px;
     
   }
+  &__hide {
+    img {
+      transform: rotate(180deg);
+    }
+  }
   .hide {
     display: none;
+    
   }
   .heightAuto {
     height: auto;
