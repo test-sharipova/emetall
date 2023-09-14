@@ -1104,15 +1104,24 @@ padding: 0;
       background: #fff;
       padding: 3px 16px;
     }
-   
+   &__link {
+    margin-right: 1px;
+    margin-top: 4px;
+    margin-left: 30px;
+    font-size: 15px;
+   }
     .form__wrapper {
       flex-wrap: wrap;
-      column-gap: 18px;
-      row-gap: 20px;
-
+      column-gap: 16px;
+      row-gap: 21px;
+      margin-bottom: 20px;
+      justify-content: flex-start;
       .btn {
         width: 100%;
-        
+        margin-top: 3px;
+      }
+      .mt-9 {
+        margin-top: -9px;
       }
       .w100 {
         width: 100%;
@@ -1146,6 +1155,14 @@ padding: 0;
       &__item_210 {
         width: 47%;
         max-width: 210px;
+      }
+      &__item {
+        &_w47 {
+          width: 47%;
+        }
+      }
+      &__divider {
+        margin-bottom: 20px;
       }
     }
     &__title {
@@ -1976,7 +1993,11 @@ padding: 0;
   .blue {
     font-size: 14px;
   }
-
+.catalogFilters {
+  &__link {
+    font-size: 15px;
+  }
+}
   .providerscard {
     padding-top: 0;
     .container {
