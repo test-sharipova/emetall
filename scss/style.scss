@@ -577,6 +577,13 @@
         font-size: 12px;
         align-self: center;
         margin-right: 8px;
+        position: relative;
+        &::before {
+          content: '';
+          background: url(../img/check_white.svg) no-repeat center/contain;
+          width: 8px;
+          height: 6px;
+        }
       }
     }
     //margins
@@ -744,6 +751,9 @@
     }
     .mt_30 {
       margin-top: 30px;
+    }
+    .ml_2 {
+      margin-left: 2px;
     }
     .ml_11 {
       margin-left: 11px;
