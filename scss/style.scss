@@ -56,6 +56,7 @@
     position: relative;
     margin: 0 auto;
   }
+ 
   //btns
   button {
     background: transparent;
@@ -671,6 +672,9 @@
     .mb_24 {
       margin-bottom: 24px;
     }
+    .mb_25 {
+      margin-bottom: 25px;
+    }
     .mb_23 {
       margin-bottom: 23px;
     }
@@ -854,7 +858,12 @@
       background: #fff;
     }
   }
-
+  .mobile {
+    display: none;
+}
+.mobile2 {
+  display: none;
+}
 
  
   @import '_banner.scss';

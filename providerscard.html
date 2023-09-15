@@ -128,23 +128,38 @@
         <div class="container">
             <div class="header__icons">
                 <a href="#" class="header__item">
-                    <img src="img/Home.svg" alt="home">
+                    <div class="header__item__img">
+                        <img src="img/Home.svg" alt="home">
+                    </div>
+                    
                     <p class="header__text">Главная</p>
                 </a>
                 <a href="#" class="header__item">
-                    <img src="img/Filter.svg" alt="filter">
+                    <div class="header__item__img">
+                        <img src="img/Filter.svg" alt="filter">
+                    </div>
+                    
                     <p class="header__text">Фильтры</p>
                 </a>
                 <a href="#" class="header__item">
-                    <img src="img/polesnoe.svg" alt="icon">
+                    <div class="header__item__img">
+                        <img src="img/polesnoe.svg" alt="icon">
+                    </div>
+                    
                     <p class="header__text">Полезное</p>
                 </a>
-                <a href="#" class="header__item">
-                    <img src="img/cart.svg" alt="cart">
+                <a href="#" class="header__item  header__item__counter">
+                    <div class="header__item__img">
+                        <img src="img/cart.svg" alt="cart">
+                    </div>
+                    
                     <p class="header__text">Корзина</p>
                 </a>
                 <a href="#" class="header__item">
-                    <img src="img/profile_mob.svg" alt="profile">
+                    <div class="header__item__img">
+                        <img src="img/profile_mob.svg" alt="profile">
+                    </div>
+                    
                     <p class="header__text">Профиль</p>
                 </a>
             </div>
@@ -2831,10 +2846,10 @@
             <div class="container">
                 <ul class="wrapper_start providerscard__menu desktop2">
                     <li class="providerscard__menu__item providerscard__menu__item_active"><a href="#" class="providerscard__menu__link">Информация о поставщике</a></li>
-                    <li class="providerscard__menu__item"><a href="#" class="providerscard__menu__link">Номенклатура</a></li>
-                    <li class="providerscard__menu__item"><a href="#" class="providerscard__menu__link">Услуги  <span>3</span> </a></li>
-                    <li class="providerscard__menu__item"><a href="#" class="providerscard__menu__link">Отзывы  <span>17 </span></a></li>
-                    <li class="providerscard__menu__item"><a href="#" class="providerscard__menu__link">Фотографии склада</a></li>
+                    <li class="providerscard__menu__item"><a href="#nomenkl" class="providerscard__menu__link">Номенклатура</a></li>
+                    <li class="providerscard__menu__item"><a href="#serv" class="providerscard__menu__link">Услуги  <span>3</span> </a></li>
+                    <li class="providerscard__menu__item"><a href="#rew" class="providerscard__menu__link">Отзывы  <span>17 </span></a></li>
+                    <li class="providerscard__menu__item"><a href="#photo" class="providerscard__menu__link">Фотографии склада</a></li>
                 </ul>
                 <div class="providerscard__info mb_56">
                     <p class="fs_24 fw_600 mb_16 lh_norm desktop2">Информация о поставщике</p>
@@ -2931,7 +2946,7 @@
                     </div>
                 </div>
                 <div class="providerscard__nomenkl">
-                    <p class="fs_24 fw_600 mb_12 lh_norm">Список реализуемой номенклатуры</p>
+                    <p class="fs_24 fw_600 mb_12 lh_norm" id="nomenkl">Список реализуемой номенклатуры</p>
                     <a href="#" class="blue fs_16 mb_32 lh_156">Запросить прайс-лист</a>
                     <div class="wrapper mb_20">
                         <div class="providerscard__table__block">
@@ -2980,7 +2995,7 @@
                     <a href="#" class="btn_transparent btn_44 lh_167">Показать больше</a>
                 </div>
                 <div class="providerscard__serv">
-                   <p class="fs_24 fw_600 mb_32 lh_norm">Услуги&nbsp;&nbsp;<span class="fs_16 fw_600 gray">3</span></p>
+                   <p class="fs_24 fw_600 mb_32 lh_norm" id="serv">Услуги&nbsp;&nbsp;<span class="fs_16 fw_600 gray">3</span></p>
                     <div class="providerscard__serv__item wrapper">
                         <p class="fs_18 fw_600 lh_139">Резка в размер<span class="gray fs_16 fw_400">от 1 000 Руб.</span></p>
                         <div class="mobile">
@@ -3005,7 +3020,7 @@
                    
 
                 </div>
-                <p class="fs_24 fw_600 lh_149">Отзывы</p>
+                <p class="fs_24 fw_600 lh_149" id="rew">Отзывы</p>
                 <div class="wrapper flexWrap">
                     
                     <div class="providerscard__rew">
@@ -3135,7 +3150,7 @@
                             </svg>
                     </a>
                 </div>
-                <div class="providerscard__slider mb_60">
+                <div class="providerscard__slider mb_60" id="photo">
                     <p class="fs_24 fw_600 mb_32">Фотографии склада</p>
                     <div class="providerscard__slider-for">
                         <div><img src="img/providerscard/providerscard_slider.png" class="providerscard__slider__img-for" alt="photo sklad"></div>
@@ -3227,7 +3242,7 @@
                           </div>
                           <div class="providerscard__map__block">
                               <div class="wrapper">
-                                  <p class="fs_18 fw_600 mb_8 lh_139">Новосибирск, ул. Академика Королева, 24</p>
+                                  <p class="fs_18 fw_600 mb_8 lh_139">Новосибирск, Колыванское ш., 19, 21</p>
                                   <a href="#"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <circle cx="14" cy="14" r="14" fill="#F2F2F4"/>
                                       <path d="M18.8778 10.122C18.7591 10.0029 18.5808 9.96788 18.4253 10.0308L9.2586 13.7808C9.08735 13.8512 8.98276 14.0258 9.00235 14.21C9.02151 14.3941 9.15985 14.5433 9.34194 14.5766L13.6416 15.3583L14.4237 19.6579C14.4566 19.84 14.6058 19.9783 14.7899 19.9979C14.8045 19.9992 14.8191 20 14.8333 20C15.0008 20 15.1545 19.8987 15.2191 19.7408L18.9691 10.5741C19.0324 10.4191 18.9966 10.2408 18.8778 10.122Z" fill="#2764E0"/>
@@ -3326,7 +3341,7 @@
                           </div>
                           <div class="providerscard__map__block">
                               <div class="wrapper">
-                                  <p class="fs_18 fw_600 mb_8">Новосибирск, ул. Академика Королева, 24</p>
+                                  <p class="fs_18 fw_600 mb_8">Новосибирск, Колыванское ш., 19, 21</p>
                                   <a href="#"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <circle cx="14" cy="14" r="14" fill="#F2F2F4"/>
                                       <path d="M18.8778 10.122C18.7591 10.0029 18.5808 9.96788 18.4253 10.0308L9.2586 13.7808C9.08735 13.8512 8.98276 14.0258 9.00235 14.21C9.02151 14.3941 9.15985 14.5433 9.34194 14.5766L13.6416 15.3583L14.4237 19.6579C14.4566 19.84 14.6058 19.9783 14.7899 19.9979C14.8045 19.9992 14.8191 20 14.8333 20C15.0008 20 15.1545 19.8987 15.2191 19.7408L18.9691 10.5741C19.0324 10.4191 18.9966 10.2408 18.8778 10.122Z" fill="#2764E0"/>
@@ -3354,10 +3369,10 @@
              <div class="providerscard__fixed mobile">
                 <div class="wrapper">
                     <div>
-                         <p class="fs_12 fw_600 mb_8">Труба профил. 50х50х3, ст.0-20, 6м</p>
+                         <p class="fs_12 fw_600 lh_208">Труба профил. 50х50х3, ст.0-20, 6м</p>
                         <p class="fs_12">52 000 ₽ / тонна</p>
                     </div>
-                    <a href="#" class="btn">В корзину</a>
+                    <button type="button" class="btn addincart">В корзину</button>
                 </div>
             </div>
         </section>
@@ -3473,31 +3488,36 @@
     <div class="modal modal__addincart">
         <div class="modal__close">&times;</div>
        <div class="modal__addincart__top">
-        <p class="fs_24 fw_600 lh_norm">Товар добавлен в корзину</p>
+        <p class="fs_24 fw_600 lh_norm desktop">Товар добавлен в корзину</p>
+        <p class="fs_20 mb_25 fw_600 lh_norm mobile2">Товар в корзине</p>
         <div class="wrapper_start mb_12">
             <div class="wrapper_start modal__addincart__product">
-                <img src="img/modal/addincart1.png" alt="product" class="mr_26">
+                <img src="img/modal/addincart1.png" alt="product" class="mr_26 desktop">
                 <p class="fs_16 fw_600 lh_norm">Труба профильная 50х50x3, ст.0-20, ГОСТ 13663-86</p>
+                <p class="fs_16 lh_156 mobile">52 000 ₽ / тонна</p>
             </div>
             <div class="modal__addincart__count">
                 <div class="wrapper">
                     <div class="modal__addincart__tonn active">
                         Тонны
                     </div>
-                    <div class="modal__addincart__metr">
+                    <div class="modal__addincart__metr desktop">
                         Метры
                     </div>
                 </div>
-                <div class="cart__quantity__count">
-                    <span class="minus"><img src="img/minus.svg" alt="minus"></span>
-                    <input type="number" class="quantity" placeholder="1,00">
-                    <span class="plus">
-                       <img src="img/plus.svg" alt="plus">
-                    </span>
+                <div class="wrapper">
+                    <div class="cart__quantity__count">
+                        <span class="minus"><img src="img/minus.svg" alt="minus"></span>
+                        <input type="number" class="quantity" placeholder="1,00">
+                        <span class="plus">
+                           <img src="img/plus.svg" alt="plus">
+                        </span>
+                    </div>
+                    <a href="#" class="btn mobile2">Перейти</a>
                 </div>
             </div>
         </div>
-        <div class="wrapper_start">
+        <div class="wrapper_start desktop">
             <p class="fs_14 mr_20 lh_179">58 920 ₽/т</p>
             <p class="fs_20 lh_norm fw_600">59 920 ₽</p>
         </div>
