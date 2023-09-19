@@ -2575,25 +2575,37 @@ padding: 0;
     }
   }
   .search {
+
+    .container {
+      padding: 0 10px;
+    }
     background: #f2f2f4;
+    padding: 16px 0 60px;
     .fs_28 {
-      margin-top: 0;
-      padding-top: 16px;
+     
+      margin: 0 0 16px 6px;
+      font-size: 24px;
     }
     &__topWrap {
       flex-wrap: wrap;
       gap: 16px;
+      margin-left: 6px;
     }
     &__wrapper {
       margin-top: 24px;
+      gap: 16px;
     }
     &__item {
       width: 100%;
+      min-height: 248px;
     }
 
     &__item {
       &__top {
-        padding: 20px 24px 24px;
+        padding: 20px 24px 20px;
+        .mb_10 {
+          margin-bottom: 16px;
+        }
       }
       &__bottom {
         padding: 20px 24px;
@@ -3208,7 +3220,7 @@ padding: 0;
       font-size: 24px;
     }
     .search__topWrap {
-      margin-left: 6px;
+      
       margin-bottom: 24px;
     }
     .container {
