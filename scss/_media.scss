@@ -3202,9 +3202,14 @@ padding: 0;
   .orders {
     background: #f2f2f4;
     padding-top: 16px;
+    padding-bottom: 60px;
     h1 {
-      margin: 0 0 16px;
+      margin: 0 0 16px 6px;
       font-size: 24px;
+    }
+    .search__topWrap {
+      margin-left: 6px;
+      margin-bottom: 24px;
     }
     .container {
       padding: 0 10px;
@@ -3212,10 +3217,15 @@ padding: 0;
     &__name {
       grid-column: 1/-1;
       line-height: 133%;
+      padding-right: 8px;
     }
     &__details {
       margin-bottom: 16px;
-      padding-bottom: 41px;
+      padding-bottom: 43px;
+      &__prise {
+        margin-right: 0;
+        margin-top: 2px;
+      }
       &__volume {
         grid-column: 2/3;
         grid-row: 2/3;
@@ -3225,7 +3235,7 @@ padding: 0;
         display: flex;
       }
       &__item {
-        padding: 20px 24px 4px;
+        padding: 18.5px 24px 4px;
         .fs_16 {
           font-size: 14px;
         }
@@ -3253,14 +3263,21 @@ padding: 0;
       }
     }
     &__summary {
-      padding: 24px 20px 0;
+      padding: 20px 24px 0;
       &__top {
-        padding-bottom: 20px;
+        padding-bottom: 17px;
         .gray {
           grid-column: 1/2;
           grid-row: 2/3;
         }
       }
+    }
+    &__showOrder {
+      padding: 0 0 0 3px;
+      bottom: 12px;
+    }
+    .blue {
+      font-size: 15px;
     }
     &__date {
       font-size: 14px;
@@ -3272,7 +3289,7 @@ padding: 0;
     &__btns {
       display: block;
       padding: 0 24px 16px;
-      margin-top: 32px;
+      margin-top: 28px;
       a {
         width: 100%;
         display: block;
@@ -3283,14 +3300,21 @@ padding: 0;
       }
     }
     &__content {
-      margin-bottom: 48px;
+      margin-bottom: 31px;
     }
     &__help {
       &__help {
         padding: 24px 24px 32px;
+        margin-bottom: 40px;
         .fs_21 {
           margin-bottom: 16px;
         }
+      }
+      &__emetall {
+        padding: 24px;
+      }
+      .blue {
+        font-size: 16px;
       }
     }
   }
