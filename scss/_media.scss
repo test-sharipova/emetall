@@ -1886,6 +1886,9 @@ padding: 0;
    &__subtitle {
     margin-top: 3px;
    }
+   &__block {
+    margin-bottom: 32px;
+   }
     &__menu {
       width: 100%;
       justify-content: space-between;
@@ -1924,7 +1927,7 @@ padding: 0;
     }
     &__item {
       flex-wrap: wrap;
-      padding: 16px 0;
+      padding: 16px 0 17px;
       margin-bottom: 0;
       .cart__wrap {
         align-items: flex-start;
@@ -1955,6 +1958,7 @@ padding: 0;
       min-width: 359px;
       box-shadow: none;
       padding: 0 0 10px;
+      margin-top: 8px;
       &__wrap {
         order: 2;
         padding: 0;

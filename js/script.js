@@ -93,6 +93,24 @@ function consoleBG() {
         console.log('ok');
     });
 
+//КОРЗИНА добавить-убрать еденицу товара
+
+
+    $('.plus').on('click', function() {
+      var input = $(this).prev('.quantity');
+      var value = parseFloat(input.val());
+        input.val((value + 1).toFixed(2));
+    });
+  
+    $('.minus').on('click', function() {
+        var input = $(this).nextAll('.quantity').first();
+        var value = parseFloat(input.val());
+        if (value > 0) {
+          input.val((value - 1).toFixed(2));
+        }
+      });
+
+
 //показать даталист в поиске (справочник стандартов)
 $('.catalog__search__input').on('click', function() {
     $('.overlay_light').fadeIn();
