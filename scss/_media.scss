@@ -1762,6 +1762,38 @@ padding: 0;
     }
 
     //медийные баннеры
+    &-banners {
+      padding-bottom: 45px;
+      .container {
+        padding: 0 8px;
+      }
+      .profile__media__wrapper-banners {
+        margin-bottom: 0;
+      }
+      .profile {
+        &__subtitle {
+          padding: 4px 0 20px 0;
+          margin-bottom: 24px;
+        }
+        &__media {
+          &__head {
+            gap: 20px;
+          }
+        }
+      }
+      .mobile {
+        align-self: center;
+        &__legend {
+          display: flex;
+          margin-top: 34px;
+          .wrapper_end {
+            margin-bottom: 0;
+            margin-right: 5px;
+          }
+        }
+      }
+      
+    }
     &__subtitle {
       font-size: 20px;
       line-height: 130%;
