@@ -82,7 +82,9 @@
         max-width: 256px;
        img {
         width: 100%;
-        object-fit: cover;
+        height: 100%;
+        object-fit: contain;
+        object-position: right;
        };
     }
     .spec {

@@ -2616,6 +2616,9 @@ padding: 0;
     }
   }
   .offers {
+    .title_36 {
+      margin-left: 6px;
+    }
     .container {
       width: 100%;
       padding: 0 10px;
@@ -2628,11 +2631,15 @@ padding: 0;
       margin-bottom: 16px;
     }
     &__filter {
-      padding: 20px 14px;
+      padding: 20px 14px 24px;
       flex-wrap: wrap;
       border-radius: 10px;
-      gap: 18px;
+      column-gap: 18px;
+      row-gap: 20px;
       margin-bottom: 32px;
+      .btn {
+        margin-top: -4px;
+      }
       select {
         height: 38px;
         padding: 6px 16px;
@@ -2653,54 +2660,84 @@ padding: 0;
         }
       }
     }
+    &__wrapper {
+      gap: 16px;
+    }
     &__item {
+      min-height: 393px;
       .btn {
-        font-weight: 400;
+        width: 147px;
       }
       &__top {
         display: flex;
         flex-direction: column;
         padding-right: 24px;
+        padding-bottom: 16px;
         .fs_16 {
           width: 100%;
           margin-bottom: 0;
         }
       }
       &__bottom {
+        padding: 16px 24px 20px;
         .wrapper {
           flex-wrap: wrap;
-          row-gap: 8px;
+          row-gap: 12px;
         }
         &__name {
           width: 100%;
+          
+          .textColor {
+            font-size: 16px;
+            line-height: normal;
+            &::after {
+              content: '';
+              display: inline-block;
+              margin-left: 3px;
+              width: 12px;
+              height: 12px;
+              background: url(../img/snow_checkmark.svg) no-repeat center/contain;
+            }
+          }
+         
         }
         .spec__oldPrice {
-          margin: 0;
+          margin: 0 0 5px 0;
           line-height: 120%;
         }
       }
       &__content {
         order: 2;
       }
+
     }
     .spec__img {
       position: relative;
       order: 1;
       max-width: 100%;
       width: 100%;
+      height: 158px;
       border-radius: 10px;
       background: #eaeaea;
       overflow: hidden;
       margin-bottom: 16px;
+     
       &__city {
         position: absolute;
-        top: 8px;
+        top: 10px;
+        line-height: normal;
         left: 8px;
-        padding: 2px 8px;
+        padding: 4px 8px;
         border-radius: 4px;
         background: #fff;
+        font-size: 12px;
       }
     }
+    .btn_transparent {
+      margin-top: 24px;
+      line-height: normal;
+    }
+    padding-bottom: 62px;
   }
   .providerSite {
     padding-top: 0;
