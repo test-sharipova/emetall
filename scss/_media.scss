@@ -1779,8 +1779,17 @@ padding: 0;
           &__head {
             gap: 20px;
           }
+          &2 {
+            .profile__title {
+              margin-bottom: 0;
+            }
+            .gray {
+              margin-bottom: 32px;
+            }
+          }
         }
       }
+      
       .mobile {
         align-self: center;
         &__legend {
