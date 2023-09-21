@@ -3943,9 +3943,13 @@ padding: 0;
           .wrapper_start {
             gap: 11px;
             position: relative;
+           
           }
           .btn_order {
             font-size: 14px;
+          }
+          .input-file-row {
+            width: 100%;
           }
         }
         &__bottom {

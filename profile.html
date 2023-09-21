@@ -2804,16 +2804,22 @@
                             
                             <p class="fs_12 gray lh_norm">Электронная почта привязанная к аккаунту</p>
                         </label>
-                        <label class="profile__input__label">
+                        <div class="profile__input__label">
                             <p class="fs_14 fw_600 mb_8 lh_norm">Название компании</p>
                             
                             <div class="wrapper_start">
                                 <input type="text" class="form__input">
-                                <a href="#" class="btn_order btn_44 btn_p32">Прикрепить реквизиты</a>
+                                <div class="input-file-row">
+                                    <label class="input-file">
+                                        <input type="file" style="visibility: hidden; clip: rect(0,0,0,0);width: 0;height: 0;display: none;">
+                                        <p class="btn_order btn_44 btn_p32 btn_file">Прикрепить реквизиты</p>
+                                    </label>
+                                    <div class="input-file-list"></div>
+                                   </div> 
                             </div>
                             
                             
-                        </label>
+                        </div>
                    </div>
                    <div class="profile__data">
                     <p class="fs_20 fw_600 mb_24 lh_norm">

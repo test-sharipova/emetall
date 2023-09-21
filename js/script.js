@@ -150,6 +150,30 @@ $('.copy').click(function() {
     setTimeout(function() { $('.profile__tooltip').hide('slow'); }, 1000);
   });
 
+//прикрепить файл реквизитов в профиле
+var dt = new DataTransfer();
+
+$('.input-file input[type=file]').on('change', function(){
+	let $files_list = $(this).closest('.input-file').next();
+	$files_list.empty();
+
+	for(var i = 0; i < this.files.length; i++){
+		let new_file_input = '<div class="input-file-list-item">' +
+			'<span class="input-file-list-name">' + this.files.item(i).name + '</span>' +
+			'<div class="input-file-list-remove"></div>' +
+			'</div>';
+		$files_list.append(new_file_input);
+		dt.items.add(this.files.item(i));
+	};
+	this.files = dt.files;
+    $('.btn_file').fadeOut();
+});
+$("body").on('click', '.input-file-list-remove', function(i) {
+    $('.input-file-list-item').remove();
+    $('.btn_file').fadeIn();
+});
+
+
 //показать календарь
 new AirDatepicker('#calend', {
         isMobile: true,

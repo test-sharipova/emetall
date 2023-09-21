@@ -152,6 +152,37 @@
         fill: #fff;
       }
     }
+    .input-file-list-item {
+      position: relative;
+      width: 100%;
+      min-height: 38px;
+      border-radius: 6px;
+      background: #E4F3E1;
+      color: #359526;
+      font-size: 14px;
+      gap: 19px;
+      line-height: normal;
+      display: flex;
+      align-items: center;
+      padding: 0 40px 0 16px;
+      &::before {
+        content: '';
+        width: 17px;
+        height: 20px;
+        display: block;
+        background: url(../img/input-file.svg) no-repeat center/contain;
+      }
+    }
+    .input-file-list-remove {
+      cursor: pointer;
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: url(../img/cross.svg) no-repeat center/cover;
+    }
   }
   &__bottom {
     padding: 24px 48px;
