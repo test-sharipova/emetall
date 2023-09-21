@@ -131,6 +131,25 @@ $('.directory__datalist__link').each(function(i){
     });
 });
 
+//маска для телефона
+
+let element = document.querySelectorAll('.phone');
+let maskOptions = {
+    mask: '(000)000-00-00'
+};
+for (let i = 0; i < element.length; i++) {
+    let mask = IMask(element[i], maskOptions);
+}
+
+//скопировать реферальную ссылку
+$('.copy').click(function() {
+    var copyText = $('#ref-link');
+    copyText.select();
+    document.execCommand('copy');
+    $('.profile__tooltip').fadeIn();
+    setTimeout(function() { $('.profile__tooltip').hide('slow'); }, 1000);
+  });
+
 //показать календарь
 new AirDatepicker('#calend', {
         isMobile: true,

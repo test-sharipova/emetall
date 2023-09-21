@@ -24,7 +24,7 @@
         </div>
     
 </section>
-<header>
+<header class="desktop2">
     <div class="container">
         <div class="header__wrapper">
             <div class="hamburger">
@@ -2690,7 +2690,7 @@
 </header>
 
 <main>
-    <div class="profile">
+    <div class="profile profile__main">
        
         <div class="container">
             <h1 class="fs_28 fw_600 mb_26 lh_norm">
@@ -2783,7 +2783,7 @@
                 
                 <form class="profile__content desktop" action="#">
                     
-                   <p class="profile__title desktop lh_norm mb_41">
+                   <p class="profile__title desktop2 lh_norm mb_41">
                         Мои данные
                    </p>
                    <div class="profile__data">
@@ -2793,7 +2793,7 @@
                         <label class="profile__input__label">
                             <p class="fs_14 fw_600 mb_8 lh_norm">Номер телефона</p>
                             <label class="profile__input__wrap">
-                                <input type="number" class="form__input">
+                                <input type="text" class="form__input phone">
                             </label>
                             <p class="fs_12 gray lh_norm">Номер телефона привязанный к аккаунту</p>
                         </label>
@@ -2835,8 +2835,9 @@
                         </p>
                         <a href="#" class="blue mb_32 lh_179 fs_14">Подробнее</a>
                         <div class="wrapper_start">
-                            <input type="text" value="https://e-metall.ru/for-suppliers/?ref..." class="form__input" readonly>
-                            <a href="#" class="btn_order btn_44 btn_p32 profile_hide">Скопировать</a>
+                            <input type="text" value="https://e-metall.ru/for-suppliers/?ref..." class="form__input" id="ref-link" readonly>
+                            <button type="button" class="btn_order btn_44 btn_p32 profile_hide copy">Скопировать</button>
+                            <p class="profile__tooltip">Скопировано</p>
                         </div>
                         <p class="fs_12 gray mb_60">Ваша персональная ссылка участника реф. программы</p>
                    </div>
@@ -2954,6 +2955,12 @@
 </section>
 <!-- modal -->
 <div class="modal modal__banners">
+    <a href="profile.html" class="mobile profile__back">
+                    
+        <p class="fs_16 fw_600">
+           
+        </p>
+    </a>
     <div class="modal__close">&times;</div>
     <p class="fs_24 mb_16 fw_600 lh_104">
         Размещение истекает...
@@ -3008,6 +3015,7 @@
 <div class="overlay"></div>
 
 <script src="js/jquery-3.6.3.min.js"></script>
+<script src="js/unpkg.com_imask@7.1.3_dist_imask.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

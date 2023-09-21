@@ -1,4 +1,7 @@
 .profile {
+  .payBanner {
+    cursor: pointer;
+  }
   background: #f2f2f4;
   padding: 32px 0 120px;
   &-banners {
@@ -130,6 +133,7 @@
     }
     .wrapper_start {
       gap: 24px;
+      position: relative;
     }
     .fs_14 {
       max-width: 428px;
@@ -174,10 +178,11 @@
     }
     &__wrap {
       position: relative;
+      display: block;
       &::before {
         content: "+7";
         position: absolute;
-        top: 56%;
+        top: 43%;
         left: 16px;
         transform: translateY(-50%);
         font-size: 15px;
@@ -186,8 +191,17 @@
         padding-left: 38px;
       }
     }
+    
   }
-
+  &__tooltip {
+    font-size: 16px;
+    padding: 4px;
+    background: $light;
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+  }
   //история проверок
   &__content {
     &__history {

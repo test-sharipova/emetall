@@ -433,6 +433,9 @@
         }
       }
     }
+    &__data {
+      padding: 0 20px;
+    }
   }
 }
 @media screen and (max-width: 768px) {
@@ -2563,6 +2566,44 @@ padding: 0;
         align-self: flex-start;
       }
     }
+    &__banners {
+      transform: translate(0, 0);
+      left: 0;
+      top: 0px;
+      border-radius: 0;
+      width: 100%;
+      padding: 76px 16px 16px;
+      height: 100vh;
+      min-height: 535px;
+      overflow: scroll;
+      .profile__back {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+      }
+      .fs_24 {
+        font-size: 20px;
+        line-height: normal;
+        margin-bottom: 12px;
+      }
+      .lh_157 {
+        line-height: 143%;
+      }
+      .blue {
+        position: absolute;
+        bottom: 40px;
+        text-align: center;
+        width: 100%;
+      }
+      .btn {
+        position: absolute;
+        bottom: 65px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 91%;
+      }
+    }
   }
   
   .blog {
@@ -3889,7 +3930,36 @@ padding: 0;
         }
     }
     // профиль контаткы
-    
+    &__main {
+      .container {
+        padding: 0 8px;
+      }
+      .profile__input__wrap {
+        margin-top: 6px;
+      }
+      .profile {
+        &__data {
+          padding-bottom: 8px;
+          .wrapper_start {
+            gap: 11px;
+            position: relative;
+          }
+          .btn_order {
+            font-size: 14px;
+          }
+        }
+        &__bottom {
+          padding: 8px;
+        }
+      }
+      .copy {
+        position: absolute;
+        right: 16px;
+        top: 46%;
+        transform: translateY(-50%);
+
+      }
+    }
     &__content {
       background: transparent;
       .form__input {
