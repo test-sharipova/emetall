@@ -1398,19 +1398,32 @@ padding: 0;
   .profile {
     //история проверок профиль
     &__history {
+      .container {
+        padding: 0 8px;
+      }
+      .profile__kontur {
+        width: 100%;
+        padding-bottom: 32px;
+        .mb_24 {
+          margin-bottom: 16px;
+        }
+      }
       &__wrapper {
-        margin-top: 16px;
+        margin-top: 0;
         padding: 24px 16px;
         gap: 32px;
         .profile__content__block {
           padding: 0;
           box-shadow: none;
+          .fs_18 {
+            font-size: 16px;
+          }
           .fs_15 {
             font-size: 14px;
             max-width: 304px;
           }
           .lh_167 {
-            line-height: 142%;
+            line-height: 143%;
           }
           .mb_32 {
             margin-bottom: 16px;
@@ -1430,6 +1443,7 @@ padding: 0;
             background: #fff;
             border: 2px solid $blue;
             width: 100%;
+            max-width: 100%;
           }
         }
         &:nth-child(2) {
@@ -1481,6 +1495,20 @@ padding: 0;
     }
     &__img {
       margin-bottom: 16px;
+    }
+    &__history {
+      padding-bottom: 60px;
+      &__wrapper {
+        .profile__table__row {
+          grid-template-columns: 1fr 1fr;
+          row-gap: 16px;
+          padding-bottom: 12px;
+          min-height: 82px;
+          .fs_14 {
+            margin-bottom: 0;
+          }
+        }
+      }
     }
     //Статистика профиль
     &__stat {
@@ -4013,6 +4041,12 @@ padding: 0;
       }
     }
     //анкета поставщика
+    &__card {
+      padding-bottom: 60px;
+      .container {
+        padding: 0 8px;
+      }
+    }
     &__content {
       &_whiteBack {
         background: #fff;
@@ -4026,6 +4060,12 @@ padding: 0;
     &__anketa {
       padding: 0 16px 32px;
       margin-bottom: 12px;
+      .mb_12 {
+        margin-bottom: 24px;
+      }
+      .mb_20 {
+        margin-bottom: 16px;
+      }
       .fs_15 {
         font-size: 14px;
       }
@@ -4044,17 +4084,44 @@ padding: 0;
         }
       }
     }
+    &__done {
+      padding: 24px;
+      margin-top: 0;
+      margin-bottom: 16px;
+      .fs_15 {
+        font-size: 15px;
+      }
+      &__text {
+        padding-left: 0;
+      }
+    }
     &__adress {
       .fs_15 {
         font-size: 14px;
         line-height: 142%;
       }
       &__wrap {
+        margin-top: 24px;
+        margin-bottom: 24px;
         &:after {
           background: url(../img/blue_pencil.svg) no-repeat center;
           background-size: contain;
         }
         
+      }
+      .profile__input__label {
+        margin-bottom: 8px;
+        &_mb40 {
+          margin-bottom: 40px;
+        }
+      }
+      .btn_order {
+        position: relative;
+        font-size: 14px;
+        &:before {
+          position: absolute;
+          right: 14px;
+        }
       }
     }
     .form__input__serv {
@@ -4062,6 +4129,19 @@ padding: 0;
         width: 100%;
         border-right: 1px solid #ddd;
         border-radius: 6px;
+      }
+    }
+    &__input {
+      &__photo {
+        width: 157px;
+        height: 103px;
+        border-radius: 10px;
+        border: 1px dashed var(--input-border, #DDD);
+        background: #F2F2F4;
+        margin-top: 24px;
+        .mb_8 {
+          margin-bottom: 0;
+        }
       }
     }
     
