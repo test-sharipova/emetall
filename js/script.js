@@ -1,11 +1,17 @@
 window.addEventListener('DOMContentLoaded', () => {
-    const menu = document.querySelector('.menu'),
+    const menu = document.querySelector('.menu__catalog'),
     menuItem = document.querySelectorAll('.menu__link'),
+    menuClose = document.querySelector('.menu__catalog__close'),
+    contentClose = document.querySelectorAll('.menu__catalog__content__close'),
+    menuContent = document.querySelectorAll('.menu__catalog__content'),
     hamburger = document.querySelector('.hamburger');
 
     hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('hamburger_active');
-        menu.classList.toggle('menu_active');
+        
+        menu.classList.toggle('menu__catalog_hide');
+    });
+    menuClose.addEventListener('click', () => {
+        menu.classList.toggle('menu__catalog_hide');
     });
 
     menuItem.forEach(item => {
@@ -14,6 +20,11 @@ window.addEventListener('DOMContentLoaded', () => {
             menu.classList.remove('menu_active');
         });
     });
+    for (let i = 0; i < contentClose.length; i++) {
+        contentClose[i].addEventListener('click', function() {
+            menuContent[i].classList.remove('menu__catalog__content_active');
+        });
+      }
     //показать каталог меню
     $('.showCatalog').on('click', function(){
         $('.menu__catalog').toggleClass('menu__catalog_hide');
@@ -32,6 +43,9 @@ window.addEventListener('DOMContentLoaded', () => {
         });
         
       });
+
+      
+     
     
 //overlay
 function consoleBG() {
