@@ -298,6 +298,11 @@
       }
     }
   }
+  .advBlog {
+    &__wrapper {
+      align-items: center;
+    }
+  }
   .offers {
     &__item {
       width: 464px;
@@ -3234,6 +3239,10 @@ padding: 0;
       .mb_32 {
         margin-bottom: 20px;
       }
+      .slick-slide {
+        padding: 0;
+      }
+      
     }
     &Blog {
       padding: 0;
@@ -3249,18 +3258,25 @@ padding: 0;
       }
       .about__link {
         margin-bottom: 24px;
+        text-align: left;
       }
       &__wrapper {
         flex-wrap: wrap;
       }
       &__content {
         order: 2;
+        padding: 0 16px;
         .title_36 {
           margin-top: 0;
+          line-height: normal;
         }
       }
       &__img {
         order: 1;
+        width: 100%;
+        img {
+          width: 98%;
+        }
       }
     }
     &Dop {
@@ -3271,9 +3287,12 @@ padding: 0;
         margin-bottom: 12px;
         max-width: 330px;
         margin-bottom: 20px;
+        margin-top: 6px;
+        padding: 0 16px;
       }
       &__wrapper {
         gap: 16px;
+        width: auto;
       }
       &__item {
         padding: 32px 20px;
@@ -3289,7 +3308,7 @@ padding: 0;
           font-size: 20px;
           max-width: 254px;
           margin: 0 auto 12px;
-          line-height: 120%;
+          line-height: normal;
         }
         .fs_16 {
           font-size: 14px;
@@ -3307,7 +3326,7 @@ padding: 0;
 
       &__wrap {
         flex-wrap: wrap;
-        padding: 32px;
+        padding: 32px 16px;
         gap: 20px;
       }
       .title_36 {
@@ -3326,6 +3345,7 @@ padding: 0;
       }
       .wrapper_start {
         width: 100%;
+        margin-top: 0;
       }
       .form__item {
         width: 100%;
