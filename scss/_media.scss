@@ -3159,15 +3159,39 @@ padding: 0;
       }
     }
     &Numbers {
-      padding: 32px 0 48px;
+      padding: 32px 0 32px;
       &__item {
         max-width: 343px;
         width: 100%;
         margin-bottom: 16px;
+        padding: 31px 24px;
+        height: auto;
+        min-height: 193px;
+        border-radius: 10px;
+        .fs_24 {
+          font-size: 16px;
+        }
+        .mb_10 {
+          margin-bottom: 8px;
+        }
+        .gray {
+          max-width: 230px;
+        }
+      }
+      &__number {
+        font-size: 60px;
+        line-height: 100%;
       }
     }
     &Info {
       padding: 0 16px;
+      &__content {
+        margin-top: 0;
+        .title_36 {
+          line-height: normal;
+          margin-bottom: 16px;
+        }
+      }
       .title_36 {
         font-size: 24px;
       }
@@ -3177,9 +3201,20 @@ padding: 0;
       &__graph {
         width: 100%;
         max-width: 300px;
+        margin-top: 0;
         &List {
           width: 100%;
           max-width: 300px;
+          margin-top: 10px;
+          .fs_24 {
+            font-size: 16px;
+            margin-bottom: 20px;
+          }
+        }
+      }
+      &__list {
+        &__item {
+          font-size: 14px;
         }
       }
     }
