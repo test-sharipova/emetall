@@ -2041,7 +2041,9 @@ padding: 0;
  .mobile2 {
   display: block;
  }
-  
+  .footer_pt59 {
+    padding-top: 32px;
+  }
   .catalog {
     padding: 24px 0 60px;
     &__search {
@@ -4132,6 +4134,7 @@ padding: 0;
       height: 38px;
       text-align: center;
     }
+    
     //калькулятор металла
     &__met {
       h1 {
