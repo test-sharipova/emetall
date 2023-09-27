@@ -4012,27 +4012,55 @@ padding: 0;
       display: none;
     }
     &__wrapper {
-      gap: 11px;
+      gap: 12px 11px;
       margin-bottom: 36px;
     }
     &__item {
       width: 166px;
-      height: 84px;
+      min-height: 84px;
       padding: 12px;
       font-size: 12px;
     }
+    .catalog__search {
+      margin-bottom: 32px;
+    }
+    .gray {
+      font-size: 12px;
+    }
     //марочник 2
+    &2 {
+      .catalog__search {
+        margin-bottom: 16px;
+      }
+      .marochnik__list {
+        margin-bottom: 32px;
+      }
+    }
     &__th {
       display: none;
     }
     &__link {
       grid-template-columns: 81px 1fr;
       column-gap: 17px;
+      height: auto;
+      min-height: 84px;
+      &__marka {
+        font-size: 14px;
+        line-height: normal;
+      }
+      &__class {
+        font-size: 14px;
+        line-height: normal;
+      }
       &__abbr {
         height: auto;
+        min-height: 52px;
         width: fit-content;
         flex-direction: column;
         grid-row: 1/3;
+        &_transparent {
+          padding: 3px 7px;
+        }
         &_blue {
           width: 100%;
           border-bottom: 1px solid #8eb1ed;
