@@ -3988,13 +3988,14 @@ padding: 0;
   }
   .calc {
     padding-top: 16px;
-    padding-bottom: 77px;
+    padding-bottom: 60px;
     h1 {
       margin: 0 0 24px;
       font-size: 24px;
     }
     &__route {
       flex-direction: column;
+      margin-bottom: 24px;
       .calc__label {
         &:nth-child(1) {
           .calc__input {
@@ -4004,9 +4005,12 @@ padding: 0;
           }
         }
         &:nth-child(2) {
+          
           .calc__input {
             border-radius: 0 0 6px 6px;
+            padding-left: 20px;
           }
+         
         }
       }
     }
@@ -4015,15 +4019,15 @@ padding: 0;
     }
     &__change {
       transform: rotate(90deg);
-      top: 81%;
-      right: 8px;
+      top: 83%;
+    right: 17px;
     }
     .calc__input__wrap::after {
       display: none;
     }
     &__volume {
       flex-direction: column;
-      margin-bottom: 27px;
+      margin-bottom: 21px;
       .calc__label {
         &:nth-child(1) {
           .calc__input {
@@ -4033,6 +4037,11 @@ padding: 0;
               border-right: 1px solid $blue;
               border-bottom: 1px solid $blue;
             }
+          }
+        }
+        &:nth-child(2) {
+          .fs_14 {
+            margin-left: 0;
           }
         }
       }
@@ -4051,7 +4060,8 @@ padding: 0;
       box-shadow: none;
       align-items: center;
       padding: 0;
-      gap: 20px;
+      gap: 9px;
+      margin-top: 47px;
       &__content {
         width: 100%;
       }
@@ -4071,6 +4081,7 @@ padding: 0;
         border-bottom: 1px solid #f2f2f4;
         &:nth-child(2) {
           border-bottom: none;
+          padding-top: 9px;
         }
         .fs_24 {
           font-size: 20px;
@@ -4083,9 +4094,36 @@ padding: 0;
     &__info {
       flex-direction: column;
       align-items: flex-start;
+      margin-top: 32px;
+      gap: 20px;
+      &>div {
+        .fs_14:nth-child(1) {
+          margin-bottom: 20px;
+        }
+      }
       .fs_14 {
         width: 100%;
         line-height: 142%;
+      }
+    }
+    &__img {
+      margin-top: 4px;
+    }
+    &__last {
+      padding-top: 0;
+      .mb_26 {
+        margin-bottom: 8px;
+      }
+      .gray {
+        font-size: 14px;
+      }
+      &__item {
+        padding: 16px 0;
+        margin: 0;
+        min-height: 109px;
+        .fw_600 {
+          font-size: 14px;
+        }
       }
     }
     &_mobile {
@@ -4094,12 +4132,24 @@ padding: 0;
       height: 38px;
       text-align: center;
     }
+    //калькулятор металла
     &__met {
+      h1 {
+        margin-bottom: 16px;
+      }
+      .labelRadio {
+        padding: 6px 29px;
+      }
+      .calc_mobile {
+        width: 279px;
+        margin-bottom: 24px;
+      }
       &__wrap {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 24px 12px;
         width: 100%;
+        margin-bottom: 24px;
         .calc__label_220 {
           .calc__input {
             width: 100%;
@@ -4113,6 +4163,24 @@ padding: 0;
             max-width: 100%;
           }
         }
+        
+      }
+      .calc__label:nth-child(2) {
+        .calc__input {
+          padding-left: 16px;
+        }
+      }
+      .calc__item_280 {
+        margin-top: 0;
+      }
+      .mb_58 {
+        margin-bottom: 20px;
+      }
+      .calc__last__item {
+        
+       .blue {
+        font-size: 16px;
+       }
       }
     }
     &__item {
@@ -4148,6 +4216,11 @@ padding: 0;
             font-size: 16px;
           }
         }
+      }
+    }
+    &__last {
+      &_met {
+        padding-left: 0;
       }
     }
   }
