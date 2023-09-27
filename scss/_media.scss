@@ -4494,6 +4494,61 @@ padding: 0;
     }
   }
 }
+.directory {
+  padding: 16px 0 52px;
+  &__promo {
+    min-height: 293px;
+    padding: 24px;
+    display: block;
+    position: relative;
+    background-color: #F1F5F8;
+    background-image: url(../img/directory/directory-bg-mob.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    margin-bottom: 16px;
+  }
+  &__content {
+    padding: 0;
+    .fs_28 {
+      font-size: 24px;
+    }
+  }
+  &__subtitle {
+    font-size: 14px;
+    max-width: 267px;
+    line-height: 143%;
+  }
+  &__img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+.directory2 {
+  padding-bottom: 60px;
+  .fs_28 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .catalog__search {
+    margin-bottom: 32px;
+  }
+  .mb_17 {
+    margin-bottom: 4px;
+  }
+  .directory {
+    &__link {
+      display: block;
+      line-height: normal;
+
+      .fw_600 {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
 
 
 
