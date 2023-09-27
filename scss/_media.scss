@@ -268,6 +268,7 @@
   }
   .login {
     width: auto;
+   
   }
 
   // for advertisers site
@@ -2001,11 +2002,24 @@ padding: 0;
         .mb_16 {
           margin-bottom: 12px;
         }
+        .fs_24 {
+          line-height: normal;
+        }
+        .fs_14 {
+          line-height: 171%;
+        }
       }
+      &__wins {
+        .fs_20 {
+          line-height: normal;
+        }
+      }
+     
       &__form {
         .btn_order {
           border: 2px solid #2764e0;
           background: #fff;
+          font-size: 15px;
         }
       }
     }
@@ -3616,18 +3630,25 @@ padding: 0;
     }
   }
   .error {
-    padding: 70px 0 48px;
+    padding: 70px 0 38px;
     .fs_28 {
       font-size: 24px;
     }
     .fs_18 {
       font-size: 16px;
+      line-height: 150%;
     }
     .popular {
-      margin-top: 48px;
+      margin-top: 45px;
+      &__slider {
+        margin-top: -6px;
+      }
     }
     .mb_32 {
       margin-bottom: 20px;
+    }
+    .blue {
+      margin-bottom: 0;
     }
   }
   .proverka {
