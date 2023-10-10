@@ -2820,12 +2820,26 @@ padding: 0;
   }
   
   .blog {
-    .fs_28 {
+    h1 {
+      margin-bottom: 16px;
+    }
+    .fs_28:not(h2) {
       font-size: 24px;
+    }
+     h2 {
+      font-size: 20px;
+      margin-bottom: 16px;
+     } 
+    
+    
+    &__links {
+      margin-bottom: 32px;
     }
     padding: 16px 0 60px;
     &__stories {
       margin: 0 auto 8px;
+      width: 82px;
+      height: 82px;
     }
     &__articles {
       gap: 24px 11px;
@@ -2833,20 +2847,33 @@ padding: 0;
         width: 50%;
         max-width: 166px;
         .fs_18,
-        .fs_14 {
+        .fs_14,
+        .fs_24 {
           font-size: 12px;
         }
         &:nth-child(3n) {
           width: 100%;
           max-width: 343px;
-          .fs_18 {
-            font-size: 14px;
+          .fs_18, .fs_24 {
+            font-size: 16px;
           }
+        }
+        .mb_16 {
+          margin-bottom: 8px;
+        }
+        &_587 {
+          margin-bottom: 0;
         }
       }
     }
     &__img {
       margin-bottom: 12px;
+    }
+    &__subscribe {
+      margin-top: 48px;
+      .fs_18 {
+        line-height: 150%;
+      }
     }
   }
   .article {
