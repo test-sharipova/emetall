@@ -3654,11 +3654,22 @@ padding: 0;
     }
   }
   .proverka {
+    .container_1208 {
+      padding: 0 10px;
+    }
     padding: 32px 0 60px;
     .title_36 {
       font-size: 24px;
-      line-height: 120%;
+      line-height: normal;
       max-width: 257px;
+      margin-bottom: 12px;
+    }
+    .center:not(.title_36) {
+      max-width: 316px;
+    }
+    &__subtitle {
+      max-width: 316px;
+      line-height: 143%;
     }
     .fs_18 {
       font-size: 14px;
@@ -3674,11 +3685,29 @@ padding: 0;
       margin-bottom: 16px;
       &:nth-child(2) {
         margin-bottom: 0;
+        .proverka__item__top {
+          .fs_15 {
+            margin-bottom: 20px;
+          }
+        }
+        .mb_36 {
+          margin-bottom: 32px;
+        }
+      }
+      .mb_42 {
+        margin-bottom: 21px;
       }
       &__top {
         padding: 24px;
         height: auto;
+        .fs_20 {
+          font-size: 16px;
+          max-width: 248px;
+        }
         .mb_48 {
+          margin-bottom: 24px;
+        }
+        .mb_44 {
           margin-bottom: 24px;
         }
         .mb_12 {
@@ -3687,17 +3716,19 @@ padding: 0;
         .fs_15 {
           font-size: 14px;
           line-height: 20px;
+          max-width: 295px;
         }
       }
       &__bottom {
-        padding: 24px 24px 32px;
+        padding: 24px 24px 0;
         .fs_15 {
           font-size: 12px;
-          line-height: 120%;
+          line-height: normal;
         }
         .wrapper_start {
-          justify-content: center;
+          justify-content: space-between;
           flex-wrap: wrap;
+          margin-bottom: 32px;
           .btn {
             width: 100%;
             margin-bottom: 24px;
@@ -3707,13 +3738,26 @@ padding: 0;
         }
       }
     }
+    &__price {
+      width: 41%;
+    }
+    &__pdf {
+      margin: 0 auto 0;
+      line-height: 156%;
+      font-size: 16px;
+    }
     &__kontur {
+      .fs_18 {
+        line-height: 142%;
+        max-width: 279px;
+      }
       order: 2;
       padding: 20px 24px 32px;
       border-radius: 0 0 12px 12px;
       .title_36 {
         font-size: 20px;
         max-width: 100%;
+        
       }
       .mb_24 {
         margin-bottom: 12px;
