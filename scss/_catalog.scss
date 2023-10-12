@@ -4,7 +4,7 @@
     }
     padding: 32px 0 246px;
     .fs_28 {
-        margin-bottom: 34px;
+        margin-bottom: 32px;
     }
     &__content {
         align-self: flex-start;
@@ -20,6 +20,7 @@
             outline: none;
             border: 1px solid #DDDDDD;
             border-radius: 6px;
+            font-size: 15px;
             &:focus {
                 outline: 4px solid #E9EFFC;
                 border: 1px solid #2764E0;
@@ -36,8 +37,8 @@
         &__btn {
             position: absolute;
             top: 50%;
-            transform: translateY(-50%);
-            right: 13px;
+            transform: translateY(-39%);
+            right: 17px;
             border: none;
             background: transparent;
             cursor: pointer;
@@ -53,9 +54,61 @@
             line-height: 141%;
             z-index: 1;
             overflow: hidden;
+            &:nth-child(1) {
+               .product__img {
+                max-width: 108%;
+                margin-top: -5px;
+                margin-left: -12px;
+               }
+            }
             &:nth-child(9), &:nth-child(3) {
                 .product__item__title {
                     margin-bottom: 0;
+                }
+            }
+            &:nth-child(9) {
+                .product__img {
+                    margin-top: -12px;
+                }
+            }
+            &:nth-child(11) {
+                .product__img {
+                    margin-top: -10px;
+                    max-width: 95%;
+                    margin-left: -5px;
+                }
+            }
+            &:nth-child(12) {
+                .product__img {
+                    
+                    max-width: 100%;
+                    
+                }
+            }
+            &:nth-child(21) {
+                .product__img {
+                    margin-top: -17px;
+                    margin-left: -5px;
+                    max-width: 94%;
+                    
+                }
+            }
+            &:nth-child(22) {
+                .product__img {
+                    margin-top: -11px;
+                    
+                }
+            }
+            &:nth-child(24) {
+                .product__img {
+                    margin-top: -24px;
+                    max-width: 100%;
+                }
+            }
+            &:nth-child(27) {
+                .product__img {
+                    margin-top: -9px;
+                    margin-left: -1px;
                 }
             }
             &::after {

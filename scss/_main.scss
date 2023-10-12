@@ -393,9 +393,20 @@
         gap: 16px;
         margin-bottom: 0;
         margin-left: -5px;
+        height: 505px;
+        overflow: hidden;
         &__img {
             margin-bottom: -3px;
+            img {
+                max-width: 100%;
+            }
         }
+        &:nth-child(2) {
+            img {
+                margin-top: -17px;
+            }
+        }
+
     }
     &__soc {
         width: 224px;
