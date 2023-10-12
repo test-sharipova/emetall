@@ -2894,23 +2894,53 @@ padding: 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 16px;
+        gap: 6px;
         margin-bottom: 0;
+      }
+      &__img {
+        justify-content: flex-start;
+      }
+    }
+    &__nav {
+      margin-bottom: 19px;
+      .fs_16 {
+        font-size: 14px;
       }
     }
     .title_36 {
       font-size: 20px;
-      line-height: 120%;
+      line-height: normal;
       width: 293px;
+      margin-bottom: 16px;
+    }
+    &__img {
+      height: 193px;
+      &_content {
+        height: 251px;
+      }
     }
     .mb_64 {
       margin-bottom: 24px;
     }
+    ol.mb_64 {
+      margin-bottom: 48px;
+    }
     &__text {
       width: 100%;
+     
+      .fs_28 {
+        font-size: 20px;
+        line-height: normal;
+      }
       .fs_18 {
         font-size: 16px;
         line-height: 24px;
+      }
+      .mb_30 {
+        margin-bottom: 24px;
+      }
+      .mb_28 {
+        margin-bottom: 22px;
       }
     }
     &__blockquote {
@@ -2918,18 +2948,24 @@ padding: 0;
       line-height: 24px;
       padding-left: 24px;
       margin-bottom: 24px;
+      max-width: 314px;
     }
     &__table {
       flex-direction: column;
       width: 100%;
       &__item {
         display: flex;
+        height: 53px;
+        &:first-child {
+          height: 60px;
+        }
       }
       &__name,
       &__value {
         width: 50%;
       }
     }
+   
     &__autor {
       flex-direction: column;
       gap: 18px;
