@@ -193,14 +193,10 @@
 }
 @media screen and (max-width: 1024px) {
   .banner {
-    &__logo {
-      width: 85px;
-    }
-    &__date {
-      font-size: 13px;
-    }
-    &__name {
-      font-size: 13px;
+    padding: 0 20px;
+    img {
+      width: 100%;
+      max-width: 1017px;
     }
   }
   .about {

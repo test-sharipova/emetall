@@ -4,12 +4,23 @@
     background: #E9F0FC;
     height: 56px;
     overflow: hidden;
-
-    background-image: image-set("../img/top_banner.png" 1x, "../img/top_banner2.png" 2x);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: #E9F0FC;
+    position: relative;
+    img {
+      margin: 0 auto;
+      display: block;
+    }
+   
+    &::after {
+      content: '';
+      display: block;
+      width: 115px;
+      height: 21px;
+      background: url(../img/top-banner-adv.png) no-repeat center/contain;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+ 
     
     // &__wrap {
     //     max-width: 1017px;
