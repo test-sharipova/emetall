@@ -72,8 +72,18 @@
         color: #fff;
        
     }
+    &:focus {
+        background: $blue;
+    }
     
 }
+.air-datepicker-cell.-selected-.-focus- {
+    background: $blue;
+}
+.air-datepicker-cell.-range-to- {
+    background: $blue;
+}
+
 .air-datepicker-cell.-in-range- {
     background: #E9F0FC;
     &:hover {
