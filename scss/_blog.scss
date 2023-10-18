@@ -120,8 +120,9 @@
                 margin-bottom: 24px;
             }
             .fs_18 {
+                transition: color .3s;
                 &:hover {
-                    opacity: .8;
+                    color: $blue;
                 }
                 
             }
@@ -137,10 +138,10 @@
             transform: scale(1.08);
         }
         &:hover + .fs_18 {
-            opacity: .8;
+            color: $blue;
         }
         &:hover + .fs_24 {
-            opacity: .8;
+            color: $blue;
         }
         img {
             width: 100%;

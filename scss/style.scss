@@ -77,11 +77,11 @@
     cursor: pointer;
     border: none;
     &:hover {
-      opacity: .8;
+      background: #3473F4;
       transition: all .3s;
     }
     &:active {
-      box-shadow: inset 4px 4px 4px rgba(16, 16, 16, 0.68);
+      background: #104CC4;
     }
     &__burger {
       display: flex;
@@ -109,11 +109,11 @@
       transition: all .3s;
       font-size: 14px;
       &:hover {
-        background: #007BFF;
+        background: #3473F4;
         color: #fff;
       }
       &:active {
-        box-shadow: inset 2px 2px 2px rgba(16, 16, 16, 0.68);
+        background: #104CC4;
       }
     }
     &_gray {
@@ -165,7 +165,7 @@
       text-decoration: none;
       line-height: normal;
       &:hover {
-        opacity: .8;
+        background: #F5F5F5;
         transition: all .3s;
       }
       &:active {
@@ -819,14 +819,31 @@
                   border-right: 1px solid #DDD;
               }
              }
+             
           }
           input[type=radio] {
-              display: none;
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            padding: 0;
+            border: 0;
+            clip: rect(0 0 0 0);
+            overflow: hidden;
+          
           }
           input[type=radio]:checked + .radio__mark {
               border: 1px solid #2764E0;
               background: #E9F0FC;
           }
+          input[type=radio]:focus + .radio__mark {
+            border: 1px solid #2764E0;
+            background: #E9F0FC;
+        }
+        input[type=radio]:focus + .radio__mark:hover {
+          color: $text-color;
+        outline: none;
+      }
       }
       &__mark {
           font-size: 14px;
@@ -837,6 +854,12 @@
           cursor: pointer;
           display: block;
           height: 38px;
+          &:hover {
+            background-color: $blue;
+            
+            color: #fff;
+            
+          }
       }
       
   }

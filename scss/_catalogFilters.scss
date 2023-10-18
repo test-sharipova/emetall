@@ -83,7 +83,15 @@
       padding: 13px 40px 14px;
     }
     &__radio {
-      display: none;
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      border: 0;
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+
     
     }
     &__link {
@@ -240,6 +248,7 @@
   position: relative;
   height: 38px;
   line-height: normal;
+  transition: all .3s;
   &::after {
     content: '';
     position: absolute;
@@ -269,7 +278,11 @@
       border-radius: 0px 6px 6px 0px;
     }
   }
-  
+  &:hover {
+    background-color: $blue;
+    outline: 1px solid $blue;
+    color: #fff;
+  }
 }
 .catalogFilters__radio:checked+label {
   background: #E9F0FC;
@@ -277,6 +290,20 @@
     display: block;
   }
 
+  
+}
+.catalogFilters__radio:focus+label {
+  background: #E9F0FC;
+  &::after {
+    display: block;
+  }
+
+  
+}
+.catalogFilters__radio:checked+label:hover {
+ color: $text-color;
+ 
+  outline: none;
   
 }
 .catalogFilters2 {
@@ -423,12 +450,16 @@
     background: $blue;
     text-decoration: none;
     &:hover {
-      opacity: .8;
+      background: #3473F4;
+    }
+    &:active {
+      background: #104CC4;
     }
   }
   .btn_gray {
     background: #DDDDDD;
-    padding: 3px 10px;
+    padding: 2px 10px 3px;
+    line-height: normal;
     margin-left: 8px;
     border-radius: 5px;
   }
@@ -694,7 +725,7 @@
       width: 0;
       height: 0;
       opacity: 0;
-      
+      transition: all .3s;
     }
     &:hover .table__btns {
       width: auto;
