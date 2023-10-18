@@ -21,6 +21,7 @@
             border: 1px solid #DDDDDD;
             border-radius: 6px;
             font-size: 15px;
+            height: 44px;
             &:focus {
                 outline: 4px solid #E9EFFC;
                 border: 1px solid #2764E0;
@@ -35,13 +36,21 @@
             left: 18px;
         }
         &__btn {
+            width: 36px;
+            height: 36px;
+            border-radius: 36px;
             position: absolute;
             top: 50%;
-            transform: translateY(-39%);
+            transform: translateY(-50%);
             right: 17px;
             border: none;
-            background: transparent;
+            background: transparent url(../img/catalog/search.svg) no-repeat center/14px 20px;
             cursor: pointer;
+            transition: all .3s;
+            &:hover {
+                background-color: #F2F2F4;
+                
+            }
         }
     }
     &__wrapper {

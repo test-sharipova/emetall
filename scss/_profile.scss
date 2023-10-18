@@ -6,6 +6,11 @@
   padding: 32px 0 120px;
   &-banners {
     padding-bottom: 89px;
+    .profile__media__count__wrap {
+      a {
+        margin-top: 3px;
+      }
+    }
   }
   &_pb84 {
     padding-bottom: 83px;
@@ -395,6 +400,9 @@
       &_stat {
         padding-bottom: 51px;
         max-width: 1084px;
+        background: #fff;
+        border-radius: 15px;
+        margin-bottom: 16px;
       }
       .search__calend {
         margin-right: 24px;
@@ -406,6 +414,19 @@
   }
   &__media {
     &__count {
+      &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 8px;
+        a {
+          display: block;
+          background-color: #778899;
+          mask: url(../img/info-icon.svg) no-repeat center / contain;
+          width: 18px;
+          height: 18px;
+        }
+      }
       .gray {
         text-transform: uppercase;
         letter-spacing: .6px;
@@ -486,6 +507,15 @@
     }
   }
   &__stat {
+    .profile__title {
+      padding: 24px 0 24px 48px;
+    }
+    .profile__media__select {
+      border-radius: 6px;
+    }
+    &__wrap {
+      padding: 0 48px;
+    }
     &__category {
       column-gap: 17px;
     }
@@ -606,13 +636,19 @@
       }
     }
     &__btn {
+      &:first-child {
+        background: #f6f7f8 url(../img/arrow_up_gray.svg) no-repeat center;
+        background-size: 10px 16px;
+      }
       width: 42px;
       height: 38px;
       border-radius: 3px;
-      background: #f6f7f8;
+      
       border: none;
       margin-right: 4px;
       cursor: pointer;
+      background: #f6f7f8 url(../img/arrow_down_gray.svg) no-repeat center;
+      background-size: 10px 16px;
     }
     &__select {
       text-align: right;
@@ -766,10 +802,10 @@
       min-width: 46px;
       min-height: 46px;
       &::after {
-        width: 44px;
-        height: 44px;
-        left: 3%;
-        top: 3%;
+        width: 90%;
+        height: 90%;
+        left: 5%;
+        top: 5%;
       }
     }
   }

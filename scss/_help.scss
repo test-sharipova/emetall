@@ -36,6 +36,9 @@
                 background: #FFF;
                 color: $blue;
             }
+            .help__img {
+                right: 0;
+            }
         }
         &:nth-child(2) {
             background:#E9F0FC;
@@ -55,7 +58,7 @@
     }
     .help__img {
         right: 28px;
-        max-width: 200px;
+        max-width: 232px;
         img {
             width: 100%;
         }

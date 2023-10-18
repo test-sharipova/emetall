@@ -39,9 +39,10 @@
     // }
     .catalog__search__input {
         font-size: 15px;
+        
     }
     &__product {
-        overflow-x: auto;
+       
         gap: 8px;
         margin-top: 26px;
         &::-webkit-scrollbar {
@@ -79,12 +80,12 @@
         border-bottom: 1px solid #F2F2F4;
         padding: 16px 0;
     }
-    .catalog__search__btn {
-        width: 36px;
-        height: 36px;
-        border-radius: 36px;
-        background: #F2F2F4;
-    }
+    // .catalog__search__btn {
+    //     width: 36px;
+    //     height: 36px;
+    //     border-radius: 36px;
+    //     background: #F2F2F4;
+    // }
     &__datalist {
         width: 100%;
         position: absolute;

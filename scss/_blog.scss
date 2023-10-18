@@ -110,12 +110,20 @@
         &__item {
             text-decoration: none;
             color: $text-color;
+            transition: opacity .3s;
+            
             &_278 {
                 width: 278px;
             }
             &_587 {
                 width: 587px;
                 margin-bottom: 24px;
+            }
+            .fs_18 {
+                &:hover {
+                    opacity: .8;
+                }
+                
             }
         }
     }
@@ -124,11 +132,22 @@
         width: 100%;
         overflow: hidden;
         border-radius: 12px;
+        transition: transform .4s;
+        &:hover {
+            transform: scale(1.08);
+        }
+        &:hover + .fs_18 {
+            opacity: .8;
+        }
+        &:hover + .fs_24 {
+            opacity: .8;
+        }
         img {
             width: 100%;
             object-fit: cover;
             display: block;
         }
+        
     }
     &__subscribe {
         border-radius: 12px;

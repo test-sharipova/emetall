@@ -34,12 +34,13 @@
         padding: 23px 24px 16px;
         &__subtitle {
             max-width: 309px;
-            padding: 2px 14px;
+            padding: 2px 14px 3px;
             background: #E9F0FC;
             border-radius: 6px;
             color: $blue;
             font-size: 14px;
             font-weight: 400;
+            height: 24px;
         }
         svg {
             width: 16px;
@@ -50,10 +51,22 @@
             }
         }
         &__price {
-            display: flex;
+            width: fit-content;
             align-items: center;
             margin-bottom: 25px;
             line-height: 156%;
+            position: relative;
+            padding-right: 24px;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-32%);
+                background: url(../img/info-icon.svg) no-repeat center/ contain;
+                width: 16px;
+                height: 16px;
+            }
         }
         .divider {
             margin: 29px 0 18px;
@@ -150,6 +163,16 @@
         &__item {
             border-bottom: 1px solid #F2F2F4;
             padding: 16px 0;
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            &_contact {
+                display: grid;
+                grid-template-columns: 268px 200px 1fr;
+                .providerscard__info__info {
+                    margin-right: 0;
+                }
+            }
             .wrapper_center {
                 justify-content: flex-start;
             }

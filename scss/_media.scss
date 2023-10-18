@@ -717,6 +717,7 @@ padding: 0;
       padding-right: 0;
       width: 100%;
       height: auto;
+      border-right: none;
     }
     &__form {
       width: 100%;
@@ -1414,8 +1415,13 @@ padding: 0;
     &__name {
       .title_36 {
         img {
-          margin-left: 12px;
+          display: none;
         }
+      }
+    }
+    &__about {
+      .divider {
+        width: 100%;
       }
     }
   }
@@ -2411,6 +2417,13 @@ padding: 0;
   }
 }
   .providerscard {
+    &__name {
+      .title_36 {
+        img {
+          display: block;
+        }
+      }
+    }
     padding-top: 0;
     padding-bottom: 18px;
     .container {
@@ -2503,6 +2516,7 @@ padding: 0;
       }
       &__item {
         padding: 12px 0 12px;
+        justify-content: space-between;
         .providerscard__info__info_date {
           justify-content: space-between;
           width: 100%;
@@ -2517,6 +2531,15 @@ padding: 0;
         width: 100%;
         .mb_20 {
           margin-bottom: 18px;
+        }
+      }
+      &_contact {
+        grid-template-columns: 1fr 1fr;
+        .providerscard__info__title {
+          grid-column: 1/-1;
+        }
+        .blue {
+          text-align: right;
         }
       }
       }
@@ -2583,6 +2606,7 @@ padding: 0;
         padding: 24px 0px;
         .checkmark_blue {
           background: transparent;
+          margin-bottom: -4px;
         }
         .fs_18 {
           font-size: 16px;
