@@ -31,6 +31,9 @@
       margin-left: auto;
       margin-top: 20px;
     }
+    &__indicator {
+      margin-left: auto;
+    }
   }
   .promo {
     &__wrapper {
@@ -39,6 +42,14 @@
     &__img {
       width: auto;
       min-width: auto;
+    }
+  }
+  .choise {
+    &__content {
+      padding-right: 30px;
+    }
+    &__link {
+      font-size: 14px;
     }
   }
   .catalogFilters {
@@ -190,6 +201,36 @@
       overflow-x: auto;
     }
   }
+  .about {
+    &__block {
+      min-width: 48%;
+      width: 48%;
+      position: relative;
+      &__img {
+        position: absolute;
+        bottom: 0;
+        left: 27%;
+        // left: 50%;
+        // transform: translateX(-50%);
+      }
+    }
+    &__person {
+      padding: 66px 76px;
+      &__img {
+        right: 50px;
+        bottom: 0px;
+        width: 43%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    &__wrapper2 {
+      justify-content: center;
+      column-gap: 16px;
+    }
+  }
+ 
 }
 @media screen and (max-width: 1024px) {
   .banner {
@@ -201,7 +242,7 @@
   }
   .about {
     &__block {
-      min-width: 458px;
+      
       padding: 40px 31px 0px;
       img {
         width: 80%;
@@ -223,6 +264,16 @@
   }
 }
 @media screen and (max-width: 1023px) {
+  .header {
+    &__indicator {
+      margin-left: 0;
+      &__item {
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
   .cart {
     padding-bottom: 100px;
     &__wrapper {
@@ -890,6 +941,7 @@ padding: 0;
       padding: 24px 16px 20px;
       display: block;
       margin-right: 16px;
+      scroll-snap-align: start;
       svg {
         path {
           fill: url(#linear-gradient);
@@ -980,6 +1032,10 @@ padding: 0;
         height: 20px;
         right: 9px;
       }
+    }
+    &__wrapper2 {
+      justify-content: space-between;
+      scroll-snap-type: x mandatory;
     }
     .about__title {
       max-width: 287px;
@@ -4845,6 +4901,10 @@ padding: 0;
     bottom: 0;
     left: 0;
     width: 100%;
+  }
+  &__product {
+    overflow-y: hidden;
+    overflow-x: scroll;
   }
 }
 .directory2 {

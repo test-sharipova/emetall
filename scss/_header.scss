@@ -80,6 +80,7 @@ header {
         font-weight: 400;
         font-size: 14px;
         color: #333333;
+        white-space: nowrap;
     }
     &__icons {
         display: flex;
@@ -479,3 +480,61 @@ header {
         display: none;
     }
 }
+//dropdown menu
+ //сужение меню при изменении ширины экрана
+ .top_menu {
+    width: 81%;
+    .menu {
+        width: 100%;
+    }
+}
+ul.menu {padding:0; margin:0;}
+ul.menu li {
+    list-style-type:none; 
+    display:block; 
+    float:left; 
+    padding: 0; 
+    white-space:nowrap;
+    &:first-child {
+        a {
+            margin-left: 0;
+        }
+    }
+}
+.dropdown-toggle {
+    cursor: pointer;
+    width: 26px;
+    height: 23px;
+    background: #fff;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    
+    display: flex;
+   
+    justify-content: center;
+   
+    align-items: center;
+   
+}
+ul.menu li.dd_menu {float:right; position:relative; display:none;}
+ul.menu ul.dropdown-menu {
+    display:none; 
+    position:absolute; 
+    top:35px; 
+    right:10px; 
+    padding:5px; 
+    border:#CCC 1px solid; 
+    border-radius:5px; 
+    z-index:2;
+    background: #fff;
+}
+ul.menu ul.dropdown-menu li {
+    &:first-child {
+        a {
+            margin: 0 10px;
+        }
+    }
+    float:none;
+    margin-bottom: 8px;
+}
+ul.menu a {color: $text-color; text-decoration: none; display:inline-block; margin:0 10px;}
