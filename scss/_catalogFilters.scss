@@ -53,7 +53,18 @@
         background-color: #E9F0FC;
         border: 1px solid #8EB1ED;
         }
+      
+   .new-select {
+    &:empty {
+      background-color: #fff;
+      border: 1px solid #DDD;
+    }
+    &.on {
+      border: 1px solid #8EB1ED;
+    }    
+   }
    
+
    .showFilters {
     padding: 12px 24px;
     background: #e9f0fc;
@@ -236,7 +247,11 @@
     .labelRadio {
       margin-top: 2px;
     }
-}
+    .form__item_286 {
+      position: relative;
+    }
+  }
+    
 //radio buttons
 .labelRadio {
   background: #FFFFFF;
@@ -769,4 +784,7 @@
   .heightAuto {
     height: auto;
   }
+  
+  
+  
 }

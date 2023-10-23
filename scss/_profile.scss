@@ -437,23 +437,18 @@
         align-items: flex-end;
       }
     }
-    &__select {
-      border-radius: 3px;
-      border: 1px solid #ddd;
-      background-color: #fff;
-      background-image: url(../img/form_arrow.svg);
-      background-repeat: no-repeat;
-      background-position: center right 15px;
-      appearance: none;
-      width: 214px;
-      font-size: 14px;
-      padding: 8px 36px 8px 16px;
-      margin: 0 18px 0 0;
-      height: 38px;
-    }
+    
+    
     &__head {
       align-items: center;
       margin-bottom: 60px;
+      .select {
+        max-width: 214px;
+      }
+      .new-select {
+        background-color: #fff;
+        border: 1px solid #ddd;
+      }
     }
     //статистика
     &__wrapper {
@@ -470,7 +465,23 @@
   }
   &__content {
     &__media {
-      
+      .select {
+        max-width: 214px;
+      }
+      .new-select {
+        border-radius: 3px;
+      border: 1px solid #ddd;
+      background-color: #fff;
+      background-image: url(../img/form_arrow.svg);
+      background-repeat: no-repeat;
+      background-position: center right 15px;
+      appearance: none;
+      width: 214px;
+      font-size: 14px;
+      padding: 8px 36px 8px 16px;
+      margin: 0 18px 0 0;
+      height: 38px;
+      }
       &_p60 {
         padding-top: 60px;
         padding-bottom: 49px;

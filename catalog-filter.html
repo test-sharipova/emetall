@@ -3077,7 +3077,7 @@
                             <div class="wrapper form__wrapper">
                               <div class="form__item_286 form__item_w47">
                                   <label for="chapter" class="label">Раздел</label>
-                              <select name="chapter" id="chapter" class="form__input select">
+                              <select name="chapter" id="chapter" class="form__input select select_main">
                                   <option value="" selected disabled></option>
                                   <option value="Арматура">Арматура</option>
                                   <option value="Балка">Балка</option>
@@ -3124,7 +3124,7 @@
                               </div>
                               <div class="form__item_286 form__item_w47">
                                   <label for="chapter2" class="label">Подраздел</label>
-                              <select name="chapter2" id="chapter2" class="form__input select">
+                              <select name="chapter2" id="chapter2" class="form__input select select_main">
                                         <option value="" selected disabled></option>
                                           <option value="Арматура">ППУ</option>
                                           <option value="Балка">Треугольная</option>
@@ -3139,7 +3139,7 @@
                               </div>
                               <div class="form__item_286 w100">
                                   <label for="city" class="label">Город</label>
-                              <select name="city" id="city" class="form__input select" placeholder="">
+                              <select name="city" id="city" class="form__input select select_main" placeholder="">
                                         <option value="" selected disabled></option>
                                           <option value="Санкт-Петербург">Санкт-Петербург</option>
                                           <option value="Москва">Москва</option>
@@ -3204,15 +3204,17 @@
                             </div>
                             <div class="form__divider"></div>
                             <div class="wrapper form__wrapper form__wrapper_mb22">
-                              <div class="form__item_286 w100">
+                              <div class="form__item_286 w100 metallobaza">
                                   <label for="metallobaza" class="label">Металлобаза</label>
-                                  <input name="metallobaza" id="metallobaza" class="form__input" list="metallobazalist" placeholder="">
-                                  <datalist id="metallobazalist">
+                                  <input name="metallobaza" id="metallobaza" class="form__input" list="" autocomplete="off" role="combobox" placeholder="">
+                                  <datalist id="metallobazalist" role="listbox">
 
-                                      <option value="Металлобаза1"></option>
-                                      <option value="Металлобаза2"></option>
-                                      <option value="Металлобаза3"></option>
-                                      <option value="Металлобаза4"></option>
+                                      <option value="Мечел">Мечел</option>
+                                      <option value="НМЛК">НМЛК</option>
+                                      <option value="МеталлСервис">МеталлСервис</option>
+                                      <option value="ЕВРАЗ">ЕВРАЗ</option>
+                                      <option value="Металл Гарант">Металл Гарант</option>
+                                      <option value="Metallink">Metallink</option>
                                   </datalist>
                                     <p class="fs_12 gray2 desktop">Введите название металлобазы</p>
                                     <button type="submit" class="btn mobile fw_600 btn_50">Показать 2 618 предложений</button>
@@ -6292,6 +6294,7 @@
     <script src="js/jquery-3.6.3.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/air-datepicker.js"></script>
+    <script src="js/select2.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

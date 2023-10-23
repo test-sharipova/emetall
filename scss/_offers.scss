@@ -7,21 +7,7 @@
         margin-bottom: 5px;
         line-height: 208%;
     }
-    .select {
-        background-color: #FFFFFF;
-        
-        background-image: url(../img/form_arrow.svg);
-        background-repeat: no-repeat;
-        background-position: center right 15px;
-        border: 1px solid #DDDDDD;
-        appearance: none;
-        position: relative;
-        height: 38px;
-        &_active {
-            background-color: #E9F0FC;
-            border: 1px solid #8EB1ED;
-        }
-    }
+   
     &__filter {
         display: flex;
         align-items: center;
@@ -99,4 +85,13 @@
         height: 44px;
         line-height: normal;
     }
+    .new-select {
+        &:empty {
+          background-color: #fff;
+          border: 1px solid #DDD;
+        }
+        &.on {
+          border: 1px solid #8EB1ED;
+        }    
+       }
 }

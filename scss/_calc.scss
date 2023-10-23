@@ -272,9 +272,20 @@
         }
     }
     &__label {
+        &:nth-child(1) {
+            .new-select {
+                border-radius: 6px 0 0 6px;
+            }
+        }
+        &:nth-child(2) {
+            .new-select {
+                border-radius: 0 6px 6px 0;
+            }
+        }
         &_220 {
             width: 220px;
             max-width: 220px;
+            min-width: 220px;
             .calc__input {
                 width: 220px;
                 max-width: 220px;
@@ -410,6 +421,16 @@
     }
     .calc__last__item {
         display: block;
+    }
+    .new-select {
+        border-radius: 6px;
+        border: 1px solid #DDD;
+        background: transparent;
+        width: 100%;
+        max-width: 357px;
+        padding: 15px 28px 15px 20px;
+        height: 50px;
+        white-space: nowrap;
     }
     
 }
