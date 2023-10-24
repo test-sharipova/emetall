@@ -169,26 +169,6 @@ function responseMenu(){
       });
 
 
-//показать даталист в поиске (справочник стандартов)
-$('.catalog__search__input').on('click', function() {
-    $('.overlay_light').fadeIn();
-    $('.directory__datalist').fadeIn();
-    $('.catalog__search').css('z-index', '110');
-    
-});
-$('.directory__datalist, .overlay_light').on('click', function() {
-    $('.overlay_light').fadeOut();
-    $('.directory__datalist').fadeOut();
-    $('.catalog__search').css('z-index', '1');
-    
-});
-$('.directory__datalist__link').each(function(i){
-    $(this).on('click', function() {
-        $('.catalog__search__input').val($('.directory__datalist__link').eq(i).text());
-      
-    });
-});
-
 //маска для телефона
 
 let element = document.querySelectorAll('.phone');
@@ -529,6 +509,25 @@ $('.advRew__slider').slick({
             }
         ]
     });
+
+    //блог - показать больше статей
+    
+        
+        var visibleBlocks = 12;
+        var allBlocks = $('.blog__articles__item').length;
+                
+        $('.blog__articles__item').slice(visibleBlocks).hide();
+                
+        $('.btn_transparent').on('click', function() {
+                  visibleBlocks += 12;
+                  
+          if (visibleBlocks >= allBlocks) {
+            $('.btn_transparent').hide();
+          }
+                   
+          $('.blog__articles__item').slice(0, visibleBlocks).show();
+        });
+      
     
   //select 
   $('.select_main').each(function() {
@@ -597,77 +596,137 @@ $('.advRew__slider').slick({
 });
 
 
-// стили datalist 
-
-metallobaza.onfocus = function () {
-    metallobazalist.style.display = 'block';
-    
-  };
-  for (let option of metallobazalist.options) {
-    option.onclick = function () {
-        metallobaza.value = option.value;
-        metallobazalist.style.display = 'none';
-        
-    }
-  };
-  
-  metallobaza.oninput = function() {
-    currentFocus = -1;
-    var text = metallobaza.value.toUpperCase();
-    for (let option of metallobazalist.options) {
-      if(option.value.toUpperCase().indexOf(text) > -1){
-        option.style.display = "block";
-    }else{
-      option.style.display = "none";
-      }
-    };
-  }
-  var currentFocus = -1;
-  metallobaza.onkeydown = function(e) {
-    if(e.keyCode == 40){
-      currentFocus++
-     addActive(metallobazalist.options);
-    }
-    else if(e.keyCode == 38){
-      currentFocus--
-     addActive(metallobazalist.options);
-    }
-    else if(e.keyCode == 13){
-      e.preventDefault();
-          if (currentFocus > -1) {
-            /*and simulate a click on the "active" item:*/
-            if (metallobazalist.options) metallobazalist.options[currentFocus].click();
+// стили datalist на странице каталог-фильтры
+let metallobaza = document.getElementById('metallobaza'),
+    metallobazalist = document.getElementById('metallobazalist');
+    if(metallobaza) {
+        metallobaza.onfocus = function () {
+            metallobazalist.style.display = 'block';
+            
+          };
+          for (let option of metallobazalist.options) {
+            option.onclick = function () {
+                metallobaza.value = option.value;
+                metallobazalist.style.display = 'none';
+                
+            };
+          };
+          
+          metallobaza.oninput = function() {
+            currentFocus = -1;
+            var text = metallobaza.value.toUpperCase();
+            for (let option of metallobazalist.options) {
+              if(option.value.toUpperCase().indexOf(text) > -1){
+                option.style.display = "block";
+            }else{
+              option.style.display = "none";
+              }
+            };
           }
+          var currentFocus = -1;
+          metallobaza.onkeydown = function(e) {
+            if(e.keyCode == 40){
+              currentFocus++
+             addActive(metallobazalist.options);
+            }
+            else if(e.keyCode == 38){
+              currentFocus--
+             addActive(metallobazalist.options);
+            }
+            else if(e.keyCode == 13){
+              e.preventDefault();
+                  if (currentFocus > -1) {
+                    /*and simulate a click on the "active" item:*/
+                    if (metallobazalist.options) metallobazalist.options[currentFocus].click();
+                  }
+            }
+          }
+          
+          function addActive(x) {
+              if (!x) return false;
+              removeActive(x);
+              if (currentFocus >= x.length) currentFocus = 0;
+              if (currentFocus < 0) currentFocus = (x.length - 1);
+              x[currentFocus].classList.add("active");
+            }
+            function removeActive(x) {
+              for (var i = 0; i < x.length; i++) {
+                x[i].classList.remove("active");
+              }
+            }
+          
     }
-  }
-  
-  function addActive(x) {
-      if (!x) return false;
-      removeActive(x);
-      if (currentFocus >= x.length) currentFocus = 0;
-      if (currentFocus < 0) currentFocus = (x.length - 1);
-      x[currentFocus].classList.add("active");
-    }
-    function removeActive(x) {
-      for (var i = 0; i < x.length; i++) {
-        x[i].classList.remove("active");
-      }
-    }
-
-   
-
-  //меняется фон у селекта в форме при фокусе и выборе
-// const selects = document.querySelectorAll('.select');
-
-// selects.forEach(select => {
-//   select.addEventListener('focus', () => {
     
-//     select.classList.add('select_active');
-//   });
-// });
+    // стили datalist на странице справочника стандартов
+
+    let directory = document.getElementById('directory'),
+    directorysearch = document.getElementById('directorysearch');
+    if(directory) {
+        directory.onfocus = function () {
+            directorysearch.style.display = 'block';
+            $('.overlay_light').fadeIn();
+            $('.catalog__search').css('z-index', '11');
+          };
+          for (let option of directorysearch.options) {
+            option.onclick = function () {
+                directory.value = option.value;
+                directorysearch.style.display = 'none';
+                
+                $('.overlay_light').fadeOut();
+            }
+          };
+          
+          directory.oninput = function() {
+            currentFocus = -1;
+            var text = directory.value.toUpperCase();
+            for (let option of directorysearch.options) {
+              if(option.value.toUpperCase().indexOf(text) > -1){
+                option.style.display = "block";
+            }else{
+              option.style.display = "none";
+              }
+            };
+          }
+          var currentFocus = -1;
+          directory.onkeydown = function(e) {
+            if(e.keyCode == 40){
+              currentFocus++
+             addActive(directorysearch.options);
+            }
+            else if(e.keyCode == 38){
+              currentFocus--
+             addActive(directorysearch.options);
+            }
+            else if(e.keyCode == 13){
+              e.preventDefault();
+                  if (currentFocus > -1) {
+                    /*and simulate a click on the "active" item:*/
+                    if (directorysearch.options) directorysearch.options[currentFocus].click();
+                  }
+            }
+          }
+          
+          function addActive(x) {
+              if (!x) return false;
+              removeActive(x);
+              if (currentFocus >= x.length) currentFocus = 0;
+              if (currentFocus < 0) currentFocus = (x.length - 1);
+              x[currentFocus].classList.add("active");
+            }
+            function removeActive(x) {
+              for (var i = 0; i < x.length; i++) {
+                x[i].classList.remove("active");
+              }
+            }
+        
+           $('.overlay_light').on('click', function(){
+            directorysearch.style.display = 'none';
+            $('.overlay_light').fadeOut();
+           })
+    }
 
 
-    //rew popup + company popup Достижения и награды страницы О сервисе
+      //rew popup + company popup Достижения и награды страницы О сервисе
   $('.advRew__slider').magnificPopup({
     delegate: 'a',
     type: 'image',
