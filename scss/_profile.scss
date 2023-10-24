@@ -521,7 +521,25 @@
     .profile__title {
       padding: 24px 0 24px 48px;
     }
-    .profile__media__select {
+    &__select {
+      &__wrap {
+        margin-right: 24px;
+        position: relative;
+        .new-select {
+          width: 214px;
+          text-align: right;
+          padding-right: 36px;
+          &::before {
+            content: 'Показано';
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+      }
+    }
+    .new-select {
       border-radius: 6px;
     }
     &__wrap {
@@ -534,6 +552,7 @@
       border-radius: 15px;
       background: #fff;
       padding: 24px 24px 32px;
+      max-width: 350px;
       .profile__title {
         padding: 2px 0 24px 6px;
       }
@@ -633,6 +652,19 @@
     &__list {
       list-style-type: none;
       margin: 34px 0 32px;
+      &__wrap {
+        position: relative;
+        overflow: hidden;
+        height: 221px;
+        .profile__stat__list {
+          position: absolute;
+          bottom: -100%;
+          height: 100%;
+          &_active {
+            bottom: 0;
+          }
+        }
+      }
     }
     &__li {
       display: grid;
@@ -646,11 +678,8 @@
         }
       }
     }
-    &__btn {
-      &:first-child {
-        background: #f6f7f8 url(../img/arrow_up_gray.svg) no-repeat center;
-        background-size: 10px 16px;
-      }
+    &__btn_prev, &__btn_next {
+     
       width: 42px;
       height: 38px;
       border-radius: 3px;
@@ -661,20 +690,10 @@
       background: #f6f7f8 url(../img/arrow_down_gray.svg) no-repeat center;
       background-size: 10px 16px;
     }
-    &__select {
-      text-align: right;
-      &__wrap {
-        position: relative;
-        &::before {
-          content: "Показано:";
-          position: absolute;
-          top: 50%;
-          left: 16px;
-          transform: translateY(-50%);
-          font-size: 14px;
-        }
-      }
+    &__btn_prev {
+      background: #f6f7f8 url(../img/arrow_up_gray.svg) no-repeat center;
     }
+   
   }
   &__table {
     &__stat {

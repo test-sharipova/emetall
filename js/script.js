@@ -274,14 +274,37 @@ new AirDatepicker('#calend', {
 
   
 //страница профиль статистика
-//табы в моб. версии
-$('ul.profile__stat__tabs__caption').on('click', 'li:not(.profile__stat__tab_active)', function() {
-    $(this)
-      .addClass('profile__stat__tab_active').siblings().removeClass('profile__stat__tab_active')
-      .closest('div.profile__stat__tabs').find('div.profile__stat__tab__content').removeClass('profile__stat__tab__content_active').eq($(this).index()).addClass('profile__stat__tab__content_active');
-  });
+    //табы в моб. версии
+    $('ul.profile__stat__tabs__caption').on('click', 'li:not(.profile__stat__tab_active)', function() {
+        $(this)
+        .addClass('profile__stat__tab_active').siblings().removeClass('profile__stat__tab_active')
+        .closest('div.profile__stat__tabs').find('div.profile__stat__tab__content').removeClass('profile__stat__tab__content_active').eq($(this).index()).addClass('profile__stat__tab__content_active');
+    });
     
-    // promo slider
+    //слайдер листать список топовых категорий
+    $('.profile__stat__list__slider').slick({
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        vertical: true,
+        arrows: false,
+      });
+       
+    $('.profile__stat__btn_prev').each(function(i) {
+        $(this).on('click', function() {
+            $('.profile__stat__list__slider').eq(i).slick('slickPrev');
+            
+        });
+      });
+      $('.profile__stat__btn_next').each(function(i) {
+        $(this).on('click', function() {
+            $('.profile__stat__list__slider').eq(i).slick('slickNext');
+            
+        });
+      });
+
+      
+  // promo slider
     $('.promo__slider').slick({
         dots: true,
         prevArrow: '<button type="button" class="slick-prev"><img src="img/prev.svg"></button>',
