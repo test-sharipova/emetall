@@ -19,12 +19,39 @@
       max-width: calc(100% - 450px);
       overflow-y: hidden;
       overflow-x: auto;
+      &::-webkit-scrollbar {
+        height: 4px;
+        
+      }
+    &::-webkit-scrollbar-track {
+        background: transparent;
+      }
+    &::-webkit-scrollbar-thumb {
+        background-color: #B7B7B7;
+        border-radius: 3px;
+      }
       &__item {
         white-space: nowrap;
       }
     }
     &__info {
       max-width: calc(100% - 450px);
+    }
+  }
+  .catalogFilters {
+    &__banners {
+      display: flex;
+      overflow-x: scroll;
+      margin-top: 24px;
+    }
+    &__banner {
+      margin-right: 12px;
+    }
+  }
+  .table {
+    &__block {
+      overflow-x: scroll;
+      overflow-y: hidden;
     }
   }
 }
@@ -65,16 +92,7 @@
       font-size: 14px;
     }
   }
-  .catalogFilters {
-    &__banners {
-      display: flex;
-      overflow-x: scroll;
-      margin-top: 24px;
-    }
-    &__banner {
-      margin-right: 12px;
-    }
-  }
+  
   .catalogFilters2 {
     &__wrapper {
       flex-wrap: wrap;
@@ -97,11 +115,7 @@
       }
     }
   }
-  .table {
-    &__block {
-      overflow-x: scroll;
-    }
-  }
+ 
   // .providerscard {
   //   &__right {
   //     display: none;

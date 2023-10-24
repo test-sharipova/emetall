@@ -114,6 +114,9 @@
     -moz-appearance: none;
     appearance: none;
     transition: all .3s;
+    &:hover {
+        background: #CCCCCC;
+    }
     &::after {
         content: "";
 
@@ -134,6 +137,6 @@
         &::after {
             transform: translateX(calc(100% - 1px)); 
         }
-        background: $blue;
+        background: #3473F4;
     }
    }
