@@ -3063,23 +3063,18 @@
             <h1 class="fs_28 fw_600 mb_24 lh_norm">Справочник стандартов</h1>
             <form action="#" class="catalog__search">
                 <img src="img/catalog/search_img.svg" class="catalog__search__img" alt="search">
-                <input class="catalog__search__input" type="text" placeholder="Введите ГОСТ, ТУ или любой параметр">
+                <input class="catalog__search__input" id="directory" type="text" list="" autocomplete="off" type="text" placeholder="Введите ГОСТ, ТУ или любой параметр">
                 <button type="submit" class="catalog__search__btn desktop"></button>
+                <datalist id="directorysearch" role="listbox">
+ 
+                    <option value="ГОСТ 13663-86  Трубы стальные профильные">ГОСТ 13663-86  Трубы стальные профильные</option>
+                    <option value="ГОСТ 617-2006  Трубы медные и латунные круглого сечения общего назначения">ГОСТ 617-2006  Трубы медные и латунные круглого сечения общего назначения</option>
+                    <option value="ГОСТ 617-2006  Трубы медные и латунные круглого сечения общего назначения">ГОСТ 617-2006  Трубы медные и латунные круглого сечения общего назначения</option>
+                    <option value="ГОСТ 13663-88  Трубы стальные профильные">ГОСТ 13663-88  Трубы стальные профильные</option>
+                    <option value="ГОСТ 617-2006  Трубы медные и латунные круглого сечения общего назначения">ГОСТ 617-2006  Трубы медные и латунные круглого сечения общего назначения</option>
+                    <option value="ГОСТ 617-2006  Трубы медные и латунные круглого сечения общего назначения">ГОСТ 617-2006  Трубы медные и латунные круглого сечения общего назначения</option>
+                </datalist>
                 
-                <div class="directory__datalist">
-                    <div class="directory__link directory__datalist__link">
-                        <p class="fs_16 fw_600">ГОСТ 13663-86</p>
-                        <p class="fs_16">Трубы стальные профильные </p>
-                    </div>
-                    <div class="directory__link directory__datalist__link">
-                        <p class="fs_16 fw_600">ГОСТ 617-2006</p>
-                        <p class="fs_16">Трубы медные и латунные круглого сечения общего назначения </p>
-                    </div>
-                    <div class="directory__link directory__datalist__link">
-                        <p class="fs_16 fw_600">ГОСТ 617-2006</p>
-                        <p class="fs_16">Трубы медные и латунные круглого сечения общего назначения </p>
-                    </div>
-                </div>
             </form>
             <p class="fs_20 mb_17 fw_600 lh_norm">Трубный прокат</p>
             <div class="directory__list">
@@ -3278,6 +3273,8 @@
 <div class="overlay_light"></div>
 
 <script src="js/jquery-3.6.3.min.js"></script>
+<script src="js/air-datepicker.js"></script>
+<script src="js/slick.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

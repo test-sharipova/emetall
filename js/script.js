@@ -293,10 +293,20 @@ new AirDatepicker('#calend', {
             {
                 breakpoint: 800,
                 settings: {
+                    
+                    slidesToShow: 1                   
+                }
+                 
+            },
+            {
+                breakpoint: 1420,
+                settings: {
                     arrows: false,
                     slidesToShow: 1                   
-                } 
+                }
+                 
             }
+            
         ]
       });
     // popular slider
@@ -511,24 +521,25 @@ $('.advRew__slider').slick({
     });
 
     //блог - показать больше статей
-    
+  
         
         var visibleBlocks = 12;
         var allBlocks = $('.blog__articles__item').length;
                 
         $('.blog__articles__item').slice(visibleBlocks).hide();
                 
-        $('.btn_transparent').on('click', function() {
+        $('.btn_show-more').on('click', function() {
                   visibleBlocks += 12;
                   
           if (visibleBlocks >= allBlocks) {
-            $('.btn_transparent').hide();
+            $('.btn_show-more').hide();
           }
                    
           $('.blog__articles__item').slice(0, visibleBlocks).show();
         });
       
-    
+           
+   
   //select 
   $('.select_main').each(function() {
     const _this = $(this),

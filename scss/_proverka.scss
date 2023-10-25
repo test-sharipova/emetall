@@ -29,6 +29,8 @@
             padding: 27px 48px 40px;
             .wrapper_start {
                 align-items: center;
+                flex-wrap: wrap;
+                row-gap: 16px;
             }
             .btn {
                 position: relative;

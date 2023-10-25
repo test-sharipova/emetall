@@ -160,22 +160,28 @@
     .input-file-list-item {
       position: relative;
       width: 100%;
-      min-height: 38px;
+      min-height: 44px;
       border-radius: 6px;
-      background: #E4F3E1;
-      color: #359526;
+      background: #F2F2F4;
+      color: #9295AE;
       font-size: 14px;
       gap: 19px;
       line-height: normal;
       display: flex;
+      justify-content: center;
       align-items: center;
-      padding: 0 40px 0 16px;
+      padding: 0 40px 0 40px;
+      width: 404px;
       &::before {
         content: '';
         width: 17px;
         height: 20px;
         display: block;
-        background: url(../img/input-file.svg) no-repeat center/contain;
+        background: url(../img/input-file-blue.svg) no-repeat center/contain;
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
       }
     }
     .input-file-list-remove {
@@ -305,7 +311,7 @@
           grid-template-columns: 303px 252px 266px 1fr;
         }
         &__row {
-          grid-template-columns: 301px 256px 265px 1fr;
+          grid-template-columns: 301px 256px 265px auto;
           .fs_14 {
             line-height: normal;
           }
@@ -356,7 +362,7 @@
         &::before {
           content: "";
           width: 2px;
-          height: 36px;
+          height: 100%;
           background: $blue;
           position: absolute;
           left: 0;
@@ -381,6 +387,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      white-space: nowrap;
       &::after {
         content: "";
         width: 16px;
@@ -698,11 +705,11 @@
   &__table {
     &__stat {
       .profile__table__head {
-        grid-template-columns: 200px 161px 154px 185px 195px 1fr;
+        grid-template-columns: 200px 161px 154px 185px 195px max-content;
         padding-left: 0;
       }
       .profile__table__row {
-        grid-template-columns: 191px 161px 146px 185px 196px 1fr;
+        grid-template-columns: 191px 161px 146px 185px 196px max-content;
         height: 24px;
         .fs_14 {
           line-height: normal;
