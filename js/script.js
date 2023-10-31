@@ -94,6 +94,7 @@ function responseMenu(){
 }
 
 
+
 	$('.top_menu').on('click', '.dropdown-toggle', function () {
 		$('.dropdown-menu').toggle();
 	});
@@ -101,7 +102,16 @@ function responseMenu(){
 	$(window).on('resize', function(){
 		responseMenu();
 	}).trigger('resize');
-
+    $(document).mouseup( function(e){ // событие клика по веб-документу
+        var div = $( ".dropdown-menu" ); // тут указываем ID элемента
+        if ( !div.is(e.target) // если клик был не по нашему блоку
+            && div.has(e.target).length === 0 ) { // и не по его дочерним элементам
+            $('.dropdown-menu').hide(); // скрываем его
+        }
+    
+    
+        
+    });
 
 
 // ПОКАЗ МОДАЛЬНЫХ ОКОН

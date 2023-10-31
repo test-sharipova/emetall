@@ -406,6 +406,13 @@
       }
     }
   }
+  .about {
+    &__wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+  }
   .choise {
     &__wrapper {
       flex-wrap: wrap;
@@ -656,7 +663,7 @@
   }
   .menu {
     position: fixed;
-
+    display: none;
     flex-direction: column;
     top: 0;
     right: -100%;
