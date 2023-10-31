@@ -303,7 +303,7 @@ new AirDatepicker('#calend', {
             {
                 breakpoint: 800,
                 settings: {
-                    
+                    arrows: false,
                     slidesToShow: 1                   
                 }
                  

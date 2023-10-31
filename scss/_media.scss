@@ -394,6 +394,18 @@
       }
     }
   }
+  .catalogFilters {
+    .form {
+      &__wrapper {
+        flex-wrap: wrap;
+       
+      }
+      // &__item_w47 {
+      //   width: 47%;
+      // }
+     
+    }
+  }
 }
 @media screen and (max-width: 1023px) {
   .header {
