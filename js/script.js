@@ -548,7 +548,23 @@ $('.advRew__slider').slick({
           $('.blog__articles__item').slice(0, visibleBlocks).show();
         });
       
-           
+    //спецпредложения - показать больше спецпредложений
+  
+        
+    var visibleBlocks1 = 12;
+    var allBlocks1 = $('.offers__item').length;
+            
+    $('.offers__item').slice(visibleBlocks1).hide();
+            
+    $('.btn_show-more').on('click', function() {
+              visibleBlocks1 += 12;
+              
+      if (visibleBlocks1 >= allBlocks1) {
+        $('.btn_show-more').hide();
+      }
+               
+      $('.offers__item').slice(0, visibleBlocks1).show();
+    });       
    
   //select 
   $('.select_main').each(function() {

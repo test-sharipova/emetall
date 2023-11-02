@@ -321,6 +321,12 @@
             margin-top: 16px;
             width: 100%;
             padding: 8px 0 11px;
+            transition: background .3s;
+            &:hover {
+                background: linear-gradient(90deg, #2864E0 0.34%, #DB0A5B 271.92%);
+
+
+            }
         }
         
         

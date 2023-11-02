@@ -72,6 +72,10 @@
                 img {
                     margin-right: 8px;
                 }
+                &:hover {
+                    transition: opacity .3s;
+                    opacity: .8;
+                }
             }
             .fs_14 {
                 line-height: normal;
