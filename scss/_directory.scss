@@ -1,9 +1,18 @@
 .directory {
     padding: 51px 0 153px;
+    
     &__promo {
         padding: 13px 0 0 56px;
         border-radius: 15px;
         background: #F1F5F8;
+        background-image: url(../img/directory/directory-bg.png);
+        background-image: image-set(
+            url(../img/directory/directory-bg.png) type('image/png') 1x,
+            url(../img/directory/directory-bg-2x.png) type('image/png') 2x
+        );
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;

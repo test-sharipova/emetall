@@ -69,11 +69,8 @@
     &__wrapper {
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
-        
         align-content: stretch;
         
-       
     }
     &__content {
         max-width: 649px;

@@ -105,8 +105,7 @@
         gap: 64px 32px;
         flex-wrap: wrap;
         margin-bottom: 40px;
-        // display: grid;
-        // grid-template-columns: repeat(4, 278px);
+       
         &__item {
             text-decoration: none;
             color: $text-color;
@@ -119,13 +118,14 @@
                 width: 587px;
                 margin-bottom: 24px;
             }
-            .fs_18 {
+            .fs_18, .fs_24 {
                 transition: color .3s;
                 &:hover {
                     color: $blue;
                 }
                 
             }
+            
         }
     }
     &__img {
@@ -161,6 +161,12 @@
         padding: 62px 64px;
         color: #fff;
         letter-spacing: .25px;
+        .mobile {
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
         &__content {
             max-width: 594px;
         }

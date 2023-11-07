@@ -1,6 +1,13 @@
 .companyPromo {
-    background: #E9F0FC;
-    
+    background-color: #E9F0FC;
+    background-image: url(../img/company/company-promo-bg.png);
+    background-image: image-set(
+        url(../img/company/company-promo-bg.png) type('image/png') 1x,
+        url(../img/company/company-promo-bg-2x.png) type('image/png') 2x,
+    );
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: cover;
     position: relative;
     &__content {
         width: 70%;
@@ -60,6 +67,13 @@
 .companyMission {
     background-color: #171C41;
     background-image: url(../img/company/company-mission-bg.png);
+    background-image: image-set(
+        url(../img/company/company-mission-bg-2x.webp) type('image/webp') 1x,
+        url(../img/company/company-mission-bg-2x.webp) type('image/webp') 2x,
+        url(../img/company/company-mission-bg.png) type('image/png') 1x,
+        url(../img/company/company-mission-bg-2x.png) type('image/png') 2x,
+        
+    );
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right bottom;

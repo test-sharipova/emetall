@@ -113,6 +113,9 @@
       }
     }
   }
+  .companyPromo {
+    background-position: 60% bottom;
+  }
 }
 @media screen and (max-width: 1439px) {
   .header {
@@ -192,13 +195,8 @@
   }
   //about company site
   .companyPromo {
-    &__img {
-      width: 62%;
-      right: 0;
-      img {
-        width: 100%;
-      }
-    }
+   background-position: 51% bottom;
+   
   }
   .companyMission {
     background-position: right 58% bottom;
@@ -331,6 +329,17 @@
     }
   }
  }
+ .blog {
+  &__articles {
+    
+    &__item {
+      width: 30%;
+     .fs_24 {
+      font-size: 18px;
+     }
+    }
+  }
+ }
 }
 @media screen and (max-width: 1024px) {
   .banner {
@@ -400,10 +409,16 @@
         flex-wrap: wrap;
        
       }
-      // &__item_w47 {
-      //   width: 47%;
-      // }
      
+     
+    }
+  }
+  .calc {
+    &__last {
+      width: 32%;
+    }
+    &__calc {
+      width: 64%;
     }
   }
 }
@@ -653,6 +668,23 @@
     &__product {
       overflow-y: hidden;
       overflow-x: scroll;
+    }
+  }
+  .proverka {
+    &__item {
+      &__top {
+        height: auto;
+      }
+    }
+    &__kontur {
+      &__img {
+        padding: 0 20px;
+      }
+    }
+  }
+  .help {
+    .help__img {
+      max-width: 155px;
     }
   }
 }
@@ -1692,6 +1724,13 @@ padding: 0;
         }
       }
     }
+    &__articles {
+      &__item {
+        .fs_18, .fs_24 {
+          font-size: 16px;
+        }
+      }
+    }
   }
   .providerSite {
     .catalog__search {
@@ -2244,6 +2283,11 @@ padding: 0;
           font-size: 15px;
         }
       }
+    }
+  }
+  .directory {
+    &__promo {
+      background-position: 67% bottom;
     }
   }
 }
@@ -3081,6 +3125,7 @@ padding: 0;
     }
     &__articles {
       gap: 24px 11px;
+      justify-content: center;
       &__item {
         width: 50%;
         max-width: 166px;
@@ -3089,13 +3134,7 @@ padding: 0;
         .fs_24 {
           font-size: 12px;
         }
-        &:nth-child(3n) {
-          width: 100%;
-          max-width: 343px;
-          .fs_18, .fs_24 {
-            font-size: 16px;
-          }
-        }
+        
         .mb_16 {
           margin-bottom: 8px;
         }
@@ -3736,7 +3775,7 @@ padding: 0;
   }
   .company {
     &Promo {
-
+     
       min-height: 619px;
       .wrapper {
         flex-wrap: wrap;
@@ -4105,6 +4144,7 @@ padding: 0;
     }
     .help__img {
       right: 14px;
+      
     }
     &__contact {
       width: 100%;
@@ -5041,7 +5081,7 @@ padding: 0;
     display: block;
     position: relative;
     background-color: #F1F5F8;
-    background-image: url(../img/directory/directory-bg-mob.png);
+    
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -5095,5 +5135,40 @@ padding: 0;
 
   .desktop {
     display: none;
+  }
+}
+@media screen and (max-width: 525px) {
+  .directory {
+    &__promo {
+      background-image: url(../img/directory/directory-bg-mob.png);
+    }
+  }
+  .companyPromo {
+    background-image: url(../img/company/company-promo-img-mob.png);
+    background-position: center bottom;
+    background-size: 70%;
+  }
+  .blog {
+    &__articles {
+      &__item {
+        &:nth-child(3n) {
+          width: 100%;
+          max-width: 343px;
+          .fs_18, .fs_24 {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:374px) {
+  .blog {
+    &__articles {
+      &__item {
+        width: 100%;
+        max-width: 343px;
+      }
+    }
   }
 }

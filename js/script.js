@@ -564,6 +564,24 @@ $('.advRew__slider').slick({
       }
                
       $('.offers__item').slice(0, visibleBlocks1).show();
+    });  
+    
+    //поставщики (provider-site) - показать больше поставщиков
+  
+        
+    var visibleBlocks2 = 8;
+    var allBlocks2 = $('.providerSite__item').length;
+            
+    $('.providerSite__item').slice(visibleBlocks2).hide();
+            
+    $('.btn_show-more').on('click', function() {
+              visibleBlocks2 += 12;
+              
+      if (visibleBlocks2 >= allBlocks2) {
+        $('.btn_show-more').hide();
+      }
+               
+      $('.providerSite__item').slice(0, visibleBlocks2).show();
     });       
    
   //select 
