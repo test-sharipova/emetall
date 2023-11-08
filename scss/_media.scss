@@ -178,11 +178,7 @@
     }
   }
  
-  // .providerscard {
-  //   &__right {
-  //     display: none;
-  //   }
-  // }
+  
   .footer {
     &__wrapper {
       flex-wrap: wrap;
@@ -281,7 +277,46 @@
       }
       
     }
-    
+    //статистика
+    .profile__content__history {
+      width: calc(100% - 372px);
+    }
+    &__media {
+      &__wrapper {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    .profile__choise {
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    &__stat {
+      
+      .profile {
+        
+        &__content {
+          &__media {
+            padding-left: 22px;
+            padding-right: 22px;
+          }
+        }
+        &__media {
+          &__btns {
+            flex-wrap: wrap;
+            gap: 16px;
+          }
+          &__head {
+            flex-direction: column;
+          }
+        }
+      }
+     
+    }
+    //история проверок
+    &__table {
+      overflow-x: auto;
+      overflow-y: hidden;
+    }
   }
   .about {
     &__block {
