@@ -569,6 +569,12 @@
       .profile__title {
         padding: 2px 0 24px 6px;
       }
+      #profile__circle-chart, #profile__circle-chart2, #profile__circle-chart3 {
+        margin: 0 auto;
+      }
+      &__chart {
+        position: relative;
+      }
     }
     &__circle {
       width: 228px;
@@ -577,47 +583,7 @@
       transform: translateX(-50%);
 
       position: relative;
-      &__pie {
-        width: 228px;
-        height: 228px;
-        min-width: 228px;
-        min-height: 228px;
-        border-radius: 100%;
-        position: absolute;
-        &:hover .profile__stat__tooltip {
-          opacity: 1;
-          width: auto;
-          height: auto;
-        }
-        &:nth-child(1) {
-          background: conic-gradient(#a13960 86deg, transparent 86deg 360deg);
-          z-index: 4;
-        }
-        &:nth-child(2) {
-          background: conic-gradient(
-            #dd0858 86deg 197deg,
-            transparent 197deg 360deg
-          );
-          z-index: 3;
-        }
-        &:nth-child(3) {
-          background: conic-gradient(
-            #2764e0 197deg 269deg,
-            transparent 0deg 197deg
-          );
-          z-index: 2;
-        }
-        &:nth-child(4) {
-          background: conic-gradient(
-            #3f9c59 269deg 297deg,
-            transparent 297deg 360deg
-          );
-          z-index: 1;
-        }
-        &:nth-child(5) {
-          background: conic-gradient(#a095e4 297deg 360deg);
-        }
-      }
+      
       &__wrap {
         position: relative;
       }
@@ -626,7 +592,7 @@
         border-radius: 100%;
         width: 90%;
         height: 90%;
-        background: #fff;
+        background: transparent;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -635,33 +601,13 @@
         justify-content: center;
         align-items: center;
         z-index: 6;
-        
+        border-radius: 100%;
+        overflow: hidden;
+        width: 100px;
+        height: 100px;
       }
     }
-    &__tooltip {
-      position: absolute;
-      border-radius: 5px;
-      background: #000;
-      color: #fff;
-      padding: 5px 18px 8px;
-      z-index: 7;
-      top: -21px;
-      opacity: 0;
-      width: 1px;
-      height: 1px;
-      transition: all 0.3s;
-
-      .path {
-        position: absolute;
-        background: #000;
-        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-        width: 7px;
-        height: 4px;
-        transform: rotate(180deg);
-        bottom: -4px;
-        left: 50%;
-      }
-    }
+   
     &__list {
       list-style-type: none;
       margin: 34px 0 32px;
