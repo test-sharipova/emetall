@@ -320,7 +320,7 @@ header {
               }
         }
         &__link {
-            padding: 0px 8px 0px 0;
+            padding: 0px 11px 0px 0;
             border-radius: 6px;
             display: grid;
             grid-template-columns: 32px 1fr 50px;
@@ -362,6 +362,9 @@ header {
             border-radius: 30px;
             background: #E9F0FC;
             padding: 2px 6px;
+            white-space: nowrap;
+            justify-self: end;
+
         }
         &__content {
             &>.wrapper {
