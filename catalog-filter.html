@@ -3155,28 +3155,61 @@
                             </div>
                             <div class="wrapper form__wrapper">
                               <div class="form__item_210">
-                              <label for="size" class="label">Размер</label>
-                              <input name="size" id="size" class="form__input" list="sizeoption" placeholder="">
-                               <datalist id="sizeoption">
-                                  <option value="50 x 50"></option>
-                                  <option value="100 x 100"></option>
-                                  <option value="150 x 150"></option>
-                                  <option value="200 x 200"></option>
-                               </datalist>           
-                                          
-              
-                              
-                              <p class="fs_12 gray2">Начните вводить размер</p>
+                              <label for="catalogFilters-size" class="label">Размер</label>
+                             <div class="form__input__search">
+                                <input class="form__input custom-drop" id="catalogFilters-size" placeholder="">
+                                <div class="form__input__dropdown">
+                                    <div class="form__input__dropdown__filter">
+                                        <span class="fs_14 fw_600 lh_norm">От</span>
+                                        <span class="fs_14 fw_600 lh_norm">До</span>
+                                        <input type="number" id="from" class="form__input__dropdown__filter-count form__input__dropdown__filter-count-from">
+                                        <input type="number" id="to" class="form__input__dropdown__filter-count form__input__dropdown__filter-count-to">
+                                    </div>
+                                   <div class="form__input__dropdown__labels">
+                                    <label class="form__input__dropdown__label" for="size1">
+                                        <input class="catalogFilters-sizecheck" type="checkbox" id="size1">
+                                        <span class="form__input__dropdown__mark"></span>
+                                        <span class="fs_15">2</span>
+                                    </label>
+                                    <label class="form__input__dropdown__label" for="size2">
+                                        <input class="catalogFilters-sizecheck" type="checkbox" id="size2">
+                                        <span class="form__input__dropdown__mark"></span>
+                                        <span class="fs_15">4</span>
+                                    </label>
+                                    <label class="form__input__dropdown__label" for="size3">
+                                        <input class="catalogFilters-sizecheck" type="checkbox" id="size3">
+                                        <span class="form__input__dropdown__mark"></span>
+                                        <span class="fs_15">6</span>
+                                    </label>
+                                    <label class="form__input__dropdown__label" for="size4">
+                                        <input class="catalogFilters-sizecheck" type="checkbox" id="size4">
+                                        <span class="form__input__dropdown__mark" for="size"></span>
+                                        <span class="fs_15">8</span>
+                                    </label>
+                                    <label class="form__input__dropdown__label" for="size5">
+                                        <input class="catalogFilters-sizecheck" type="checkbox" id="size5">
+                                        <span class="form__input__dropdown__mark"></span>
+                                        <span class="fs_15">10</span>
+                                    </label>
+                                    <label class="form__input__dropdown__label" for="size6">
+                                        <input class="catalogFilters-sizecheck" type="checkbox" id="size6">
+                                        <span class="form__input__dropdown__mark"></span>
+                                        <span class="fs_15">12</span>
+                                    </label>
+                                    <label class="form__input__dropdown__label" for="size7">
+                                        <input class="catalogFilters-sizecheck" type="checkbox" id="size7">
+                                        <span class="form__input__dropdown__mark"></span>
+                                        <span class="fs_15">14</span>
+                                    </label>
+                                   </div>
+                                </div>
+                             </div>
+                                <p class="fs_12 gray2">Начните вводить размер</p>
                               </div>
+
                               <div class="form__item_210">
-                                  <label for="tol" class="label">Толщина стенки</label>
-                                  <input id="tol" class="form__input" list="tollist" placeholder="">
-                                  <datalist id="tollist">
-                                    <option value="50"></option>
-                                    <option value="100"></option>
-                                    <option value="150"></option>
-                                    <option value="200"></option>
-                                 </datalist>  
+                                  <label for="catalogFiters-tol" class="label">Толщина стенки</label>
+                                  <input class="form__input" id="catalogFiters-tol"  placeholder="">
                                     <p class="fs_12 gray2">Начните вводить толщину</p>
                               </div>
                               <div class="form__item_210">
@@ -3452,7 +3485,7 @@
                             <div class="table__td table__td_w192 order">
                                 <div class="wrapper">
                                     <div class="table__date desktop2">13/07/2022</div>
-                                    <a href="#" class="btn_small">В корзину</a>
+                                    <a href="#" class="btn_remove">Убрать</a>
                                 </div>
                             </div>
                             

@@ -214,6 +214,28 @@
       border-radius: 6px;
       background: #33364E;
     }
+    &_remove {
+      height: 24px;
+      border-radius: 5px;
+      border: 1px solid #2764E0;
+      background-color: #fff;
+      color: $blue;
+      font-size: 14px;
+      line-height: normal;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      padding: 2px 5px 3px;
+      min-width: 85px;
+      &:hover {
+        border: 1px solid #3473F4;
+
+      }
+      &:active {
+        border: 1px solid #104CC5;
+      }
+    }
     &_38 {
       height: 38px;
     }
@@ -507,6 +529,92 @@
   fieldset {
     border: none;
     padding: 0;
+  }
+  .form__input__search {
+    position: relative;
+  }
+  .form__input__dropdown {
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: height .7s;
+    border-radius: 12px;
+    background: #FFF;
+    
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.20);
+    z-index: 3;
+    width: 100%;
+   &__labels {
+    max-height: 224px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px 16px 20px;
+    &::-webkit-scrollbar {
+      width: 4px;
+      
+    }
+  &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+  &::-webkit-scrollbar-thumb {
+      background-color: #B7B7B7;
+      border-radius: 3px;
+    }
+    .form__input__dropdown__label {
+      margin-left: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 11px;
+    }
+    input {
+      width: 1px;
+      height: 1px;
+      position: absolute;
+      clip: rect(0, 0, 0, 0);
+      opacity: 0;
+      &:checked + .form__input__dropdown__mark {
+        background: url(../img/check_black.svg) no-repeat center/contain;
+      }
+    }
+    .form__input__dropdown__mark {
+      width: 15px;
+      height: 11px;
+      display: block;
+    }
+   }
+   &__filter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 8px;
+    padding: 24px 16px;
+    border-bottom: 1px solid #E6E6E6;
+    &-count {
+      width: 100%;
+      padding: 9px 12px;
+      font-size: 15px;
+      line-height: normal;
+      border: 1px solid #8EB1ED;
+      height: 38px;
+      background: #FFF;
+      &:focus {
+        background: #E9F0FC;
+        outline: none;
+      }
+      &-from {
+        border-radius: 6px 0px 0px 6px;
+        border-right: none;
+      }
+      &-to {
+        border-radius: 0px 6px 6px 0px;
+      }
+    }
+   }
   }
   
   //raiting 

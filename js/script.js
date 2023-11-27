@@ -458,7 +458,49 @@ $('.catalogFilters__close').on('click', function() {
     $('.showFilters').fadeIn();
 });
 
+//фильтры в кастомном дропдауне
 
+$('.custom-drop').on('click', function(){
+    $('.form__input__dropdown').css('height', 'auto');
+});
+//фильтр
+$('.form__input__dropdown__filter-count-from, .form__input__dropdown__filter-count-to').on('input', function(){
+    var from = parseInt($('.form__input__dropdown__filter-count-from').val());
+    var to = parseInt($('.form__input__dropdown__filter-count-to').val());
+    $('.form__input__dropdown__label').each(function(){
+      var price = parseInt($(this).find('.fs_15').text());
+      if(price >= from && price <= to){
+        $(this).show();
+      }else{
+        $(this).hide();
+      }
+    });
+  });
+//отображаются все значения, если не заполнен фильтр
+$('.form__input__dropdown__filter-count').on('input', function(){
+  if($(this).val() == '') {
+    $('.form__input__dropdown__label').show();
+  }
+});
+//значения выбранных чекбоксов подставляется в значение инпута
+$('.catalogFilters-sizecheck').change(function() {
+  var checkedLabels = $('.catalogFilters-sizecheck:checked').map(function() {
+    return $('label[for="' + $(this).attr('id') + '"]').text().trim();
+  }).get().join(', ');
+  $('#catalogFilters-size').val(checkedLabels.trim());
+  
+});
+//скрыть дропдаун при клике на окно
+  $(document).mouseup( function(e){ // событие клика по веб-документу
+    var div = $( ".form__input__search" ); // тут указываем ID элемента
+    if ( !div.is(e.target) // если клик был не по нашему блоку
+        && div.has(e.target).length === 0 ) { // и не по его дочерним элементам
+        $('.form__input__dropdown').hide(); // скрываем его
+
+    } else {
+        $('.form__input__dropdown').show();
+    }
+     });
 
 // показать все характериситки в моб
 function tableShowMore(item) {
@@ -648,7 +690,7 @@ $('.advRew__slider').slick({
 
 
     
-});
+    });
 
 
 // стили datalist на странице каталог-фильтры
