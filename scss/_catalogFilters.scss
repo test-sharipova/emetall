@@ -699,9 +699,7 @@
           vertical-align: middle;
           background: url(../img/filter_arrows.svg) no-repeat center/contain;
         }
-        // .table__metallobaza:hover span {
-        //   display: none;
-        // }
+        
         .table {
           &__metallobaza {
             color: $link;
@@ -735,6 +733,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-40%, -50%);
+            
           }
         }
     }
