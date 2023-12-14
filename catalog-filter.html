@@ -3208,29 +3208,35 @@
                               </div>
 
                               <div class="form__item_210">
-                                  <label for="catalogFiters-tol" class="label">Толщина стенки</label>
-                                  <input class="form__input" id="catalogFiters-tol"  placeholder="">
+                                  <label for="wall" class="label">Толщина стенки</label>
+                                  <input class="form__input" id="wall"  placeholder="">
+                                  <datalist id="walllist">
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                    <option value="150">150</option>
+                                    <option value="200">200</option>
+                                    </datalist>  
                                     <p class="fs_12 gray2">Начните вводить толщину</p>
                               </div>
                               <div class="form__item_210">
                                   <label for="marka" class="label">Марка стали</label>
-                                  <input id="marka" class="form__input" list="markalist" placeholder="">
+                                  <input id="marka" class="form__input select" placeholder="">
                                   <datalist id="markalist">
-                                    <option value="50"></option>
-                                    <option value="100"></option>
-                                    <option value="150"></option>
-                                    <option value="200"></option>
-                                 </datalist>  
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                    <option value="150">150</option>
+                                    <option value="200">200</option>
+                                    </datalist>  
                                     <p class="fs_12 gray2">Начните вводить сталь</p>
                               </div>
                               <div class="form__item_210">
                                   <label for="standart" class="label">Стандарт</label>
-                                  <input id="standart" class="form__input select" list="standartlist" placeholder="">
+                                  <input id="standart" class="form__input select" placeholder="">
                                   <datalist id="standartlist">
-                                    <option value="50"></option>
-                                    <option value="100"></option>
-                                    <option value="150"></option>
-                                    <option value="200"></option>
+                                    <option value="ГОСТ 13663-86">ГОСТ 13663-86</option>
+                                    <option value="ГОСТ 13663-86">ГОСТ 13663-86</option>
+                                    <option value="ГОСТ 13663-86">ГОСТ 13663-86</option>
+                                    <option value="ГОСТ 13663-86">ГОСТ 13663-86</option>
                                  </datalist>  
                                     <p class="fs_12 gray2">Начните вводить стандарт</p>
                               </div>
@@ -3441,7 +3447,7 @@
                             </td>
                             <td class="city"> Санкт-Петербург <span class="mobile">, 36.58 тонн</span> </td>
                             <td class="desktop2">13/07/2022</td>
-                            <td > <span class="mobile fs_16 fw_600">53 400 руб/т</span> <a href="#" class="btn_small">В корзину</a></td>
+                            <td > <span class="mobile fs_16 fw_600">53 400 руб/т</span> <a href="#" class="btn_remove">Убрать</a></td>
                         </tr>
                         <tr>
                             <td > <span class="mobile">Диаметр</span> Труба 50x50  </td>                                                                                                                </td>

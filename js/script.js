@@ -694,7 +694,9 @@ $('.advRew__slider').slick({
 
 
 // стили datalist на странице каталог-фильтры
-let metallobaza = document.getElementById('metallobaza'),
+//металлобаза
+function dataListMetallobaza () {
+  let metallobaza = document.getElementById('metallobaza'),
     metallobazalist = document.getElementById('metallobazalist');
     if(metallobaza) {
         metallobaza.onfocus = function () {
@@ -753,7 +755,204 @@ let metallobaza = document.getElementById('metallobaza'),
             }
           
     }
-    
+
+}
+dataListMetallobaza();
+
+//марка стали
+function markaStali () {
+  let marka = document.getElementById('marka'),
+  markalist = document.getElementById('markalist');
+    if(marka) {
+      marka.onfocus = function () {
+        markalist.style.display = 'block';
+            
+          };
+          for (let option of markalist.options) {
+            option.onclick = function () {
+                marka.value = option.value;
+                markalist.style.display = 'none';
+                
+            };
+          };
+          
+          marka.oninput = function() {
+            currentFocus = -1;
+            var text = marka.value.toUpperCase();
+            for (let option of markalist.options) {
+              if(option.value.toUpperCase().indexOf(text) > -1){
+                option.style.display = "block";
+            }else{
+              option.style.display = "none";
+              }
+            }
+          };
+          var currentFocus = -1;
+          marka.onkeydown = function(e) {
+            if(e.keyCode == 40){
+              currentFocus++
+             addActive(markalist.options);
+            }
+            else if(e.keyCode == 38){
+              currentFocus--
+             addActive(markalist.options);
+            }
+            else if(e.keyCode == 13){
+              e.preventDefault();
+                  if (currentFocus > -1) {
+                    /*and simulate a click on the "active" item:*/
+                    if (markalist.options) markalist.options[currentFocus].click();
+                  }
+            }
+          }
+          
+          function addActive(x) {
+              if (!x) return false;
+              removeActive(x);
+              if (currentFocus >= x.length) currentFocus = 0;
+              if (currentFocus < 0) currentFocus = (x.length - 1);
+              x[currentFocus].classList.add("active");
+            }
+            function removeActive(x) {
+              for (var i = 0; i < x.length; i++) {
+                x[i].classList.remove("active");
+              }
+            }
+          
+    }
+
+}
+markaStali();
+
+//толщина стенки
+function wallSteel () {
+  let wall = document.getElementById('wall'),
+  walllist = document.getElementById('walllist');
+    if(wall) {
+      wall.onfocus = function () {
+        walllist.style.display = 'block';
+            
+          };
+          for (let option of walllist.options) {
+            option.onclick = function () {
+              wall.value = option.value;
+              walllist.style.display = 'none';
+                
+            };
+          };
+          
+          wall.oninput = function() {
+            currentFocus = -1;
+            var text = wall.value.toUpperCase();
+            for (let option of walllist.options) {
+              if(option.value.toUpperCase().indexOf(text) > -1){
+                option.style.display = "block";
+            }else{
+              option.style.display = "none";
+              }
+            }
+          };
+          var currentFocus = -1;
+          wall.onkeydown = function(e) {
+            if(e.keyCode == 40){
+              currentFocus++
+             addActive(walllist.options);
+            }
+            else if(e.keyCode == 38){
+              currentFocus--
+             addActive(walllist.options);
+            }
+            else if(e.keyCode == 13){
+              e.preventDefault();
+                  if (currentFocus > -1) {
+                    /*and simulate a click on the "active" item:*/
+                    if (walllist.options) walllist.options[currentFocus].click();
+                  }
+            }
+          }
+          
+          function addActive(x) {
+              if (!x) return false;
+              removeActive(x);
+              if (currentFocus >= x.length) currentFocus = 0;
+              if (currentFocus < 0) currentFocus = (x.length - 1);
+              x[currentFocus].classList.add("active");
+            }
+            function removeActive(x) {
+              for (var i = 0; i < x.length; i++) {
+                x[i].classList.remove("active");
+              }
+            }
+          
+    }
+
+}
+wallSteel();
+
+//стандарт
+function standartSteel () {
+  let standart = document.getElementById('standart'),
+  standartlist = document.getElementById('standartlist');
+    if(standart) {
+      standart.onfocus = function () {
+        standartlist.style.display = 'block';
+            
+          };
+          for (let option of standartlist.options) {
+            option.onclick = function () {
+              standart.value = option.value;
+              standartlist.style.display = 'none';
+                
+            };
+          };
+          
+          standart.oninput = function() {
+            currentFocus = -1;
+            var text = standart.value.toUpperCase();
+            for (let option of standartlist.options) {
+              if(option.value.toUpperCase().indexOf(text) > -1){
+                option.style.display = "block";
+            }else{
+              option.style.display = "none";
+              }
+            }
+          };
+          var currentFocus = -1;
+          standart.onkeydown = function(e) {
+            if(e.keyCode == 40){
+              currentFocus++
+             addActive(standartlist.options);
+            }
+            else if(e.keyCode == 38){
+              currentFocus--
+             addActive(standartlist.options);
+            }
+            else if(e.keyCode == 13){
+              e.preventDefault();
+                  if (currentFocus > -1) {
+                    /*and simulate a click on the "active" item:*/
+                    if (standartlist.options) standartlist.options[currentFocus].click();
+                  }
+            }
+          }
+          
+          function addActive(x) {
+              if (!x) return false;
+              removeActive(x);
+              if (currentFocus >= x.length) currentFocus = 0;
+              if (currentFocus < 0) currentFocus = (x.length - 1);
+              x[currentFocus].classList.add("active");
+            }
+            function removeActive(x) {
+              for (var i = 0; i < x.length; i++) {
+                x[i].classList.remove("active");
+              }
+            }
+          
+    }
+
+}
+standartSteel();
     // стили datalist на странице справочника стандартов
 
     let directory = document.getElementById('directory'),
