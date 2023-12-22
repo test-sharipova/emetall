@@ -3123,18 +3123,10 @@
                               <p class="fs_12 gray2">Выберите раздел</p>
                               </div>
                               <div class="form__item_286 form__item_w47">
-                                  <label for="chapter2" class="label">Подраздел</label>
-                              <select name="chapter2" id="chapter2" class="form__input select select_main">
-                                        <option value="" selected disabled></option>
-                                          <option value="Арматура">ППУ</option>
-                                          <option value="Балка">Треугольная</option>
-                                          <option value="Баллоны">Овальная</option>
-                                          <option value="Дробь">Арочная</option>
-                                          <option value="Заглушки">Плоскоовальная</option>
-                                          <option value="Задвижки">Радиуснопрофильная</option>
-                                          
-              
-                              </select>
+                                    <label for="chapter2" class="label">Подраздел</label>
+                                    <select name="chapter2" id="chapter2" class="form__input select select_main">
+                                        
+                                    </select>
                               <p class="fs_12 gray2">Выберите подраздел</p>
                               </div>
                               <div class="form__item_286 w100">
@@ -3209,35 +3201,41 @@
 
                               <div class="form__item_210">
                                   <label for="wall" class="label">Толщина стенки</label>
-                                  <input class="form__input" id="wall"  placeholder="">
-                                  <datalist id="walllist">
-                                    <option value="50">50</option>
-                                    <option value="100">100</option>
-                                    <option value="150">150</option>
-                                    <option value="200">200</option>
-                                    </datalist>  
+                                    <div class="filter-dropdown">
+                                        <input class="form__input" placeholder="" autocomplete="off" role="combobox">
+                                        <datalist>
+                                          <option value="50">50</option>
+                                          <option value="100">100</option>
+                                          <option value="150">150</option>
+                                          <option value="200">200</option>
+                                        </datalist>
+                                    </div>  
                                     <p class="fs_12 gray2">Начните вводить толщину</p>
                               </div>
                               <div class="form__item_210">
                                   <label for="marka" class="label">Марка стали</label>
-                                  <input id="marka" class="form__input select" placeholder="">
-                                  <datalist id="markalist">
-                                    <option value="50">50</option>
-                                    <option value="100">100</option>
-                                    <option value="150">150</option>
-                                    <option value="200">200</option>
+                                  <div class="filter-dropdown">
+                                    <input class="form__input select" autocomplete="off" role="combobox" placeholder="">
+                                    <datalist>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
                                     </datalist>  
+                                  </div>
                                     <p class="fs_12 gray2">Начните вводить сталь</p>
                               </div>
                               <div class="form__item_210">
                                   <label for="standart" class="label">Стандарт</label>
-                                  <input id="standart" class="form__input select" placeholder="">
-                                  <datalist id="standartlist">
-                                    <option value="ГОСТ 13663-86">ГОСТ 13663-86</option>
-                                    <option value="ГОСТ 13663-86">ГОСТ 13663-86</option>
-                                    <option value="ГОСТ 13663-86">ГОСТ 13663-86</option>
-                                    <option value="ГОСТ 13663-86">ГОСТ 13663-86</option>
-                                 </datalist>  
+                                  <div class="filter-dropdown">
+                                    <input class="form__input select" autocomplete="off" role="combobox" placeholder="">
+                                    <datalist>
+                                        <option value="ГОСТ 13663-86">ГОСТ 13663-86</option>
+                                        <option value="ГОСТ 13663-86">ГОСТ 13663-86</option>
+                                        <option value="ГОСТ 13663-86">ГОСТ 13663-86</option>
+                                        <option value="ГОСТ 13663-86">ГОСТ 13663-86</option>
+                                    </datalist>  
+                                  </div>
                                     <p class="fs_12 gray2">Начните вводить стандарт</p>
                               </div>
                             </div>
@@ -3245,16 +3243,18 @@
                             <div class="wrapper form__wrapper form__wrapper_mb22">
                               <div class="form__item_286 w100 metallobaza">
                                   <label for="metallobaza" class="label">Металлобаза</label>
-                                  <input name="metallobaza" id="metallobaza" class="form__input" list="" autocomplete="off" role="combobox" placeholder="">
-                                  <datalist id="metallobazalist" role="listbox">
+                                    <div class="filter-dropdown">
+                                        <input class="form__input" autocomplete="off" role="combobox" placeholder="">
+                                        <datalist id="metallobazalist" role="listbox">
 
-                                      <option value="Мечел">Мечел</option>
-                                      <option value="НМЛК">НМЛК</option>
-                                      <option value="МеталлСервис">МеталлСервис</option>
-                                      <option value="ЕВРАЗ">ЕВРАЗ</option>
-                                      <option value="Металл Гарант">Металл Гарант</option>
-                                      <option value="Metallink">Metallink</option>
-                                  </datalist>
+                                            <option value="Мечел">Мечел</option>
+                                            <option value="НМЛК">НМЛК</option>
+                                            <option value="МеталлСервис">МеталлСервис</option>
+                                            <option value="ЕВРАЗ">ЕВРАЗ</option>
+                                            <option value="Металл Гарант">Металл Гарант</option>
+                                            <option value="Metallink">Metallink</option>
+                                        </datalist>
+                                    </div>
                                     <p class="fs_12 gray2 desktop">Введите название металлобазы</p>
                                     <button type="submit" class="btn mobile fw_600 btn_50">Показать 2 618 предложений</button>
                               </div>

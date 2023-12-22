@@ -458,7 +458,7 @@ $('.catalogFilters__close').on('click', function() {
     $('.showFilters').fadeIn();
 });
 
-//фильтры в кастомном дропдауне
+//фильтры в кастомном дропдауне на странице каталог фильтры
 
 $('.custom-drop').on('click', function(){
     $('.form__input__dropdown').css('height', 'auto');
@@ -501,6 +501,177 @@ $('.catalogFilters-sizecheck').change(function() {
         $('.form__input__dropdown').show();
     }
      });
+
+// стили datalist на странице каталог-фильтры
+$('.filter-dropdown').each(function(){
+    let filter = $(this),
+        filterInput = filter.find('input'),
+        filterList = filter.find('datalist');
+        console.log(filterList);
+        console.log(filter);
+
+        filterInput.on('focus', function () {
+          filterList.css('display', 'block');
+          
+        });
+        filterList.find('option').on('click', function () {
+          filterInput.val($(this).val());
+          filterList.css('display', 'none');
+            
+      });
+        
+      filterInput.on('input', function() {
+        currentFocus = -1;
+        var text = filterInput.val().toUpperCase();
+        for (let option of filterList.find('option')) {
+          if(option.value.toUpperCase().indexOf(text) > -1){
+            $(option).css('display', 'block');
+        }else{
+          $(option).css('display', 'none');
+          }
+        };
+      });
+        var currentFocus = -1;
+        filterInput.onkeydown = function(e) {
+          if(e.keyCode == 40){
+            currentFocus++
+           addActive(filterList.options);
+          }
+          else if(e.keyCode == 38){
+            currentFocus--
+           addActive(filterList.options);
+          }
+          else if(e.keyCode == 13){
+            e.preventDefault();
+                if (currentFocus > -1) {
+                  /*and simulate a click on the "active" item:*/
+                  if (filterList.options) filterList.options[currentFocus].click();
+                }
+          }
+        }
+        
+        function addActive(x) {
+            if (!x) return false;
+            removeActive(x);
+            if (currentFocus >= x.length) currentFocus = 0;
+            if (currentFocus < 0) currentFocus = (x.length - 1);
+            x[currentFocus].classList.add("active");
+          }
+          function removeActive(x) {
+            for (var i = 0; i < x.length; i++) {
+              x[i].classList.remove("active");
+            }
+          }
+
+          
+});
+
+
+
+//select 
+function newSelect() {
+  $('.select_main').each(function() {
+    const _this = $(this),
+        selectOption = _this.find('option'),
+        selectOptionLength = selectOption.length,
+        selectedOption = selectOption.filter(':selected'),
+        duration = 350; // длительность анимации 
+  
+    _this.hide();
+    _this.wrap('<div class="select"></div>');
+    $('<div>', {
+        class: 'new-select',
+        text: _this.children('option:selected').text()
+    }).insertAfter(_this);
+  
+    const selectHead = _this.next('.new-select');
+    $('<div>', {
+        class: 'new-select__list'
+    }).insertAfter(selectHead);
+  
+    const selectList = selectHead.next('.new-select__list');
+    for (let i = 1; i < selectOptionLength; i++) {
+        $('<div>', {
+            class: 'new-select__item',
+            html: $('<span>', {
+                text: selectOption.eq(i).text()
+            })
+        })
+        .attr('data-value', selectOption.eq(i).val())
+        .appendTo(selectList);
+    }
+  
+    const selectItem = selectList.find('.new-select__item');
+    selectList.slideUp(0);
+    selectHead.on('click', function() {
+        if ( !$(this).hasClass('on') ) {
+            $(this).addClass('on');
+            selectList.slideDown(duration);
+  
+            selectItem.on('click', function() {
+                let chooseItem = $(this).data('value');
+  
+                $('select').val(chooseItem).attr('selected', 'selected');
+                selectHead.text( $(this).find('span').text() );
+  
+                selectList.slideUp(duration);
+                selectHead.removeClass('on');
+                let select = $('select');
+                $(select).trigger('change');
+            });
+  
+        } else {
+            $(this).removeClass('on');
+            selectList.slideUp(duration);
+        }
+    });
+  });
+  $(document).mouseup( function(e){ // событие клика по веб-документу
+    var div = $( "new-select" ); // тут указываем ID элемента
+    if ( !div.is(e.target) // если клик был не по нашему блоку
+        && div.has(e.target).length === 0 ) { // и не по его дочерним элементам
+        $('.new-select__list').hide(); // скрываем его
+    }
+  
+  
+    
+    });
+}
+newSelect();
+
+
+//меняется контент подраздела в зависимости от раздела
+var select1 = document.getElementById("chapter");
+var select2 = document.getElementById("chapter2");
+
+
+select1.onchange = function() {
+  changeSelect2Options();
+  
+}
+
+function changeSelect2Options() {
+  var selectedOption = select1.value;
+  switch(selectedOption) {
+    case "Арматура":
+      
+      select2.options.length = 0; // удалить все опции
+      select2.options.add(new Option("Вариант 1.1", "value1"));
+      select2.options.add(new Option("Вариант 1.2", "value2"));
+      
+      break;
+
+    case "Балка":
+      select2.options.length = 0; // удалить все опции
+      select2.options.add(new Option("Вариант 2.1", "value3"));
+      select2.options.add(new Option("Вариант 2.2", "value4"));
+      select2.options.add(new Option("Вариант 2.3", "value5"));
+     
+      break;
+    // и т.д.
+  }
+  
+}
 
 // показать все характериситки в моб
 function tableShowMore(item) {
@@ -626,333 +797,10 @@ $('.advRew__slider').slick({
       $('.providerSite__item').slice(0, visibleBlocks2).show();
     });       
    
-  //select 
-  $('.select_main').each(function() {
-    const _this = $(this),
-        selectOption = _this.find('option'),
-        selectOptionLength = selectOption.length,
-        selectedOption = selectOption.filter(':selected'),
-        duration = 350; // длительность анимации 
   
-    _this.hide();
-    _this.wrap('<div class="select"></div>');
-    $('<div>', {
-        class: 'new-select',
-        text: _this.children('option:selected').text()
-    }).insertAfter(_this);
-  
-    const selectHead = _this.next('.new-select');
-    $('<div>', {
-        class: 'new-select__list'
-    }).insertAfter(selectHead);
-  
-    const selectList = selectHead.next('.new-select__list');
-    for (let i = 1; i < selectOptionLength; i++) {
-        $('<div>', {
-            class: 'new-select__item',
-            html: $('<span>', {
-                text: selectOption.eq(i).text()
-            })
-        })
-        .attr('data-value', selectOption.eq(i).val())
-        .appendTo(selectList);
-    }
-  
-    const selectItem = selectList.find('.new-select__item');
-    selectList.slideUp(0);
-    selectHead.on('click', function() {
-        if ( !$(this).hasClass('on') ) {
-            $(this).addClass('on');
-            selectList.slideDown(duration);
-  
-            selectItem.on('click', function() {
-                let chooseItem = $(this).data('value');
-  
-                $('select').val(chooseItem).attr('selected', 'selected');
-                selectHead.text( $(this).find('span').text() );
-  
-                selectList.slideUp(duration);
-                selectHead.removeClass('on');
-            });
-  
-        } else {
-            $(this).removeClass('on');
-            selectList.slideUp(duration);
-        }
-    });
-  });
-  $(document).mouseup( function(e){ // событие клика по веб-документу
-    var div = $( "new-select" ); // тут указываем ID элемента
-    if ( !div.is(e.target) // если клик был не по нашему блоку
-        && div.has(e.target).length === 0 ) { // и не по его дочерним элементам
-        $('.new-select__list').hide(); // скрываем его
-    }
 
 
-    
-    });
 
-
-// стили datalist на странице каталог-фильтры
-//металлобаза
-function dataListMetallobaza () {
-  let metallobaza = document.getElementById('metallobaza'),
-    metallobazalist = document.getElementById('metallobazalist');
-    if(metallobaza) {
-        metallobaza.onfocus = function () {
-            metallobazalist.style.display = 'block';
-            
-          };
-          for (let option of metallobazalist.options) {
-            option.onclick = function () {
-                metallobaza.value = option.value;
-                metallobazalist.style.display = 'none';
-                
-            };
-          };
-          
-          metallobaza.oninput = function() {
-            currentFocus = -1;
-            var text = metallobaza.value.toUpperCase();
-            for (let option of metallobazalist.options) {
-              if(option.value.toUpperCase().indexOf(text) > -1){
-                option.style.display = "block";
-            }else{
-              option.style.display = "none";
-              }
-            };
-          }
-          var currentFocus = -1;
-          metallobaza.onkeydown = function(e) {
-            if(e.keyCode == 40){
-              currentFocus++
-             addActive(metallobazalist.options);
-            }
-            else if(e.keyCode == 38){
-              currentFocus--
-             addActive(metallobazalist.options);
-            }
-            else if(e.keyCode == 13){
-              e.preventDefault();
-                  if (currentFocus > -1) {
-                    /*and simulate a click on the "active" item:*/
-                    if (metallobazalist.options) metallobazalist.options[currentFocus].click();
-                  }
-            }
-          }
-          
-          function addActive(x) {
-              if (!x) return false;
-              removeActive(x);
-              if (currentFocus >= x.length) currentFocus = 0;
-              if (currentFocus < 0) currentFocus = (x.length - 1);
-              x[currentFocus].classList.add("active");
-            }
-            function removeActive(x) {
-              for (var i = 0; i < x.length; i++) {
-                x[i].classList.remove("active");
-              }
-            }
-          
-    }
-
-}
-dataListMetallobaza();
-
-//марка стали
-function markaStali () {
-  let marka = document.getElementById('marka'),
-  markalist = document.getElementById('markalist');
-    if(marka) {
-      marka.onfocus = function () {
-        markalist.style.display = 'block';
-            
-          };
-          for (let option of markalist.options) {
-            option.onclick = function () {
-                marka.value = option.value;
-                markalist.style.display = 'none';
-                
-            };
-          };
-          
-          marka.oninput = function() {
-            currentFocus = -1;
-            var text = marka.value.toUpperCase();
-            for (let option of markalist.options) {
-              if(option.value.toUpperCase().indexOf(text) > -1){
-                option.style.display = "block";
-            }else{
-              option.style.display = "none";
-              }
-            }
-          };
-          var currentFocus = -1;
-          marka.onkeydown = function(e) {
-            if(e.keyCode == 40){
-              currentFocus++
-             addActive(markalist.options);
-            }
-            else if(e.keyCode == 38){
-              currentFocus--
-             addActive(markalist.options);
-            }
-            else if(e.keyCode == 13){
-              e.preventDefault();
-                  if (currentFocus > -1) {
-                    /*and simulate a click on the "active" item:*/
-                    if (markalist.options) markalist.options[currentFocus].click();
-                  }
-            }
-          }
-          
-          function addActive(x) {
-              if (!x) return false;
-              removeActive(x);
-              if (currentFocus >= x.length) currentFocus = 0;
-              if (currentFocus < 0) currentFocus = (x.length - 1);
-              x[currentFocus].classList.add("active");
-            }
-            function removeActive(x) {
-              for (var i = 0; i < x.length; i++) {
-                x[i].classList.remove("active");
-              }
-            }
-          
-    }
-
-}
-markaStali();
-
-//толщина стенки
-function wallSteel () {
-  let wall = document.getElementById('wall'),
-  walllist = document.getElementById('walllist');
-    if(wall) {
-      wall.onfocus = function () {
-        walllist.style.display = 'block';
-            
-          };
-          for (let option of walllist.options) {
-            option.onclick = function () {
-              wall.value = option.value;
-              walllist.style.display = 'none';
-                
-            };
-          };
-          
-          wall.oninput = function() {
-            currentFocus = -1;
-            var text = wall.value.toUpperCase();
-            for (let option of walllist.options) {
-              if(option.value.toUpperCase().indexOf(text) > -1){
-                option.style.display = "block";
-            }else{
-              option.style.display = "none";
-              }
-            }
-          };
-          var currentFocus = -1;
-          wall.onkeydown = function(e) {
-            if(e.keyCode == 40){
-              currentFocus++
-             addActive(walllist.options);
-            }
-            else if(e.keyCode == 38){
-              currentFocus--
-             addActive(walllist.options);
-            }
-            else if(e.keyCode == 13){
-              e.preventDefault();
-                  if (currentFocus > -1) {
-                    /*and simulate a click on the "active" item:*/
-                    if (walllist.options) walllist.options[currentFocus].click();
-                  }
-            }
-          }
-          
-          function addActive(x) {
-              if (!x) return false;
-              removeActive(x);
-              if (currentFocus >= x.length) currentFocus = 0;
-              if (currentFocus < 0) currentFocus = (x.length - 1);
-              x[currentFocus].classList.add("active");
-            }
-            function removeActive(x) {
-              for (var i = 0; i < x.length; i++) {
-                x[i].classList.remove("active");
-              }
-            }
-          
-    }
-
-}
-wallSteel();
-
-//стандарт
-function standartSteel () {
-  let standart = document.getElementById('standart'),
-  standartlist = document.getElementById('standartlist');
-    if(standart) {
-      standart.onfocus = function () {
-        standartlist.style.display = 'block';
-            
-          };
-          for (let option of standartlist.options) {
-            option.onclick = function () {
-              standart.value = option.value;
-              standartlist.style.display = 'none';
-                
-            };
-          };
-          
-          standart.oninput = function() {
-            currentFocus = -1;
-            var text = standart.value.toUpperCase();
-            for (let option of standartlist.options) {
-              if(option.value.toUpperCase().indexOf(text) > -1){
-                option.style.display = "block";
-            }else{
-              option.style.display = "none";
-              }
-            }
-          };
-          var currentFocus = -1;
-          standart.onkeydown = function(e) {
-            if(e.keyCode == 40){
-              currentFocus++
-             addActive(standartlist.options);
-            }
-            else if(e.keyCode == 38){
-              currentFocus--
-             addActive(standartlist.options);
-            }
-            else if(e.keyCode == 13){
-              e.preventDefault();
-                  if (currentFocus > -1) {
-                    /*and simulate a click on the "active" item:*/
-                    if (standartlist.options) standartlist.options[currentFocus].click();
-                  }
-            }
-          }
-          
-          function addActive(x) {
-              if (!x) return false;
-              removeActive(x);
-              if (currentFocus >= x.length) currentFocus = 0;
-              if (currentFocus < 0) currentFocus = (x.length - 1);
-              x[currentFocus].classList.add("active");
-            }
-            function removeActive(x) {
-              for (var i = 0; i < x.length; i++) {
-                x[i].classList.remove("active");
-              }
-            }
-          
-    }
-
-}
-standartSteel();
     // стили datalist на странице справочника стандартов
 
     let directory = document.getElementById('directory'),

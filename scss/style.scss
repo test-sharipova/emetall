@@ -1004,7 +1004,7 @@
     display: block;
     position: relative;
   }
-  .new-select {
+  .new-select, .new-select2 {
     background: #e9f0fc;
     background-image: url(../img/form_arrow.svg);
     background-repeat: no-repeat;
@@ -1018,7 +1018,7 @@
     position: relative;
     cursor: pointer;
   }
-  .new-select__list {
+  .new-select__list, .new-select__list2 {
     position: absolute;
     z-index: 10;
     border-radius: 12px;
