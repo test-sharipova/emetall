@@ -507,9 +507,7 @@ $('.filter-dropdown').each(function(){
     let filter = $(this),
         filterInput = filter.find('input'),
         filterList = filter.find('datalist');
-        console.log(filterList);
-        console.log(filter);
-
+       
         filterInput.on('focus', function () {
           filterList.css('display', 'block');
           
@@ -643,32 +641,274 @@ newSelect();
 //меняется контент подраздела в зависимости от раздела
 var select1 = document.getElementById("chapter");
 var select2 = document.getElementById("chapter2");
-
+document.querySelector('.armatura').style.display = 'block';
 
 select1.onchange = function() {
   changeSelect2Options();
   
-}
+};
 
 function changeSelect2Options() {
   var selectedOption = select1.value;
+  
   switch(selectedOption) {
     case "Арматура":
-      
-      select2.options.length = 0; // удалить все опции
-      select2.options.add(new Option("Вариант 1.1", "value1"));
-      select2.options.add(new Option("Вариант 1.2", "value2"));
-      
+      var elements = document.querySelectorAll('.chapter_2');
+        for (var i = 0; i < elements.length; i++) {
+          elements[i].style.display = 'none';
+        }
+      document.querySelector('.armatura').style.display = 'block';
       break;
 
     case "Балка":
-      select2.options.length = 0; // удалить все опции
-      select2.options.add(new Option("Вариант 2.1", "value3"));
-      select2.options.add(new Option("Вариант 2.2", "value4"));
-      select2.options.add(new Option("Вариант 2.3", "value5"));
-     
+      var elements = document.querySelectorAll('.chapter_2');
+      for (var i = 0; i < elements.length; i++) {
+        elements[i].style.display = 'none';
+      }
+      document.querySelector('.balka').style.display = 'block';
       break;
-    // и т.д.
+
+    case "Баллоны":
+      var elements = document.querySelectorAll('.chapter_2');
+        for (var i = 0; i < elements.length; i++) {
+          elements[i].style.display = 'none';
+        }
+      document.querySelector('.ballony').style.display = 'block';
+      break;
+
+    case "Дробь":
+      var elements = document.querySelectorAll('.chapter_2');
+        for (var i = 0; i < elements.length; i++) {
+          elements[i].style.display = 'none';
+        }
+      document.querySelector('.drob').style.display = 'block';
+      break;
+
+    case "Заглушки":
+       var elements = document.querySelectorAll('.chapter_2');
+         for (var i = 0; i < elements.length; i++) {
+           elements[i].style.display = 'none';
+        }
+       document.querySelector('.zaglushki').style.display = 'block';
+       break;
+
+      case "Задвижки":
+      var elements = document.querySelectorAll('.chapter_2');
+        for (var i = 0; i < elements.length; i++) {
+          elements[i].style.display = 'none';
+        }
+      document.querySelector('.zadvighki').style.display = 'block';
+      break;
+      
+      case "Катанка":
+        var elements = document.querySelectorAll('.chapter_2');
+          for (var i = 0; i < elements.length; i++) {
+            elements[i].style.display = 'none';
+          }
+        document.querySelector('.katanka').style.display = 'block';
+        break;
+
+      case "Квадрат":
+        var elements = document.querySelectorAll('.chapter_2');
+           for (var i = 0; i < elements.length; i++) {
+             elements[i].style.display = 'none';
+          }
+         document.querySelector('.kwadrat').style.display = 'block';
+        break;
+
+       case "Краны шаровые":
+         var elements = document.querySelectorAll('.chapter_2');
+           for (var i = 0; i < elements.length; i++) {
+            elements[i].style.display = 'none';
+          }
+         document.querySelector('.krany').style.display = 'block';
+          break;
+
+      case "Лента и штрипс":
+        var elements = document.querySelectorAll('.chapter_2');
+           for (var i = 0; i < elements.length; i++) {
+           elements[i].style.display = 'none';
+          }
+        document.querySelector('.lenta').style.display = 'block';
+         break;
+
+         case "Лист":
+          var elements = document.querySelectorAll('.chapter_2');
+            for (var i = 0; i < elements.length; i++) {
+              elements[i].style.display = 'none';
+            }
+          document.querySelector('.list').style.display = 'block';
+          break;
+    
+        case "Металло-черепица":
+          var elements = document.querySelectorAll('.chapter_2');
+          for (var i = 0; i < elements.length; i++) {
+            elements[i].style.display = 'none';
+          }
+          document.querySelector('.metallocherepiza').style.display = 'block';
+          break;
+    
+        case "Отводы":
+          var elements = document.querySelectorAll('.chapter_2');
+            for (var i = 0; i < elements.length; i++) {
+              elements[i].style.display = 'none';
+            }
+          document.querySelector('.otvody').style.display = 'block';
+          break;
+    
+        case "Переходы":
+          var elements = document.querySelectorAll('.chapter_2');
+            for (var i = 0; i < elements.length; i++) {
+              elements[i].style.display = 'none';
+            }
+          document.querySelector('.perehody').style.display = 'block';
+          break;
+    
+        case "Поковка":
+           var elements = document.querySelectorAll('.chapter_2');
+             for (var i = 0; i < elements.length; i++) {
+               elements[i].style.display = 'none';
+            }
+           document.querySelector('.pokovka').style.display = 'block';
+           break;
+    
+          case "Полоса":
+          var elements = document.querySelectorAll('.chapter_2');
+            for (var i = 0; i < elements.length; i++) {
+              elements[i].style.display = 'none';
+            }
+          document.querySelector('.polosa').style.display = 'block';
+          break;
+          
+          case "Проволока":
+            var elements = document.querySelectorAll('.chapter_2');
+              for (var i = 0; i < elements.length; i++) {
+                elements[i].style.display = 'none';
+              }
+            document.querySelector('.provoloka').style.display = 'block';
+            break;
+    
+          case "Профнастил":
+            var elements = document.querySelectorAll('.chapter_2');
+               for (var i = 0; i < elements.length; i++) {
+                 elements[i].style.display = 'none';
+              }
+             document.querySelector('.profnastil').style.display = 'block';
+            break;
+    
+           case "Рельсы":
+             var elements = document.querySelectorAll('.chapter_2');
+               for (var i = 0; i < elements.length; i++) {
+                elements[i].style.display = 'none';
+              }
+             document.querySelector('.relsy').style.display = 'block';
+              break;
+    
+          case "Рулоны":
+            var elements = document.querySelectorAll('.chapter_2');
+               for (var i = 0; i < elements.length; i++) {
+               elements[i].style.display = 'none';
+              }
+            document.querySelector('.rulony').style.display = 'block';
+             break;
+        
+             case "Сетка":
+              var elements = document.querySelectorAll('.chapter_2');
+                for (var i = 0; i < elements.length; i++) {
+                  elements[i].style.display = 'none';
+                }
+              document.querySelector('.setka').style.display = 'block';
+              break;
+      
+            case "Слитки":
+              var elements = document.querySelectorAll('.chapter_2');
+                 for (var i = 0; i < elements.length; i++) {
+                   elements[i].style.display = 'none';
+                }
+               document.querySelector('.slitki').style.display = 'block';
+              break;
+      
+             case "Сэндвич-панели":
+               var elements = document.querySelectorAll('.chapter_2');
+                 for (var i = 0; i < elements.length; i++) {
+                  elements[i].style.display = 'none';
+                }
+               document.querySelector('.sandwichpaneli').style.display = 'block';
+                break;
+      
+            case "Тройники":
+              var elements = document.querySelectorAll('.chapter_2');
+                 for (var i = 0; i < elements.length; i++) {
+                 elements[i].style.display = 'none';
+                }
+              document.querySelector('.troiniki').style.display = 'block';
+               break;
+
+               case "Труба":
+                var elements = document.querySelectorAll('.chapter_2');
+                  for (var i = 0; i < elements.length; i++) {
+                    elements[i].style.display = 'none';
+                  }
+                document.querySelector('.truba').style.display = 'block';
+                break;
+        
+              case "Уголок":
+                var elements = document.querySelectorAll('.chapter_2');
+                   for (var i = 0; i < elements.length; i++) {
+                     elements[i].style.display = 'none';
+                  }
+                 document.querySelector('.ugolok').style.display = 'block';
+                break;
+        
+               case "Фланцы":
+                 var elements = document.querySelectorAll('.chapter_2');
+                   for (var i = 0; i < elements.length; i++) {
+                    elements[i].style.display = 'none';
+                  }
+                 document.querySelector('.flanzy').style.display = 'block';
+                  break;
+        
+              case "Чушки":
+                var elements = document.querySelectorAll('.chapter_2');
+                   for (var i = 0; i < elements.length; i++) {
+                   elements[i].style.display = 'none';
+                  }
+                document.querySelector('.chushki').style.display = 'block';
+                 break;
+
+                 case "Швеллер":
+                  var elements = document.querySelectorAll('.chapter_2');
+                    for (var i = 0; i < elements.length; i++) {
+                      elements[i].style.display = 'none';
+                    }
+                  document.querySelector('.shweller').style.display = 'block';
+                  break;
+          
+                case "Шестигранник":
+                  var elements = document.querySelectorAll('.chapter_2');
+                     for (var i = 0; i < elements.length; i++) {
+                       elements[i].style.display = 'none';
+                    }
+                   document.querySelector('.shestigrannik').style.display = 'block';
+                  break;
+          
+                 case "Шина":
+                   var elements = document.querySelectorAll('.chapter_2');
+                     for (var i = 0; i < elements.length; i++) {
+                      elements[i].style.display = 'none';
+                    }
+                   document.querySelector('.shina').style.display = 'block';
+                    break;
+          
+                case "Электроды":
+                  var elements = document.querySelectorAll('.chapter_2');
+                     for (var i = 0; i < elements.length; i++) {
+                     elements[i].style.display = 'none';
+                    }
+                  document.querySelector('.elektrody').style.display = 'block';
+                   break;
+      
+        
   }
   
 }
