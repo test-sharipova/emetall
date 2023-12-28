@@ -451,8 +451,8 @@
             box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
             border-radius: 12px;
             position: absolute;
-            top: 20px;
-            left: 20px;
+            top: 0px;
+            left: 0px;
            
             .btn_lightblue {
                 font-weight: 400;
@@ -481,6 +481,7 @@
             border-radius: 12px;
             overflow: hidden;
             overflow-y: scroll;
+            z-index: 2;
             &::-webkit-scrollbar {
                 width: 4px;
                 
@@ -556,4 +557,22 @@
     .mobile2 {
         display: none;
     }
+}
+#map, #map2 {
+    width: 100%;
+    height: 540px;
+    position: relative;
+}
+.ymaps-2-1-79-balloon__content {
+    padding: 0 !important;
+    margin-right: 0 !important;
+    font-family: 'Segoe UI', sans-serif;
+    line-height: normal;
+    ymaps {
+        width: 216px !important;
+        height: 148px !important;
+    }
+}
+.ymaps-2-1-79-balloon__tail {
+    display: none !important;
 }
