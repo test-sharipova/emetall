@@ -4133,8 +4133,8 @@
 
 <!-- modal -->
 <!-- вход и регистрация -->
-<div class="overlay" style="display: block;"></div>
-<div class="modal modal__login" style="display: block;">
+<div class="overlay"></div>
+<div class="modal modal__login">
     <div class="modal__close gray">&times;</div>
     <div class="login">
         <div class="wrapper_start">
@@ -4203,6 +4203,25 @@
             
         </div>
     </div>
+</div>
+<!-- вход для зарегистрированных пользователей -->
+<div class="modal modal__login-reg">
+    <div class="modal__close">&times;</div>
+    <p class="fs_24 fw_600 mb_16 lh_104">Войти</p>
+    <p class="fs_14 mb_20">Для авторизации мы отправим код <br>
+        на ваш номер телефона.</p>
+    <form action="#" class="login__form">
+        <label for="phone" class="fs_14 fw_600 mb_8 login__label">Введите номер телефона</label>
+        <div class="login__form__input__wrap mb_20">
+            
+            <input type="text" id="phone" class="form__input login__input phone">
+        </div>
+        
+        <button type="submit" class="btn mb_24">Создать аккаунт</button>
+        
+        <p class="fs_14 lh_150">Еще не зарегистрированы?
+            <a href="" class="blue">Быстрая регистрация</a></p>
+    </form>
 </div>
 <!-- помощь -->
 <div class="modal modal__help">
