@@ -170,6 +170,54 @@
         display: block;
     }
 }
+//вход для зарегистрированных пользователей
+.modal {
+    &__login-reg {
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 48px 60px 24px 60px;
+       min-width: 26%;
+
+        form {
+            padding-bottom: 24px;
+            border-bottom: 1px solid #F2F2F4;
+            margin-bottom: 16px;
+        }
+        button.blue {
+            margin: 0 auto;
+            cursor: pointer;
+            display: flex;
+            column-gap: 12px;
+            align-items: center;
+            &:after {
+                content: '';
+                display: block;
+                margin-top: 2px;
+                width: 13px;
+                height: 13px;
+                background: url(../img/log-in.svg) no-repeat center/ cover;
+            }
+        }
+        label {
+            display: block;
+            .fs_14 {
+                line-height: normal;
+            }
+            input {
+                padding-left: 16px;
+            }
+        }
+    }
+}
+//для поставщиков
+.modal {
+    &__login-provider {
+        form {
+            margin-bottom: 0;
+            border-bottom: none;
+        }
+    }
+}
 //help footer
 .modal {
     &__help {
