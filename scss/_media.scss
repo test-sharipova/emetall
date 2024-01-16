@@ -154,7 +154,16 @@
       font-size: 14px;
     }
   }
-  
+  .login {
+    &__reg {
+      padding-top: 60px;
+    }
+    &__wins {
+      padding-left: 60px;
+      padding-top: 60px;
+      background-position: 54%;
+    }
+  }
   .catalogFilters2 {
     &__wrapper {
       flex-wrap: wrap;
@@ -2430,6 +2439,9 @@ padding: 0;
       &__reg {
         width: 100%;
         padding: 48px 16px;
+        &__content {
+          max-width: 100%;
+        }
         .mb_16 {
           margin-bottom: 12px;
         }

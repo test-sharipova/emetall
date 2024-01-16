@@ -38,20 +38,51 @@
    
 }
 //login
+.modal {
+    &__login {
+        width: 100%;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+        .modal__close {
+            top: 26px;
+    right: 40px;
+    cursor: pointer;
+    font-size: 37px;
+        }
+    }
+}
 .login {
+    .wrapper_start {
+        align-items: stretch;
+    }
+    width: 100%;
     
-    width: 880px;
-    border-radius: 15px;
     background: #fff;
     &__wins {
-        padding: 66px 60px 55px;
-        background: #E9F0FC;
-        border-radius: 15px 0px 0px 15px;
+        color: #fff;
+        padding: 127px 60px 55px 120px;
+        background-image: url(../img/company/company-mission-bg.png);
+        background-image: image-set(
+            url(../img/company/company-mission-bg-2x.webp) type('image/webp') 1x,
+            url(../img/company/company-mission-bg-2x.webp) type('image/webp') 2x,
+            url(../img/company/company-mission-bg.png) type('image/png') 1x,
+            url(../img/company/company-mission-bg-2x.png) type('image/png') 2x,
+            
+        );
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 62% bottom;
+        background-color: $blue;
         width: 50%;
         min-width: 50%;
         .fs_14 {
             line-height: 150%;
             font-weight: 400;
+            
+        }
+        &__content {
+            max-width: 310px;
         }
         
     }
@@ -71,13 +102,26 @@
         }
     }
     &__reg {
-        padding: 60px 80px 40px;
+        width: 50%;
+        padding: 127px 80px 104px;
+        display: flex;
+        justify-content: center;
         .fs_14 {
             line-height: 150%;
             max-width: 246px;
         }
-        
-       
+        &__content {
+            max-width: 323px;
+        }
+       label {
+        display: block;
+        input {
+            padding-left: 16px;
+        }
+        .fs_14 {
+            line-height: normal;
+        }
+       }
     }
     &__form {
         &__input {

@@ -4133,13 +4133,39 @@
 
 <!-- modal -->
 <!-- вход и регистрация -->
-<div class="overlay"></div>
-<div class="modal modal__login">
+<div class="overlay" style="display: block;"></div>
+<div class="modal modal__login" style="display: block;">
     <div class="modal__close gray">&times;</div>
     <div class="login">
         <div class="wrapper_start">
+            <div class="login__reg">
+                <div class="login__reg__content">
+                    <p class="fs_24 fw_600 mb_16 lh_104">Регистрация</p>
+                <p class="fs_14 mb_20">Для регистрации мы отправим код <br>
+                    на ваш номер телефона.</p>
+                <form action="#" class="login__form">
+                    <label for="phone" class="fs_14 fw_600 mb_8 login__label">Введите номер телефона</label>
+                    <div class="login__form__input__wrap mb_20">
+                        
+                        <input type="text" id="phone" class="form__input login__input phone">
+                    </div>
+                    <label class="mb_20">
+                        <p class="fs_14 fw_600 mb_8 login__label">Электронная почта</p>
+                        <input type="email" class="form__input login__input" placeholder="Введите почту">
+                    </label>
+                    <label class="mb_24">
+                        <p class="fs_14 fw_600 mb_8 login__label">ИНН организации</p>
+                        <input type="email" class="form__input login__input" placeholder="Введите ИНН">
+                    </label>
+                    <button type="submit" class="btn mb_24">Создать аккаунт</button>
+                    <p class="fs_12 mb_32 lh_137">Нажимая кнопку «Создать аккаунт», вы принимаете условия <a href="" class="blue">Пользовательского соглашения</a></p>
+                    <p class="fs_14 lh_150">Уже зарегистрированы? <a href="" class="blue">Войти</a></p>
+                </form>
+                </div>
+            </div>
             <div class="login__wins">
-                <p class="fs_20 fw_600 mb_20 mobile">Что дает регистрация?</p>
+              <div class="login__wins__content">
+                <p class="fs_24 fw_600 mb_32 lh_104">Что дает регистрация?</p>
                 <div class="wrapper_start mb_32">
                     <div class="login__img">
                         <img src="img/modal/login_win1.svg" alt="win">
@@ -4172,22 +4198,9 @@
                     </div>
                     <p class="fs_14">Возможность сообщать о несоответствии информации</p>
                 </div>
+              </div>
             </div>
-            <div class="login__reg">
-                <p class="fs_24 fw_600 mb_16 lh_104">Вход и регистрация</p>
-                <p class="fs_14 mb_20">Для авторизации мы отправим код
-                    на ваш номер телефона.</p>
-                <form action="#" class="login__form">
-                    <label for="phone" class="fs_14 fw_600 mb_8 login__label">Введите номер телефона</label>
-                    <div class="login__form__input__wrap mb_24">
-                        
-                        <input type="number" id="phone" class="form__input login__input">
-                    </div>
-                    <button type="submit" class="btn mb_24">Получить код</button>
-                    <p class="fs_12 mb_24 lh_167">Нажимая “Войти” вы соглашаетесь с политикой обработки и хранения персональных данных</p>
-                    <a href="#" class="btn_order">Вход для поставщиков</a>
-                </form>
-            </div>
+            
         </div>
     </div>
 </div>
@@ -4262,6 +4275,7 @@
 <script src="js/slick.min.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/select2.min.js"></script>
+<script src="js/unpkg.com_imask@7.1.3_dist_imask.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
