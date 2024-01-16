@@ -296,3 +296,68 @@
         
     }
 }
+//выбор города
+.modal {
+    &__city {
+        
+        width: 43%;
+        max-width: 712px;
+        padding: 48px 48px 68px;
+        background-color: #fff;
+        box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.12);
+        border-radius: 15px;
+        
+        &__list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 100%;
+            gap: 24px;
+            margin-top: 10px;
+            button {
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 25px;
+                transition: color .3s;
+                cursor: pointer;
+                text-align: left;
+                &:hover {
+                    color: $blue;
+                }
+            }
+        }
+        .catalog__search__input {
+            padding-left: 24px;
+        }
+        .filter-dropdown {
+            position: relative;
+        }
+        datalist {
+            border-radius: 0;
+            box-shadow: none;
+            width: 100%;
+            padding: 0;
+            position: relative;
+            option {
+                padding: 8px 0;
+                font-size: 18px;
+                font-weight: 600;
+                &:hover {
+                    border-radius: 0;
+                    background: transparent;
+                    color: $blue;
+                }
+            }
+        }
+        .remove-val {
+            position: absolute;
+            font-size: 16px;
+            width: 16px;
+            height: 16px;
+            background: url(../img/remove-val.svg) no-repeat center/cover;
+            cursor: pointer;
+            top: 13px;
+            right: 17px;
+            display: none;
+        }
+    }
+}

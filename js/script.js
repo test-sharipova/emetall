@@ -153,6 +153,10 @@ function responseMenu(){
     $('.header__place').on('click', function() {
         $('.header__place__quest').toggleClass('hide');
     });
+    //показать выбор города 
+    $('.city-modal').on('click', function() {
+      $('.overlay, .modal__city').fadeIn();
+    });
 
     //показать продление медийного баннера/оплата
     
@@ -457,7 +461,7 @@ $('.catalogFilters__close').on('click', function() {
     $('.showFilters').fadeIn();
 });
 
-//фильтры в кастомном дропдауне на странице каталог фильтры
+//фильтры в кастомном дропдауне c возможностью ввода диапазона на странице каталог фильтры
 
 $('.custom-drop').on('click', function(){
     $('.form__input__dropdown').css('height', 'auto');
@@ -501,7 +505,7 @@ $('.catalogFilters-sizecheck').change(function() {
     }
      });
 
-// стили datalist на странице каталог-фильтры
+// стили datalist на странице каталог-фильтры, выбор города
 $('.filter-dropdown').each(function(){
     let filter = $(this),
         filterInput = filter.find('input'),
@@ -509,14 +513,16 @@ $('.filter-dropdown').each(function(){
        
         filterInput.on('focus', function () {
           filterList.css('display', 'block');
-          
+          $('.modal__city__list').css('display', 'none'); //для выбора города
+          $('.remove-val').css('display', 'block'); //для выбора города
         });
+       
         filterList.find('option').on('click', function () {
           filterInput.val($(this).val());
           filterList.css('display', 'none');
             
       });
-        
+      
       filterInput.on('input', function() {
         currentFocus = -1;
         var text = filterInput.val().toUpperCase();
@@ -559,11 +565,33 @@ $('.filter-dropdown').each(function(){
               x[i].classList.remove("active");
             }
           }
-
+         
+          $(document).mouseup( function(e){ // событие клика по веб-документу
+            var div = $( ".filter-dropdown" ); // тут указываем ID элемента
+            if ( !div.is(e.target) // если клик был не по нашему блоку
+                && div.has(e.target).length === 0 ) { // и не по его дочерним элементам
+                $(filterList).hide(); // скрываем его
+                
+            }
+           });
+           $(document).mouseup( function(e){ // событие клика по веб-документу
+            var div = $( ".filter-dropdown form" ); // тут указываем ID элемента
+            if ( !div.is(e.target) // если клик был не по нашему блоку
+                ) { 
+                  $('.modal__city__list').css('display', 'grid'); //показать весь список городов
+                
+            }
+           });
           
+             
+});
+//выбор города - вставить значение в инпут
+$('.modal__city__list button').click(function() {
+  $('#modal-city').val($(this).text());
 });
 
 
+ 
 
 //select 
 function newSelect() {
@@ -629,10 +657,7 @@ function newSelect() {
         && div.has(e.target).length === 0 ) { // и не по его дочерним элементам
         $('.new-select__list').hide(); // скрываем его
     }
-  
-  
-    
-    });
+   });
 }
 newSelect();
 
@@ -640,7 +665,8 @@ newSelect();
 //меняется контент подраздела в зависимости от раздела
 var select1 = document.getElementById("chapter");
 var select2 = document.getElementById("chapter2");
-document.querySelector('.armatura').style.display = 'block';
+if (select1) {
+  document.querySelector('.armatura').style.display = 'block';
 
 select1.onchange = function() {
   changeSelect2Options();
@@ -911,6 +937,8 @@ function changeSelect2Options() {
   }
   
 }
+}
+
 
 // показать все характериситки в моб
 function tableShowMore(item) {
