@@ -394,10 +394,16 @@
   .fs_32 {
     font-size: 32px;
   }
+  .fs_36 {
+    font-size: 36px;
+  }
   .title_36 {
     font-weight: 600;
     font-size: 36px;
     line-height: normal;
+  }
+  .fs_42 {
+    font-size: 42px;
   }
   .fs_60 {
     font-size: 60px;
@@ -708,6 +714,9 @@
     //margins
     .mt_48 {
       margin-top: 48px;
+    }
+    .mb_120 {
+      margin-bottom: 120px;
     }
     .mb_86 {
       margin-bottom: 86px;

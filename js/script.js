@@ -1149,9 +1149,37 @@ $('.advRew__slider').slick({
     }
     });
 
+    //страница для поставщиков
+    //слайдер
+    $('.forproviders__cases__slider').slick({
+        dots: false,
+        prevArrow: '<button type="button" class="slick-prev"><img src="img/prev.svg"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="img/next.svg"></button>',
+        slidesToShow: 1,
+        infinite: true,
+      
+    });
+    //выбор тарифа
+    var radioButtons = $('.forproviders__details__tarif-item input[type="radio"]');
 
+    radioButtons.change(function() {
+      // Находим ближайший блок с классом "forproviders__details__tarif-item"
+      var tarifItem = $(this).closest('.forproviders__details__tarif-item');
+      $('.forproviders__details__tarif-item').removeClass('active');
+      // Если радиокнопка выбрана, то добавляем класс "active", иначе удаляем его
+      if ($(this).is(':checked')) {
+        tarifItem.addClass('active');
+      } else {
+        tarifItem.removeClass('active');
+      }
+      var activeTarifName = $('.forproviders__details__tarif-item.active').find('.forproviders__details__tarif-name').text();
+      $('.forproviders__details__order').val(activeTarifName);
+      var activeTarifCost = $('.forproviders__details__tarif-item.active').find('.forproviders__details__tarif-cost').text();
+      $('.forproviders__details__cost').val(activeTarifCost);
+    });
 
-  
+   
+
     });
 
     //карта на странице поставщика Офисы
