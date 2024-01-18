@@ -1157,7 +1157,18 @@ $('.advRew__slider').slick({
         nextArrow: '<button type="button" class="slick-next"><img src="img/next.svg"></button>',
         slidesToShow: 1,
         infinite: true,
-      
+        responsive: [
+          {
+              breakpoint: 800,
+              settings: {
+                  arrows: false,
+                  dots: true,            
+              }
+               
+          },
+          
+          
+      ]
     });
     //выбор тарифа
     var radioButtons = $('.forproviders__details__tarif-item input[type="radio"]');

@@ -388,6 +388,15 @@
   &__promo {
     background-position: 60% center;
   }
+  &__dop {
+    &__wrapper {
+      column-gap: 12px;
+
+    }
+    &__item {
+      width: 30%;
+    }
+  }
  }
 }
 @media screen and (max-width: 1024px) {
@@ -889,8 +898,8 @@
   .hamburger {
     display: flex;
     width: 22px;
-height: 18px;
-padding: 0;
+    height: 18px;
+    padding: 0;
   }
   .banner {
     display: none;
@@ -1281,7 +1290,7 @@ padding: 0;
 
       &:before {
         width: 20px;
-        top: 9px;
+        top: 50%;
       }
       &:after {
         height: 20px;
@@ -2480,6 +2489,39 @@ padding: 0;
   .forproviders {
     &__promo {
       background-position: left center;
+      margin: 0;
+      border-radius: 0;
+    }
+    &__wins {
+      .wrapper {
+        flex-wrap: wrap;
+        
+      }
+      .mb_120 {
+        margin-bottom: 48px;
+      }
+      .fs_36 {
+        font-size: 24px;
+      }
+      .fs_28 {
+        font-size: 18px;
+      }
+      .fs_60 {
+        font-size: 48px;
+      }
+      &__stat {
+        margin-left: 0;
+        
+        min-width: 300px;
+        margin-top: 12px;
+      }
+      
+    }
+    &__dop {
+      .fs_36 {
+        font-size: 24px;
+      }
+      
     }
    }
 }
@@ -5347,6 +5389,134 @@ padding: 0;
     }
    
   }
+  &__dop {
+    &__item {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  &__stat {
+    .fs_36 {
+      font-size: 24px;
+    }
+  }
+  &__soc {
+    padding-bottom: 20px;
+    .fs_36 {
+      font-size: 24px;
+    }
+    .advInfo__wrapper {
+
+      flex-wrap: wrap;
+      .advInfo {
+        padding: 0 16px;
+      &__content {
+        margin-top: 0;
+        .title_36 {
+          line-height: normal;
+          margin-bottom: 16px;
+          font-size: 24px;
+        }
+       
+      }
+      .title_36 {
+        font-size: 24px;
+      }
+      .fs_18 {
+        font-size: 14px;
+      }
+      &__graph {
+        width: 65%;
+        max-width: 300px;
+        margin-top: 0;
+        &List {
+          width: 100%;
+          max-width: 300px;
+          margin-top: 10px;
+          .mb_80 {
+            margin-bottom: 32px;
+          }
+          .fs_24 {
+            font-size: 16px;
+            margin-bottom: 20px;
+          }
+        }
+      }
+      &__list {
+        &__item {
+          font-size: 14px;
+        }
+      }
+      }
+
+    }
+    
+  }
+  &__cases {
+    .fs_36 {
+      font-size: 24px;
+    }
+    .slick-slide {
+      .wrapper_start {
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 32px 0;
+      }
+    }
+    
+    &__case {
+      padding: 24px;
+      box-shadow: none;
+    }
+    &__content {
+      margin: 16px 0 0;
+      .fs_32 {
+        font-size: 20px;
+        margin-bottom: 16px;
+      }
+      .fs_18 {
+        font-size: 16px;
+      }
+    }
+  }
+  &__details {
+    .fs_36 {
+      font-size: 24px;
+    }
+    &__wrapper {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+    &__item {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+    }
+    &__tarif {
+      flex-wrap: wrap;
+      &-item {
+        width: 100%;
+      }
+    }
+    &__choise {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+      .btn {
+        width: 100%;
+      }
+    }
+    &__order {
+      max-width: 100%;
+    }
+   
+
+  }
+  &__questions {
+    .fs_36 {
+      font-size: 24px;
+    }
+  }
+
 }
 
 
