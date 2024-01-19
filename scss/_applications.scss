@@ -19,6 +19,9 @@
                 width: 194px;
             }
         }
+        &__img {
+            display: none;
+        }
     }
     &__form {
         &__wrapper {
@@ -39,6 +42,7 @@
             .btn_black {
                 margin-top: 5px;
                 height: 38px;
+                white-space: nowrap;
             }
             .new-select:empty {
                 background-color: #fff;
@@ -50,7 +54,10 @@
             padding: 24px 46px 30px;
             border-radius: 12px;
             background: #FFF;
-
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
             box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.10);
             .btn {
                 width: 100%;
@@ -58,6 +65,7 @@
                 justify-content: flex-start;
                 align-items: center;
                 gap: 8px;
+                white-space: nowrap;
                 &::before {
                     content: '';
                     display: block;
@@ -150,6 +158,12 @@
             &:nth-child(2) {
                 padding-right: 80px;
             }
+            .btn_remove {
+                display: none;
+            }
+            .mobile_file {
+                display: none;
+            }
         }
         tr {
             &:hover {
@@ -164,9 +178,11 @@
                 height: 176px;
                 a {
                     position: absolute;
+                    
                     top: 50%;
                     left: 50%;
                     transform: translate(-57%, -50%);
+                    
                 }
             }
         }

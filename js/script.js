@@ -1195,6 +1195,18 @@ $('.advRew__slider').slick({
 
     });
 
+
+    //страница заявки
+    //показать контакты в моб версии
+    $('.btn_show-contacts').each(function(i) {
+      $(this).on('click', function() {
+        $('.applications__table__contacts').eq(i).toggleClass('applications__table__contacts-active');
+        $('.mobile_file').eq(i).toggleClass('mobile_file-active');
+        $('.btn_show-contacts-show').eq(i).toggleClass('active');
+        $('.btn_show-contacts-move').eq(i).toggleClass('active');
+    });
+    })
+
     //карта на странице поставщика Офисы
 ymaps.ready(function () {
   var myMap = new ymaps.Map('map', {
