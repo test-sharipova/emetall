@@ -1,0 +1,181 @@
+.applications {
+    padding-bottom: 90px;
+    &__promo {
+        margin-top: 48px;
+        margin-bottom: 40px;
+        border-radius: 15px;
+        padding: 58px 0 64px 80px;
+        background-color: #F1F5F8;
+        background-image: image-set(
+            url(../img/applications/app-promo.png) type('image/png') 1x,
+            url(../img/applications/app-promo-2x.png) type('image/png') 2x
+        );
+        background-repeat: no-repeat;
+        background-size: 449px;
+        background-position: center right 12%;
+        &__content {
+            max-width: 408px;
+            .btn {
+                width: 194px;
+            }
+        }
+    }
+    &__form {
+        &__wrapper {
+            display: grid;
+            column-gap: 28px;
+            grid-template-columns: 3fr 1fr;
+            margin-bottom: 32px;
+        }
+        &__form {
+            display: flex;
+            justify-content: flex-start;
+            gap: 24px;
+            align-items: center;
+            border-radius: 12px;
+            background: #FFF;
+            padding: 24px 40px;
+            box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.10);
+            .btn_black {
+                margin-top: 5px;
+                height: 38px;
+            }
+            .new-select:empty {
+                background-color: #fff;
+                border: 1px solid #ddd;
+            }
+           
+        }
+        &__subscribe {
+            padding: 24px 46px 30px;
+            border-radius: 12px;
+            background: #FFF;
+
+            box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.10);
+            .btn {
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 8px;
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 14px;
+                    height: 12px;
+                    background: url(../img/email-subscribe.svg) no-repeat center/contain;
+                }
+            }
+        }
+    }
+    &__table {
+        display: grid;
+        border-collapse: collapse;
+        min-width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        margin-bottom: 48px;
+        grid-template-columns: 
+          minmax(min-content, 1fr)
+          minmax(min-content, 9.5fr)
+          minmax(min-content, 3fr)
+          minmax(min-content, 4fr)
+          minmax(min-content, 4fr);
+         
+          &::-webkit-scrollbar {
+            height: 4px;
+            width: 4px;
+          }
+            &::-webkit-scrollbar-track {
+                background: #F2F2F4;
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: #aaaaaa;
+                border-radius: 5px;
+            }
+          scrollbar-width: thin;          /* "auto" или "thin"  */
+          scrollbar-color: #aaaaaa #F2F2F4;
+        thead,
+        tbody,
+        tr {
+            display: contents;
+            
+            
+            }
+        
+        th {
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            border-top: 1px solid #F2F2F4;
+            border-bottom: 1px solid #F2F2F4;
+            padding: 20px 0;
+            text-align: left;
+            padding: 24px 16px 20px 14px;
+        }
+        td {
+            border-bottom: 1px solid #F2F2F4;
+            padding: 24px 16px 20px 14px;
+            transition: background-color .3s;
+            font-size: 13px;
+            line-height: normal;
+            height: 115px;
+            .btn_transparent {
+                padding: 9px 24px 10px;
+                cursor: pointer;
+            }
+            .blue {
+                display: flex;
+                justify-content: flex-start;
+                gap: 8px;
+                align-items: center;
+                text-align: right;
+                white-space: nowrap;
+                &::before {
+                    content: '';
+                    display: block;
+                    background: url(../img/download-blue-arrow.svg) no-repeat center/contain;
+                    width: 14px;
+                    height: 12px;
+                }
+            }
+            &:last-child {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+                gap: 16px;
+            }
+            &:nth-child(2) {
+                padding-right: 80px;
+            }
+        }
+        tr {
+            &:hover {
+                td {
+                    background-color: #F5F5F5;
+                }
+            }
+        }
+        &__banner {
+            position: relative;
+            td {
+                height: 176px;
+                a {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-57%, -50%);
+                }
+            }
+        }
+    }
+    &__count {
+       padding: 0 0 0 14px;
+        .btn_transparent {
+            opacity: 0;
+            cursor: auto;
+        }
+    }
+}

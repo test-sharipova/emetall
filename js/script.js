@@ -1188,7 +1188,9 @@ $('.advRew__slider').slick({
       var activeTarifCost = $('.forproviders__details__tarif-item.active').find('.forproviders__details__tarif-cost').text();
       $('.forproviders__details__cost').val(activeTarifCost);
     });
-
+    radioButtons.on('click', function() {
+      $('.forproviders__details__choise').css({'margin-top': '30px', 'opacity': '1'});
+    })
    
 
     });
