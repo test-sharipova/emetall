@@ -4272,9 +4272,9 @@
             <img src="img/modal/help_img2.png" alt="help" class="help__img">
         </a>
     </div>
-    <a href="#" class="help__link"><img src="img/modal/help_phone.svg" alt="phone">Заказать звонок</a>
-    <a href="#" class="help__link"><img src="img/modal/help_mail.svg" alt="phone">Написать на почту</a>
-    <a href="#" class="help__link"><img src="img/modal/help_telegram.svg" alt="phone">Написать в мессенджере</a>
+    <button type="button" class="help__link call"><img src="img/modal/help_phone.svg" alt="phone">Заказать звонок</button>
+    <button type="button" class="help__link"><img src="img/modal/help_mail.svg" alt="phone">Написать на почту</button>
+    <button type="button" class="help__link"><img src="img/modal/help_telegram.svg" alt="phone">Написать в мессенджере</button>
 </div>
 
 <!-- форма смены города -->
@@ -4319,6 +4319,66 @@
         <button type="button">Челябинск</button>
         <button type="button">Архангельск</button>
     </div>
+</div>
+
+<!-- Заказать звонок -->
+<div class="modal modal__call">
+    <div class="modal__close">&times;</div>
+    <p class="fs_24 fw_600 lh_norm mb_16">Заказать звонок</p>
+    <p class="fs_14 lh_150 mb_20">Оставьте номер телефона и мы свяжемся с вами в ближайшее время.</p>
+    <form action="">
+        <label for="phone" class="fs_14 fw_600 mb_8 login__label lh_norm">Введите номер телефона</label>
+        <div class="login__form__input__wrap mb_24">
+            
+            <input type="text" id="phone" class="form__input login__input phone">
+        </div>
+        <button type="submit" class="btn fs_15 lh_167 fw_600">Заказать звонок</button>
+    </form>
+</div>
+
+<!-- написать на почту -->
+<div class="modal modal__mail" style="display: block;">
+    <div class="modal__close">&times;</div>
+    <p class="fs_24 fw_600 lh_norm mb_16">Написать на почту</p>
+    <p class="fs_14 lh_norm lh_150 mb_24 modal__mail__subtitle">Время ожидания ответа зависит от нагрузки на операторов, но обычно отвечаем в течение следующего рабочего дня.</p>
+    <form action="#" class="modal__applications__order-form">
+        <label>
+            <p class="fs_14 fw_600 mb_8 login__label lh_norm">Ваше имя</p>
+            <input type="text" class="form__input login__input" placeholder="Введите имя">
+        </label>
+         <label>
+             <p class="fs_14 fw_600 mb_8 login__label lh_norm">E-mail</p>
+             <input type="email" class="form__input login__input" placeholder="">
+         </label>
+         <div class="modal__mail__theme">
+            <label for="theme" class="label">Выберите тему обращения</label>
+                                
+            <select name="theme-mail" id="theme" class="form__input select_main">
+                <option value="" selected disabled></option>
+                <option value="Проблема с сайтом">Проблема с сайтом</option>
+                <option value="Проблема с сайтом">Проблема с сайтом</option>
+                <option value="Проблема с сайтом">Проблема с сайтом</option>
+                <option value="Проблема с сайтом">Проблема с сайтом</option>
+                <option value="Проблема с сайтом">Проблема с сайтом</option>
+                <option value="Проблема с сайтом">Проблема с сайтом</option>
+                                        
+            
+            </select>
+         </div>
+        
+        
+         <textarea placeholder="Текст заявки"></textarea>
+         <div class="input-file-row">
+             <label class="input-file">
+                 <input type="file" style="visibility: hidden; clip: rect(0,0,0,0);width: 0;height: 0;display: none;">
+                 <p class="btn_remove">Прикрепить файл</p>
+             </label>
+             <div class="input-file-list"></div>
+         </div> 
+         
+         <button type="submit" class="btn fs_15 fw_600 lh_167">Отправить письмо</button>
+         <p class="gray fs_12 lh_norm">Отправляя заявку, вы соглашетесь с регистрацией аккаунта на сервисе Е-Металл</p>
+     </form>
 </div>
 
 <script src="js/jquery-3.6.3.min.js"></script>

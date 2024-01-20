@@ -180,6 +180,11 @@ function responseMenu(){
       $('.overlay, .modal__invite').fadeIn();
     });
 
+      //заказать обратный звонок
+      $('.call').on('click', function() {
+        $('.overlay, .modal__call').fadeIn();
+      });
+
 //КОРЗИНА добавить-убрать еденицу товара
 
 
