@@ -453,3 +453,134 @@
         }
     }
 }
+//подписка на категории в заявках
+.modal {
+    &__applications-subscribe {
+        border-radius: 15px;
+        box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.12);
+        max-width: 607px;
+        background-color: #fff;
+        padding: 48px 64px 60px;
+        input {
+            padding-left: 16px;
+        }
+        label {
+            display: block;
+        }
+        &__wrapper {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            align-items: flex-end;
+            gap: 16px;
+            .btn {
+                height: 44px;
+                width: 100%;
+            }
+            .form__input {
+                margin-bottom: 0;
+                height: 44px;
+            }
+            .form__input__dropdown {
+                top: 44px;
+            }
+        }
+    }
+    //Разместить заявку на металл
+    &__applications__order {
+        background: #fff;
+        padding: 48px 64px 24px;
+        border-radius: 15px;
+        box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.12);
+        max-width: 712px;
+        &-form {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+        textarea {
+            grid-column: 1/3;
+            resize: none;
+            width: 100%;
+            height: 127px;
+            border-radius: 6px;
+            border: 1px solid var(--input-border, #DDD);
+            background: #FFF;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding: 12px 16px;
+            margin: 8px 0;
+            &:focus {
+                outline: 4px solid #e9effc;
+                border: 1px solid #2764e0;
+                 
+            }
+        }
+        .input-file-row {
+            grid-column: 1/3;
+        }
+        .btn {
+            grid-column: 1/3;
+            width: 100%;
+        }
+        .gray {
+            grid-column: 1/3;
+        }
+        .btn_remove {
+            font-size: 15px;
+            font-weight: 600;
+            width: 100%;
+            height: 44px;
+            cursor: pointer;
+            &::before {
+                content: '';
+                display: block;
+                width: 14px;
+                height: 12px;
+                background: url(../img/add-file.svg) no-repeat center/contain;
+                margin-right: 8px;
+            }
+        }
+        .input-file-list {
+            margin-top: 8px;
+        }
+        .input-file-list-item {
+            position: relative;
+            width: 100%;
+            min-height: 44px;
+            border-radius: 6px;
+            background: #F2F2F4;
+            color: #9295AE;
+            font-size: 14px;
+            gap: 19px;
+            line-height: normal;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 40px 0 40px;
+            max-width: 404px;
+            &::before {
+              content: '';
+              width: 17px;
+              height: 20px;
+              display: block;
+              background: url(../img/input-file-blue.svg) no-repeat center/contain;
+              position: absolute;
+              left: 20px;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+          }
+          .input-file-list-remove {
+            cursor: pointer;
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: url(../img/cross.svg) no-repeat center/cover;
+          }
+    }
+}

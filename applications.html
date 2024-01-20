@@ -3069,7 +3069,7 @@
                         <div class="applications__promo__img">
                             <img src="img/applications/app-promo.png" alt="">
                         </div>
-                        <button type="button" class="btn fw_600 fs_15 lh_167">Разместить заявку</button>
+                        <button type="button" class="btn fw_600 fs_15 lh_167 applications-order">Разместить заявку</button>
                     </div>
                 </div>
                 <div class="applications__form">
@@ -3136,7 +3136,7 @@
                         </form>
                         <div class="applications__form__subscribe">
                             <p class="fs_20 fw_600 lh_norm mb_12 center">Сообщать о новых?</p>
-                            <button type="button" class="btn fs_14 lh_norm">Подписка на заявки</button>
+                            <button type="button" class="btn fs_14 lh_norm applications-subscribe">Подписка на заявки</button>
                         </div>
                     </div>
                 </div>
@@ -3706,6 +3706,114 @@
             <button type="button">Челябинск</button>
             <button type="button">Архангельск</button>
         </div>
+    </div>
+
+    <!-- подписка на категории -->
+    <div class="modal modal__applications-subscribe">
+        <div class="modal__close">&times;</div>
+        <p class="fs_24 fw_600 lh_norm mb_16">Подпишитесь на нужные категории</p>
+        <p class="fs_16 lh_156 mb_24">Выберите категории из списка, и получайте актуальную информацию вовремя.</p>
+        <form action="">
+            <label class="mb_22">
+                <p class="fs_14 fw_600 mb_8 login__label">E-mail</p>
+                <input type="email" class="form__input login__input" placeholder="Введите почту">
+            </label>
+            <div class="modal__applications-subscribe__wrapper">
+                <div>
+                    <label for="catalogFilters-size" class="label">Подписаться на рассылку</label>
+                    <div class="form__input__search">
+                        <input class="form__input custom-drop" id="catalogFilters-size" placeholder="" readonly>
+                        <div class="form__input__dropdown">
+                            
+                        <div class="form__input__dropdown__labels">
+                            <label class="form__input__dropdown__label" for="size1">
+                                <input class="catalogFilters-sizecheck" type="checkbox" id="size1">
+                                <span class="form__input__dropdown__mark"></span>
+                                <span class="fs_15">Арматура</span>
+                            </label>
+                            <label class="form__input__dropdown__label" for="size2">
+                                <input class="catalogFilters-sizecheck" type="checkbox" id="size2">
+                                <span class="form__input__dropdown__mark"></span>
+                                <span class="fs_15">Балка</span>
+                            </label>
+                            <label class="form__input__dropdown__label" for="size3">
+                                <input class="catalogFilters-sizecheck" type="checkbox" id="size3">
+                                <span class="form__input__dropdown__mark"></span>
+                                <span class="fs_15">Дробь</span>
+                            </label>
+                            <label class="form__input__dropdown__label" for="size4">
+                                <input class="catalogFilters-sizecheck" type="checkbox" id="size4">
+                                <span class="form__input__dropdown__mark" for="size"></span>
+                                <span class="fs_15">Катанка</span>
+                            </label>
+                            <label class="form__input__dropdown__label" for="size5">
+                                <input class="catalogFilters-sizecheck" type="checkbox" id="size5">
+                                <span class="form__input__dropdown__mark"></span>
+                                <span class="fs_15">Катанка</span>
+                            </label>
+                            <label class="form__input__dropdown__label" for="size6">
+                                <input class="catalogFilters-sizecheck" type="checkbox" id="size6">
+                                <span class="form__input__dropdown__mark"></span>
+                                <span class="fs_15">Катанка</span>
+                            </label>
+                            <label class="form__input__dropdown__label" for="size7">
+                                <input class="catalogFilters-sizecheck" type="checkbox" id="size7">
+                                <span class="form__input__dropdown__mark"></span>
+                                <span class="fs_15">Катанка</span>
+                            </label>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn">Подписаться</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- разместить заявка на металл -->
+    <div class="modal modal__applications__order">
+        <div class="modal__close">
+            &times;
+        </div>
+        <p class="fs_24 fw_600 lh_norm mb_20">Разместить заявку на металл</p>
+        <form action="#" class="modal__applications__order-form">
+           <div>
+                <label for="phone" class="fs_14 fw_600 mb_8 login__label lh_norm">Номер телефона</label>
+                <div class="login__form__input__wrap">
+                    
+                    <input type="text" id="phone" class="form__input login__input phone">
+                </div>
+           </div>
+            <label>
+                <p class="fs_14 fw_600 mb_8 login__label lh_norm">E-mail</p>
+                <input type="email" class="form__input login__input" placeholder="">
+            </label>
+            <label>
+                <p class="fs_14 fw_600 mb_8 login__label lh_norm">ИНН</p>
+                <input type="text" class="form__input login__input" placeholder="">
+            </label>
+            <label>
+                <p class="fs_14 fw_600 mb_8 login__label lh_norm">Город</p>
+                <input type="text" class="form__input login__input" placeholder="">
+            </label>
+            <textarea placeholder="Текст заявки"></textarea>
+            <div class="input-file-row">
+                <label class="input-file">
+                    <input type="file" style="visibility: hidden; clip: rect(0,0,0,0);width: 0;height: 0;display: none;">
+                    <p class="btn_remove">Прикрепить реквизиты</p>
+                </label>
+                <div class="input-file-list"></div>
+            </div> 
+            <div class="input-file-row">
+                <label class="input-file">
+                    <input type="file" style="visibility: hidden; clip: rect(0,0,0,0);width: 0;height: 0;display: none;">
+                    <p class="btn_remove">Прикрепить заявку</p>
+                </label>
+                <div class="input-file-list"></div>
+            </div> 
+            <button type="submit" class="btn mb_32 fs_15 fw_600 lh_167">Отправить заявку</button>
+            <p class="gray fs_12 lh_norm">Отправляя заявку, вы соглашетесь с регистрацией аккаунта на сервисе Е-Металл</p>
+        </form>
     </div>
 
     <script src="js/jquery-3.6.3.min.js"></script>
