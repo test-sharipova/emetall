@@ -5572,7 +5572,7 @@
                             </div>
                             <div>
                                 <p class="fs_18 fw_600">Разместите свою потребность в разделе "Заявки". Поставщики сами выйдут с вами <br> на связь и предложат варианты поставки.</p>
-                                <a href="#" class="blue">Разместить заявку на металл</a>
+                                <button type="button" class="blue applications-order">Разместить заявку на металл</button>
                             </div>
                         </div>
                     </div>
@@ -5585,7 +5585,7 @@
                                 <p class="fs_18 fw_600">Отправьте именное приглашение поставщику <br>
                                     с собственным наличием металла, <br>
                                     которого еще нет в нашей базе</p>
-                                <a href="#" class="blue">Отправить приглашение поставщику</a>
+                                <button type="button" class="blue invite-provider">Отправить приглашение поставщику</button>
                             </div>
                         </div>
                     </div>
@@ -5869,10 +5869,111 @@
             </div>
         </div>
     </section>
+
+    <!-- modal -->
+     <!-- пригласить поставщика -->
+     <div class="overlay"></div>
+     <div class="modal modal__invite">
+        <div class="modal__close">&times;</div>
+        <p class="fs_24 fw_600 lh_norm mb_16">Пригласить поставщика</p>
+        <p class="fs_16 lh_156 mb_32 modal__invite__subtitle">Отправьте именное приглашение поставщику с собственным наличием металла, которого еще нет в нашей базе</p>
+        <form action="">
+            <div class="wrapper">
+                <div class="modal__invite__data">
+                    <p class="fs_24 fw_600 lh_norm mb_24">Ваши данные</p>
+                    <label class="mb_20">
+                        <p class="fs_14 fw_600 mb_8 login__label">Ваше имя *</p>
+                        <input type="text" class="form__input login__input" placeholder="Введите имя">
+                    </label>
+                    <label class="mb_20">
+                        <p class="fs_14 fw_600 mb_8 login__label">Ваш номер телефона *</p>
+                        <input type="text" class="form__input login__input phone" placeholder="Введите номер">
+                    </label>
+                    <label class="mb_20">
+                        <p class="fs_14 fw_600 mb_8 login__label">Ваш E-mail *</p>
+                        <input type="email" class="form__input login__input" placeholder="Введите электронную почту">
+                    </label>
+                    <label>
+                        <p class="fs_14 fw_600 mb_8 login__label">Ваш ИНН *</p>
+                        <input type="text" class="form__input login__input" placeholder="Введите ИНН">
+                    </label>
+                </div>
+                <div class="modal__invite__data">
+                    <p class="fs_24 fw_600 lh_norm mb_24">Данные поставщика</p>
+                    <label class="mb_20">
+                        <p class="fs_14 fw_600 mb_8 login__label">Наименование организации *</p>
+                        <input type="text" class="form__input login__input" placeholder="Введите организацию">
+                    </label>
+                    <label class="mb_24">
+                        <p class="fs_14 fw_600 mb_8 login__label">ИНН организации *</p>
+                        <input type="text" class="form__input login__input" placeholder="Введите ИНН">
+                    </label>
+                    <label class="mb_20">
+                        <p class="fs_14 fw_600 mb_8 login__label">E-mail организации *</p>
+                        <input type="email" class="form__input login__input" placeholder="Введите электронную почту">
+                    </label>
+                    <label>
+                        <p class="fs_14 fw_600 mb_8 login__label">Телефон организации</p>
+                        <input type="text" class="form__input login__input phone" placeholder="Введите номер">
+                    </label>
+                                                       
+                    
+                </div>
+            </div>
+            <div class="btn btn_56 fs_15 fw_600">Отправить приглашение</div>
+        </form>
+    </div>
+     
+     <!-- разместить заявка на металл -->
+     <div class="modal modal__applications__order">
+        <div class="modal__close">
+            &times;
+        </div>
+        <p class="fs_24 fw_600 lh_norm mb_20">Разместить заявку на металл</p>
+        <form action="#" class="modal__applications__order-form">
+           <div>
+                <label for="phone" class="fs_14 fw_600 mb_8 login__label lh_norm">Номер телефона</label>
+                <div class="login__form__input__wrap">
+                    
+                    <input type="text" id="phone" class="form__input login__input phone">
+                </div>
+           </div>
+            <label>
+                <p class="fs_14 fw_600 mb_8 login__label lh_norm">E-mail</p>
+                <input type="email" class="form__input login__input" placeholder="">
+            </label>
+            <label>
+                <p class="fs_14 fw_600 mb_8 login__label lh_norm">ИНН</p>
+                <input type="text" class="form__input login__input" placeholder="">
+            </label>
+            <label>
+                <p class="fs_14 fw_600 mb_8 login__label lh_norm">Город</p>
+                <input type="text" class="form__input login__input" placeholder="">
+            </label>
+            <textarea placeholder="Текст заявки"></textarea>
+            <div class="input-file-row">
+                <label class="input-file">
+                    <input type="file" style="visibility: hidden; clip: rect(0,0,0,0);width: 0;height: 0;display: none;">
+                    <p class="btn_remove">Прикрепить реквизиты</p>
+                </label>
+                <div class="input-file-list"></div>
+            </div> 
+            <div class="input-file-row">
+                <label class="input-file">
+                    <input type="file" style="visibility: hidden; clip: rect(0,0,0,0);width: 0;height: 0;display: none;">
+                    <p class="btn_remove">Прикрепить заявку</p>
+                </label>
+                <div class="input-file-list"></div>
+            </div> 
+            <button type="submit" class="btn mb_32 fs_15 fw_600 lh_167">Отправить заявку</button>
+            <p class="gray fs_12 lh_norm">Отправляя заявку, вы соглашетесь с регистрацией аккаунта на сервисе Е-Металл</p>
+        </form>
+    </div>
     <script src="js/jquery-3.6.3.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/air-datepicker.js"></script>
     <script src="js/select2.min.js"></script>
+    <script src="js/unpkg.com_imask@7.1.3_dist_imask.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

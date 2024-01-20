@@ -583,4 +583,39 @@
             background: url(../img/cross.svg) no-repeat center/cover;
           }
     }
+     //Отправить приглашение поставщику
+     &__invite {
+        width: 861px;
+        border-radius: 15px;
+        background: #FFF;
+        padding: 48px 64px;
+        .fs_14 {
+            line-height: normal;
+        }
+        input {
+            padding-left: 16px;
+            width: 100%;
+        }
+        label {
+            display: block;
+            max-width: 280px;
+        }
+        &__subtitle {
+            text-wrap: balance;
+        }
+        &__data {
+            width: 49%;
+            &:nth-child(2) {
+                width: 51%;
+                border-radius: 12px;
+                background: #F2F2F4;
+                padding: 32px 48px 40px;
+            }
+        }
+        .btn {
+            width: 100%;
+            margin-top: 32px;
+            height: 56px;
+        }
+     }
 }

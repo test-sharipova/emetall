@@ -175,6 +175,11 @@ function responseMenu(){
       $('.overlay, .modal__applications__order').fadeIn();
     });
 
+     //Отправить приглашение поставщику
+     $('.invite-provider').on('click', function() {
+      $('.overlay, .modal__invite').fadeIn();
+    });
+
 //КОРЗИНА добавить-убрать еденицу товара
 
 
