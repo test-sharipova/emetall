@@ -208,6 +208,30 @@ function responseMenu(){
       });
 
 
+//показать подробнее заявку на странице applications
+function showApplication () {
+  $('.applications__table__descr').each(function() {
+    var $text = $(this).find('.applications__table__descr__text');
+    var lineHeight = parseInt($text.css('line-height')); // получаем высоту строки
+    var maxHeight = lineHeight * 4; // максимальная высота текста - 4 строки
+    if ($text.height() > maxHeight) { // если текст занимает больше 4 строк
+      $text.css({
+        'max-height': maxHeight + 'px', // устанавливаем максимальную высоту
+        'overflow': 'hidden' // скрываем остаток текста
+      });
+      var $button = $('<button>Подробнее</button>'); // создаем кнопку "Подробнее"
+      $button.on('click', function() { // при клике на кнопку
+        $text.css({
+          'max-height': 'none', // устанавливаем высоту по содержимому
+          'overflow': 'visible' // показываем весь текст
+        });
+        $button.hide(); // скрываем кнопку "Подробнее"
+      });
+      $(this).append($button); // добавляем кнопку после текста
+    }
+  });
+}
+showApplication ();
 //маска для телефона
 
 let element = document.querySelectorAll('.phone');
