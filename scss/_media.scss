@@ -406,6 +406,17 @@
     
   }
  }
+ .calcmetall {
+  &__wrapper {
+    gap: 10px;
+  }
+  &__descr {
+    min-width: 0px;
+  }
+  &__img {
+    margin-right: 10px;
+  }
+ }
 }
 @media screen and (max-width: 1024px) {
   .banner {

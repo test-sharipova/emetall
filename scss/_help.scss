@@ -2,6 +2,9 @@
     text-decoration: none;
 }
 .help {
+    .about__summary {
+        padding: 0 48px 0 0;
+    }
     details[open] > summary::after {
         display: none;
        

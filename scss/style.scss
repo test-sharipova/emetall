@@ -1113,7 +1113,14 @@ option {
       background: #F5F5F5;
     }
 }
-
+.nav-links {
+  gap: 8px;
+  align-items: center;
+  padding: 24px 0 12px;
+  a {
+    text-decoration: none;
+  }
+}
 
   .mobile {
     display: none;
@@ -1150,6 +1157,7 @@ option {
   @import '_calend.scss';
   @import '_forproviders.scss';
   @import '_applications.scss';
+  @import '_calcmetall.scss';
   @import '_modal.scss';
   @import '_footer.scss';
   @import '_media.scss';
