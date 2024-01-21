@@ -185,6 +185,11 @@ function responseMenu(){
         $('.overlay, .modal__call').fadeIn();
       });
 
+      //Написать письмо
+      $('.mail-send').on('click', function() {
+        $('.overlay, .modal__mail').fadeIn();
+      });
+
 //КОРЗИНА добавить-убрать еденицу товара
 
 
