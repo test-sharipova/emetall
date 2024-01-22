@@ -3840,13 +3840,18 @@
 
     <!-- подписка на категории -->
     <div class="modal modal__applications-subscribe">
-        <div class="modal__close">&times;</div>
+        <button type="button" class="modal__close desktop">&times;</button>
+        <div class="mobile profile__back">
+            <p class="fs_16 fw_600 lh_norm">Подписка</p>
+            <button type="button" class="modal__close">&times;</button>
+        </div>
         <p class="fs_24 fw_600 lh_norm mb_16">Подпишитесь на нужные категории</p>
         <p class="fs_16 lh_156 mb_24">Выберите категории из списка, и получайте актуальную информацию вовремя.</p>
         <form action="">
             <label class="mb_22">
                 <p class="fs_14 fw_600 mb_8 login__label">E-mail</p>
                 <input type="email" class="form__input login__input" placeholder="Введите почту">
+                <p class="fs_12 lh_norm gray2 mobile mt_8">Введите электронную почту</p>
             </label>
             <div class="modal__applications-subscribe__wrapper">
                 <div>
@@ -3895,8 +3900,9 @@
                         </div>
                     </div>
                 </div>
-                <button type="submit" class="btn">Подписаться</button>
+                <button type="submit" class="btn desktop2">Подписаться</button>
             </div>
+            <button type="submit" class="btn mobile">Подписаться</button>
         </form>
     </div>
 
