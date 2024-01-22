@@ -3492,6 +3492,9 @@
         border-radius: 0;
         width: 100%;
         height: 100vh;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
         padding: 51px 16px;
         form {
           border-bottom: none;
@@ -3558,6 +3561,9 @@
     //войти как поставщик
     &__login {
       &-provider {
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
         padding: 0;
         .modal__login-reg__content {
           padding: 32px 16px;
@@ -3589,6 +3595,9 @@
       overflow: scroll;
       width: 100%;
       height: 100vh;
+      top: 0;
+      left: 0;
+      transform: translate(0, 0);
       padding: 0;
       &__content {
         padding: 32px 16px;
@@ -3612,6 +3621,9 @@
         padding: 0;
         width: 100%;
         height: 100vh;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
         .profile__back {
           &::before {
             opacity: 0;
