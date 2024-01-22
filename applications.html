@@ -3577,156 +3577,167 @@
         </div>
     </section>
     <!-- modal -->
-    <!-- вход и регистрация -->
-    <div class="overlay"></div>
-    <div class="modal modal__login">
-        <div class="modal__close gray">&times;</div>
-        <div class="login">
-            <div class="wrapper_start">
-                <div class="login__reg">
-                    <div class="login__reg__content">
-                        <p class="fs_24 fw_600 mb_16 lh_104">Регистрация</p>
-                    <p class="fs_14 mb_20">Для регистрации мы отправим код <br>
-                        на ваш номер телефона.</p>
-                    <form action="#" class="login__form">
-                        <label for="phone" class="fs_14 fw_600 mb_8 login__label">Введите номер телефона</label>
-                        <div class="login__form__input__wrap mb_20">
-                            
-                            <input type="text" id="phone" class="form__input login__input phone">
-                        </div>
-                        <label class="mb_20">
-                            <p class="fs_14 fw_600 mb_8 login__label">Электронная почта</p>
-                            <input type="email" class="form__input login__input" placeholder="Введите почту">
-                        </label>
-                        <label class="mb_24">
-                            <p class="fs_14 fw_600 mb_8 login__label">ИНН организации</p>
-                            <input type="text" class="form__input login__input" placeholder="Введите ИНН">
-                        </label>
-                        <button type="submit" class="btn mb_24">Создать аккаунт</button>
-                        <p class="fs_12 mb_32 lh_137">Нажимая кнопку «Создать аккаунт», вы принимаете условия <a href="" class="blue">Пользовательского соглашения</a></p>
-                        <p class="fs_14 lh_150">Уже зарегистрированы? <button type="button" class="blue">Войти</button></p>
-                    </form>
-                    </div>
-                </div>
-                <div class="login__wins">
-                <div class="login__wins__content">
-                    <p class="fs_24 fw_600 mb_32 lh_104">Что дает регистрация?</p>
-                    <div class="wrapper_start mb_32">
-                        <div class="login__img">
-                            <img src="img/modal/login_win1.svg" alt="win">
-                        </div>
-                        <p class="fs_14">Безлимитный доступ к фильтру
-                            металлопроката</p>
-                    </div>
-                    <div class="wrapper_start mb_32">
-                        <div class="login__img">
-                            <img src="img/modal/login_win2.svg" alt="win">
-                        </div>
-                        <p class="fs_14">Расширенный доступ к спискам номенклатуры</p>
-                    </div>
-                    <div class="wrapper_start mb_32">
-                        <div class="login__img">
-                            <img src="img/modal/login_win3.svg" alt="win">
-                        </div>
-                        <p class="fs_14">Доступ к оформлению заявки через корзину</p>
-                    </div>
-                    <div class="wrapper_start mb_32">
-                        <div class="login__img">
-                            <img src="img/modal/login_win4.svg" alt="win">
-                        </div>
-                        <p class="fs_14">Возможность оставлять отзывы и
-                            и выбирать поставщика по рейтингу</p>
-                    </div>
-                    <div class="wrapper_start">
-                        <div class="login__img">
-                            <img src="img/modal/login_win5.svg" alt="win">
-                        </div>
-                        <p class="fs_14">Возможность сообщать о несоответствии информации</p>
-                    </div>
-                </div>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-    <!-- вход для зарегистрированных пользователей -->
-    <div class="modal modal__login-reg">
-        <button type="button" class="modal__close">&times;</button>
-        <div class="modal__login-reg__content">
-            <p class="fs_24 fw_600 mb_16 lh_104">Войти</p>
-            <p class="fs_14 mb_20 lh_150">Для авторизации мы отправим код <br>
-                на ваш номер телефона.
-            </p>
-            <form action="#" class="login__form">
-                <label for="phone" class="fs_14 fw_600 mb_8 login__label lh_norm">Введите номер телефона</label>
-                <div class="login__form__input__wrap mb_24">
-                    
-                    <input type="text" id="phone" class="form__input login__input phone">
-                </div>
-                
-                <button type="submit" class="btn mb_16 fw_600">Получить код</button>
-                
-                <p class="fs_14 lh_150">Еще не зарегистрированы? <br>
-                    <a href="" class="blue">Быстрая регистрация</a>
-                </p>
-            </form>
-            <button type="button" class="blue fs_14 lh_150">Вход для поставщиков</button>
-        </div>
-    </div>
-    <!-- войти как поставщик -->
-    <div class="modal modal__login-reg modal__login-provider">
-        <button type="button" class="modal__close">&times;</button>
-        <div class="modal__login-reg__content">
-            <p class="fs_24 fw_600 mb_16 lh_104">Войти как поставщик</p>
-            <p class="fs_14 mb_20 lh_150">Логин и пароль мы высылали вам на почту, <br> если вы размещены, как поставщик <br> на нашем сервисе.
-            </p>
-            <form action="#" class="login__form">
-                <label class="mb_20">
-                    <p class="fs_14 fw_600 mb_8 login__label">Логин</p>
-                    <input type="text" class="form__input login__input" placeholder="Введите логин">
-                </label>
-                <label class="mb_24">
-                    <p class="fs_14 fw_600 mb_8 login__label">Пароль</p>
-                    <input type="password" class="form__input login__input" placeholder="Введите пароль">
-                </label>
-                
-                <button type="submit" class="btn mb_16 fw_600">Войти</button>
-                <p class="fs_14 lh_150">Хотите продавать металл у нас? <br>
-                    <a href="" class="blue">Подать заявку</a>
-                </p>
-                
-            </form>
-        
-        </div>     
-            
-    </div>
-    <!-- помощь -->
-    <div class="modal modal__help">
-        <div class="modal__close">&times;</div>
-        <p class="fs_20 fw_600 mb_12">Возникла проблема?</p>
-        <p class="fs_16 mb_24 lh_156">Мы сможем ответить на любые ваши вопросы по поводу работы сервиса </p>
+<!-- вход и регистрация -->
+<div class="overlay"></div>
+<div class="modal modal__login" >
+    <div class="modal__close gray">&times;</div>
+    <div class="login">
         <div class="wrapper_start">
-            <a href="#" class="help__item">
-                <p class="fs_16 fw_600">Поставщикам</p>
-                <p class="fs_14">Как продавать на E&#8209;металл</p>
-                <img src="img/modal/help_img.png" alt="help" class="help__img">
-            </a>
-            <a href="#" class="help__item">
-                <p class="fs_16 fw_600">Покупателям</p>
-                <p class="fs_14">Как легко купить металл? </p>
-                <img src="img/modal/help_img2.png" alt="help" class="help__img">
-            </a>
+            <div class="login__reg">
+                <div class="login__reg__content">
+                    <p class="fs_24 fw_600 mb_16 lh_104">Регистрация</p>
+                <p class="fs_14 mb_20 lh_150">Для регистрации мы отправим код <br>
+                    на ваш номер телефона.</p>
+                <form action="#" class="login__form">
+                    <label for="phone" class="fs_14 fw_600 mb_8 login__label">Введите номер телефона</label>
+                    <div class="login__form__input__wrap mb_20">
+                        
+                        <input type="text" id="phone" class="form__input login__input phone">
+                    </div>
+                    <label class="mb_20">
+                        <p class="fs_14 fw_600 mb_8 login__label">Электронная почта</p>
+                        <input type="email" class="form__input login__input" placeholder="Введите почту">
+                    </label>
+                    <label class="mb_24">
+                        <p class="fs_14 fw_600 mb_8 login__label">ИНН организации</p>
+                        <input type="text" class="form__input login__input" placeholder="Введите ИНН">
+                    </label>
+                    <button type="submit" class="btn mb_24">Получить код</button>
+                    <p class="fs_12 mb_32 lh_137">Нажимая кнопку «Создать аккаунт», вы принимаете условия <a href="" class="blue">Пользовательского соглашения</a></p>
+                    <p class="fs_14 lh_150 desktop2">Уже зарегистрированы? <button type="button" class="blue log-in">Войти</button></p>
+                    <button type="button" class="btn_remove mobile btn_44 log-in">Уже зарегистрированы? Войти</button>
+                </form>
+                </div>
+            </div>
+            <div class="login__wins">
+              <div class="login__wins__content">
+                <p class="fs_24 fw_600 mb_32 lh_104">Что дает регистрация?</p>
+                <div class="wrapper_start mb_32">
+                    <div class="login__img">
+                        <img src="img/modal/login_win1.svg" alt="win">
+                    </div>
+                    <p class="fs_14">Безлимитный доступ к фильтру
+                        металлопроката</p>
+                </div>
+                <div class="wrapper_start mb_32">
+                    <div class="login__img">
+                        <img src="img/modal/login_win2.svg" alt="win">
+                    </div>
+                    <p class="fs_14">Расширенный доступ к спискам номенклатуры</p>
+                </div>
+                <div class="wrapper_start mb_32">
+                    <div class="login__img">
+                        <img src="img/modal/login_win3.svg" alt="win">
+                    </div>
+                    <p class="fs_14">Доступ к оформлению заявки через корзину</p>
+                </div>
+                <div class="wrapper_start mb_32">
+                    <div class="login__img">
+                        <img src="img/modal/login_win4.svg" alt="win">
+                    </div>
+                    <p class="fs_14">Возможность оставлять отзывы и
+                        и выбирать поставщика по рейтингу</p>
+                </div>
+                <div class="wrapper_start">
+                    <div class="login__img">
+                        <img src="img/modal/login_win5.svg" alt="win">
+                    </div>
+                    <p class="fs_14">Возможность сообщать о несоответствии информации</p>
+                </div>
+              </div>
+            </div>
+            
         </div>
-        <button type="button" class="help__link call"><img src="img/modal/help_phone.svg" alt="phone">Заказать звонок</button>
-        <button type="button" class="help__link"><img src="img/modal/help_mail.svg" alt="phone">Написать на почту</button>
-        <button type="button" class="help__link"><img src="img/modal/help_telegram.svg" alt="phone">Написать в мессенджере</button>
     </div>
+</div>
+<!-- вход для зарегистрированных пользователей -->
+<div class="modal modal__login-reg modal__login-reg-user">
+    <button type="button" class="modal__close">&times;</button>
+    <div class="modal__login-reg__content">
+        <p class="fs_24 fw_600 mb_16 lh_104">Войти</p>
+        <p class="fs_14 mb_20 lh_150">Для авторизации мы отправим код <br>
+            на ваш номер телефона.
+        </p>
+        <form action="#" class="login__form">
+            <label for="phone" class="fs_14 fw_600 mb_8 login__label lh_norm">Введите номер телефона</label>
+            <div class="login__form__input__wrap mb_24">
+                
+                <input type="text" id="phone" class="form__input login__input phone">
+            </div>
+            
+            <button type="submit" class="btn mb_16 fw_600">Получить код</button>
+            
+            <p class="fs_14 lh_150"><span>Еще не зарегистрированы?</span> <br>
+                <a href="" class="blue">Быстрая регистрация</a>
+            </p>
+        </form>
+       
+        <button type="button" class="blue fs_14 lh_150 login-prov">Вход для поставщиков</button>
+    </div>
+</div>
+   <!-- войти как поставщик -->
+<div class="modal modal__login-reg modal__login-provider modal__login-reg-prov" >
+    <button type="button" class="modal__close desktop">&times;</button>
+    <div class="mobile profile__back">
+        <button type="button" class="modal__close">&times;</button>
+    </div>
+    <div class="modal__login-reg__content">
+        <p class="fs_24 fw_600 mb_16 lh_104">Войти как поставщик</p>
+        <p class="fs_14 mb_20 lh_150">Логин и пароль мы высылали вам на почту, <br> если вы размещены, как поставщик <br> на нашем сервисе.
+        </p>
+        <form action="#" class="login__form">
+            <label class="mb_20">
+                <p class="fs_14 fw_600 mb_8 login__label">Логин</p>
+                <input type="text" class="form__input login__input" placeholder="Введите логин">
+            </label>
+            <label class="mb_24">
+                <p class="fs_14 fw_600 mb_8 login__label">Пароль</p>
+                <input type="password" class="form__input login__input" placeholder="Введите пароль">
+            </label>
+            
+            <button type="submit" class="btn mb_16 fw_600">Войти</button>
+            <p class="fs_14 lh_150">Хотите продавать металл у нас? <br>
+                <a href="" class="blue">Подать заявку</a>
+            </p>
+            
+        </form>
+       
+    </div>     
+        
+</div>
+<!-- помощь -->
+<div class="modal modal__help">
+    <div class="modal__close">&times;</div>
+    <p class="fs_20 fw_600 mb_12">Возникла проблема?</p>
+    <p class="fs_16 mb_24 lh_156">Мы сможем ответить на любые ваши вопросы по поводу работы сервиса </p>
+    <div class="wrapper_start">
+        <a href="#" class="help__item">
+            <p class="fs_16 fw_600">Поставщикам</p>
+            <p class="fs_14">Как продавать на E&#8209;металл</p>
+            <img src="img/modal/help_img.png" alt="help" class="help__img">
+        </a>
+        <a href="#" class="help__item">
+            <p class="fs_16 fw_600">Покупателям</p>
+            <p class="fs_14">Как легко купить металл? </p>
+            <img src="img/modal/help_img2.png" alt="help" class="help__img">
+        </a>
+    </div>
+    <button type="button" class="help__link call"><img src="img/modal/help_phone.svg" alt="phone">Заказать звонок</button>
+    <button type="button" class="help__link mail-send"><img src="img/modal/help_mail.svg" alt="phone">Написать на почту</button>
+    <button type="button" class="help__link"><img src="img/modal/help_telegram.svg" alt="phone">Написать в мессенджере</button>
+</div>
 
-    <!-- форма смены города -->
-    <div class="modal modal__city">
-        <div class="modal__close">&times;</div>
-        <p class="fs_24 fw_600 lh_norm mb_24">Выберите город</p>
-    <div class="filter-dropdown">
+<!-- форма смены города -->
+<div class="modal modal__city">
+    <button type="button" class="modal__close desktop">&times;</button>
+    <div class="mobile profile__back">
+        <p class="fs_16 fw_600 lh_norm">Выбор города</p>
+        <button type="button" class="modal__close">&times;</button>
+    </div>
+    <div class="modal__city__content">
+        <p class="fs_24 fw_600 lh_norm mb_24 desktop">Выберите город</p>
+        <p class="mobile fs_14 lh_norm fw_600 mb_8">Город</p>
+        <div class="filter-dropdown">
         <form action="#">
             <input type="text" class="catalog__search__input mb_32" placeholder="Введите ваш город" id="modal-city">
         <datalist>
@@ -3765,6 +3776,67 @@
             <button type="button">Архангельск</button>
         </div>
     </div>
+</div>
+
+<!-- Заказать звонок -->
+<div class="modal modal__call">
+    <div class="modal__close">&times;</div>
+    <p class="fs_24 fw_600 lh_norm mb_16">Заказать звонок</p>
+    <p class="fs_14 lh_150 mb_20">Оставьте номер телефона и мы свяжемся с вами в ближайшее время.</p>
+    <form action="">
+        <label for="phone" class="fs_14 fw_600 mb_8 login__label lh_norm">Введите номер телефона</label>
+        <div class="login__form__input__wrap mb_24">
+            
+            <input type="text" id="phone" class="form__input login__input phone">
+        </div>
+        <button type="submit" class="btn fs_15 lh_167 fw_600">Заказать звонок</button>
+    </form>
+</div>
+
+<!-- написать на почту -->
+<div class="modal modal__mail">
+    <div class="modal__close">&times;</div>
+    <p class="fs_24 fw_600 lh_norm mb_16">Написать на почту</p>
+    <p class="fs_14 lh_norm lh_150 mb_24 modal__mail__subtitle">Время ожидания ответа зависит от нагрузки на операторов, но обычно отвечаем в течение следующего рабочего дня.</p>
+    <form action="#" class="modal__applications__order-form">
+        <label>
+            <p class="fs_14 fw_600 mb_8 login__label lh_norm">Ваше имя</p>
+            <input type="text" class="form__input login__input" placeholder="Введите имя">
+        </label>
+         <label>
+             <p class="fs_14 fw_600 mb_8 login__label lh_norm">E-mail</p>
+             <input type="email" class="form__input login__input" placeholder="">
+         </label>
+         <div class="modal__mail__theme">
+            <label for="theme" class="label">Выберите тему обращения</label>
+                                
+            <select name="theme-mail" id="theme" class="form__input select_main">
+                <option value="" selected disabled></option>
+                <option value="Проблема с сайтом">Проблема с сайтом</option>
+                <option value="Проблема с сайтом">Проблема с сайтом</option>
+                <option value="Проблема с сайтом">Проблема с сайтом</option>
+                <option value="Проблема с сайтом">Проблема с сайтом</option>
+                <option value="Проблема с сайтом">Проблема с сайтом</option>
+                <option value="Проблема с сайтом">Проблема с сайтом</option>
+                                        
+            
+            </select>
+         </div>
+        
+        
+         <textarea placeholder="Текст заявки"></textarea>
+         <div class="input-file-row">
+             <label class="input-file">
+                 <input type="file" style="visibility: hidden; clip: rect(0,0,0,0);width: 0;height: 0;display: none;">
+                 <p class="btn_remove">Прикрепить файл</p>
+             </label>
+             <div class="input-file-list"></div>
+         </div> 
+         
+         <button type="submit" class="btn fs_15 fw_600 lh_167">Отправить письмо</button>
+         <p class="gray fs_12 lh_norm">Отправляя заявку, вы соглашетесь с регистрацией аккаунта на сервисе Е-Металл</p>
+     </form>
+</div>
 
     <!-- подписка на категории -->
     <div class="modal modal__applications-subscribe">
@@ -3828,27 +3900,32 @@
         </form>
     </div>
 
-    <!-- разместить заявка на металл -->
-    <div class="modal modal__applications__order">
-        <div class="modal__close">
-            &times;
+    <!-- разместить заявку на металл -->
+    <div class="modal modal__applications__order" style="display: block;">
+        <button type="button" class="modal__close desktop">&times;</button>
+        <div class="mobile profile__back">
+            <p class="fs_16 fw_600 lh_norm">Разместить заявку</p>
+            <button type="button" class="modal__close">&times;</button>
         </div>
         <p class="fs_24 fw_600 lh_norm mb_20">Разместить заявку на металл</p>
         <form action="#" class="modal__applications__order-form">
            <div>
                 <label for="phone" class="fs_14 fw_600 mb_8 login__label lh_norm">Номер телефона</label>
-                <div class="login__form__input__wrap">
+                <div class="login__form__input__wrap mb_8">
                     
                     <input type="text" id="phone" class="form__input login__input phone">
                 </div>
+                <p class="fs_12 lh_norm gray2 mobile">Введите номер телефона</p>
            </div>
             <label>
                 <p class="fs_14 fw_600 mb_8 login__label lh_norm">E-mail</p>
                 <input type="email" class="form__input login__input" placeholder="">
+                <p class="fs_12 lh_norm gray2 mobile mt_8">Введите электронную почту</p>
             </label>
             <label>
                 <p class="fs_14 fw_600 mb_8 login__label lh_norm">ИНН</p>
                 <input type="text" class="form__input login__input" placeholder="">
+                
             </label>
             <label>
                 <p class="fs_14 fw_600 mb_8 login__label lh_norm">Город</p>
