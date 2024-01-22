@@ -4349,8 +4349,12 @@
 </div>
 
 <!-- написать на почту -->
-<div class="modal modal__mail">
-    <div class="modal__close">&times;</div>
+<div class="modal modal__mail" style="display: block;">
+    <button type="button" class="modal__close desktop">&times;</button>
+    <div class="mobile profile__back">
+        <p class="fs_16 fw_600 lh_norm">Написать на почту</p>
+        <button type="button" class="modal__close">&times;</button>
+    </div>
     <p class="fs_24 fw_600 lh_norm mb_16">Написать на почту</p>
     <p class="fs_14 lh_norm lh_150 mb_24 modal__mail__subtitle">Время ожидания ответа зависит от нагрузки на операторов, но обычно отвечаем в течение следующего рабочего дня.</p>
     <form action="#" class="modal__applications__order-form">
@@ -4379,7 +4383,7 @@
          </div>
         
         
-         <textarea placeholder="Текст заявки"></textarea>
+         <textarea placeholder="Опишите проблему, чтобы мы могли помочь вам..."></textarea>
          <div class="input-file-row">
              <label class="input-file">
                  <input type="file" style="visibility: hidden; clip: rect(0,0,0,0);width: 0;height: 0;display: none;">

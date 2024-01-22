@@ -632,6 +632,9 @@
      //написать на почту
      
      &__mail {
+        input {
+            padding-left: 16px;
+        }
         max-width: 712px;
         .fs_14 {
             max-width: 100%;
