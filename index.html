@@ -4231,7 +4231,7 @@
     </div>
 </div>
    <!-- войти как поставщик -->
-<div class="modal modal__login-reg modal__login-provider modal__login-reg-prov" style="display: block;">
+<div class="modal modal__login-reg modal__login-provider modal__login-reg-prov" >
     <button type="button" class="modal__close desktop">&times;</button>
     <div class="mobile profile__back">
         <button type="button" class="modal__close">&times;</button>
@@ -4283,8 +4283,11 @@
 </div>
 
 <!-- форма смены города -->
-<div class="modal modal__city">
-    <div class="modal__close">&times;</div>
+<div class="modal modal__city" style="display: block;">
+    <button type="button" class="modal__close desktop">&times;</button>
+    <div class="mobile profile__back">
+        <button type="button" class="modal__close">&times;</button>
+    </div>
     <p class="fs_24 fw_600 lh_norm mb_24">Выберите город</p>
    <div class="filter-dropdown">
     <form action="#">
