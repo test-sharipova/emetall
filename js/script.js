@@ -117,10 +117,16 @@ function responseMenu(){
 // ПОКАЗ МОДАЛЬНЫХ ОКОН
 
     //modal login войти зарегистрироваться
-    $('.header__profile').on('click', function() {
+    $('.header__profile, .registration').on('click', function() {
         $('.overlay, .modal__login').fadeIn();
         
     });
+    //modal login войти для авторизации (зарег пользователи)
+    $('.log-in').on('click', function() {
+      $('.modal__login').fadeOut();
+      $('.overlay, .modal__login-reg').fadeIn();
+      
+  });
     //modal help footer
     $('.showHelp').on('click', function() {
         $('.overlay, .modal__help').fadeIn();

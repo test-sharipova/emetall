@@ -3073,7 +3073,7 @@
                             <p class="text promo__text">
                                 Актуальное наличие металла без посредников
                             </p>
-                            <button type="button" class="btn btn_50 promo__btn">Зарегистрироваться</button>
+                            <button type="button" class="btn btn_50 promo__btn registration">Зарегистрироваться</button>
                         </div>
                         <div class="promo__img">
                             <img src="img/promo_img.png" alt="promo" srcset="img/promo_img.png 1x, img/promo_img-2x.png 2x">
@@ -4134,7 +4134,7 @@
 <!-- modal -->
 <!-- вход и регистрация -->
 <div class="overlay"></div>
-<div class="modal modal__login" style="display: block;">
+<div class="modal modal__login" >
     <div class="modal__close gray">&times;</div>
     <div class="login">
         <div class="wrapper_start">
@@ -4159,8 +4159,8 @@
                     </label>
                     <button type="submit" class="btn mb_24">Получить код</button>
                     <p class="fs_12 mb_32 lh_137">Нажимая кнопку «Создать аккаунт», вы принимаете условия <a href="" class="blue">Пользовательского соглашения</a></p>
-                    <p class="fs_14 lh_150 desktop2">Уже зарегистрированы? <button type="button" class="blue">Войти</button></p>
-                    <button type="button" class="btn_remove mobile btn_44">Уже зарегистрированы? Войти</button>
+                    <p class="fs_14 lh_150 desktop2">Уже зарегистрированы? <button type="button" class="blue log-in">Войти</button></p>
+                    <button type="button" class="btn_remove mobile btn_44 log-in">Уже зарегистрированы? Войти</button>
                 </form>
                 </div>
             </div>
@@ -4222,11 +4222,12 @@
             
             <button type="submit" class="btn mb_16 fw_600">Получить код</button>
             
-            <p class="fs_14 lh_150">Еще не зарегистрированы? <br>
+            <p class="fs_14 lh_150"><span>Еще не зарегистрированы?</span> <br>
                 <a href="" class="blue">Быстрая регистрация</a>
             </p>
         </form>
-        <button type="button" class="blue fs_14 lh_150">Вход для поставщиков</button>
+       
+        <button type="button" class="blue fs_14 lh_150 login-prov">Вход для поставщиков</button>
     </div>
 </div>
    <!-- войти как поставщик -->
