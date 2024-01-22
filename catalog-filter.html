@@ -5873,9 +5873,13 @@
     <!-- modal -->
      <!-- пригласить поставщика -->
      <div class="overlay"></div>
-     <div class="modal modal__invite">
-        <div class="modal__close">&times;</div>
-        <p class="fs_24 fw_600 lh_norm mb_16">Пригласить поставщика</p>
+     <div class="modal modal__invite" style="display: block;">
+        <button type="button" class="modal__close desktop">&times;</button>
+        <div class="mobile profile__back">
+            <p class="fs_16 fw_600 lh_norm">Пригласить</p>
+            <button type="button" class="modal__close">&times;</button>
+        </div>
+        <p class="fs_24 fw_600 lh_norm mb_16 modal__invite__title">Пригласить поставщика</p>
         <p class="fs_16 lh_156 mb_32 modal__invite__subtitle">Отправьте именное приглашение поставщику с собственным наличием металла, которого еще нет в нашей базе</p>
         <form action="">
             <div class="wrapper">

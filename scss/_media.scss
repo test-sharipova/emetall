@@ -440,6 +440,9 @@
         }
     }
   }
+  &__invite {
+    width: 100%;
+  }
  }
 }
 @media screen and (max-width: 1024px) {
@@ -3690,7 +3693,62 @@
         }
       }
     }
-    
+    //пригласить поставщика
+    &__invite {
+      top: 0;
+      left: 0;
+      transform: translate(0, 0);
+      padding: 0;
+      height: 100vh;
+      overflow: hidden auto;
+      border-radius: 0;
+      .profile__back {
+        &::before {
+          opacity: 0;
+        }
+      }
+      form {
+        position: relative;
+        .wrapper {
+          flex-wrap: wrap;
+        }
+        .fs_24 {
+          font-size: 20px;
+          margin-bottom: 16px;
+        }
+      }
+      label {
+        max-width: 100%;
+      }
+      &__data {
+        width: 100%;
+        padding: 0 24px;
+        &:nth-child(2) {
+          width: 100%;
+          border-radius: 0;
+          margin-top: 32px;
+          padding: 24px 24px 99px;
+        }
+      }
+      &__title {
+        padding: 32px 24px 0;
+        margin-bottom: 12px;
+      }
+      &__subtitle {
+        padding: 0 24px;
+        font-size: 14px;
+        text-wrap: wrap;
+        line-height: 150%;
+        margin-bottom: 24px;
+      }
+      .btn {
+        position: absolute;
+        bottom: 32px;
+        margin: 0 24px;
+        height: 50px;
+        width: calc(100% - 48px);
+      }
+    }
   }
   
   .blog {
