@@ -4134,14 +4134,14 @@
 <!-- modal -->
 <!-- вход и регистрация -->
 <div class="overlay"></div>
-<div class="modal modal__login">
+<div class="modal modal__login" style="display: block;">
     <div class="modal__close gray">&times;</div>
     <div class="login">
         <div class="wrapper_start">
             <div class="login__reg">
                 <div class="login__reg__content">
                     <p class="fs_24 fw_600 mb_16 lh_104">Регистрация</p>
-                <p class="fs_14 mb_20">Для регистрации мы отправим код <br>
+                <p class="fs_14 mb_20 lh_150">Для регистрации мы отправим код <br>
                     на ваш номер телефона.</p>
                 <form action="#" class="login__form">
                     <label for="phone" class="fs_14 fw_600 mb_8 login__label">Введите номер телефона</label>
@@ -4157,9 +4157,10 @@
                         <p class="fs_14 fw_600 mb_8 login__label">ИНН организации</p>
                         <input type="text" class="form__input login__input" placeholder="Введите ИНН">
                     </label>
-                    <button type="submit" class="btn mb_24">Создать аккаунт</button>
+                    <button type="submit" class="btn mb_24">Получить код</button>
                     <p class="fs_12 mb_32 lh_137">Нажимая кнопку «Создать аккаунт», вы принимаете условия <a href="" class="blue">Пользовательского соглашения</a></p>
-                    <p class="fs_14 lh_150">Уже зарегистрированы? <button type="button" class="blue">Войти</button></p>
+                    <p class="fs_14 lh_150 desktop2">Уже зарегистрированы? <button type="button" class="blue">Войти</button></p>
+                    <button type="button" class="btn_remove mobile btn_44">Уже зарегистрированы? Войти</button>
                 </form>
                 </div>
             </div>

@@ -2543,6 +2543,11 @@
         order: 2;
         padding: 32px;
         border-radius: 0;
+        .fs_24 {
+          font-size: 20px;
+          line-height: normal;
+          margin-bottom: 20px;
+        }
         .fs_14 {
           max-width: 229px;
         }
@@ -2559,8 +2564,9 @@
         .fs_24 {
           line-height: normal;
         }
-        .fs_14 {
-          line-height: 171%;
+        
+        .mb_20 {
+          margin-bottom: 24px;
         }
       }
       &__wins {
@@ -2574,6 +2580,22 @@
           border: 2px solid #2764e0;
           background: #fff;
           font-size: 15px;
+        }
+        .btn {
+          margin-top: 32px;
+        }
+        .lh_137 {
+          line-height: 167%;
+          text-wrap: balance;
+          .blue {
+            font-size: 12px;
+          }
+        }
+        .btn_remove {
+          width: 100%;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 600;
         }
       }
     }
