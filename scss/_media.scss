@@ -3522,6 +3522,35 @@
       }
       
     }
+    //войти как поставщик
+    &__login {
+      &-provider {
+        padding: 0;
+        .modal__login-reg__content {
+          padding: 32px 16px;
+        }
+        .login__form {
+          .fs_14 {
+            font-size: 16px;
+            br {
+              display: none;
+
+            }
+          }
+          .blue {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 150% */
+            border: none;
+            height: auto;
+            text-align: left;
+            display: block;
+            margin-top: 0;
+          }
+        }
+      }
+    }
   }
   
   .blog {

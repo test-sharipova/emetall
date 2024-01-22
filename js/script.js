@@ -124,9 +124,17 @@ function responseMenu(){
     //modal login войти для авторизации (зарег пользователи)
     $('.log-in').on('click', function() {
       $('.modal__login').fadeOut();
-      $('.overlay, .modal__login-reg').fadeIn();
+      $('.overlay, .modal__login-reg-user').fadeIn();
       
-  });
+    });
+
+    //modal login войти как поставщик
+    $('.login-prov').on('click', function() {
+      $('.modal__login').fadeOut();
+      $('.overlay, .modal__login-reg-prov').fadeIn();
+      
+    });
+
     //modal help footer
     $('.showHelp').on('click', function() {
         $('.overlay, .modal__help').fadeIn();

@@ -4206,7 +4206,7 @@
     </div>
 </div>
 <!-- вход для зарегистрированных пользователей -->
-<div class="modal modal__login-reg">
+<div class="modal modal__login-reg modal__login-reg-user">
     <button type="button" class="modal__close">&times;</button>
     <div class="modal__login-reg__content">
         <p class="fs_24 fw_600 mb_16 lh_104">Войти</p>
@@ -4231,8 +4231,11 @@
     </div>
 </div>
    <!-- войти как поставщик -->
-<div class="modal modal__login-reg modal__login-provider">
-    <button type="button" class="modal__close">&times;</button>
+<div class="modal modal__login-reg modal__login-provider modal__login-reg-prov" style="display: block;">
+    <button type="button" class="modal__close desktop">&times;</button>
+    <div class="mobile profile__back">
+        <button type="button" class="modal__close">&times;</button>
+    </div>
     <div class="modal__login-reg__content">
         <p class="fs_24 fw_600 mb_16 lh_104">Войти как поставщик</p>
         <p class="fs_14 mb_20 lh_150">Логин и пароль мы высылали вам на почту, <br> если вы размещены, как поставщик <br> на нашем сервисе.
