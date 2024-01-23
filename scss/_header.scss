@@ -288,26 +288,102 @@ header {
     }
     &_active {
         border: none;
-        top: 44px;
+        top: 0;
         z-index: 15;
-        position: absolute;
+        position: relative;
         right: 0;
         span {
             &:nth-child(1) {
-                transform: rotate(45deg) translateY(15px);
-                background: #fff;
+                transform: rotate(45deg) translateY(11px);
+                
             }
             &:nth-child(2) {
                 display: none;
             }
             &:nth-child(3) {
-                transform: rotate(-45deg) translateY(-15px);
-                background: #fff;
+                transform: rotate(-45deg) translateY(-11px);
+                
             }
         }
     }
 }
-
+//моб меню основное
+.main-menu__mobile {
+    position: fixed;
+    background: #fff;
+    display: none;
+    top: 60px;
+    left: -100%;
+    z-index: 13;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    transition: all .2s;
+    &__link {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: $text-color;
+        text-decoration: none;
+        
+    }
+    &__item {
+        padding: 0 16px;
+        border-bottom: 1px solid #F2F2F4;
+        min-height: 43px;
+        display: flex;
+        align-items: center;
+        &-catalog {
+            padding-right: 32px;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            position: relative;
+            padding-top: 4px;
+            &::after {
+                content: "";
+                background: url(../img/menu-catalog-arrow.svg) no-repeat center;
+                background-size: contain;
+                display: block;
+                width: 7px;
+                height: 13px;
+                position: absolute;
+                right: 16px;
+                top: 50%;
+                
+                transform: translateY(-50%);
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 4px;
+                display: block;
+                top: -4px;
+                left: 0;
+                box-shadow: 0px 1px 14px 0px rgba(47, 61, 84, 0.15);
+            }
+        }
+    }
+    .wrapper_start {
+        margin-top: auto;
+        margin-top: 56px;
+        .help__item {
+            &:first-child {
+                color: #fff;
+            }
+            &:nth-child(2) {
+                background: #E9F0FC;
+            }
+            
+        }
+    }
+    &-active {
+        left: 0;
+    }
+}
 //каталог меню
 .menu {
     &__catalog {

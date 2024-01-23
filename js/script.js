@@ -5,11 +5,19 @@ window.addEventListener('DOMContentLoaded', () => {
     contentClose = document.querySelectorAll('.menu__catalog__content__close'),
     menuContent = document.querySelectorAll('.menu__catalog__content'),
     hamburger = document.querySelector('.hamburger');
+    mainMenu = document.querySelector('.main-menu__mobile');
+    mainMenuCatalog = document.querySelector('.main-menu__mobile__item-catalog');
 
-    hamburger.addEventListener('click', () => {
+    mainMenuCatalog.addEventListener('click', () => {
         
         menu.classList.toggle('menu__catalog_hide');
     });
+
+    hamburger.addEventListener('click', () => {
+      mainMenu.classList.toggle('main-menu__mobile-active');
+      hamburger.classList.toggle('hamburger_active');
+    });
+
     menuClose.addEventListener('click', () => {
         menu.classList.toggle('menu__catalog_hide');
     });
