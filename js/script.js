@@ -586,8 +586,7 @@ $('.filter-dropdown').each(function(){
        
         filterInput.on('focus', function () {
           filterList.css('display', 'block');
-          $('.modal__city__list').css('display', 'none'); //для выбора города
-          $('.remove-val').css('display', 'block'); //для выбора города
+         
         });
        
         filterList.find('option').on('click', function () {
@@ -647,17 +646,93 @@ $('.filter-dropdown').each(function(){
                 
             }
            });
-           $(document).mouseup( function(e){ // событие клика по веб-документу
-            var div = $( ".filter-dropdown form" ); // тут указываем ID элемента
-            if ( !div.is(e.target) // если клик был не по нашему блоку
-                ) { 
-                  $('.modal__city__list').css('display', 'grid'); //показать весь список городов
-                
-            }
-           });
+         
           
              
 });
+
+
+function inputCity () {
+  let filter = $('.filter-dropdown-city'),
+      filterInput = filter.find('input'),
+      filterList = filter.find('datalist');
+     
+      filterInput.on('input', function () {
+        filterList.css('display', 'block');
+        $('.modal__city__list').css('display', 'none'); //для выбора города
+        $('.remove-val').css('display', 'block'); //для выбора города
+      });
+     
+      filterList.find('option').on('click', function () {
+        filterInput.val($(this).val());
+        filterList.css('display', 'none');
+          
+    });
+    
+    filterInput.on('input', function() {
+      currentFocus = -1;
+      var text = filterInput.val().toUpperCase();
+      for (let option of filterList.find('option')) {
+        if(option.value.toUpperCase().indexOf(text) > -1){
+          $(option).css('display', 'block');
+      }else{
+        $(option).css('display', 'none');
+        }
+      };
+    });
+      var currentFocus = -1;
+      filterInput.onkeydown = function(e) {
+        if(e.keyCode == 40){
+          currentFocus++
+         addActive(filterList.options);
+        }
+        else if(e.keyCode == 38){
+          currentFocus--
+         addActive(filterList.options);
+        }
+        else if(e.keyCode == 13){
+          e.preventDefault();
+              if (currentFocus > -1) {
+                /*and simulate a click on the "active" item:*/
+                if (filterList.options) filterList.options[currentFocus].click();
+              }
+        }
+      }
+      
+      function addActive(x) {
+          if (!x) return false;
+          removeActive(x);
+          if (currentFocus >= x.length) currentFocus = 0;
+          if (currentFocus < 0) currentFocus = (x.length - 1);
+          x[currentFocus].classList.add("active");
+        }
+        function removeActive(x) {
+          for (var i = 0; i < x.length; i++) {
+            x[i].classList.remove("active");
+          }
+        }
+       
+        $(document).mouseup( function(e){ // событие клика по веб-документу
+          var div = $( ".filter-dropdown" ); // тут указываем ID элемента
+          if ( !div.is(e.target) // если клик был не по нашему блоку
+              && div.has(e.target).length === 0 ) { // и не по его дочерним элементам
+              $(filterList).hide(); // скрываем его
+              
+          }
+         });
+         $(document).mouseup( function(e){ // событие клика по веб-документу
+          var div = $( ".filter-dropdown form" ); // тут указываем ID элемента
+          if ( !div.is(e.target) // если клик был не по нашему блоку
+              ) { 
+                $('.modal__city__list').css('display', 'grid'); //показать весь список городов
+              
+          }
+         });
+        
+}
+inputCity();       
+
+
 //выбор города - вставить значение в инпут
 $('.modal__city__list button').click(function() {
   $('#modal-city').val($(this).text());
