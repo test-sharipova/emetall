@@ -663,6 +663,59 @@ $('.modal__city__list button').click(function() {
   $('#modal-city').val($(this).text());
 });
 
+ //блог - показать больше статей
+  
+        
+ var visibleBlocks = 12;
+ var allBlocks = $('.blog__articles__item').length;
+         
+ $('.blog__articles__item').slice(visibleBlocks).hide();
+         
+ $('.btn_show-more').on('click', function() {
+           visibleBlocks += 12;
+           
+   if (visibleBlocks >= allBlocks) {
+     $('.btn_show-more').hide();
+   }
+            
+   $('.blog__articles__item').slice(0, visibleBlocks).show();
+ });
+
+//спецпредложения - показать больше спецпредложений
+
+ 
+var visibleBlocks1 = 12;
+var allBlocks1 = $('.offers__item').length;
+     
+$('.offers__item').slice(visibleBlocks1).hide();
+     
+$('.btn_show-more').on('click', function() {
+       visibleBlocks1 += 12;
+       
+if (visibleBlocks1 >= allBlocks1) {
+ $('.btn_show-more').hide();
+}
+        
+$('.offers__item').slice(0, visibleBlocks1).show();
+});  
+
+//поставщики (provider-site) - показать больше поставщиков
+
+ 
+var visibleBlocks2 = 8;
+var allBlocks2 = $('.providerSite__item').length;
+     
+$('.providerSite__item').slice(visibleBlocks2).hide();
+     
+$('.btn_show-more').on('click', function() {
+       visibleBlocks2 += 12;
+       
+if (visibleBlocks2 >= allBlocks2) {
+ $('.btn_show-more').hide();
+}
+        
+$('.providerSite__item').slice(0, visibleBlocks2).show();
+});       
 
  
 
@@ -1083,59 +1136,6 @@ $('.advRew__slider').slick({
         ]
     });
 
-    //блог - показать больше статей
-  
-        
-        var visibleBlocks = 12;
-        var allBlocks = $('.blog__articles__item').length;
-                
-        $('.blog__articles__item').slice(visibleBlocks).hide();
-                
-        $('.btn_show-more').on('click', function() {
-                  visibleBlocks += 12;
-                  
-          if (visibleBlocks >= allBlocks) {
-            $('.btn_show-more').hide();
-          }
-                   
-          $('.blog__articles__item').slice(0, visibleBlocks).show();
-        });
-      
-    //спецпредложения - показать больше спецпредложений
-  
-        
-    var visibleBlocks1 = 12;
-    var allBlocks1 = $('.offers__item').length;
-            
-    $('.offers__item').slice(visibleBlocks1).hide();
-            
-    $('.btn_show-more').on('click', function() {
-              visibleBlocks1 += 12;
-              
-      if (visibleBlocks1 >= allBlocks1) {
-        $('.btn_show-more').hide();
-      }
-               
-      $('.offers__item').slice(0, visibleBlocks1).show();
-    });  
-    
-    //поставщики (provider-site) - показать больше поставщиков
-  
-        
-    var visibleBlocks2 = 8;
-    var allBlocks2 = $('.providerSite__item').length;
-            
-    $('.providerSite__item').slice(visibleBlocks2).hide();
-            
-    $('.btn_show-more').on('click', function() {
-              visibleBlocks2 += 12;
-              
-      if (visibleBlocks2 >= allBlocks2) {
-        $('.btn_show-more').hide();
-      }
-               
-      $('.providerSite__item').slice(0, visibleBlocks2).show();
-    });       
    
   
 

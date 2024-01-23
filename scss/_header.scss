@@ -368,9 +368,11 @@ header {
         }
     }
     .wrapper_start {
-        margin-top: auto;
+        padding: 0 16px;
+      
         margin-top: 56px;
         .help__item {
+            width: 49%;
             &:first-child {
                 color: #fff;
             }

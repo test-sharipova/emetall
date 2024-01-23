@@ -597,6 +597,11 @@
         width: 100%;
       }
     }
+    &__logos {
+      &__wrapper {
+        overflow-x: scroll;
+      }
+    }
   }
   .modal__login {
     width: 100%;
@@ -1156,6 +1161,9 @@
       gap: 24px;
       margin-top: 20px;
     }
+    .choise__wrapper {
+      margin-top: 0;
+  }
     &__content {
       padding-right: 0;
       width: 100%;
@@ -1174,7 +1182,7 @@
      
       padding-top: 0;
       justify-content: flex-start;
-    gap: 94px;
+      gap: 94px;
       .fs_18 {
         font-size: 14px;
         line-height: 285%;;
@@ -1314,7 +1322,7 @@
       order: 2;
       margin: 0;
       padding-top: 15px;
-      padding-bottom: 11px;
+      padding-bottom: 6px;
     }
     .about__raiting {
       padding: 14px 25px 42px;
@@ -1436,6 +1444,9 @@
         right: 9px;
       }
     }
+    .about__summary {
+      padding: 8px 48px 21px 0;
+    }
     &__wrapper2 {
       justify-content: space-between;
       scroll-snap-type: x mandatory;
@@ -1480,6 +1491,11 @@
         line-height: 142%;
     margin-bottom: 7px;
       }
+    }
+  }
+  .footer {
+    &__text-2 {
+      margin-bottom: 8px;
     }
   }
   .catalog {
@@ -1696,7 +1712,7 @@
         flex-direction: column;
         border-radius: 10px;
         background: #FFF; 
-        min-width: 375px;
+        width: 48%;
         &:nth-child(odd):not(.table__item_spec) {
           td {
             background-color: #fff;
@@ -1766,6 +1782,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+      }
+      .btn_remove {
+        width: 147px;
+height: 38px;
       }
       .price {
         font-weight: 600 !important;
@@ -1863,6 +1883,7 @@
       &__item_210 {
         width: 47%;
         max-width: 210px;
+        min-width: 140px;
       }
       &__item {
         &_w47 {
@@ -2004,6 +2025,21 @@
     &__about {
       .divider {
         width: 100%;
+      }
+    }
+    #map, #map2 {
+      height: 408px;
+    }
+    &__map {
+      padding-bottom: 144px;
+      &__adressWrap {
+        position: absolute;
+        bottom: -133px;
+        z-index: 2;
+        max-width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
       }
     }
   }
@@ -2791,6 +2827,31 @@
       font-size: 20px;
     }
    }
+   .article {
+    .blog__subscribe {
+      background-image: url(../img/blog/blog_subscribe_mob.png);
+      margin-top: 46px;
+    }
+    &__top {
+      .fs_28 {
+        font-size: 20px;
+      }
+      &__items {
+        margin: 20px 0 57px;
+      }
+      .blog__img {
+        height: 176px;
+        img {
+          height: 100%;
+        }
+      }
+      .blog__articles__item {
+        .fs_18 {
+          font-size: 16px;
+        }
+      }
+    }
+   }
 }
 @media screen and (max-width: 767px) {
   .container {
@@ -3034,7 +3095,7 @@
     }
     &__item {
       flex-wrap: wrap;
-      padding: 16px 0 17px;
+      padding: 16px 0 18px;
       margin-bottom: 0;
       .cart__wrap {
         align-items: flex-start;
@@ -3168,9 +3229,7 @@
       margin: 21px 0 32px
     }
     &__logos {
-      &__wrapper {
-        overflow-x: scroll;
-      }
+     
       &__item {
         min-width: 70px;
       }
@@ -3188,6 +3247,11 @@
 .catalogFilters {
   &__link {
     font-size: 15px;
+  }
+  &__table {
+    tr {
+      width: 100%;
+    }
   }
 }
   .providerscard {
@@ -3495,10 +3559,7 @@
         .btn_lightblue {
           width: 184px;
         }
-        &Wrap {
-          margin-top: -20%;
-          scroll-snap-type: x mandatory;
-        }
+       
       }
     }
     
@@ -4154,6 +4215,7 @@
         gap: 16px;
       }
     }
+    
   }
   .search {
 
@@ -4317,6 +4379,7 @@
     .btn_transparent {
       margin-top: 24px;
       line-height: normal;
+      width: 100%;
     }
     padding-bottom: 62px;
   }
@@ -4702,7 +4765,7 @@
       }
     }
     &Mission {
-      padding-bottom: 82%;
+      padding-bottom: 87%;
       background-image: url(../img/company/company-mission-bg-mob.png);
       background-position: bottom;
       margin: 0;
@@ -4790,7 +4853,7 @@
       }
     }
     &Support {
-      padding-top: 78px;
+      padding-top: 15px;
       padding-bottom: 48px;
       .mb_34 {
         margin-bottom: 20px;
@@ -4935,7 +4998,7 @@
           margin-bottom: 32px;
           .btn {
             width: 100%;
-            margin-bottom: 24px;
+            margin-bottom: 8px;
             padding-left: 24px;
             padding-right: 24px;
           }
@@ -5112,7 +5175,7 @@
       }
     }
     &__showOrder {
-      padding: 0 0 0 3px;
+      padding: 0 0 0 0px;
       bottom: 12px;
     }
     .blue {
@@ -5147,6 +5210,7 @@
         margin-bottom: 40px;
         .fs_21 {
           margin-bottom: 16px;
+          font-size: 20px;
         }
       }
       &__emetall {
@@ -5577,6 +5641,18 @@
       height: 38px;
       text-align: center;
     }
+    &__last {
+      &__item {
+        position: relative;
+        &__elem {
+          &.blue {
+            position: absolute;
+            right: 0;
+            bottom: 18px;
+          }
+        }
+      }
+    }
     
     //калькулятор металла
     &__met {
@@ -5593,10 +5669,11 @@
       &__wrap {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 24px 12px;
+        gap: 22px 12px;
         width: 100%;
         margin-bottom: 24px;
         .calc__label_220 {
+          min-width: 100px;
           .calc__input {
             width: 100%;
             max-width: 100%;
@@ -5611,10 +5688,20 @@
         }
         
       }
+      .calc__label {
+        .new-select {
+          height: 44px;
+          border-radius: 6px;
+        }
+      }
+     .calc__form__img {
+      margin-top: 3px;
+     }
       .calc__label:nth-child(2) {
         .calc__input {
           padding-left: 16px;
         }
+       
       }
       .calc__item_280 {
         margin-top: 0;
@@ -5628,6 +5715,7 @@
         font-size: 16px;
        }
       }
+
     }
     &__item {
       &_280 {
@@ -5908,6 +5996,47 @@
         margin-top: 24px;
         .mb_8 {
           margin-bottom: 0;
+        }
+      }
+    }
+    //статистика
+    &__stat {
+      .profile {
+        &__choise {
+          gap: 0;
+          flex-wrap: nowrap;
+        }
+        &__content {
+          &__media {
+            padding-left: 16px;
+            padding-right: 16px;
+            &_stat {
+              .profile__title {
+                padding-left: 16px;
+              }
+              padding-bottom: 30px;
+            }
+          }
+        }
+        &__stat {
+          &__wrap {
+            padding: 0 16px;
+           
+          }
+          &__item {
+            &__chart {
+              display: flex;
+              justify-content: center;
+            }
+          }
+        }
+      }
+      
+    }
+    &-banners {
+      .profile {
+        &__choise {
+          column-gap: 0;
         }
       }
     }

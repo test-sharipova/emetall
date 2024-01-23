@@ -221,9 +221,107 @@ var pieChart = new Chart(circleChart, {
   data: circleData,
   options: chartOptions
 });
+//mob
+var circleChart = document.getElementById("profile__circle-chart-mob");
+  var circleData = {
+    labels: [
+        "Отводы",
+        "Квадрат",
+        "Труба",
+        "Лист",
+        "Полоса"
+    ],
+    datasets: [
+        {
+            data: [16, 31, 24, 8, 21],
+            backgroundColor: [
+                "#a095e4",
+                "#dd0858",
+                "#a13960",
+                "#3f9c59",
+                "#2764e0"
+            ],
+            borderColor: "black",
+            borderWidth: 0
+        }]
+};
+
+var chartOptions = {
+  // rotation: -Math.PI,
+  cutout: 99,
+  // circumference: Math.PI,
+  responsive: false,
+  maintainAspectRatio: false,
+  width: 228,
+  height: 228,
+  plugins: {
+    tooltip: {
+      backgroundColor: 000,
+      zindex: 10,
+      padding: 12,
+      usePointStyle: true,
+      
+      callbacks: {
+          labelPointStyle: function(context) {
+              return {
+                  pointStyle: 'circle',
+                  rotation: 0,
+                  
+              };
+          }
+      }
+      
+  },
+  },
+ 
+ 
+  animation: {
+    animateRotate: false,
+    animateScale: true
+  },
+
+};
+
+var pieChart = new Chart(circleChart, {
+  type: 'doughnut',
+  data: circleData,
+  options: chartOptions
+});
 
 //топовые стандарты
 var circleChart2 = document.getElementById("profile__circle-chart2");
+var circleData2 = {
+  labels: [
+      "8734-75",
+      "8732-78",
+      "14-3p-55-2001",
+      "10704-91",
+      "3262-7"
+  ],
+  datasets: [
+      {
+          data: [16, 31, 24, 8, 21],
+          backgroundColor: [
+              "#a095e4",
+              "#dd0858",
+              "#a13960",
+              "#3f9c59",
+              "#2764e0"
+          ],
+          borderColor: "black",
+          borderWidth: 0
+      }]
+};
+
+
+
+var pieChart = new Chart(circleChart2, {
+type: 'doughnut',
+data: circleData2,
+options: chartOptions
+});
+//mob
+var circleChart2 = document.getElementById("profile__circle-chart2-mob");
 var circleData2 = {
   labels: [
       "8734-75",
@@ -287,5 +385,37 @@ type: 'doughnut',
 data: circleData3,
 options: chartOptions
 });
-  });
   
+//mob
+var circleChart3 = document.getElementById("profile__circle-chart3-mob");
+var circleData3 = {
+  labels: [
+      "20",
+      "09Г2С",
+      "30ХГСА",
+      "12Х1МФ",
+      "40Х"
+  ],
+  datasets: [
+      {
+          data: [16, 31, 24, 8, 21],
+          backgroundColor: [
+              "#a095e4",
+              "#dd0858",
+              "#a13960",
+              "#3f9c59",
+              "#2764e0"
+          ],
+          borderColor: "black",
+          borderWidth: 0
+      }]
+};
+
+
+
+var pieChart = new Chart(circleChart3, {
+type: 'doughnut',
+data: circleData3,
+options: chartOptions
+});
+  });

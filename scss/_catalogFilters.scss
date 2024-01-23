@@ -704,6 +704,7 @@
         .table {
           &__metallobaza {
             color: $link;
+            text-overflow: ellipsis;
             .table__btns {
               width: 0;
               height: 0;
@@ -711,9 +712,22 @@
               transition: all .3s;
             }
             &:hover .table__btns {
-              width: auto;
+              width: 100%;
               height: auto;
               opacity: 1;
+              overflow-x: auto;
+              overflow-y: hidden;
+              &::-webkit-scrollbar {
+                height: 4px;
+                
+              }
+              &::-webkit-scrollbar-track {
+                  background: transparent;
+                }
+              &::-webkit-scrollbar-thumb {
+                  background-color: #B7B7B7;
+                  border-radius: 3px;
+                }
             }
             &:hover span {
               display: none;
