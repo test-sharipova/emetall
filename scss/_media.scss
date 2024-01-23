@@ -879,9 +879,7 @@
     }
    }
   }
-  .menu-reg-fixed {
-    display: none;
-  }
+  
 }
 @media screen and (max-width: 768px) {
   header {
@@ -3161,6 +3159,14 @@
     }
     &__divider {
       margin: 21px 0 32px
+    }
+    &__logos {
+      &__wrapper {
+        overflow-x: scroll;
+      }
+      &__item {
+        min-width: 70px;
+      }
     }
   }
   footer {
@@ -5663,12 +5669,12 @@
     }
     &__nav {
         width: 100%;
-        max-width: 343px;
+        max-width: 100%;
         margin-right: 0;
     }
     &__name {
         width: 100%;
-        max-width: 343px;
+        max-width: 100%;
         margin-bottom: 16px;
         padding: 28px 35px 30px 32px;
         .gray, .blue {
@@ -6624,6 +6630,9 @@
     order: 3;
   }
 }
+}
+.menu-reg-fixed {
+  display: none;
 }
 
   .desktop {

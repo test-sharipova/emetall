@@ -165,36 +165,56 @@ header {
             background: #FFFFFF;
             box-shadow: 0px -1px 14px rgba(47, 61, 84, 0.15);
             display: none;
+            .header__text {
+                color: $text-color;
+            }
+            
             .header {
                 &__item {
+                    
                     &__img {
                         width: 28px;
                         height: 28px;
                         margin: 0 auto;
-                        background: $text-color;
-                        mask-repeat: no-repeat;
-                        mask-position: center;
-                        mask-size: 75%;
+                        background-color: transparent;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: 75%;
                        
                         &-1 {
-                            mask-image: url(../img/home.svg);
+                            background-image: url(../img/mobmenu-fixed-icon1.svg);
                         }
                         &-2 {
-                            mask-image: url(../img/filter.svg);
+                            background-image: url(../img/mobmenu-fixed-icon2.svg);
                         }
                         &-3 {
-                            mask-image: url(../img/polesnoe.svg);
+                            background-image: url(../img/mobmenu-fixed-icon3.svg);
                         }
                         &-4 {
-                            mask-image: url(../img/cart.svg);
+                            background-image: url(../img/mobmenu-fixed-icon4.svg);
                         }
                         &-5 {
-                            mask-image: url(../img/profile_mob.svg);
+                            background-image: url(../img/mobmenu-fixed-icon5.svg);
                         }
                     }
                     &_active {
+                        text-decoration: none;
                         .header__item__img {
-                            background: $blue;
+                            &-1 {
+                                background-image: url(../img/mobmenu-fixed-icon1-active.svg);
+                            }
+                            &-2 {
+                                background-image: url(../img/mobmenu-fixed-icon2-active.svg);
+                            }
+                            &-3 {
+                                background-image: url(../img/mobmenu-fixed-icon3-active.svg);
+                            }
+                            &-4 {
+                                background-image: url(../img/mobmenu-fixed-icon4-active.svg);
+                            }
+                            &-5 {
+                                background-image: url(../img/mobmenu-fixed-icon5-active.svg);
+                            }
                         }
                         .header__text {
                             color: $blue;
