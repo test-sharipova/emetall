@@ -47,12 +47,17 @@ height: 50px;
 }
 .advNumbers {
     padding: 55px 0 120px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+    }
     &__item {
         padding: 47px 48px 40px;
         background: #FFFFFF;
         box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.12);
         border-radius: 30px;
-        max-width: 31.623%;
+       
         max-height: 284px;
        
         .fs_16 {
@@ -152,7 +157,7 @@ height: 50px;
     }
     img {
         max-width: 100%;
-        box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.12);
+        box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.12);
         border-radius: 12px;
     }
     .slick-arrow {

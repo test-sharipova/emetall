@@ -1173,7 +1173,8 @@ $('.advRew__slider').slick({
             settings: {
                 centerMode: false,
                 slidesToShow: 2,  
-                arrows: false,                 
+                arrows: false,
+                             
             }
            
         }
