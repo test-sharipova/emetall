@@ -454,6 +454,15 @@
     width: 93%;
   }
 }
+.marochnik {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  &__item {
+    width: auto;
+  }
+}
 }
 @media screen and (max-width: 1024px) {
   .banner {
@@ -884,7 +893,12 @@
     }
    }
   }
-  
+  .marochnik {
+    &__wrapper {
+      
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
 }
 @media screen and (max-width: 768px) {
   header {
@@ -5409,9 +5423,10 @@ height: 38px;
     &__wrapper {
       gap: 12px 11px;
       margin-bottom: 36px;
+      grid-template-columns: repeat(2, 1fr);
     }
     &__item {
-      width: 166px;
+     
       min-height: 84px;
       padding: 12px;
       font-size: 12px;

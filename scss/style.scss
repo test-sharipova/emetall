@@ -19,6 +19,17 @@
     font-family: 'Segoe UI', 'Arial', sans-serif;
     color: $text-color;
   }
+  a {
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+  }
+  a[x-apple-data-detectors] {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+  }
   h1, h2, h3 {
     font-weight: 600;
     margin: 0;
