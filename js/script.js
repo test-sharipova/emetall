@@ -400,9 +400,10 @@ new AirDatepicker('#calend', {
     $('.popular__slider').slick({
         dots: false,
         slidesToShow: 7,
-        centerMode: true,
+        centerMode: false,
         prevArrow: '<button type="button" class="slick-prev"><img src="img/prev.svg"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="img/next.svg"></button>',
+        
         responsive: [
             {
                 breakpoint: 1024,
@@ -410,7 +411,7 @@ new AirDatepicker('#calend', {
                     arrows: false,
                     slidesToShow: 4,
                     variableWidth: true,
-                    centerMode: true,
+                    centerMode: false,
                                        
                 } 
             },
@@ -418,10 +419,11 @@ new AirDatepicker('#calend', {
                 breakpoint: 768,
                 settings: {
                     arrows: false,
-                    slidesToShow: 2,
+                    slidesToShow: 3,
+                    centerPadding: '16px',
                     variableWidth: true,
-                    centerMode: true,
-                                       
+                    centerMode: false,
+                    
                 } 
             }
         ]
@@ -1164,6 +1166,7 @@ $('.advRew__slider').slick({
     nextArrow: '<button type="button" class="slick-next"><img src="img/next.svg"></button>',
     slidesToShow: 4,
     infinite: false,
+    
     responsive: [
         {
             breakpoint: 1023,
@@ -1204,7 +1207,7 @@ $('.advRew__slider').slick({
                     arrows: false,
                     slidesToShow: 3,
                     variableWidth: true,
-                    centerMode: true,
+                    centerMode: false,
                                        
                 } 
             }

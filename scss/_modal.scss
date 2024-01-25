@@ -46,9 +46,9 @@
         transform: translate(0, 0);
         .modal__close {
             top: 26px;
-    right: 40px;
-    cursor: pointer;
-    font-size: 37px;
+            right: 40px;
+            cursor: pointer;
+            font-size: 37px;
         }
     }
 }
@@ -413,6 +413,8 @@
                 transition: color .3s;
                 cursor: pointer;
                 text-align: left;
+                color: $text-color !important;
+                appearance: none;
                 &:hover {
                     color: $blue;
                 }

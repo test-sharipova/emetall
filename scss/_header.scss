@@ -342,6 +342,7 @@ header {
             line-height: normal;
             position: relative;
             padding-top: 4px;
+            height: 63px;
             &::after {
                 content: "";
                 background: url(../img/menu-catalog-arrow.svg) no-repeat center;

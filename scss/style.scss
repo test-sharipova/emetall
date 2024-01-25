@@ -30,6 +30,17 @@
     font-weight: inherit !important;
     line-height: inherit !important;
   }
+  details summary::-webkit-details-marker {
+    display: none
+  }
+  details > summary {
+    list-style: none;
+  }
+  details {
+    summary::marker { 
+      content: none;
+    }
+  }
   h1, h2, h3 {
     font-weight: 600;
     margin: 0;
@@ -999,6 +1010,7 @@
           cursor: pointer;
           display: block;
           height: 38px;
+          transition: all .3s;
           &:hover {
             background-color: $blue;
             border: 1px solid $blue;

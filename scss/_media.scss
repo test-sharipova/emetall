@@ -191,7 +191,12 @@
       }
     }
   }
- 
+  .providers {
+    .container_mob-pr0 {
+      width: 100%;
+      padding-right: 0;
+    }
+  }
   
   .footer {
     &__wrapper {
@@ -1004,6 +1009,7 @@
           align-items: center;
           justify-content: space-between;
           border-bottom: 1px solid #F2F2F4;
+          padding: 0 16px;
           &::after {
             content: '';
             background: url(../img/menu-catalog-arrow.svg) no-repeat center;
@@ -1019,6 +1025,7 @@
         }
       }
       &__content {
+        padding-left: 0;
         &_active {
           position: fixed;
           background: #fff;
@@ -1026,8 +1033,13 @@
           left: 0;
           width: 100%;
           height: 100vh;
-          padding: 0 16px;
+          // padding: 0 16px;
           overflow: scroll;
+          .wrapper {
+            &div {
+              width: 100%;
+            }
+          }
         }
         .btn {
           display: block;
@@ -1038,6 +1050,10 @@
           flex-wrap: wrap;
         }
       }
+      &__search {
+        width: auto;
+        margin: 84px 16px 20px 16px;
+      }
       &__head {
         display: none;
       }
@@ -1047,6 +1063,9 @@
       .providerscard__watched__subtitle {
         max-width: fit-content;
         background: #E9F0FC;
+      }
+      &__oft {
+        padding: 0 16px;
       }
     }
   }
@@ -1144,8 +1163,12 @@
   }
   .popular {
     padding-top: 73px;
+    padding-bottom: 10px;
     .slick-active {
       width: 130px;
+    }
+    &__slider {
+      width: 100%;
     }
     .product {
       &__item {
@@ -1358,7 +1381,7 @@
   }
     &__item {
       background: #ffffff;
-      box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.12);
+      box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.12);
       border-radius: 10px;
       min-width: 126px;
       width: 126px;
@@ -2896,7 +2919,11 @@ height: 38px;
   .container_992 {
     width: 100%;
   }
- 
+  .container_mob-pr0 {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 0;
+  }
  .mobile2 {
   display: block;
  }
@@ -4100,16 +4127,17 @@ height: 38px;
     }
     padding: 16px 0 60px;
     &__stories {
-      margin: 0 auto 8px;
+      margin: 0 0 8px;
       width: 82px;
       height: 82px;
     }
     &__articles {
       gap: 24px 11px;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
       &__item {
-        width: 50%;
-        max-width: 166px;
+        width: 100%;
+        
         .fs_18,
         .fs_14,
         .fs_24 {
@@ -4131,6 +4159,14 @@ height: 38px;
       margin-top: 48px;
       .fs_18 {
         line-height: 150%;
+      }
+    }
+    &__slider {
+      .fs_14 {
+        span {
+          display: block;
+          max-width: 82px;
+        }
       }
     }
   }
@@ -4914,17 +4950,17 @@ height: 38px;
       .mb_34 {
         margin-bottom: 20px;
       }
-      .wrapper {
+      &__wrapper {
         gap: 12px;
+        grid-template-columns: repeat(2, 1fr);
       }
       &__item {
-        width: 50%;
-        max-width: 164px;
-        margin-bottom: 0;
+        
+        
+       
         height: 90px;
         &:nth-child(3n) {
-          width: 100%;
-          max-width: 100%;
+          grid-column: 1/-1;
         }
       }
     }
@@ -4938,6 +4974,7 @@ height: 38px;
         overflow: auto;
         scroll-snap-type: x mandatory;
         margin-bottom: 8px;
+
       }
       &__item {
         min-width: 311px;
@@ -4950,6 +4987,13 @@ height: 38px;
         .fs_18 {
           font-size: 16px;
           line-height: 120%;
+        }
+      }
+    }
+    &Prise {
+      &__img {
+        img {
+          box-shadow: 0px 4px 5px 0px rgba(0,0,0,.15);
         }
       }
     }
@@ -5754,8 +5798,12 @@ height: 38px;
       h1 {
         margin-bottom: 16px;
       }
+      .new-select {
+        max-width: 100%;
+      }
       .labelRadio {
-        padding: 6px 29px;
+        padding: 6px 10px;
+        min-width: 146px;
       }
       .calc_mobile {
         width: 279px;
@@ -6132,6 +6180,13 @@ height: 38px;
       .profile {
         &__choise {
           column-gap: 0;
+        }
+        &__content__media {
+          &:nth-child(1) {
+            .profile__title {
+              border-bottom: none;
+            }
+          }
         }
       }
     }
@@ -6893,8 +6948,9 @@ height: 38px;
     &__articles {
       &__item {
         &:nth-child(3n) {
-          width: 100%;
-          max-width: 343px;
+          grid-column: 1/-1;
+          // width: 100%;
+          // max-width: 343px;
           .fs_18, .fs_24 {
             font-size: 16px;
           }
