@@ -3176,7 +3176,7 @@
                         <br>
                         Для улучшения рейтинга советуем поставщикам запрашивать у покупателей отзывы на Е-Металл. Положительная обратная связь на независимой профильной площадке положительно сказываются на общем имидже компании.</p>
                  </details>
-                 <a href="#" class="btn_transparent mobile">Показать больше</a>
+                 <a href="#" class="btn_transparent btn_44 mobile">Показать больше</a>
             </div>
             <h2 class="fs_28 fw_600 mb_32 lh_norm">Центр поддержки</h2>
             <div class="wrapper flexWrap">
@@ -3187,7 +3187,7 @@
                     <a href="tel+78003020940" class="textColor fs_21 mb_12 fw_600 desktop">8 800 30 20 940</a>
                     <p class="fs_16 lh_156">
                         Позвоните или закажите <br>
-                        <a href="#" class="blue call">обратный звонок</a>
+                        <button type="button" class="blue call">обратный звонок</button>
                     </p>
                 </div>
                 <div class="help__contact">
@@ -3338,6 +3338,259 @@
         </div>
     </div>
 </section>
+<div class="overlay"></div>
+<!-- modal -->
+<!-- вход и регистрация -->
+<div class="overlay"></div>
+<div class="modal modal__login" >
+    <div class="modal__close gray">&times;</div>
+    <div class="login">
+        <div class="wrapper_start">
+            <div class="login__reg">
+                <div class="login__reg__content">
+                    <p class="fs_24 fw_600 mb_16 lh_104">Регистрация</p>
+                <p class="fs_14 mb_20 lh_150">Для регистрации мы отправим код <br>
+                    на ваш номер телефона.</p>
+                <form action="#" class="login__form">
+                    <label for="phone" class="fs_14 fw_600 mb_8 login__label">Введите номер телефона</label>
+                    <div class="login__form__input__wrap mb_20">
+                        
+                        <input type="text" id="phone" class="form__input login__input phone">
+                    </div>
+                    <label class="mb_20">
+                        <p class="fs_14 fw_600 mb_8 login__label">Электронная почта</p>
+                        <input type="email" class="form__input login__input" placeholder="Введите почту">
+                    </label>
+                    <label class="mb_24">
+                        <p class="fs_14 fw_600 mb_8 login__label">ИНН организации</p>
+                        <input type="text" class="form__input login__input" placeholder="Введите ИНН">
+                    </label>
+                    <button type="submit" class="btn mb_24">Получить код</button>
+                    <p class="fs_12 mb_32 lh_137">Нажимая кнопку «Создать аккаунт», вы принимаете условия <a href="" class="blue">Пользовательского соглашения</a></p>
+                    <p class="fs_14 lh_150 desktop2">Уже зарегистрированы? <button type="button" class="blue log-in">Войти</button></p>
+                    <button type="button" class="btn_remove mobile btn_44 log-in">Уже зарегистрированы? Войти</button>
+                </form>
+                </div>
+            </div>
+            <div class="login__wins">
+              <div class="login__wins__content">
+                <p class="fs_24 fw_600 mb_32 lh_104">Что дает регистрация?</p>
+                <div class="wrapper_start mb_32">
+                    <div class="login__img">
+                        <img src="img/modal/login_win1.svg" alt="win">
+                    </div>
+                    <p class="fs_14">Безлимитный доступ к фильтру
+                        металлопроката</p>
+                </div>
+                <div class="wrapper_start mb_32">
+                    <div class="login__img">
+                        <img src="img/modal/login_win2.svg" alt="win">
+                    </div>
+                    <p class="fs_14">Расширенный доступ к спискам номенклатуры</p>
+                </div>
+                <div class="wrapper_start mb_32">
+                    <div class="login__img">
+                        <img src="img/modal/login_win3.svg" alt="win">
+                    </div>
+                    <p class="fs_14">Доступ к оформлению заявки через корзину</p>
+                </div>
+                <div class="wrapper_start mb_32">
+                    <div class="login__img">
+                        <img src="img/modal/login_win4.svg" alt="win">
+                    </div>
+                    <p class="fs_14">Возможность оставлять отзывы и
+                        и выбирать поставщика по рейтингу</p>
+                </div>
+                <div class="wrapper_start">
+                    <div class="login__img">
+                        <img src="img/modal/login_win5.svg" alt="win">
+                    </div>
+                    <p class="fs_14">Возможность сообщать о несоответствии информации</p>
+                </div>
+              </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-- вход для зарегистрированных пользователей -->
+<div class="modal modal__login-reg modal__login-reg-user">
+    <button type="button" class="modal__close">&times;</button>
+    <div class="modal__login-reg__content">
+        <p class="fs_24 fw_600 mb_16 lh_104">Войти</p>
+        <p class="fs_14 mb_20 lh_150">Для авторизации мы отправим код <br>
+            на ваш номер телефона.
+        </p>
+        <form action="#" class="login__form">
+            <label for="phone" class="fs_14 fw_600 mb_8 login__label lh_norm">Введите номер телефона</label>
+            <div class="login__form__input__wrap mb_24">
+                
+                <input type="text" id="phone" class="form__input login__input phone">
+            </div>
+            
+            <button type="submit" class="btn mb_16 fw_600">Получить код</button>
+            
+            <p class="fs_14 lh_150"><span>Еще не зарегистрированы?</span> <br>
+                <a href="" class="blue">Быстрая регистрация</a>
+            </p>
+        </form>
+       
+        <button type="button" class="blue fs_14 lh_150 login-prov">Вход для поставщиков</button>
+    </div>
+</div>
+   <!-- войти как поставщик -->
+<div class="modal modal__login-reg modal__login-provider modal__login-reg-prov" >
+    <button type="button" class="modal__close desktop">&times;</button>
+    <div class="mobile profile__back">
+        <button type="button" class="modal__close">&times;</button>
+    </div>
+    <div class="modal__login-reg__content">
+        <p class="fs_24 fw_600 mb_16 lh_104">Войти как поставщик</p>
+        <p class="fs_14 mb_20 lh_150">Логин и пароль мы высылали вам на почту, <br> если вы размещены, как поставщик <br> на нашем сервисе.
+        </p>
+        <form action="#" class="login__form">
+            <label class="mb_20">
+                <p class="fs_14 fw_600 mb_8 login__label">Логин</p>
+                <input type="text" class="form__input login__input" placeholder="Введите логин">
+            </label>
+            <label class="mb_24">
+                <p class="fs_14 fw_600 mb_8 login__label">Пароль</p>
+                <input type="password" class="form__input login__input" placeholder="Введите пароль">
+            </label>
+            
+            <button type="submit" class="btn mb_16 fw_600">Войти</button>
+            <p class="fs_14 lh_150">Хотите продавать металл у нас? <br>
+                <a href="" class="blue">Подать заявку</a>
+            </p>
+            
+        </form>
+       
+    </div>     
+        
+</div>
+<!-- помощь -->
+<div class="modal modal__help">
+    <div class="modal__close">&times;</div>
+    <p class="fs_20 fw_600 mb_12">Возникла проблема?</p>
+    <p class="fs_16 mb_24 lh_156">Мы сможем ответить на любые ваши вопросы по поводу работы сервиса </p>
+    <div class="wrapper_start">
+        <a href="#" class="help__item">
+            <p class="fs_16 fw_600">Поставщикам</p>
+            <p class="fs_14">Как продавать на E&#8209;металл</p>
+            <img src="img/modal/help_img.png" alt="help" class="help__img">
+        </a>
+        <a href="#" class="help__item">
+            <p class="fs_16 fw_600">Покупателям</p>
+            <p class="fs_14">Как легко купить металл? </p>
+            <img src="img/modal/help_img2.png" alt="help" class="help__img">
+        </a>
+    </div>
+    <div class="desktop2">
+        <button type="button" class="help__link call"><img src="img/modal/help_phone.svg" alt="phone">Заказать звонок</button>
+        <button type="button" class="help__link mail-send"><img src="img/modal/help_mail.svg" alt="phone">Написать на почту</button>
+        <button type="button" class="help__link"><img src="img/modal/help_telegram.svg" alt="phone">Написать в мессенджере</button>
+    </div>
+    <div class="wrapper flexWrap mobile">
+        <div class="help__contact">
+            <div class="help__contact__img">
+                <img src="img/services/serv_phone_mob.svg" alt="mail">
+            </div>
+            <a href="tel+78003020940" class="textColor fs_21 mb_12 fw_600 desktop">8 800 30 20 940</a>
+            <p class="fs_16 lh_156">
+                Позвоните или закажите <br>
+                <a href="#" class="blue call">обратный звонок</a>
+            </p>
+        </div>
+        <div class="help__contact">
+            <div class="help__contact__img">
+               
+                <img src="img/services/serv_mail_mob.svg" alt="mail">
+            </div>
+            <a href="mailto:info@e-metall.ru" class="textColor fs_21 mb_12 fw_600 desktop">info@e-metall.ru</a>
+            <p class="fs_16 lh_156">
+                Напишите на почту или оставьте 
+                заявку <a href="#" class="blue">через сайт </a>
+            </p>
+        </div>
+        <div class="help__contact">
+            <div class="help__contact__img">
+
+                <img src="img/services/serv_telegram_mob.svg" alt="telegram">
+            </div>
+            <a href="https://t.me/emetall" class="textColor fs_21 mb_12 fw_600 desktop">@emetall</a>
+            <p class="fs_16 lh_156">
+                Свяжитесь с нами через <br>
+                
+                <a href="https://t.me/emetall" class="blue">Telegram</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- форма смены города -->
+<div class="modal modal__city">
+    <button type="button" class="modal__close desktop">&times;</button>
+    <div class="mobile profile__back">
+        <p class="fs_16 fw_600 lh_norm">Выбор города</p>
+        <button type="button" class="modal__close">&times;</button>
+    </div>
+    <div class="modal__city__content">
+        <p class="fs_24 fw_600 lh_norm mb_24 desktop">Выберите город</p>
+        <p class="mobile fs_14 lh_norm fw_600 mb_8">Город</p>
+        <div class="filter-dropdown-city">
+        <form action="#">
+            <input type="text" class="catalog__search__input mb_32" placeholder="Введите ваш город" id="modal-city">
+        <datalist>
+            <option value="Москва">Москва</option>
+            <option value="Санкт-Петербург">Санкт-Петербург</option>
+            <option value="Казань">Казань</option>
+            <option value="Тюмень">Тюмень</option>
+            <option value="Новосибирск">Новосибирск</option>
+            <option value="Иркутск">Иркутск</option>
+            <option value="Уфа">Уфа</option>
+            <option value="Владивосток">Владивосток</option>
+            <option value="Екатеринбург">Екатеринбург</option>
+            <option value="Хабаровск">Хабаровск</option>
+            <option value="Челябинск">Челябинск</option>
+            <option value="Челябинск">Чебоксары</option>
+            <option value="Челябинск">Чехов</option>
+            <option value="Челябинск">Череповец</option>
+            <option value="Архангельск">Архангельск</option>
+
+        </datalist>
+        <button type="reset" class="remove-val"></button>
+        </form>
+    </div>
+        <div class="modal__city__list">
+            <button type="button">Москва</button>
+            <button type="button">Тюмень</button>
+            <button type="button">Санкт-Петербург</button>
+            <button type="button">Новосибирск</button>
+            <button type="button">Казань</button>
+            <button type="button">Иркутск</button>
+            <button type="button">Уфа</button>
+            <button type="button">Владивосток</button>
+            <button type="button">Екатеринбург</button>
+            <button type="button">Хабаровск</button>
+            <button type="button">Челябинск</button>
+            <button type="button">Архангельск</button>
+        </div>
+    </div>
+</div>
+<!-- Заказать звонок -->
+<div class="modal modal__call">
+    <div class="modal__close">&times;</div>
+    <p class="fs_24 fw_600 lh_norm mb_16">Заказать звонок</p>
+    <p class="fs_14 lh_150 mb_20">Оставьте номер телефона и мы свяжемся с вами в ближайшее время.</p>
+    <form action="">
+        <label for="phone" class="fs_14 fw_600 mb_8 login__label lh_norm">Введите номер телефона</label>
+        <div class="login__form__input__wrap mb_24">
+            
+            <input type="text" id="phone" class="form__input login__input phone">
+        </div>
+        <button type="submit" class="btn fs_15 lh_167 fw_600">Заказать звонок</button>
+    </form>
+</div>
 
 <script src="js/jquery-3.6.3.min.js"></script>
 <script src="js/script.js"></script>

@@ -190,9 +190,12 @@
       border-radius: 8px;
       padding: 10px 0;
       text-align: center;
-      display: block;
+      line-height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       text-decoration: none;
-      line-height: normal;
+      
       &:hover {
         background: #F5F5F5;
         transition: all .3s;

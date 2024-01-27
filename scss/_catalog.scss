@@ -81,15 +81,19 @@
         }
     }
     &__wrapper {
-        justify-content: flex-start;
-        gap: 32px;
+        display: grid;
+        row-gap: 30px;
+        column-gap: 32px;
+       grid-template-columns: repeat(6, 1fr);
         .product__item {
             margin: 0;
-            background: #F1F5F8;
+            border-radius: 15px;
+            background-color: #F2F2F4;
             box-shadow: none;
             line-height: 141%;
             z-index: 1;
             overflow: hidden;
+            width: 100%;
             &:nth-child(1) {
                .product__img {
                 max-width: 108%;

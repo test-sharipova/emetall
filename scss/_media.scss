@@ -121,6 +121,11 @@
       width: 80%;
     }
   }
+  .catalog {
+    &__wrapper {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
 }
 @media screen and (max-width: 1439px) {
   .header {
@@ -421,6 +426,9 @@
   &__img {
     margin-right: 10px;
   }
+  &__tiporasmer {
+    grid-template-columns: repeat(5, 1fr);
+  }
  }
  .modal {
   &__city {
@@ -461,6 +469,12 @@
   }
   &__item {
     width: auto;
+  }
+}
+.catalog {
+  &__wrapper {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 9px;
   }
 }
 }
@@ -802,6 +816,7 @@
     &__product {
       overflow-y: hidden;
       overflow-x: scroll;
+      
     }
   }
   .proverka {
@@ -896,10 +911,21 @@
     }
    }
   }
+  .calcmetall {
+    &__tiporasmer {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
   .marochnik {
     &__wrapper {
       
       grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  .catalog {
+    &__wrapper {
+      grid-template-columns: repeat(3, 1fr);
+      
     }
   }
 }
@@ -956,7 +982,7 @@
         display: block;
         &::after {
           content: '';
-          background: url(../img/cross.svg) no-repeat center;
+          background: url(../img/modal-close-gray.svg) no-repeat center;
           background-size: cover;
           display: block;
           width: 16px;
@@ -978,7 +1004,9 @@
         position: relative;
         grid-template-columns: 32px 1fr 70px;
         border-bottom: 1px solid #F2F2F4;
-        padding: 0 40px 0 0;
+        padding: 0 20px 0 0;
+        min-height: 42px;
+        
         &::after {
           content: '';
           background: url(../img/menu-catalog-arrow.svg) no-repeat center;
@@ -987,9 +1015,9 @@
           width: 7px;
           height: 13px;
           position: absolute;
-          right: 7px;
-          top: 50%;
           
+          top: 50%;
+          right: 0;
           transform: translateY(-50%);
         }
       }
@@ -1046,6 +1074,11 @@
         }
         .wrapper_start {
           flex-wrap: wrap;
+        }
+      }
+      .profile__back {
+        .fs_16 {
+          margin-top: -1px;
         }
       }
       &__search {
@@ -1160,6 +1193,7 @@
     }
   }
   .popular {
+    
     padding-top: 73px;
     padding-bottom: 10px;
     .slick-active {
@@ -1167,15 +1201,28 @@
     }
     &__slider {
       width: 100%;
+      .slick-list {
+        padding:0 20% 0 0;
+      }
+      .slick-slide {
+        margin-right: 16px;
+      }
     }
     .product {
       &__item {
         margin: 20px 16px 10px 0;
        
-        width: 126px;
+        width: 100%;
         height: 130px;
         background: #f1f5f8;
         box-shadow: none;
+        &__title {
+          margin-bottom: 10px;
+        }
+        img {
+          height: 73%;
+          object-fit: contain;
+        }
       }
       &__count {
         left: 12px;
@@ -1290,6 +1337,10 @@
       width: auto;
       overflow-x: scroll;
       margin-bottom: 28px;
+      gap: 16px;
+      .about__item {
+        margin-right: 0;
+      }
     }
     .fs_18 {
       font-size: 14px;
@@ -1541,7 +1592,14 @@
       margin-right: 0;
     }
   }
-  
+  .cart {
+    &__order {
+      &__block {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
   .catalogFilters2 {
     background: #f2f2f4;
   }
@@ -1695,7 +1753,7 @@
       order: 2;
       line-height: 167%;
       width: 100%;
-      max-width: 343px;
+      max-width: 100%;
       margin: 18px auto 0;
       height: 44px;
     }
@@ -1964,10 +2022,13 @@ height: 38px;
     &__img {
       margin-top: 20px;
       width: 100%;
-      max-width: 343px;
+      max-width: 100%;
+      height: 343px;
       img {
         width: 100%;
+        height: 100%;
         display: block;
+        object-fit: cover;
       }
     }
     &__block {
@@ -2001,6 +2062,7 @@ height: 38px;
     &__more {
       overflow-x: scroll;
       flex-wrap: nowrap;
+      width: 104%;
     }
   }
   .showFilters {
@@ -2015,7 +2077,7 @@ height: 38px;
     background: #f2f2f4;
     .tabs {
       &__caption {
-        width: 100%;
+        width: 104%;
         min-width: 100%;
 
         overflow-x: scroll;
@@ -2768,11 +2830,16 @@ height: 38px;
    .calcmetall {
     padding-bottom: 13px;
     background-color: #F2F2F4;
-    padding-top: 16px;
+    padding-top: 24px;
+    &_white {
+      background-color: #fff;
+      padding-top: 0;
+      margin-top: 16px;
+    }
     &__wrapper {
       flex-direction: column;
       gap: 32px;
-      margin-bottom: 48px;
+      margin-bottom: 20px;
     }
     .wrapper_start {
       flex-direction: column;
@@ -2807,6 +2874,8 @@ height: 38px;
       }
     }
     &__price {
+      margin-top: 0;
+      margin-bottom: 48px;
       width: 100%;
       &__block {
         padding: 24px;
@@ -2833,7 +2902,7 @@ height: 38px;
       gap: 16px 11px;
       margin-bottom: 32px;
       &__item {
-        width: 166px;
+       
         border: none;
         background: #DDDDDE;
       }
@@ -2856,7 +2925,7 @@ height: 38px;
     .btn_transparent {
       margin-bottom: 48px;
       font-size: 15px;
-
+      display: flex;
     }
     .calcmetall-title2 {
       font-size: 20px;
@@ -2922,6 +2991,10 @@ height: 38px;
     padding-left: 16px;
     padding-right: 0;
   }
+  .container_mob-w100 {
+    width: 100%;
+    padding: 0;
+   }
  .mobile2 {
   display: block;
  }
@@ -2950,7 +3023,69 @@ height: 38px;
       }
     }
     .product__item {
-      width: 108px;
+      .product__img {
+        max-width: 71%;
+      }
+      &:nth-child(1) {
+      
+        .product__img {
+          max-width: 92%;
+          margin-left: auto;
+        }
+      
+      }
+      &:nth-child(11) {
+      
+        .product__img {
+          max-width: 71%;
+          margin-left: auto;
+        }
+      
+      }
+      &:nth-child(21) {
+      
+        .product__img {
+          max-width: 71%;
+          margin-left: auto;
+          margin-top: -7px;
+        }
+      
+      }
+      &:nth-child(24) {
+      
+        .product__img {
+          max-width: 71%;
+          margin-left: auto;
+          margin-top: 0;
+        }
+      
+      }
+      &:nth-child(2) {
+        .product__item__title {
+          margin-bottom: 9px;
+        }
+      }
+     &:nth-child(3) {
+      
+        img {
+          max-width: 61%;
+        }
+      
+     }
+     &:nth-child(9) {
+      
+      .product__img {
+        margin-top: 0;
+      }
+    
+      }
+      &:nth-child(24) {
+      
+        .product__img {
+          margin-top: 0;
+        }
+      
+        }
       height: 120px;
       overflow: hidden;
       padding: 8px 8px;
@@ -2958,6 +3093,9 @@ height: 38px;
       &__title {
         font-size: 12px;
       }
+    }
+    &__content {
+      width: 100%;
     }
     &__wrapper {
       gap: 9px;
@@ -3087,16 +3225,22 @@ height: 38px;
   }
   .cart {
     padding: 16px 0 49px;
+    .container {
+      padding: 0 8px;
+    }
     .title {
       font-size: 24px;
+      padding: 0 8px;
     }
    &__subtitle {
     margin-top: 3px;
+    padding: 0 8px;
    }
    &__block {
     margin-bottom: 32px;
    }
     &__menu {
+      padding: 0 8px;
       width: 100%;
       justify-content: space-between;
       margin-bottom: 22px;
@@ -3114,10 +3258,10 @@ height: 38px;
       }
     }
     &__head {
-      width: 104%;
-      transform: translateX(-2%);
+      width: 100%;
+      
       padding: 11px 32px 12px;
-    margin-bottom: 0;
+      margin-bottom: 0;
     }
     &__wrapper {
       gap: 0;
@@ -3134,7 +3278,7 @@ height: 38px;
     }
     &__item {
       flex-wrap: wrap;
-      padding: 16px 0 18px;
+      padding: 16px 8px 18px;
       margin-bottom: 0;
       .cart__wrap {
         align-items: flex-start;
@@ -3162,13 +3306,13 @@ height: 38px;
     &__order {
       display: flex;
       flex-direction: column;
-      min-width: 359px;
+      min-width: 100%;
       box-shadow: none;
       padding: 0 0 10px;
       margin-top: 8px;
       &__wrap {
         order: 2;
-        padding: 0;
+        padding: 0 8px;
         .btn {
           width: 327px;
           height: 50px;
@@ -3178,7 +3322,7 @@ height: 38px;
       &__block {
         order: 1;
         margin: 0 0 40px;
-        transform: translateX(-2%);
+        
       }
       .cart__wrapper {
         order: 2;
@@ -3889,7 +4033,22 @@ height: 38px;
           width: 24px;
           height: 24px;
         }
+        .fs_16 {
+          margin-top: -3px;
+        }
       }
+      .modal__close {
+        background: url(../img/modal-close-gray.svg) no-repeat center;
+        color: transparent;
+        font-size: 1px;
+        width: 16px;
+        height: 16px;
+        top: 21px;
+        right: 20px;
+      }
+      .catalog__search__input {
+        padding-left: 15px;
+    }
     }
     //разместить заявку на металл
     &__applications {
@@ -4047,6 +4206,7 @@ height: 38px;
       bottom: 0;
       left: 0;
       transform: translate(0, 0);
+      max-width: 100%;
       .fs_24 {
         margin-bottom: 12px;
       }
@@ -4299,6 +4459,9 @@ height: 38px;
     .blog__articles__item {
       width: 100%;
       max-width: 100%;
+      &:nth-child(3n) {
+        grid-column: auto;
+      }
     }
     &__top {
       &__items {
@@ -4335,9 +4498,13 @@ height: 38px;
 
     &__item {
       &__top {
+        
         padding: 20px 24px 20px;
         .mb_10 {
           margin-bottom: 16px;
+        }
+        .fs_16 {
+          max-width: 100%;
         }
       }
       &__bottom {
@@ -4346,6 +4513,9 @@ height: 38px;
       .toggler {
         font-size: 14px;
       }
+    }
+    &__calend {
+      min-width: 219px;
     }
   }
   .offers {
@@ -4365,31 +4535,33 @@ height: 38px;
     }
     &__filter {
       padding: 20px 14px 24px;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
       border-radius: 10px;
       column-gap: 18px;
       row-gap: 20px;
       margin-bottom: 32px;
-      .btn {
-        margin-top: -4px;
-      }
+     
       select {
         height: 38px;
         padding: 6px 16px;
       }
 
       .w151 {
-        width: 151px;
+        width: 100%;
       }
       .w158 {
-        width: 158px;
+        width: 100%;
       }
       .btn {
         width: 100%;
+        grid-column: 1/-1;
+        margin-top: -4px;
       }
       .form__item_286 {
         &:nth-child(3) {
           width: 100%;
+          grid-column: 1/-1;
         }
       }
     }
@@ -4398,6 +4570,7 @@ height: 38px;
     }
     &__item {
       min-height: 393px;
+      width: 100%;
       .btn {
         width: 147px;
       }
@@ -4591,14 +4764,14 @@ height: 38px;
       }
     }
     &Numbers {
-      padding: 32px 0 32px;
+      padding: 32px 0 48px;
       &__wrapper {
         grid-template-columns: repeat(1, 1fr);
       }
       &__item {
         
         width: 100%;
-        margin-bottom: 16px;
+        
         padding: 31px 24px;
         height: auto;
         min-height: 193px;
@@ -4659,12 +4832,13 @@ height: 38px;
         font-size: 20px;
       }
       &__img {
-        width: 148px;
+        width: 100%;
         height: 214px;
         display: block;
         img {
-          object-fit: cover;
-          box-shadow: 0px 2px 10px 0px rgba(0,0,0,.12)
+          object-fit: contain;
+          box-shadow: 0px 2px 10px 0px rgba(0,0,0,.12);
+          margin-bottom: 4px;
         }
       }
       .mb_32 {
@@ -4672,6 +4846,15 @@ height: 38px;
       }
       .slick-slide {
         padding: 0;
+      }
+      &__slider {
+        .slick-list {
+          padding:0 20% 0 0;
+        }
+        .slick-slide {
+          margin-right: 16px;
+
+        }
       }
       
     }
@@ -4724,6 +4907,8 @@ height: 38px;
       &__wrapper {
         gap: 16px;
         width: auto;
+        scroll-snap-type: x mandatory;
+
       }
       &__item {
         padding: 32px 20px;
@@ -4731,7 +4916,8 @@ height: 38px;
         width: 294px;
         min-width: 294px;
         min-height: 389px;
-        
+        height: auto;
+        scroll-snap-align: start;
         .mb_16 {
           margin-bottom: 12px;
         }
@@ -4746,6 +4932,7 @@ height: 38px;
         }
         img {
           max-width: 228px;
+          max-height: 222px;
         }
       }
     }
@@ -4844,6 +5031,14 @@ height: 38px;
       &__item {
         width: 100%;
         margin-bottom: 0;
+        &__img {
+          max-width: 100%;
+        }
+        p {
+          br {
+            display: none;
+          }
+        }
         &:nth-child(2) {
           .companyAbout__item__img {
             margin-top: 0;
@@ -4952,7 +5147,7 @@ height: 38px;
       }
     }
     &Support {
-      padding-top: 15px;
+      padding-top: 48px;
       padding-bottom: 48px;
       .mb_34 {
         margin-bottom: 20px;
@@ -4960,6 +5155,7 @@ height: 38px;
       &__wrapper {
         gap: 12px;
         grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 0;
       }
       &__item {
         
@@ -5151,7 +5347,7 @@ height: 38px;
     padding-top: 32px;
     .title_36 {
       font-size: 24px;
-      max-width: 257px;
+      max-width: 79%;
       line-height: normal;
       margin-bottom: 12px;
     }
@@ -5162,11 +5358,12 @@ height: 38px;
     &__subtitle {
       font-size: 14px;
       line-height: 20px;
-      max-width: 316px;
+      max-width: 90%;
       margin-bottom: 24px;
     }
     .help__item {
       width: 100%;
+      max-width: 100%;
       padding: 24px 24px 28px;
       min-height: 219px;
       &:nth-child(1) {
@@ -5205,6 +5402,9 @@ height: 38px;
         line-height: 20px;
         text-align: left;
         text-wrap: balance;
+        br {
+          display: none;
+        }
       }
       &__img {
         width: 40px;
@@ -5219,6 +5419,11 @@ height: 38px;
     &__questions {
       margin-bottom: 48px;
     }
+    .btn_transparent {
+      display: flex;
+      margin-top: 8px;
+    }
+    
   }
   .orders {
     background: #f2f2f4;
@@ -5533,7 +5738,7 @@ height: 38px;
       padding-bottom: 0;
       h1 {
         font-size: 20px;
-        max-width: 323px;
+        max-width: 95%;
         margin-bottom: 16px;
       }
       .gray {
@@ -5541,7 +5746,7 @@ height: 38px;
       }
       .marochnik__block {
         .fs_16 {
-          max-width: 327px;
+          max-width: 90%px;
         }
         &_mb67 {
           margin-bottom: 48px;
@@ -5587,7 +5792,7 @@ height: 38px;
           &__descr {
             font-size: 12px;
             line-height: normal;
-            max-width: 240px;
+            max-width: 100%;
           }
         }
         &__list {
@@ -5604,7 +5809,7 @@ height: 38px;
     }
     &__component {
       margin: 0 0 8px;
-      width: 192px;
+      width: 56%;
       height: 121px;
       padding: 24px 35px;
       .mb_46 {
@@ -5625,7 +5830,7 @@ height: 38px;
         font-size: 14px;
       }
       h2 {
-        max-width: 314px;
+        max-width: 100%;
         line-height: 120%;
         margin-bottom: 24px;
       }
@@ -5671,6 +5876,10 @@ height: 38px;
     }
     &__label {
       width: 100%;
+      max-width: 100%;
+    }
+    &__input {
+      max-width: 100%;
     }
     &__change {
       transform: rotate(90deg);
@@ -6268,6 +6477,12 @@ height: 38px;
   .mb_17 {
     margin-bottom: 4px;
   }
+  .fs_16 {
+    .pdf {
+      margin-top: 6px;
+      margin-left: 0;
+    }
+  }
   .directory {
     &__link {
       display: block;
@@ -6347,7 +6562,8 @@ height: 38px;
     }
    }
    &__stat {
-   
+    max-width: 100%;
+    min-width: 100%;
     box-shadow: none;
     .desktop2 {
       display: none;
@@ -6407,6 +6623,8 @@ height: 38px;
       max-width: 100%;
       min-height: 90px;
       flex-direction: row;
+      justify-content: flex-start;
+      gap: 24px;
       padding: 24px 19px 23px 27px;
       align-items: center;
       p {
@@ -6475,6 +6693,7 @@ height: 38px;
       }
       &__graphList {
         margin-top: 0;
+        max-width: 100%;
         .fs_18 {
           font-size: 14px;
         }
@@ -6487,11 +6706,14 @@ height: 38px;
       }
       &__graph {
         width:100%;
-        max-width: 300px;
+        max-width: 100%;
         margin-top: 0;
+        img {
+          width: 100%;
+        }
         &List {
           width: 100%;
-          max-width: 300px;
+          margin-right: 0;
           
           .mb_80 {
             margin-bottom: 32px;
@@ -6512,10 +6734,14 @@ height: 38px;
     }
     
   }
-  &__advRew {
+  .advRew {
     padding-top: 32px;
     margin-bottom: 43px;
+    &__slider {
+      width: 104%;
+    }
   }
+
   &__cases {
     .slick-slide {
       padding: 0 16px;
@@ -6547,11 +6773,12 @@ height: 38px;
     }
     
     &__case {
+      width: 100%;
       border-radius: 12px;
       background: #FFF;
       margin-left: 4px;
       margin-right: 4px;
-      box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.12);
+      box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.12);
       padding: 24px 20px 20px;
       margin-top: 32px;
       display: grid;
@@ -6761,6 +6988,7 @@ height: 38px;
     }
     .btn_transparent {
       margin-top: 12px;
+      display: flex;
     }
   }
 
@@ -6847,6 +7075,8 @@ height: 38px;
         
         span {
           display: none;
+          line-height: 100%;
+          margin-top: -2px;
           &.active {
             display: block;
             
@@ -6922,6 +7152,7 @@ height: 38px;
     margin-bottom: 24px;
   }
   .btn_transparent {
+    height: 44px;
     opacity: 1;
     order: 2;
     margin-bottom: 32px;
@@ -6963,6 +7194,11 @@ height: 38px;
           }
         }
       }
+    }
+  }
+  .calcmetall {
+    &__tiporasmer {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }

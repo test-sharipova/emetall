@@ -251,12 +251,20 @@
     //calc metall
     &__met {
         .calc__label {
+            &:nth-child(1) {
+                .new-select {
+                    border-radius: 6px;
+                }
+            }
             &:nth-child(2) {
                 .fs_14 {
                     margin-left: 0px;
                 }
                 .calc__input {
                     padding-left: 16px;
+                }
+                .new-select {
+                    border-radius: 6px;
                 }
             }
         }
@@ -265,6 +273,16 @@
             justify-content: flex-start;
             gap: 24px;
         }
+       .new-select {
+        padding: 0 16px;
+        line-height: 100%;
+        display: flex;
+        align-items: center;
+        &:empty {
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+       }
     }
     &__wrap {
         &_g46 {
@@ -422,15 +440,17 @@
     .calc__last__item {
         display: block;
     }
-    .new-select {
-        border-radius: 6px;
-        border: 1px solid #DDD;
-        background: transparent;
-        width: 100%;
-        max-width: 357px;
-        padding: 15px 28px 15px 20px;
-        height: 50px;
-        white-space: nowrap;
-    }
     
+    &:not(.calc__met) {
+        .new-select {
+            border-radius: 6px;
+            border: 1px solid #DDD;
+            background: transparent;
+            width: 100%;
+            max-width: 100%;
+            padding: 15px 28px 15px 20px;
+            height: 50px;
+            white-space: nowrap;
+        }
+    }
 }

@@ -204,6 +204,7 @@ function responseMenu(){
 
       //заказать обратный звонок
       $('.call').on('click', function() {
+        $('.modal').fadeOut();
         $('.overlay, .modal__call').fadeIn();
       });
 
@@ -419,9 +420,9 @@ new AirDatepicker('#calend', {
                 breakpoint: 768,
                 settings: {
                     arrows: false,
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                     centerPadding: '16px',
-                    variableWidth: true,
+                    // variableWidth: true,
                     centerMode: false,
                     
                 } 

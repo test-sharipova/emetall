@@ -96,9 +96,8 @@
         margin-bottom: 80px;
     }
     &__tiporasmer {
-        display: flex;
-        justify-content: flex-start;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
         gap: 24px 32px;
         &__item {
             border-radius: 8px;
@@ -109,7 +108,7 @@
             line-height: normal;
             color: #222;
             padding: 12px 16px;
-            width: 216px;
+            
             border: 1px solid #E9F0FC;
             display: block;
             text-decoration: none;
