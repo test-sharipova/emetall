@@ -3423,6 +3423,9 @@ height: 38px;
         order: 5;
         font-size: 16px;
       }
+      .order_btn {
+        width: calc(100% - 48px);
+      }
     }
   }
   .repost {
@@ -7251,6 +7254,7 @@ height: 38px;
 &__count {
   flex-direction: column;
   justify-content: center;
+  padding-left: 0;
   .fs_14 {
     margin-bottom: 24px;
   }

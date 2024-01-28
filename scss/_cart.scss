@@ -274,6 +274,7 @@
             width: 70px;
             text-align: right;
             margin-left: auto;
+            white-space: nowrap;
         }
         &__summ {
             font-style: normal;
@@ -281,6 +282,7 @@
             font-size: 20px;
             width: 80px;
             margin-top: 12px;
+            white-space: nowrap;
         }
     }
     &__order {
