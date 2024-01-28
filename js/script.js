@@ -7,6 +7,7 @@ window.addEventListener('DOMContentLoaded', () => {
     hamburger = document.querySelector('.hamburger');
     mainMenu = document.querySelector('.main-menu__mobile');
     mainMenuCatalog = document.querySelector('.main-menu__mobile__item-catalog');
+    body = document.querySelector('body');
 
     mainMenuCatalog.addEventListener('click', () => {
         
@@ -16,6 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
     hamburger.addEventListener('click', () => {
       mainMenu.classList.toggle('main-menu__mobile-active');
       hamburger.classList.toggle('hamburger_active');
+      body.classList.toggle('overflow');
     });
 
     menuClose.addEventListener('click', () => {
@@ -38,7 +40,7 @@ window.addEventListener('DOMContentLoaded', () => {
         $('.menu__catalog').toggleClass('menu__catalog_hide');
         $('.btn__burger').toggleClass('btn__burger_active');
         $('.menu__catalog__overlay').toggleClass('menu__catalog__overlay_active');
-        
+        // $('body').toggleClass('overflow');
     });
     
 
