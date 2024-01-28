@@ -1218,6 +1218,7 @@
         box-shadow: none;
         &__title {
           margin-bottom: 10px;
+          font-size: 12px;
         }
         img {
           height: 73%;
@@ -1932,11 +1933,12 @@ height: 38px;
     font-size: 15px;
    }
     .form__wrapper {
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
       column-gap: 16px;
       row-gap: 21px;
       margin-bottom: 20px;
-      justify-content: flex-start;
+      
       .btn {
         width: 100%;
         margin-top: 3px;
@@ -1945,13 +1947,14 @@ height: 38px;
         margin-top: -9px;
       }
       .w100 {
+        grid-column: 1/-1;
         width: 100%;
       }
       .w151 {
-        width: 151px;
+        width: 100%;
       }
       .w158 {
-        width: 158px;
+        width: 100%;
       }
       .labelRadio {
         text-align: center;
@@ -1974,13 +1977,13 @@ height: 38px;
     }
     .form {
       &__item_210 {
-        width: 47%;
+        width: 100%;
         max-width: 210px;
         min-width: 140px;
       }
       &__item {
         &_w47 {
-          width: 47%;
+          width: 100%;
         }
       }
       &__divider {
@@ -5495,6 +5498,9 @@ height: 38px;
         .gray {
           grid-column: 1/2;
           grid-row: 2/3;
+          img {
+            margin-top: 3px;
+          }
         }
       }
     }
