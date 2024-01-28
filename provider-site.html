@@ -3195,7 +3195,19 @@
                     <p class="fs_15 mb_16 lh_167">706 металлобаз</p>
                     <form action="#" class="catalog__search mb_32">
                         <img src="img/catalog/search_img.svg" class="catalog__search__img" alt="search">
-                        <input class="catalog__search__input" type="text" placeholder="Поиск по названию">
+                        
+                        <div class="filter-dropdown">
+                            <input class="catalog__search__input" autocomplete="off" role="combobox" type="text" placeholder="Поиск по названию">
+                            <datalist id="metallobazalist" role="listbox">
+
+                                <option value="Мечел">Мечел</option>
+                                <option value="НМЛК">НМЛК</option>
+                                <option value="МеталлСервис">МеталлСервис</option>
+                                <option value="ЕВРАЗ">ЕВРАЗ</option>
+                                <option value="Металл Гарант">Металл Гарант</option>
+                                <option value="Metallink">Metallink</option>
+                            </datalist>
+                        </div>
                         <button type="submit" class="catalog__search__btn desktop"></button>
                         <div class="showFilters mobile"> 
                             <img src="img/filter_blue.svg" alt="filters"> 

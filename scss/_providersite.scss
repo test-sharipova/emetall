@@ -112,4 +112,8 @@
         width: 100%;
         cursor: pointer;
     }
+    .filter-dropdown {
+        flex-grow: 1;
+        position: relative;
+    }
 }

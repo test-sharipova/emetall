@@ -11,6 +11,12 @@
     }
 }
 .providerscard {
+    .container_p10 {
+        max-width: 1456px;
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+    }
     padding-top: 19px;
     &__content {
         width: 100%;
@@ -62,7 +68,7 @@
                 position: absolute;
                 top: 50%;
                 right: 0;
-                transform: translateY(-32%);
+                transform: translateY(-40%);
                 background: url(../img/info-icon.svg) no-repeat center/ contain;
                 width: 16px;
                 height: 16px;

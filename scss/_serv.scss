@@ -2,7 +2,8 @@
 .serv {
     padding: 0px 0 105px;
     &__wrapper {
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         gap: 32px;
     }
     &__item {
@@ -10,9 +11,9 @@
         background: #FFFFFF;
         box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.12);
         border-radius: 12px;
-        width: 381px;
-        height: 284px;
-        padding: 38px 36px 67px;
+        width: 100%;
+        min-height: 284px;
+        padding: 38px 36px 64px;
         &:nth-child(4), &:nth-child(5), &:nth-child(6) {
             padding-left: 32px;
         }
