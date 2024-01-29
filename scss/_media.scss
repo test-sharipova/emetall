@@ -1015,6 +1015,9 @@
         margin-top: 60px;
         grid-template-columns: 1fr;
       }
+      &__scroll {
+        max-height: 88vh;
+      }
       &__link {
         width: 100%;
         max-width: 100%;

@@ -7,7 +7,8 @@ window.addEventListener('DOMContentLoaded', () => {
     hamburger = document.querySelector('.hamburger');
     mainMenu = document.querySelector('.main-menu__mobile');
     mainMenuCatalog = document.querySelector('.main-menu__mobile__item-catalog');
-    body = document.querySelector('body');
+    body = document.querySelector('.body__wrap');
+    header = document.querySelector('header');
 
     mainMenuCatalog.addEventListener('click', () => {
         

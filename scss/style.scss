@@ -86,8 +86,17 @@
   }
   .overflow {
     overflow: hidden;
+    height: 100vh;
   }
- 
+  .header-fixed {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    background: #fff;
+    top: 0;
+    left: 0;
+
+  }
   //btns
   button {
     background: transparent;
