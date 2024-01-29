@@ -250,12 +250,14 @@
     }
     &__close {
       position: absolute;
-      top: 43%;
+      top: 48%;
       transform: translateY(-50%);
       left: 16px;
-         
-    font-size: 36px;
-    line-height: 36px;
+      color: transparent;
+      font-size: 1px;
+      width: 16px;
+      height: 16px;
+      background: url(../img/close-filter.svg) no-repeat center/contain;
     }
     .labelRadio {
       margin-top: 2px;

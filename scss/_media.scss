@@ -1899,7 +1899,7 @@
       }
       .btn_remove {
         width: 147px;
-height: 38px;
+        height: 38px;
       }
       .price {
         font-weight: 600 !important;
@@ -1923,14 +1923,25 @@ height: 38px;
       }
       &__banner {
         a {
+          position: relative;
+          width: 100%;
+          
           z-index: 2;
-          left: 10px;
+          left: 0px;
           top: 0;
           transform: translate(0, 0);
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
         }
         background: transparent !important;
         td {
           background: transparent !important;
+          position: relative;
+          padding: 0 !important;
         }
       }
     }
@@ -2594,6 +2605,7 @@ height: 38px;
         &__caption {
           margin-left: 6px;
           max-width: 100%;
+          width: 104%;
           
         }
       }
@@ -5507,6 +5519,14 @@ height: 38px;
       display: flex;
       margin-top: 8px;
     }
+    .about__summary {
+      font-size: 16px;
+    }
+    .about__question {
+      &:last-child {
+        border-bottom: none;
+      }
+    }
     
   }
   .orders {
@@ -5580,7 +5600,7 @@ height: 38px;
           grid-column: 1/2;
           grid-row: 2/3;
           img {
-            margin-top: 3px;
+            margin-top: 2px;
           }
         }
       }
@@ -5817,6 +5837,7 @@ height: 38px;
         &_blue {
           width: 100%;
           border-bottom: 1px solid #8eb1ed;
+          border-right: none;
         }
       }
     }
@@ -6940,7 +6961,10 @@ height: 38px;
   &__details {
     padding-top: 126px;
     padding-left: 16px;
-   padding-bottom: 50px;
+    padding-bottom: 50px;
+    &-download {
+      display: flex;
+    }
     .center {
       text-align: left;
       margin-bottom: 16px;
@@ -6987,7 +7011,7 @@ height: 38px;
         gap: 12px;
         align-items: center;
         font-size: 16px;
-        margin-bottom: 16px;
+        margin-bottom: 12px;
         &::before {
           content: '';
           display: block;
@@ -7002,6 +7026,10 @@ height: 38px;
         max-height: 61px;
         overflow: hidden;
         transition: max-height .3s;
+        .fs_16, .fs_24 {
+          color: transparent;
+          transition: color .3s;
+        }
         &.active {
           max-height: 200px;
           &::before {
@@ -7009,6 +7037,9 @@ height: 38px;
           }
           .forproviders__details__tarif-name {
             color: $blue;
+          }
+          .fs_16, .fs_24 {
+            color: $text-color;
           }
         }
         width: 100%;

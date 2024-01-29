@@ -446,6 +446,7 @@
             gap: 12px;
             color: $blue;
             text-decoration: none;
+            display: none;
             &::before {
                 content: '';
                 display: block;
