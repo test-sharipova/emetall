@@ -4190,11 +4190,7 @@
         top: 0;
         left: 0;
         transform: translate(0, 0);
-        .profile__back {
-          &::before {
-            opacity: 0;
-          }
-        }
+        
         .fs_24 {
           padding: 32px 24px 0;
           margin-bottom: 12px;
@@ -4203,6 +4199,14 @@
           padding: 0 24px;
           font-size: 14px;
           margin-bottom: 29px;
+        }
+        .profile__back {
+          .fs_16 {
+            font-size: 16px;
+          }
+          &::before {
+            opacity: 0;
+          }
         }
         form {
           gap: 20px;
@@ -6635,7 +6639,7 @@
       .fs_18 {
         font-size: 16px;
         line-height: 156%;
-        max-width: 234px;
+        max-width: 90%;
         margin-bottom: 24px;
       }
     }
