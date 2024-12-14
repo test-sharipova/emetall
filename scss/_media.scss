@@ -1,4 +1,15 @@
 @media screen and (max-width: 1670px) {
+  .header {
+    &__wrapper {
+      flex-wrap: wrap;
+      gap: 8px 0;
+    }
+    &__profile {
+      &__btn {
+        margin: 0 0 0 auto;
+      }
+    }
+  }
   .providerSite {
     &__item {
       width: 460px;
@@ -146,6 +157,7 @@
     &__indicator {
       margin-left: auto;
     }
+    
   }
   .promo {
     &__wrapper {
@@ -510,6 +522,13 @@
     top: -1000%;
   }
  }
+  .header {
+    &__profile {
+      &__btn {
+        margin-left: 0;
+      }
+    }
+  }
   .about {
     &__block {
       
