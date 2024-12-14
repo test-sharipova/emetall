@@ -120,7 +120,7 @@ main:has(.catalogFilters) {
         border-right: 2px solid transparent;
       }
     }
-    &:hover {
+    &:not(.catalogFilters__table__banner):hover {
       &>td {
         position: relative;
         
@@ -180,6 +180,11 @@ main:has(.catalogFilters) {
           display: none;
         }
       }
+    }
+  }
+  &__banner {
+    a {
+      transform: translate(-16%, -50%);
     }
   }
 } 
@@ -360,6 +365,11 @@ tr:has(.table-spec-wrap) {
                   background-image: url(../img/providerscard-price.svg);
               }
           }
+          &-send {
+            &::before {
+                background-image: url(../img/export.svg);
+            }
+        }
           &:hover {
               background: #f5f5f5;
           }
@@ -578,6 +588,41 @@ tr:has(.table-spec-wrap) {
     }
   }
 }
+.modal-info {
+  background-color: #fff;
+  padding: 48px;
+  border-radius: 15px;
+  box-shadow: 0 12px 30px 0 rgba(0, 0, 0, 0.12);
+  min-width: 957px;
+  .modal__close {
+    background: url(../img/modal-close-gray.svg) no-repeat center/16px 16px;
+    width: 26px;
+    height: 26px;
+    top: 24px;
+    right: 24px;
+  }
+  &__img {
+    border-radius: 15px;
+    background: #e9f0fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+    padding: 54px;
+    img {
+      display: block;
+      max-width: 90%;
+    }
+
+  }
+  .fs_32 {
+    max-width: 520px;
+  }
+  .fs_16 {
+    max-width: 772px;
+  }
+}
+
 @media screen and (max-width: 1670px) {
     .header {
       &__wrapper {
@@ -612,7 +657,9 @@ tr:has(.table-spec-wrap) {
     .modal-place-order {
       min-width: fit-content;
     }
-    
+    .modal-info {
+      min-width: 100%;
+    }
 }
 @media screen and (max-width: 1023px) {
   .modal-place-order {
@@ -637,4 +684,5 @@ tr:has(.table-spec-wrap) {
       min-width: 100%;
     }
   }
+
 }
