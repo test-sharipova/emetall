@@ -1008,15 +1008,42 @@
                         <p class="header__text">позиций товаров</p>
                     </div>
                 </div>
+                
                 <button type="button" class="header__profile__btn applications-order desktop">Разместить заявку</button>
+                
                 <div class="header__icons header__desktop">
+                    <!-- <a href="#" class="header__item">
+                        <div class="header__item__img">
+                            <img src="img/Union.svg" alt="stat">
+                        </div>
+                        <p class="header__text">Статистика</p>
+                    </a> -->
+                    <a href="#" class="header__item header__item__counter">
+                        <div class="header__item__img">
+                            <img src="img/Group.svg" alt="search">
+                        </div>
+                        <p class="header__text">Поиски</p>
+                    </a>
+                    <a href="#" class="header__item">
+                        <div class="header__item__img">
+                            <img src="img/Vector.svg" alt="order">
+                        </div>
+                        <p class="header__text">Заказы</p>
+                    </a>
+                    <a href="cart.html" class="header__item header__item__counter">
+                        <div class="header__item__img">
+                            <img src="img/cart.svg" alt="cart">
+                        </div>
+                        <p class="header__text">Корзина</p>
+                    </a>
                     <div class="header__item">
-                        <style>
-                            body {
-                                padding-bottom: 1px;
-                            }
-                        </style>
-                        <a href="#" class="sign__in-btn">Войти</a>
+                        <div class="header__profile">
+                            <div class="header__profile__back_white"></div>
+                            <div class="header__profile__back_gray"></div>
+                            <img src="img/profile.svg" alt="profile">
+                            
+                        </div>
+                        <!-- <button type="button" class="header__profile__btn hide">Войти</button> -->
                     </div>
                 </div>
 
@@ -7794,7 +7821,7 @@
 
                             </div>
                             <div class="form__divider"></div>
-                            <div class="wrapper form__wrapper form__wrapper_mb15 grid__wrapper wrap__dop">
+                            <div class="wrapper form__wrapper form__wrapper_mb15 wrap__dop">
 
 
 
@@ -8164,7 +8191,7 @@
         <section class="table">
             <div class="container container_p10">
                 <div class="wrapper table__filters">
-                    <div class="wrapper_start">
+                    <div class="wrapper_start desktop2">
                         <p class="fs_20 fw_600 lh_norm"><span>13</span> предложений в <button type="button" class="blue city-modal">Екатеринбурге</button> и еще 49 в других регионах</p>
                         <p class="providerscard__watched__subtitle">
                             <img src="https://e-metall.ru/img/lightning.svg" alt="lightning"> 
@@ -13647,10 +13674,6 @@
                     flex: 1;
                 }
 
-                .catalogFilters .form__wrapper.grid__wrapper {
-                    display: flex;
-                }
-
                 .catalogFilters .catalogFilters__form {
                     max-width: unset;
                     min-width: unset;
@@ -13661,7 +13684,7 @@
                     flex-wrap: nowrap;
                 }
 
-                .catalogFilters__form .select__wrap,
+                .catalogFilters__form,
                 .catalogFilters__form .form__item_286 {
                     min-width: 216px;
                     width: auto;

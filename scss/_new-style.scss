@@ -2,7 +2,8 @@
   height: 56px;
 }
 header {
-  padding-top: 18px;
+  padding-top: 8px;
+  
 }
 .header {
     &__wrapper {
@@ -32,7 +33,7 @@ header {
             white-space: nowrap;
             padding: 8px 32px;
             text-decoration: none;
-            margin: 0 auto;
+            margin: 10px auto 0;
             &:hover {
                 border-color: #3473F4;
                 color:#3473F4;
@@ -148,6 +149,12 @@ main:has(.catalogFilters) {
 .catalogFilters {
   #catalogFilters__form {
     max-width: 992px;
+  }
+}
+.catalogFilters .form__wrapper.grid__wrapper {
+  gap: 28px;
+  .select__wrap {
+    max-width: 210px;
   }
 }
 
@@ -753,6 +760,12 @@ tr:has(.table-spec-wrap) {
         max-width: 907px;
       }
     }
+    .catalogFilters .form__wrapper.grid__wrapper {
+      display: flex;
+      .select__wrap {
+        flex-grow: 1;
+      }
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -769,6 +782,12 @@ tr:has(.table-spec-wrap) {
     }
     .modal-info {
       min-width: 100%;
+        top: 0;
+        left: 0;
+        transform: translate(0px, 0px);
+        height: 100%;
+        overflow-y: auto;
+        border-radius: 0;
     }
 }
 @media screen and (max-width: 1023px) {
