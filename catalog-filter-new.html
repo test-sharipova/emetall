@@ -8205,8 +8205,8 @@
         <section class="table">
             <div class="container container_p10">
                 <div class="wrapper table__filters">
-                    <div class="wrapper_start desktop2">
-                        <p class="fs_20 fw_600 lh_norm"><span>13</span> предложений в <button type="button" class="blue city-modal">Екатеринбурге</button> и еще 49 в других регионах</p>
+                    <div class="wrapper_start">
+                        <p class="fs_20 fw_600 lh_norm desktop2"><span>13</span> предложений в <button type="button" class="blue city-modal">Екатеринбурге</button> и еще 49 в других регионах</p>
                         <p class="providerscard__watched__subtitle">
                             <img src="https://e-metall.ru/img/lightning.svg" alt="lightning"> 
                             <span>Эту позицию искали сегодня 3 человека</span>
@@ -8214,15 +8214,23 @@
                     </div>
         
                           
-                    <div class="showFilters mobile">
-                        <div class="wrapper_center">
-                            <img src="https://chel.e-metall.ru/img/catalog/filter_blue.svg" alt="filters">
-                            <p class="blue">Фильтры металлопроката</p>
+                    <div class="mobile showFilters__wrap">
+                        
+                        <select name="chapter2" id="chapter2" class="form__input select select_main" style="display: none;">
+                            <option value="" selected="" disabled=""></option>
+                            <option value="Все города">Все города</option>
+                            <option value="Екатеринбург">Екатеринбург</option>
+                            <option value="Челябинск">Челябинск</option>
+                            <option value="Москва">Москва</option>
+                        </select>
+                        <div class="showFilters wrapper_center">
+                            <img src="https://chel.e-metall.ru/img/filter_white.svg" alt="filters">
+                            <p class="fs_14">Фильтры</p>
                             
                         </div>
                         
                     </div>
-                    <p class="fs_12 lh_norm mobile"><span>13</span> предложений в <span>Екатеринбурге</span> и еще 49 в других регионах</p>
+                    <p class="fs_12 lh_norm mobile showFilters__text"><span>13</span> предложений в <span class="showFilters__text__city">Екатеринбурге</span> <br> и еще 49 в других регионах</p>
                 </div>
                 
 
@@ -8453,7 +8461,7 @@
                                     <span class="table-spec-erid">Металлторг, ИНН 9712771890, erid:
                                         nWR26TK8SawRQk2nZWW21drBvbYeoQiСС</span>
                                 </span>
-
+                                
                                 <span class="mobile">Диаметр</span>
 
                                 <span class="tdvalue">
@@ -8582,22 +8590,26 @@
                             <td class="mobile__temp">
                                 <span class="mobile">Цена, руб с НДС</span>
                                 66 000 ₽ / тн </td>
-                            <td class="mobile__temp">
+                            <td class="mobile__temp table__date">
                                 <span class="mobile">Дата обновления</span>
 
 
 
                                 07/12/2024 </td>
                             <td class="table__metallobaza">
-
+                                
                                 <div class="wrapper_start">
+                                    <span class="mobile">Металлобаза</span>
                                     <span class="table__metallobaza__raiting">10</span>
                                     <span class="table__metallobaza__name">Металлторг</span>
                                 </div>
 
                             </td>
-                            <td class="city"><span class="tdvalue">Челябинск </span></td>
-                            <td class="desktop2 text__right">
+                            <td class="city">
+                                <span class="mobile">Город</span>
+                                <span class="tdvalue">Челябинск </span>
+                            </td>
+                            <td class="text__right">
                                 <div class="wrapper">
                                     <a href="" class="btn_small">В корзину</a>
 
@@ -8605,6 +8617,10 @@
                                         <button type="button" class="btn-catalog-more"><img src="img/more.svg"
                                                 alt=""></button>
                                         <div class="providerscard-more__menu">
+                                            <div class="providerscard-more__menu__wrapper mobile">
+                                                <span class="providerscard-more__menu__title">Действия</span>
+                                                <button type="button" class="providerscard-more__menu__close"></button>
+                                            </div>
                                             <a href="" class="providerscard-more__item providerscard-more__item-rew">
                                                 <p class="fs_14 lh_norm">Оставить отзыв</p>
                                             </a>
@@ -8783,7 +8799,7 @@
                                 </div>
                             </td>
                             <td class="city"><span class="tdvalue">Красноярск </span></td>
-                            <td class="desktop2 text__right">
+                            <td class="text__right">
                                 <div class="wrapper">
                                     <a href="" class="btn_small">В корзину</a>
 
@@ -8791,6 +8807,10 @@
                                         <button type="button" class="btn-catalog-more"><img src="img/more.svg"
                                                 alt=""></button>
                                         <div class="providerscard-more__menu">
+                                            <div class="providerscard-more__menu__wrapper mobile">
+                                                <span class="providerscard-more__menu__title">Действия</span>
+                                                <button type="button" class="providerscard-more__menu__close"></button>
+                                            </div>
                                             <a href="" class="providerscard-more__item providerscard-more__item-rew">
                                                 <p class="fs_14 lh_norm">Оставить отзыв</p>
                                             </a>
@@ -8971,7 +8991,7 @@
 
                             </td>
                             <td class="city"><span class="tdvalue">Красноярск </span></td>
-                            <td class="desktop2 text__right">
+                            <td class="text__right">
                                 <div class="wrapper">
                                     <a href="" class="btn_small">В корзину</a>
 
@@ -8979,6 +8999,10 @@
                                         <button type="button" class="btn-catalog-more"><img src="img/more.svg"
                                                 alt=""></button>
                                         <div class="providerscard-more__menu">
+                                            <div class="providerscard-more__menu__wrapper mobile">
+                                                <span class="providerscard-more__menu__title">Действия</span>
+                                                <button type="button" class="providerscard-more__menu__close"></button>
+                                            </div>
                                             <a href="" class="providerscard-more__item providerscard-more__item-rew">
                                                 <p class="fs_14 lh_norm">Оставить отзыв</p>
                                             </a>
@@ -9154,7 +9178,7 @@
 
                             </td>
                             <td class="city"><span class="tdvalue">Красноярск </span></td>
-                            <td class="desktop2 text__right">
+                            <td class="text__right">
                                 <div class="wrapper">
                                     <a href="" class="btn_small">В корзину</a>
 
@@ -9162,6 +9186,10 @@
                                         <button type="button" class="btn-catalog-more"><img src="img/more.svg"
                                                 alt=""></button>
                                         <div class="providerscard-more__menu">
+                                            <div class="providerscard-more__menu__wrapper mobile">
+                                                <span class="providerscard-more__menu__title">Действия</span>
+                                                <button type="button" class="providerscard-more__menu__close"></button>
+                                            </div>
                                             <a href="" class="providerscard-more__item providerscard-more__item-rew">
                                                 <p class="fs_14 lh_norm">Оставить отзыв</p>
                                             </a>
@@ -9293,7 +9321,7 @@
 
                             </td>
                             <td ></td>
-                            <td class="desktop2 text__right">
+                            <td class="text__right">
                                 <button type="button" class="btn btn_black applications-order">Разместить заявку</button>
                             </td>
                             <!-- <td class="mobile"> <span class="mobile fs_16 fw_600">65 800 руб/т</span> -->
@@ -9493,7 +9521,7 @@
 
                             </td>
                             <td class="city"><span class="tdvalue">Красноярск </span></td>
-                            <td class="desktop2 text__right">
+                            <td class="text__right">
                                 <div class="wrapper">
                                     <a href="" class="btn_small">В корзину</a>
 
@@ -9501,6 +9529,10 @@
                                         <button type="button" class="btn-catalog-more"><img src="img/more.svg"
                                                 alt=""></button>
                                         <div class="providerscard-more__menu">
+                                            <div class="providerscard-more__menu__wrapper mobile">
+                                                <span class="providerscard-more__menu__title">Действия</span>
+                                                <button type="button" class="providerscard-more__menu__close"></button>
+                                            </div>
                                             <a href="" class="providerscard-more__item providerscard-more__item-rew">
                                                 <p class="fs_14 lh_norm">Оставить отзыв</p>
                                             </a>
@@ -9675,7 +9707,7 @@
 
                             </td>
                             <td class="city"><span class="tdvalue">Красноярск </span></td>
-                            <td class="desktop2 text__right">
+                            <td class="text__right">
                                 <div class="wrapper">
                                     <a href="" class="btn_small">В корзину</a>
 
@@ -9683,6 +9715,10 @@
                                         <button type="button" class="btn-catalog-more"><img src="img/more.svg"
                                                 alt=""></button>
                                         <div class="providerscard-more__menu">
+                                            <div class="providerscard-more__menu__wrapper mobile">
+                                                <span class="providerscard-more__menu__title">Действия</span>
+                                                <button type="button" class="providerscard-more__menu__close"></button>
+                                            </div>
                                             <a href="" class="providerscard-more__item providerscard-more__item-rew">
                                                 <p class="fs_14 lh_norm">Оставить отзыв</p>
                                             </a>
@@ -9857,7 +9893,7 @@
 
                             </td>
                             <td class="city"><span class="tdvalue">Красноярск </span></td>
-                            <td class="desktop2 text__right">
+                            <td class="text__right">
                                 <div class="wrapper">
                                     <a href="" class="btn_small">В корзину</a>
 
@@ -9865,6 +9901,10 @@
                                         <button type="button" class="btn-catalog-more"><img src="img/more.svg"
                                                 alt=""></button>
                                         <div class="providerscard-more__menu">
+                                            <div class="providerscard-more__menu__wrapper mobile">
+                                                <span class="providerscard-more__menu__title">Действия</span>
+                                                <button type="button" class="providerscard-more__menu__close"></button>
+                                            </div>
                                             <a href="" class="providerscard-more__item providerscard-more__item-rew">
                                                 <p class="fs_14 lh_norm">Оставить отзыв</p>
                                             </a>
@@ -10039,7 +10079,7 @@
 
                             </td>
                             <td class="city"><span class="tdvalue">Красноярск </span></td>
-                            <td class="desktop2 text__right">
+                            <td class="text__right">
                                 <div class="wrapper">
                                     <a href="" class="btn_small">В корзину</a>
 
@@ -10047,6 +10087,10 @@
                                         <button type="button" class="btn-catalog-more"><img src="img/more.svg"
                                                 alt=""></button>
                                         <div class="providerscard-more__menu">
+                                            <div class="providerscard-more__menu__wrapper mobile">
+                                                <span class="providerscard-more__menu__title">Действия</span>
+                                                <button type="button" class="providerscard-more__menu__close"></button>
+                                            </div>
                                             <a href="" class="providerscard-more__item providerscard-more__item-rew">
                                                 <p class="fs_14 lh_norm">Оставить отзыв</p>
                                             </a>
@@ -10221,7 +10265,7 @@
 
                             </td>
                             <td class="city"><span class="tdvalue">Красноярск </span></td>
-                            <td class="desktop2 text__right">
+                            <td class="text__right">
                                 <div class="wrapper">
                                     <a href="" class="btn_small">В корзину</a>
 
@@ -10229,6 +10273,10 @@
                                         <button type="button" class="btn-catalog-more"><img src="img/more.svg"
                                                 alt=""></button>
                                         <div class="providerscard-more__menu">
+                                            <div class="providerscard-more__menu__wrapper mobile">
+                                                <span class="providerscard-more__menu__title">Действия</span>
+                                                <button type="button" class="providerscard-more__menu__close"></button>
+                                            </div>
                                             <a href="" class="providerscard-more__item providerscard-more__item-rew">
                                                 <p class="fs_14 lh_norm">Оставить отзыв</p>
                                             </a>
@@ -10403,7 +10451,7 @@
 
                             </td>
                             <td class="city"><span class="tdvalue">Красноярск </span></td>
-                            <td class="desktop2 text__right">
+                            <td class="text__right">
                                 <div class="wrapper">
                                     <a href="" class="btn_small">В корзину</a>
 
@@ -10411,6 +10459,10 @@
                                         <button type="button" class="btn-catalog-more"><img src="img/more.svg"
                                                 alt=""></button>
                                         <div class="providerscard-more__menu">
+                                            <div class="providerscard-more__menu__wrapper mobile">
+                                                <span class="providerscard-more__menu__title">Действия</span>
+                                                <button type="button" class="providerscard-more__menu__close"></button>
+                                            </div>
                                             <a href="" class="providerscard-more__item providerscard-more__item-rew">
                                                 <p class="fs_14 lh_norm">Оставить отзыв</p>
                                             </a>
@@ -10585,7 +10637,7 @@
 
                             </td>
                             <td class="city"><span class="tdvalue">Красноярск </span></td>
-                            <td class="desktop2 text__right">
+                            <td class="text__right">
                                 <div class="wrapper">
                                     <a href="" class="btn_small">В корзину</a>
 
@@ -10593,6 +10645,10 @@
                                         <button type="button" class="btn-catalog-more"><img src="img/more.svg"
                                                 alt=""></button>
                                         <div class="providerscard-more__menu">
+                                            <div class="providerscard-more__menu__wrapper mobile">
+                                                <span class="providerscard-more__menu__title">Действия</span>
+                                                <button type="button" class="providerscard-more__menu__close"></button>
+                                            </div>
                                             <a href="" class="providerscard-more__item providerscard-more__item-rew">
                                                 <p class="fs_14 lh_norm">Оставить отзыв</p>
                                             </a>
@@ -10810,7 +10866,7 @@
 
                             </td>
                             <td class="city"><span class="tdvalue">Красноярск </span></td>
-                            <td class="desktop2 text__right">
+                            <td class="text__right">
                                 <div class="wrapper">
                                     <a href="" class="btn_small">В корзину</a>
 
@@ -10818,6 +10874,10 @@
                                         <button type="button" class="btn-catalog-more"><img src="img/more.svg"
                                                 alt=""></button>
                                         <div class="providerscard-more__menu">
+                                            <div class="providerscard-more__menu__wrapper mobile">
+                                                <span class="providerscard-more__menu__title">Действия</span>
+                                                <button type="button" class="providerscard-more__menu__close"></button>
+                                            </div>
                                             <a href="" class="providerscard-more__item providerscard-more__item-rew">
                                                 <p class="fs_14 lh_norm">Оставить отзыв</p>
                                             </a>
@@ -10992,7 +11052,7 @@
 
                             </td>
                             <td class="city"><span class="tdvalue">Красноярск </span></td>
-                            <td class="desktop2 text__right">
+                            <td class="text__right">
                                 <div class="wrapper">
                                     <a href="" class="btn_small">В корзину</a>
 
@@ -11000,6 +11060,10 @@
                                         <button type="button" class="btn-catalog-more"><img src="img/more.svg"
                                                 alt=""></button>
                                         <div class="providerscard-more__menu">
+                                            <div class="providerscard-more__menu__wrapper mobile">
+                                                <span class="providerscard-more__menu__title">Действия</span>
+                                                <button type="button" class="providerscard-more__menu__close"></button>
+                                            </div>
                                             <a href="" class="providerscard-more__item providerscard-more__item-rew">
                                                 <p class="fs_14 lh_norm">Оставить отзыв</p>
                                             </a>
@@ -11174,7 +11238,7 @@
 
                             </td>
                             <td class="city"><span class="tdvalue">Красноярск </span></td>
-                            <td class="desktop2 text__right">
+                            <td class="text__right">
                                 <div class="wrapper">
                                     <a href="" class="btn_small">В корзину</a>
 
@@ -11182,6 +11246,10 @@
                                         <button type="button" class="btn-catalog-more"><img src="img/more.svg"
                                                 alt=""></button>
                                         <div class="providerscard-more__menu">
+                                            <div class="providerscard-more__menu__wrapper mobile">
+                                                <span class="providerscard-more__menu__title">Действия</span>
+                                                <button type="button" class="providerscard-more__menu__close"></button>
+                                            </div>
                                             <a href="" class="providerscard-more__item providerscard-more__item-rew">
                                                 <p class="fs_14 lh_norm">Оставить отзыв</p>
                                             </a>
@@ -11356,7 +11424,7 @@
 
                             </td>
                             <td class="city"><span class="tdvalue">Красноярск </span></td>
-                            <td class="desktop2 text__right">
+                            <td class="text__right">
                                 <div class="wrapper">
                                     <a href="" class="btn_small">В корзину</a>
 
@@ -11535,7 +11603,7 @@
 
                             </td>
                             <td class="city"><span class="tdvalue">Красноярск </span></td>
-                            <td class="desktop2 text__right">
+                            <td class="text__right">
                                 <div class="wrapper">
                                     <a href="" class="btn_small">В корзину</a>
 
@@ -11714,7 +11782,7 @@
 
                             </td>
                             <td class="city"><span class="tdvalue">Красноярск </span></td>
-                            <td class="desktop2 text__right">
+                            <td class="text__right">
                                 <div class="wrapper">
                                     <a href="" class="btn_small">В корзину</a>
 
@@ -11893,7 +11961,7 @@
 
                             </td>
                             <td class="city"><span class="tdvalue">Красноярск </span></td>
-                            <td class="desktop2 text__right">
+                            <td class="text__right">
                                 <div class="wrapper">
                                     <a href="" class="btn_small">В корзину</a>
 
@@ -12072,7 +12140,7 @@
 
                             </td>
                             <td class="city"><span class="tdvalue">Красноярск </span></td>
-                            <td class="desktop2 text__right">
+                            <td class="text__right">
                                 <div class="wrapper">
                                     <a href="" class="btn_small">В корзину</a>
 
@@ -12296,7 +12364,7 @@
 
                             </td>
                             <td class="city"><span class="tdvalue">Красноярск </span></td>
-                            <td class="desktop2 text__right">
+                            <td class="text__right">
                                 <div class="wrapper">
                                     <a href="" class="btn_small">В корзину</a>
 
@@ -12475,7 +12543,7 @@
 
                             </td>
                             <td class="city"><span class="tdvalue">Красноярск </span></td>
-                            <td class="desktop2 text__right">
+                            <td class="text__right">
                                 <div class="wrapper">
                                     <a href="" class="btn_small">В корзину</a>
 
@@ -12654,7 +12722,7 @@
 
                             </td>
                             <td class="city"><span class="tdvalue">Красноярск </span></td>
-                            <td class="desktop2 text__right">
+                            <td class="text__right">
                                 <div class="wrapper">
                                     <a href="" class="btn_small">В корзину</a>
 
@@ -12833,7 +12901,7 @@
 
                             </td>
                             <td class="city"><span class="tdvalue">Красноярск </span></td>
-                            <td class="desktop2 text__right">
+                            <td class="text__right">
                                 <div class="wrapper">
                                     <a href="" class="btn_small">В корзину</a>
 
@@ -13012,7 +13080,7 @@
 
                             </td>
                             <td class="city"><span class="tdvalue">Красноярск </span></td>
-                            <td class="desktop2 text__right">
+                            <td class="text__right">
                                 <div class="wrapper">
                                     <a href="" class="btn_small">В корзину</a>
 
@@ -13191,7 +13259,7 @@
 
                             </td>
                             <td class="city"><span class="tdvalue">Красноярск </span></td>
-                            <td class="desktop2 text__right">
+                            <td class="text__right">
                                 <div class="wrapper">
                                     <a href="" class="btn_small">В корзину</a>
 

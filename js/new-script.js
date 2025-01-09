@@ -4,6 +4,9 @@ $('.btn-catalog-more').each(function(i) {
     $('.providerscard-more__menu').eq(i).toggleClass('providerscard-more__menu-active');
     });
 });
+$('.providerscard-more__menu__close').on('click', function(){
+    $('.providerscard-more__menu').removeClass('providerscard-more__menu-active');
+})
 
 //показать модалку с измененениями в дизайне (инфо)
 let modalShown = false; // Флаг для отслеживания, показано ли модальное окно
