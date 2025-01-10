@@ -3,6 +3,7 @@
 }
 header {
   padding-top: 8px;
+
   
 }
 .header {
@@ -734,7 +735,11 @@ tr:has(.table-spec-wrap) {
       padding-inline: 12px;
       transform: translateX(-21px);
     }
+    &_mobile {
+      display: none!important;
+    }
   }
+
 }
 
 
@@ -851,6 +856,7 @@ main:has(.catalogFilters) .breadcrumbs {
 }
 .catalogFilters__title {
   padding-top: 0;
+  padding-bottom: 4px;
 }
 .catalogFilters__subtitle {
   display: none;
@@ -860,6 +866,10 @@ main:has(.catalogFilters) .breadcrumbs {
     display: block;
     margin: 0;
     padding: 0;
+    .new-select {
+      border: 1px solid #ddd;
+      background-color: #fff;
+    }
   }
 }
 .catalogFilters__table {
@@ -925,6 +935,7 @@ main:has(.catalogFilters) .breadcrumbs {
       position: relative;
       top: 0;
       grid-column: 1/-1;
+      overflow: visible!important;
     }
     .table-spec-label {
       border-radius: 4px;
@@ -933,7 +944,21 @@ main:has(.catalogFilters) .breadcrumbs {
       font-size: 14px;
       color: #fff;
       margin-bottom: 12px;
-      padding-inline: 20px 8px;
+      margin-left: -14px;
+      padding-inline: 8px;
+      gap: 5px;
+      display: flex;
+      align-items: center;
+      &::before {
+        content: '';
+        display: block;
+        width: 8px;
+        height: 8px;
+        background-image: url("data:image/svg+xml;utf8,<svg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M7.84697 3.78838L6.69923 3.45969C6.18238 3.31366 5.71157 3.03714 5.33185 2.6566C4.95213 2.27606 4.67622 1.80423 4.5305 1.28626L4.20252 0.136042C4.18602 0.0957995 4.15796 0.0613799 4.1219 0.0371566C4.08584 0.0129333 4.04341 0 4 0C3.95659 0 3.91416 0.0129333 3.8781 0.0371566C3.84204 0.0613799 3.81398 0.0957995 3.79748 0.136042L3.4695 1.28626C3.32378 1.80423 3.04787 2.27606 2.66815 2.6566C2.28843 3.03714 1.81762 3.31366 1.30077 3.45969L0.153034 3.78838C0.108965 3.80092 0.0701792 3.82752 0.042561 3.86415C0.0149427 3.90077 0 3.94543 0 3.99134C0 4.03725 0.0149427 4.0819 0.042561 4.11853C0.0701792 4.15516 0.108965 4.18176 0.153034 4.19429L1.30077 4.52299C1.81762 4.66902 2.28843 4.94553 2.66815 5.32607C3.04787 5.70661 3.32378 6.17844 3.4695 6.69642L3.79748 7.84663C3.80999 7.8908 3.83653 7.92967 3.87308 7.95735C3.90963 7.98502 3.95419 8 4 8C4.04581 8 4.09037 7.98502 4.12692 7.95735C4.16347 7.92967 4.19001 7.8908 4.20252 7.84663L4.5305 6.69642C4.67622 6.17844 4.95213 5.70661 5.33185 5.32607C5.71157 4.94553 6.18238 4.66902 6.69923 4.52299L7.84697 4.19429C7.89103 4.18176 7.92982 4.15516 7.95744 4.11853C7.98506 4.0819 8 4.03725 8 3.99134C8 3.94543 7.98506 3.90077 7.95744 3.86415C7.92982 3.82752 7.89103 3.80092 7.84697 3.78838Z' fill='white'/></svg>");
+        background-position: center;
+        background-size: 8px 8px;
+        background-repeat: no-repeat;
+      }
     }
     .catalogFilters__table td:not(.desktop2,.catalogFilters__info-item) span {
       max-width: 100%;
@@ -1110,6 +1135,59 @@ main:has(.catalogFilters) .breadcrumbs {
     
     display: block;
     clip: inherit!important;
+  }
+}
+header {
+  padding-top: 14px;
+}
+.catalogFilters__table td:not(.desktop2,.catalogFilters__info-item):first-child {
+  padding-top: 8px;
+}
+.catalogFilters__table .city {
+  margin-bottom: 24px;
+}
+.catalogFilters__table tr:has(.table-spec-wrap) {
+  border: 1px solid #009861;
+}
+.table-spec2 {
+  
+  &-label2 {
+    margin-bottom: 12px;
+    
+  }
+}
+.table-spec-label:hover+.table-spec-erid {
+  top: 20px;
+  left: 20px;
+}
+.catalogFilters__table td:not(.desktop2,.catalogFilters__info-item):last-child {
+  padding-bottom: 22px;
+}
+.catalogFilters__table {
+  .catalogFilters__sborn {
+    display: none;
+  }
+}
+.catalogFilters__sborn_mobile {
+  display: block!important;
+  
+ td {
+  background: linear-gradient(309deg, #f3cedc 0%, #ebe9ff 100%);
+  padding: 24px!important;
+ }
+  .fs_14 {
+    white-space: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #6c757d;
+    line-height: normal;
+  }
+  .btn_black {
+    width: 100%;
+    background: #212529;
+    font-weight: 400;
+font-size: 14px;
+color: #fff;
   }
 }
 
