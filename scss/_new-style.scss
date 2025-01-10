@@ -265,6 +265,17 @@ tr:has(.table-spec-wrap) {
     }
   }
 }
+.catalogFilters__table .catalogFilters__info {
+  background-color: #ddd;
+  mask: url(../img/info-icon.svg) no-repeat center/contain;
+  border: none;
+  background-image: none;
+  &:hover {
+    background-color: $blue;
+    background-image: none;
+    border: none;
+  }
+}
 .table-spec {
   
   &-wrap {
@@ -1088,6 +1099,7 @@ main:has(.catalogFilters) .breadcrumbs {
     }
   }
   
+  
 .table__note {
   &__header {
     padding: 0;
@@ -1186,8 +1198,8 @@ header {
     width: 100%;
     background: #212529;
     font-weight: 400;
-font-size: 14px;
-color: #fff;
+    font-size: 14px;
+    color: #fff;
   }
 }
 
