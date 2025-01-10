@@ -30,3 +30,31 @@ let modalShown = false; // Флаг для отслеживания, показ�
     }
 
 
+    //показать инфо при наветдении на значок i 
+    if ($(window).width() > 768) {
+    $('.catalogFilters__info').hover(
+        function() {
+            // Добавляем класс при наведении
+            $('.table__note').addClass('table__note_active');
+        },
+        function() {
+            // Убираем класс при уходе мыши
+            $('.table__note').removeClass('table__note_active');
+        }
+    );
+    }
+    if ($(window).width() < 768) {
+
+        $('.catalogFilters__info').each(function(i) {
+            $(this).on('click', function(){
+            $('.table__note').eq(i).toggleClass('table__note_active');
+            });
+        });
+
+        
+        $('.table__note__close').on('click', function() {
+            // Переключаем класс при клике
+            $('.table__note').removeClass('table__note_active');
+        });
+        
+        }
