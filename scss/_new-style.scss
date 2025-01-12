@@ -1211,10 +1211,13 @@ header {
 }
 .catalogFilters__sborn_mobile {
   display: block!important;
-  
+  border-radius: 10px;
+  overflow: hidden;
  td {
   background: linear-gradient(309deg, #f3cedc 0%, #ebe9ff 100%);
   padding: 24px!important;
+  border: none!important;
+  
  }
   .fs_14 {
     white-space: normal;
@@ -1229,6 +1232,7 @@ header {
     font-weight: 400;
     font-size: 14px;
     color: #fff;
+    height: 38px;
   }
 }
 
