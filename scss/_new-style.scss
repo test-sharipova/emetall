@@ -164,6 +164,9 @@ main:has(.catalogFilters) {
 .catalogFilters__table {
   tr {
     td {
+      border-top: 2px solid transparent;
+      padding-top: 8px;
+      
       &:first-child {
           border-radius: 4px 0 0 4px;
           border-left: 2px solid transparent;
@@ -174,50 +177,60 @@ main:has(.catalogFilters) {
     }
     &:not(.catalogFilters__table__banner):hover {
       &>td {
-        position: relative;
         background-color: #fff;
-        &::before {
-          content: '';
-          position: absolute;
-          width: 100%;
-          height: 2px;
-          display: block;
-          background-color: $blue;
-          top: 0;
-          left: 0;
+        border-top: 2px solid $blue;
+        border-bottom: 2px solid $blue;
+        
+        // position: relative;
+        // background-color: #fff;
+        // &::before {
+        //   content: '';
+        //   position: absolute;
+        //   width: 100%;
+        //   height: 2px;
+        //   display: block;
+        //   background-color: $blue;
+        //   top: 0;
+        //   left: 0;
          
-        }
-        &:after {
-          content: '';
-          position: absolute;
-          width: 100%;
-          height: 2px;
-          display: block;
-          background-color: $blue;
-          bottom: 0;
-          left: 0;
+        // }
+        // &:after {
+        //   content: '';
+        //   position: absolute;
+        //   width: 100%;
+        //   height: 2px;
+        //   display: block;
+        //   background-color: $blue;
+        //   bottom: 0;
+        //   left: 0;
           
-        }
+        // }
         &:first-child {
           border-left-color: $blue;
           padding-left: 20px;
           margin-left: -15px;
+          .table-spec-wrap {
+           
+            left: 15px;
+        }
           
           &::before {
-            content: '';
-            position: absolute;
-            width: calc(100% - 1px);
-            height: 2px;
-            display: block;
-            background-color: $blue;
-            top: 0;
-            left: 1px;
-           
+            // content: '';
+            // position: absolute;
+            // width: calc(100% - 1px);
+            // height: 2px;
+            // display: block;
+            // background-color: $blue;
+            // top: 0;
+            // left: 1px;
+            display: none;
           }
         }
         &:last-child {
-          border-radius: 4px;
+          border-radius: 0 4px 4px 0;
           border-right: 2px solid $blue;
+          padding-right: 20px;
+          margin-right: -15px;
         }
         
       }
@@ -388,7 +401,7 @@ tr:has(.table-spec-wrap) {
   display: flex;
  
   align-items: center;
- 
+  line-height: 107%;
   justify-content: center;
   gap: 8px;
 }
@@ -720,21 +733,24 @@ tr:has(.table-spec-wrap) {
   }
 }
 
-//фиолетовая строчка
+//лавандовая строчка с градиентом
 .catalogFilters {
   
   &__sborn {
     background: linear-gradient(3deg, #f3cedc 0%, #ebe9ff 100%);
     td {
       background: linear-gradient(3deg, #f3cedc 0%, #ebe9ff 100%);
+      
     }
     &__text {
       position: absolute;
       z-index: 3;
+      margin-top: -2px;
       &-gray {
         font-weight: 400;
         font-size: 14px;
         color: #6c757d;
+        
       }
     }
     .btn_black {
@@ -890,7 +906,9 @@ main:has(.catalogFilters) .breadcrumbs {
     
     &:not(.catalogFilters__table__banner):hover {
       &>td {
+        border-color: transparent;
         
+        border-bottom: 1px;
         &::before {
           display: none;
          
@@ -900,8 +918,9 @@ main:has(.catalogFilters) .breadcrumbs {
           
         }
         &:first-child {
+          margin-left: 0;
+          padding-left: 24px;
           border-left-color: transparent;
-          
           
           &::before {
            display: none;
@@ -911,6 +930,8 @@ main:has(.catalogFilters) .breadcrumbs {
         &:last-child {
           border-radius: 4px;
           border-right: none;
+          margin-right: 0;
+          padding-right: 24px;
         }
         
       }
@@ -939,7 +960,7 @@ main:has(.catalogFilters) .breadcrumbs {
       font-weight: 400;
       font-size: 16px;
       color: #212529;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
       padding: 0 6px;
       &__city {
         color: #6c757d;
@@ -1050,7 +1071,7 @@ main:has(.catalogFilters) .breadcrumbs {
     position: fixed;
     bottom: 0;
     top: auto;
-    z-index: 20;
+    z-index: 110;
     border-radius: 15px 15px 0 0;
     
     &-active {
@@ -1104,6 +1125,7 @@ main:has(.catalogFilters) .breadcrumbs {
   
   
 .table__note {
+  
   &__header {
     padding: 0;
     position: relative;
@@ -1136,7 +1158,7 @@ main:has(.catalogFilters) .breadcrumbs {
     background: #fff;
     position: fixed;
     bottom: 0;
-    z-index: 20;
+    z-index: 110;
     top: auto;
     width: 100%;
     left: 0;
@@ -1159,7 +1181,7 @@ header {
   padding-top: 8px;
 }
 .catalogFilters__table .city {
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 }
 .catalogFilters__table tr:has(.table-spec-wrap) {
   border: 1px solid #009861;

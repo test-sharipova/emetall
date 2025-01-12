@@ -1,12 +1,30 @@
 //показать выпадающий список меню при клике на троеточие в таблице фильтров
 $('.btn-catalog-more').each(function(i) {
-    $(this).on('click', function(){
-    $('.providerscard-more__menu').eq(i).toggleClass('providerscard-more__menu-active');
+    $(this).on('click', function(e){
+        e.stopPropagation(); // Останавливаем всплытие события
+        $('.providerscard-more__menu').removeClass('providerscard-more__menu-active');
+        $('.providerscard-more__menu').eq(i).toggleClass('providerscard-more__menu-active');
+        if ($(window).width() < 768) {
+            $('.overlay').fadeIn();
+        }
     });
 });
+
+// Обработчик для клика по документу - скрыть меню при клике на любую точку документа
+$(document).on('click', function(e) {
+    if (!$(e.target).closest('.providerscard-more__menu').length) {
+        $('.providerscard-more__menu').removeClass('providerscard-more__menu-active');
+    }
+});
+
 $('.providerscard-more__menu__close').on('click', function(){
     $('.providerscard-more__menu').removeClass('providerscard-more__menu-active');
-})
+    if ($(window).width() < 768) {
+        $('.overlay').fadeOut();
+    }
+});
+
+
 
 //показать модалку с измененениями в дизайне (инфо)
 let modalShown = false; // Флаг для отслеживания, показано ли модальное окно
@@ -48,13 +66,40 @@ let modalShown = false; // Флаг для отслеживания, показ�
         $('.catalogFilters__info').each(function(i) {
             $(this).on('click', function(){
             $('.table__note').eq(i).toggleClass('table__note_active');
+            $('.overlay').fadeIn(0);
             });
         });
 
         
-        $('.table__note__close').on('click', function() {
+        $('.table__note__close, .overlay').on('click', function() {
             // Переключаем класс при клике
             $('.table__note').removeClass('table__note_active');
+            $('.overlay').fadeOut(0);
         });
         
         }
+
+//меняются стили фильтра при прокрутке
+if ($(window).width() > 768) {
+    $(window).scroll(function() {
+    
+        if ($(this).scrollTop() > 700) { 
+            $('.filters-top-menu').css('transform', 'translateY(0)');
+        } else {
+            $('.filters-top-menu').css('transform', 'translateY(-60px)');
+        }
+    });
+    $(".filters-top-menu a").on("click", function () {
+        let href = $(this).attr("href");
+    
+        $("html, body").animate({
+            scrollTop: $(href).offset().top - 130
+        }, {
+            duration: 370,   
+            easing: "linear" 
+        });
+    
+        return false;
+    });
+    
+}
