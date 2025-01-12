@@ -750,7 +750,8 @@ tr:has(.table-spec-wrap) {
         font-weight: 400;
         font-size: 14px;
         color: #6c757d;
-        
+        display: block;
+        margin-top: 1px;
       }
     }
     .btn_black {
@@ -882,6 +883,9 @@ main:has(.catalogFilters) .breadcrumbs {
     padding: 0;
     align-items: center;
   }
+}
+.catalogFilters__form {
+  padding-top: 74px;
 }
 .catalogFilters__title {
   padding-top: 0;
