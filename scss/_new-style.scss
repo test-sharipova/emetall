@@ -516,12 +516,17 @@ tr:has(.table-spec-wrap) {
   }
 }
 .table {
+  .btn_small {
+    margin-top: -3px;
+    padding-block: 1px;
+  }
   &__metallobaza {
     .wrapper_start {
       gap: 8px;
       align-items: center;
       line-height: 100%;
       height: 100%;
+      margin-top: -2px;
     }
     &__raiting {
       font-weight: 600;
@@ -531,6 +536,10 @@ tr:has(.table-spec-wrap) {
       background: url(../img/table-raiting-bg.svg) no-repeat center/cover;
       padding: 1px 10px 2px 6px;
       
+    }
+    &__name {
+      color: $blue;
+      text-decoration: none;
     }
   }
 }
@@ -1049,6 +1058,7 @@ main:has(.catalogFilters) .breadcrumbs {
     .wrapper:has(.btn-catalog-more) {
       .btn_small {
         flex-grow: 1;
+        margin-top: 0;
       }
       .btn-catalog-more {
         border-radius: 6px;
