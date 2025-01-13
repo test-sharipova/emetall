@@ -79,27 +79,3 @@ let modalShown = false; // Флаг для отслеживания, показ�
         
         }
 
-//меняются стили фильтра при прокрутке
-if ($(window).width() > 768) {
-    $(window).scroll(function() {
-    
-        if ($(this).scrollTop() > 700) { 
-            $('.filters-top-menu').css('transform', 'translateY(0)');
-        } else {
-            $('.filters-top-menu').css('transform', 'translateY(-60px)');
-        }
-    });
-    $(".filters-top-menu a").on("click", function () {
-        let href = $(this).attr("href");
-    
-        $("html, body").animate({
-            scrollTop: $(href).offset().top - 130
-        }, {
-            duration: 370,   
-            easing: "linear" 
-        });
-    
-        return false;
-    });
-    
-}
