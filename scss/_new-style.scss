@@ -520,7 +520,12 @@ tr:has(.table-spec-wrap) {
     &__name {
       color: $blue;
       text-decoration: none;
+      transition: color .2s;
+      &:hover {
+        color: #C3094F;
+      }
     }
+    
   }
 }
 .catalogFilters__table {
