@@ -161,6 +161,10 @@ main:has(.catalogFilters) {
 
 
 //таблица
+.catalogFilters__table tr:nth-child(odd):not(.table__item_spec) td .tdvalue:hover {
+  
+  background: #fff;
+}
 .catalogFilters__table {
   tr {
     td {
@@ -181,30 +185,7 @@ main:has(.catalogFilters) {
         border-top: 2px solid $blue;
         border-bottom: 2px solid $blue;
         
-        // position: relative;
-        // background-color: #fff;
-        // &::before {
-        //   content: '';
-        //   position: absolute;
-        //   width: 100%;
-        //   height: 2px;
-        //   display: block;
-        //   background-color: $blue;
-        //   top: 0;
-        //   left: 0;
-         
-        // }
-        // &:after {
-        //   content: '';
-        //   position: absolute;
-        //   width: 100%;
-        //   height: 2px;
-        //   display: block;
-        //   background-color: $blue;
-        //   bottom: 0;
-        //   left: 0;
-          
-        // }
+       
         &:first-child {
           border-left-color: $blue;
           padding-left: 20px;
@@ -215,14 +196,7 @@ main:has(.catalogFilters) {
         }
           
           &::before {
-            // content: '';
-            // position: absolute;
-            // width: calc(100% - 1px);
-            // height: 2px;
-            // display: block;
-            // background-color: $blue;
-            // top: 0;
-            // left: 1px;
+           
             display: none;
           }
         }
@@ -234,6 +208,7 @@ main:has(.catalogFilters) {
         }
         
       }
+      
     }
     &:has(.catalogFilters__table__banner) {
       td {
@@ -253,6 +228,9 @@ main:has(.catalogFilters) {
     a {
       transform: translate(3%, -50%);
     }
+  }
+  .tdvalue {
+    margin-top: 1px;
   }
 } 
 .table__note {
@@ -285,6 +263,7 @@ tr:has(.table-spec-wrap) {
   mask: url(../img/info-icon.svg) no-repeat center/contain;
   border: none;
   background-image: none;
+  margin-top: 2px;
   &:hover {
     background-color: $blue;
     background-image: none;
@@ -521,12 +500,13 @@ tr:has(.table-spec-wrap) {
     padding-block: 1px;
   }
   &__metallobaza {
+    
     .wrapper_start {
       gap: 8px;
       align-items: center;
       line-height: 100%;
-      height: 100%;
-      margin-top: -2px;
+      height: fit-content;
+      margin-top: 1.5px;
     }
     &__raiting {
       font-weight: 600;
