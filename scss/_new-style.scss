@@ -755,8 +755,8 @@ tr:has(.table-spec-wrap) {
         margin-bottom: 2px;
         z-index: 0;
       }
-      td.desktop2 {
-        z-index: 1;
+      td.desktop2:has(.catalogFilters__sborn__text) {
+        z-index: 2;
       }
     }
     &__text {
