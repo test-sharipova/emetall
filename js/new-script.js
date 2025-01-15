@@ -50,16 +50,16 @@ let modalShown = false; // Флаг для отслеживания, показ�
 
     //показать инфо при наветдении на значок i 
     if ($(window).width() > 768) {
-    $('.catalogFilters__info').hover(
-        function() {
-            // Добавляем класс при наведении
-            $('.table__note').addClass('table__note_active');
-        },
-        function() {
-            // Убираем класс при уходе мыши
-            $('.table__note').removeClass('table__note_active');
-        }
-    );
+        $('.catalogFilters__info').hover(
+            function() {
+                // Находим соответствующий .table__note и добавляем класс
+                $(this).next('.table__note').addClass('table__note_active');
+            },
+            function() {
+                // Находим соответствующий .table__note и убираем класс
+                $(this).next('.table__note').removeClass('table__note_active');
+            }
+        );
     }
     if ($(window).width() < 768) {
 

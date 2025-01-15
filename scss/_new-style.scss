@@ -463,10 +463,11 @@ tr:has(.table-spec-wrap) {
   }
   
 }
+
 .table__note {
   background-color: rgba(0, 0, 0, .8);
   border-radius: 6px;
-  
+  top: 43px;
   
   font-size: 12px;
   line-height: 83%;
@@ -475,12 +476,18 @@ tr:has(.table-spec-wrap) {
   &_active {
     width: 350px;
     min-width: 350px;
+    opacity: 1;
+    display: block;
+    clip: inherit;
   }
   &__header {
     border-bottom: 1px solid rgba($color: #ffffff, $alpha: 0.1);
     margin-bottom: 8px;
     padding: 6px 12px;
     line-height: normal;
+    .green {
+      color: #04c900;
+    }
   }
   .wrapper_start {
     justify-content: space-between;
@@ -731,10 +738,13 @@ tr:has(.table-spec-wrap) {
 .catalogFilters {
   
   &__sborn {
-    background: linear-gradient(3deg, #f3cedc 0%, #ebe9ff 100%);
+    
     td {
-      background: linear-gradient(3deg, #f3cedc 0%, #ebe9ff 100%);
-      
+      background: linear-gradient(0deg, #f3cedc 0%, #ebe9ff 100%);
+      .tdvalue:hover {
+        background: transparent!important;
+        
+    }
     }
     &__text {
       position: absolute;
@@ -1128,9 +1138,15 @@ main:has(.catalogFilters) .breadcrumbs {
     }
   }
   
-  
+  .catalogFilters__table .catalogFilters__info:hover+.table__note {
+    opacity: 0;
+    clip: rect(0,0,0,0);
+    width: 0;
+    height: 0;
+    min-width: 0;
+  }
 .table__note {
-  
+  transition: all 0;
   &__header {
     padding: 0;
     position: relative;
@@ -1139,6 +1155,10 @@ main:has(.catalogFilters) .breadcrumbs {
       font-weight: 600;
       font-size: 20px;
       margin-bottom: 8px;
+      
+    }
+    .green {
+      color: #1a913c;
     }
     
   }
@@ -1160,6 +1180,7 @@ main:has(.catalogFilters) .breadcrumbs {
     }
   }
   &_active {
+    transition: all 0;
     background: #fff;
     position: fixed;
     bottom: 0;
