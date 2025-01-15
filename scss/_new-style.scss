@@ -1146,7 +1146,7 @@ main:has(.catalogFilters) .breadcrumbs {
     min-width: 0;
   }
 .table__note {
-  transition: all 0;
+  transition: all 0s;
   &__header {
     padding: 0;
     position: relative;
@@ -1180,7 +1180,7 @@ main:has(.catalogFilters) .breadcrumbs {
     }
   }
   &_active {
-    transition: all 0;
+    transition: all 0s;
     background: #fff;
     position: fixed;
     bottom: 0;
