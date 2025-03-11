@@ -251,6 +251,14 @@ main:has(.catalogFilters) {
     cursor: pointer;
     width: 100%;
   }
+  tr {
+    &:nth-last-child(1), &:nth-last-child(2), &:nth-last-child(3), &:nth-last-child(4), &:nth-last-child(5), &:nth-last-child(6) {
+      .table__note {
+        bottom: unset;
+        left: unset;
+      }
+    }
+  }
 } 
 .table__note {
   .wrapper_start {
